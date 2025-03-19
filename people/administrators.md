@@ -13,9 +13,9 @@ lang: zh-CN
 
 ### 策划组
 
-- **群赛**：组织[新人群群赛](https://osuxrq.top/events/matches/README.md)，给群赛选图，并给获得名次的新人发放奖励。
-- **头衔**：推出月度的[头衔图](https://osuxrq.top/events/charts/README.md)，并以公告形式发出。
-- **集锦**：收集、制作月度/季度[新人群集锦](https://osuxrq.top/events/collections/README.md)。
+- **群赛**：组织[新人群群赛](https://osuxrq.com/events/matches/README.md)，给群赛选图，并给获得名次的新人发放奖励。
+- **头衔**：推出月度的[头衔图](https://osuxrq.com/events/charts/README.md)，并以公告形式发出。
+- **集锦**：收集、制作月度/季度[新人群集锦](https://osuxrq.com/events/collections/README.md)。
 
 ### 指导组
 
@@ -32,7 +32,7 @@ lang: zh-CN
 ### 维护组
 
 - **开发**：开发并维护与新人群有关的机器人 (Bot)。
-- **网站**：维护[新人群网站](https://osuxrq.top)，确保内容最新且无误。
+- **网站**：维护[新人群网站](https://osuxrq.com)，确保内容最新且无误。
 - **资源**：管理群文件资源
 
 ---

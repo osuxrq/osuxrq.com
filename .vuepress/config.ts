@@ -79,7 +79,7 @@ export default defineUserConfig({
                                 children: [
                                     {
                                         text: "开启回忆",
-                                        link: "https://meme.osuxrq.top/"
+                                        link: "https://meme.osuxrq.com/"
                                     },
                                     {
                                         text: "添加回忆",
@@ -183,10 +183,10 @@ export default defineUserConfig({
                 openInNewWindow: '在新窗口打开',
             },
         },
-        repo: 'osuxrq/osuxrq.top',
+        repo: 'osuxrq/osuxrq.com',
         lastUpdated: true,
         contributors: true,
-        docsRepo: 'osuxrq/osuxrq.top',
+        docsRepo: 'osuxrq/osuxrq.com',
         docsBranch: 'main',
     }),
     bundler: viteBundler(),

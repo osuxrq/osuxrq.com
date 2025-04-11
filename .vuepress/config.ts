@@ -125,6 +125,7 @@ export default defineUserConfig({
                                 "/events/matches/29.md",
                                 "/events/matches/30.md",
                                 "/events/matches/31.md",
+                                "/events/matches/32.md",
                                 "/events/matches/a1.md",
                                 "/events/matches/a2.md",
                                 "/events/matches/y1.md",

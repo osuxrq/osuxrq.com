@@ -38,6 +38,10 @@ export default defineUserConfig({
                         activeMatch: "^/introduction/(?!how-to-join)",
                     },
                     {
+                        text: "常见问题",
+                        link: "/faq/",
+                    },
+                    {
                         text: "管理",
                         children: [
                             {

@@ -1,21 +1,15 @@
 ---
-title: 悬赏列表
+title: 月赛列表
 lang: zh-CN
 ---
 
-# 悬赏列表
-
-## 悬赏
-
-参见：[高阶群悬赏墙](https://docs.qq.com/sheet/DSUJvU1FYalNEQm1Z?tab=wmga4h)
-
-## 月赛
+# 月赛
 
 参见：[高阶群月赛主网站](https://mcnc.crzteam.cn/sheet?src=https://mcnc.crzteam.cn/static/hoc-mappools.html)、[旧版表格](https://docs.qq.com/sheet/DZVVPb29OZFpNbFRx?tab=b14i1q)
 
 **高阶群月赛** (High Order Chart) 也称为高阶群 Chart，主要由[高阶群策划管理](../../people/administrators.md)负责。
 
-### 列表
+## 列表
 
 | 届 | 年份 | 月份 | 链接（可点击） |
 | :-: | :-: | :-: | :-: |
@@ -30,7 +24,7 @@ lang: zh-CN
 | 2 |  | 4 | [HOC 23.Apr](h2304.md) |
 | 1 |  | 3 | [HOC 23.Mar](h2303.md) |
 
-### 参与
+## 参与
 
 游玩指定的谱面包（图池），提交回放文件（暂未发现修改回放文件来作弊的情况，以后有可能会修改提交方式）。
 

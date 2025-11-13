@@ -116,6 +116,7 @@ export default defineUserConfig({
                             text: "群赛",
                             children: [
                                 "/events/matches/README.md",
+                                "/events/matches/33.md",
                                 "/events/matches/32.md",
                                 "/events/matches/31.md",
                                 "/events/matches/30.md",

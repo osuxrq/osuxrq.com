@@ -79,6 +79,10 @@ export default defineUserConfig({
                                 link: "/misc/mascots/"
                             },
                             {
+                                text: "出群遗言",
+                                link: "/misc/lastwords/"
+                            },
+                            {
                                 text: "新人群的回忆",
                                 children: [
                                     {

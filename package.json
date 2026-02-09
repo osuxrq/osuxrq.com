@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.13.14",
-    "@vuepress/bundler-vite": "^2.0.0-rc.20",
-    "@vuepress/theme-default": "^2.0.0-rc.88",
-    "sass-embedded": "^1.86.0",
-    "typescript": "5.8.2",
-    "vue": "3.5.13",
-    "vuepress": "^2.0.0-rc.20"
+    "@types/node": "22.19.10",
+    "@vuepress/bundler-vite": "^2.0.0-rc.26",
+    "@vuepress/theme-default": "^2.0.0-rc.122",
+    "sass-embedded": "^1.97.3",
+    "typescript": "5.9.3",
+    "vue": "3.5.28",
+    "vuepress": "^2.0.0-rc.26"
   }
 }

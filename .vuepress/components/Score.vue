@@ -1,4 +1,3 @@
-
 <script setup>
 import {computed, ref} from 'vue'
 
@@ -8,6 +7,13 @@ const props = defineProps({
   preview: String,
   star: [String, Number],
   mode: [String],
+
+  accuracy: [Number],
+  combo: [Number],
+  max: [Number],
+  rank: [String],
+  performance: [Number],
+  mods: [String],
 })
 
 const thumbSrc = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`)
@@ -40,12 +46,29 @@ const parsedData = computed(() => {
     default: mode = 'osu!standard'; break;
   }
 
+  let pa = parseFloat(props.accuracy)
+
+  let acc
+
+  if (isNaN(pa)) {
+    acc = '0'
+  } else if (pa <= 1) {
+    acc = Number((pa * 100).toFixed(2)).toString()
+  } else if (pa <= 100) {
+    acc = Number(pa.toFixed(2)).toString()
+  } else if (pa <= 10000) {
+    acc = Number(pa.toFixed(2)).toString()
+  } else {
+    acc = '0'
+  }
+
   if (match) {
     return {
       artist: match[1]?.trim(), // yandere
       title: match[2]?.trim(), // fall from grace
       creator: match[3]?.trim(), // Chrisse
       difficulty: match[4]?.trim(),  // [4K] afterimage
+      statistics: ` - ${acc}% ${props.combo}x/${props.max}x`,
       bid: props.bid?.toString() ?? '0',
       mode: mode
     };
@@ -55,6 +78,7 @@ const parsedData = computed(() => {
       title: '',
       creator: '',
       difficulty: '',
+      statistics: acc,
       bid: props.bid?.toString() ?? '0',
       mode: mode
     };
@@ -118,41 +142,6 @@ const toggleModal = (e) => {
   isModalOpen.value = !isModalOpen.value
 }
 
-const handleOfficialDownload = () => {
-  const sid = props.sid?.toString() ?? '0'
-
-  // 构建目标网址
-  const downloadUrl = encodeURI(`https://osu.ppy.sh/beatmapsets/${sid}/download`) ;
-
-  // 在新窗口打开链接
-  window.open(downloadUrl, '_blank');
-}
-
-const handleSayoDownload = () => {
-  // 获取 bid，如果不存在则设为 0 或空
-  const v = parsedData.value ?? {}
-  const bid = v.bid ?? props.bid?.toString() ?? '0'
-
-  let path1
-  let path2
-
-  if (bid.length >= 4) {
-    path1 = parseInt(bid.slice(0, -4), 10)
-    path2 = parseInt(bid.slice(-4), 10)
-  } else {
-    path1 = 0
-    path2 = parseInt(bid, 10)
-  }
-
-  const filename = `${bid} ${v.artist} - ${v.title}`
-
-  // 构建目标网址
-  const downloadUrl = encodeURI(`https://cmcc.sayobot.cn:25225/beatmaps/${path1}/${path2}/full?filename=${filename}`) ;
-
-  // 在新窗口打开链接
-  window.open(downloadUrl, '_blank');
-};
-
 // 显示星数
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
@@ -161,29 +150,76 @@ const formattedStar = computed(() => {
   return Number(num.toFixed(1)).toString();
 })
 
+// 绘制评级跑马灯
+
+const rankMarquee = computed(() => {
+  let colors
+  switch (props.rank?.toUpperCase()) {
+    case "PF":
+    case "XH":
+    case "SSH":
+    case "EX":
+    case "X+":
+      colors = ['#ccc', '#fafafa']
+      break;
+    case "X":
+    case "SS":
+      colors = ['#FFC86B', '#FFFF00']
+      break;
+    case "SH":
+      colors = ['#999', '#ccc']
+      break;
+    case "SP":
+    case "S+":
+      colors = ['#FF4E6F', '#FAD126'] // S+
+      break;
+    case "S":
+      colors = ['#EC6841', '#FF9800']
+      break;
+    case "A":
+      colors = ['#31B16C', '#12B4B1']
+      break;
+    case "B":
+      colors = ['#7776FF', '#4FACFE']
+      break;
+    case "C":
+      colors = ['#9922EE', '#F772D1']
+      break;
+    case "D":
+      colors = ['#D32F2F', '#FD5392']
+      break;
+    case "F":
+      colors = ['#666', '#999']
+      break;
+    case "FC":
+      colors = ['#4FACFE', '#00F2FE']
+      break;
+    default:
+      colors = ['none', 'none'];
+  }
+
+  return colors
+})
+
 </script>
 
 <template>
   <a :href="targetUrl" target="_blank" class="data-card-container" title="访问谱面网页">
     <div class="card-canvas">
+      <div class="color-rect" :style="{ backgroundColor: statusColor }"></div>
 
-      <div class="download-group">
-        <div class="download-icon official" @click.stop.prevent="handleOfficialDownload" title="使用官方渠道下载谱面">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3 3m0 0l-3-3m3 3V10"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
+      <div class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
+        <div class="symbol-wrapper">
+          <div class="mods-text" v-if="props.mods">+{{ props.mods }}</div>
 
-        <div class="download-icon sayo" @click.stop.prevent="handleSayoDownload" title="使用 Sayobot 下载谱面">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v1a2 2 0 002 2h12a2 2 0 002-2v-1"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <div class="baseline-container">
+            <span class="text-large">{{ props.performance ?? 0 }}</span>
+            <span class="text-small">PP</span>
+          </div>
         </div>
       </div>
 
-      <div class="color-rect" :style="{ backgroundColor: statusColor }"></div>
+      <div class="base-rect" :style="{ backgroundColor: '#2A2226' }"></div>
 
       <div class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></div>
 
@@ -204,10 +240,7 @@ const formattedStar = computed(() => {
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
       </div>
       <div class="text-content-3">
-        <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]`}}</span>
-      </div>
-      <div class="text-content-4">
-        <span class="part-d" v-if="parsedData.mode">{{ parsedData.mode }}</span>
+        <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]${parsedData.statistics}`}}</span>
       </div>
     </div>
   </a>
@@ -222,7 +255,6 @@ const formattedStar = computed(() => {
       </div>
     </Transition>
   </Teleport>
-
 </template>
 
 <style scoped>
@@ -262,6 +294,10 @@ const formattedStar = computed(() => {
   filter: brightness(0.6) contrast(1.1);
 }
 
+.data-card-container:hover .base-rect {
+  filter: brightness(0.6) contrast(1.1);
+}
+
 /* 悬停时：预览图边缘发光 */
 .data-card-container:hover .preview-rect {
   filter: brightness(1.1) contrast(1.1);
@@ -287,29 +323,29 @@ const formattedStar = computed(() => {
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
   //border-radius: 20px;
-  z-index: 1;
+  z-index: 3;
 }
 
-/* 底板矩形: x=176, width=724 -> left: (176/900)*100%, width: (724/900)*100% */
+/* 调整背景图宽度，留出右侧空间 */
 .background-rect {
   position: absolute;
   left: 14.889%;
   top: 0;
-  width: 85.111%;
+  width: 66.222%; /* 从 85% 缩减，为右侧留出约 12% 的空间 */
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   background-size: cover;
   background-position: center;
   opacity: 0.2;
-  z-index: 2;
+  z-index: 3;
+  transition: filter 0.3s ease;
 }
 
 .base-rect {
   position: absolute;
   left: 14.889%;
   top: 0;
-  width: 85.111%;
+  width: 66.222%; /* 从 85% 缩减，为右侧留出约 12% 的空间 */
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
   background-size: cover;
@@ -317,6 +353,110 @@ const formattedStar = computed(() => {
   opacity: 1;
   z-index: 2;
   transition: filter 0.3s ease;
+}
+
+/* 新增：右侧独立矩形 */
+.extra-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: clamp(8px, 2.222cqw, 20px);
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: filter 0.3s ease;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* 增加一点左侧阴影层次感 */
+
+  /* 1. 平滑渐变设计：A -> B -> A 循环模式 */
+  /* 使用 120deg 配合 background-position 实现视觉上的 30度角向右上移动 */
+  background: linear-gradient(
+      120deg,
+      var(--color-1) 0%,
+      var(--color-2) 50%,
+      var(--color-1) 100%
+  );
+
+  /* 2. 拉大背景宽度，为位移留出空间 */
+  background-size: 200% 100%;
+
+  /* 3. 动画：3秒匀速无限循环 */
+  animation: move-gradient 3s linear infinite;
+}
+
+/* 4. 定义 30度向右上方移动的动画 */
+@keyframes move-gradient {
+  0% {
+    /* 起始位置 */
+    background-position: 0% 50%;
+  }
+  100% {
+    /* 移动到 200% 正好完成一个 A-B-A 的循环，实现无缝衔接 */
+    background-position: 200% 50%;
+  }
+}
+
+/* 1. 精确对齐容器 */
+.symbol-wrapper {
+  position: absolute;
+  left: 90.50%; /* 90.55% 锁定 815px */
+  top: 48%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+/* 模组 */
+.mods-text {
+  position: absolute;
+  /* 关键：定位在主容器中心线上方 */
+  /* 如果想放下面，就把 bottom 换成 top */
+  bottom: 78%;
+  left: 50%;
+  transform: translateX(-50%); /* 水平居中对齐 815px 线 */
+
+  font-family: "Torus SemiBold", sans-serif;
+  font-size: 2cqw;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+
+  /* 距离下方文字的微调间距 */
+  margin-bottom: 2px;
+}
+
+/* 内部对齐容器 */
+.baseline-container {
+  display: flex;
+  align-items: baseline; /* 关键：基线对齐 */
+  gap: 0.2cqw; /* 两个文字之间的间距 */
+}
+
+/* 大字样式 48px */
+.text-large {
+  color: white;
+  font-family: "Torus SemiBold", sans-serif;
+  font-size: 5.2cqw;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+
+/* 小字样式 36px */
+.text-small {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Torus SemiBold", sans-serif;
+  font-size: 3.8cqw;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+
+/* 悬停效果更新 */
+.data-card-container:hover .extra-rect {
+  filter: brightness(1.15);
 }
 
 .preview-rect {
@@ -330,7 +470,7 @@ const formattedStar = computed(() => {
   background-position: center;
   border-radius: clamp(8px, 2.222cqw, 20px);
   //border-radius: 20px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .star-badge {
@@ -348,7 +488,7 @@ const formattedStar = computed(() => {
   border-radius: 2cqw;
 
   /* 视觉层叠 */
-  z-index: 5;
+  z-index: 6;
   pointer-events: none;
 
   /* 阴影：增加立体感，确保在亮色背景下也能看清 */
@@ -376,7 +516,7 @@ const formattedStar = computed(() => {
   border-radius: 2cqw;
 
   /* 视觉层叠 */
-  z-index: 5;
+  z-index: 6;
   pointer-events: none;
 
   /* 阴影：增加立体感，确保在亮色背景下也能看清 */
@@ -396,7 +536,7 @@ const formattedStar = computed(() => {
     top: 7%;
 
     width: 55.555%;
-    z-index: 4;
+    z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
     font-size: 3.5cqw;
@@ -405,7 +545,6 @@ const formattedStar = computed(() => {
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 
     height: 4cqw;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -417,7 +556,7 @@ const formattedStar = computed(() => {
     top: 44%;
 
     width: 55.555%;
-    z-index: 4;
+    z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
     font-size: 2.5cqw;
@@ -426,7 +565,6 @@ const formattedStar = computed(() => {
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 
     height: 3cqw;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -438,7 +576,7 @@ const formattedStar = computed(() => {
     top: 70%;
 
     width: 55.555%;
-    z-index: 4;
+    z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
     font-size: 2.5cqw;
@@ -451,25 +589,6 @@ const formattedStar = computed(() => {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-
-.text-content-4 {
-  text-align: right;
-
-  position: absolute;
-  right: 1.67%;
-  top: 70%;
-
-  width: auto;
-  white-space: nowrap;
-  overflow: visible;
-  z-index: 4;
-
-  font-family: "Torus SemiBold", sans-serif;
-  font-size: 2.5cqw;
-  line-height: 1;
-  color: #aaaaaa;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
 .data-card-container {
@@ -521,59 +640,6 @@ const formattedStar = computed(() => {
   color: white;
   font-size: 30px;
   cursor: pointer;
-}
-
-/* 简单的淡入淡出动画 */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-
-/* 新增：下载按钮组容器 */
-.download-group {
-  position: absolute;
-  top: 1.2cqw;
-  right: 1.2cqw;
-  display: flex;
-  gap: 0.8cqw;
-  z-index: 10;
-}
-
-/* 下载图标 */
-.download-icon {
-  position: relative;
-  width: 4.444cqw;
-  height: 4.444cqw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border-radius: 1.667cqw;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  backdrop-filter: blur(4px);
-}
-
-/* 可选：给第二个下载按钮一点颜色区分 */
-.download-icon.secondary:hover {
-  color: #66ccff; /* 比如用天蓝色区分原来的黄色 */
-}
-
-.download-icon:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffcc22;
-  transform: translateY(-1px); /* 微小的向上浮动效果 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.download-icon svg {
-  width: 60%; /* 稍微缩小图标比例，看起来更精致 */
-  height: 60%;
-  /* 增加一个小阴影让图标在浅色背景图上更清晰 */
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 </style>

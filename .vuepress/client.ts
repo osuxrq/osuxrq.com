@@ -1,6 +1,8 @@
 import { defineClientConfig } from "vuepress/client";
 import { scaleImage } from "./scripts/image-scale";
 import Beatmap from './components/Beatmap.vue'
+import Score from "./components/Score.vue";
+import Player from "./components/Player.vue";
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -16,5 +18,7 @@ export default defineClientConfig({
     });
 
     app.component('Beatmap', Beatmap)
+    app.component('Score', Score)
+    app.component('Player', Player)
   },
 });

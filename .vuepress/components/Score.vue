@@ -1,5 +1,10 @@
 <script setup>
-import {computed, ref} from 'vue'
+import {computed, ref, onMounted} from 'vue'
+
+const isMounted = ref(false)
+onMounted(() => {
+  isMounted.value = true
+})
 
 const props = defineProps({
   bid: [String, Number],
@@ -247,7 +252,7 @@ const rankMarquee = computed(() => {
 
   <Teleport to="body">
     <Transition name="fade">
-      <div v-if="isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
+      <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
         <div class="modal-content">
           <img :src="imgSrc" alt="Preview" class="full-image" />
           <div class="close-btn">×</div>

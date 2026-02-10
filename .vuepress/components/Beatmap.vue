@@ -1,6 +1,11 @@
 
 <script setup>
-import {computed, ref} from 'vue'
+import {computed, onMounted, ref} from 'vue'
+
+const isMounted = ref(false)
+onMounted(() => {
+  isMounted.value = true
+})
 
 const props = defineProps({
   bid: [String, Number],
@@ -214,7 +219,7 @@ const formattedStar = computed(() => {
 
   <Teleport to="body">
     <Transition name="fade">
-      <div v-if="isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
+      <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
         <div class="modal-content">
           <img :src="imgSrc" alt="Preview" class="full-image" />
           <div class="close-btn">×</div>

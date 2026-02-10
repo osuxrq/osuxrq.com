@@ -5,10 +5,25 @@ import * as path from "node:path";
 
 export default defineUserConfig({
     head: [
-        ["link", {
-            "rel": "icon",
-            "href": "/images/hero.png",
-        }],
+        [
+            "link",
+            {
+                "rel": "icon",
+                "href": "/images/hero.png",
+            },
+        ], [
+            "link",
+            {
+                href: "/fonts/Torus-SemiBold.woff2",
+                rel: "stylesheet",
+            },
+        ], [
+            "link",
+            {
+                href: "/fonts/Torus-SemiBold.woff",
+                rel: "stylesheet",
+            },
+        ],
     ],
     locales: {
         '/': {

@@ -66,9 +66,9 @@ const countryFlag = computed (() => {
 <template>
   <div class="user-card-container">
     <a :href="`https://osu.ppy.sh/u/${props.id}`" target="_blank" class="user-card">
-      <div class="card-bg-animated"></div>
+      <span class="card-bg-animated"></span>
 
-      <div class="card-overlay"></div>
+      <span class="card-overlay"></span>
 
       <img :src="`https://a.ppy.sh/${props.id}`" class="user-avatar" alt="avatar" />
 
@@ -82,10 +82,10 @@ const countryFlag = computed (() => {
         {{ acc }}% Lv.{{ props.level ?? 0 }}({{ props.progress ?? 0 }}%)
       </span>
 
-      <div class="pp-container">
+      <span class="pp-container">
         <span class="text-perf">{{ props.performance }}</span>
         <span class="text-pp">PP</span>
-      </div>
+      </span>
     </a>
   </div>
 </template>
@@ -103,17 +103,18 @@ const countryFlag = computed (() => {
 /* 动画定义：移动背景图的位置 */
 @keyframes streamer {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 
 .card-bg-animated {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -157,6 +158,7 @@ const countryFlag = computed (() => {
 }
 
 .card-overlay {
+  display: block;
   position: absolute;
   inset: 0;
   background-color: #2a2226;
@@ -165,6 +167,7 @@ const countryFlag = computed (() => {
 }
 
 .user-avatar {
+  display: block;
   position: absolute;
   left: 4.651cqw; /* 20px */
   top: 4.651cqw;  /* 20px */
@@ -179,6 +182,7 @@ const countryFlag = computed (() => {
 }
 
 .user-flag {
+  display: block;
   position: absolute;
   left: 29.767cqw; /* 128px */
   top: 15.814cqw;  /* 68px */

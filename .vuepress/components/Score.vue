@@ -205,44 +205,44 @@ const rankMarquee = computed(() => {
 
 <template>
   <a :href="targetUrl" target="_blank" class="data-card-container" title="访问谱面网页">
-    <div class="card-canvas">
-      <div class="color-rect" :style="{ backgroundColor: statusColor }"></div>
+    <span class="card-canvas">
+      <span class="color-rect" :style="{ backgroundColor: statusColor }"></span>
 
-      <div class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
-        <div class="symbol-wrapper">
-          <div class="mods-text" v-if="props.mods">+{{ props.mods }}</div>
+      <span class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
+        <span class="symbol-wrapper">
+          <span class="mods-text" v-if="props.mods">+{{ props.mods }}</span>
 
-          <div class="baseline-container">
+          <span class="baseline-container">
             <span class="text-large">{{ props.performance ?? 0 }}</span>
             <span class="text-small">PP</span>
-          </div>
-        </div>
-      </div>
+          </span>
+        </span>
+      </span>
 
-      <div class="base-rect" :style="{ backgroundColor: '#2A2226' }"></div>
+      <span class="base-rect" :style="{ backgroundColor: '#2A2226' }"></span>
 
-      <div class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></div>
+      <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
 
-      <div class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
+      <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
            @click="toggleModal" title="查看缩略图">
-        <div class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
+        <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
           {{ formattedStar }}
-        </div>
-        <div class="id-badge" v-if="props.bid" :style="{ backgroundColor: statusColor }">
+        </span>
+        <span class="id-badge" v-if="props.bid" :style="{ backgroundColor: statusColor }">
           {{ props.bid }}
-        </div>
-      </div>
+        </span>
+      </span>
 
-      <div class="text-content">
+      <span class="text-content">
         <span class="part-a">{{ parsedData.title }}</span>
-      </div>
-      <div class="text-content-2">
+      </span>
+      <span class="text-content-2">
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
-      </div>
-      <div class="text-content-3">
+      </span>
+      <span class="text-content-3">
         <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]${parsedData.statistics}`}}</span>
-      </div>
-    </div>
+      </span>
+    </span>
   </a>
 
   <Teleport to="body">
@@ -308,6 +308,7 @@ const rankMarquee = computed(() => {
 }
 
 .card-canvas {
+  display: block;
   position: relative;
   width: 100%;
   height: 100%;
@@ -316,6 +317,7 @@ const rankMarquee = computed(() => {
 
 /* 颜色矩形 */
 .color-rect {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -328,6 +330,7 @@ const rankMarquee = computed(() => {
 
 /* 调整背景图宽度，留出右侧空间 */
 .background-rect {
+  display: block;
   position: absolute;
   left: 14.889%;
   top: 0;
@@ -342,6 +345,7 @@ const rankMarquee = computed(() => {
 }
 
 .base-rect {
+  display: block;
   position: absolute;
   left: 14.889%;
   top: 0;
@@ -357,6 +361,7 @@ const rankMarquee = computed(() => {
 
 /* 新增：右侧独立矩形 */
 .extra-rect {
+  display: flex;
   position: absolute;
   left: 0;
   top: 0;
@@ -364,7 +369,6 @@ const rankMarquee = computed(() => {
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
   z-index: 2;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   transition: filter 0.3s ease;
@@ -390,7 +394,7 @@ const rankMarquee = computed(() => {
 @keyframes move-gradient {
   0% {
     /* 起始位置 */
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   100% {
     /* 移动到 200% 正好完成一个 A-B-A 的循环，实现无缝衔接 */
@@ -412,6 +416,7 @@ const rankMarquee = computed(() => {
 }
 /* 模组 */
 .mods-text {
+  display: block;
   position: absolute;
   /* 关键：定位在主容器中心线上方 */
   /* 如果想放下面，就把 bottom 换成 top */

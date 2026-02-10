@@ -11,7 +11,7 @@
     </template>
     <template v-else>
       <div v-for="user in users" :key="user.uid" class="user-card" :class="getCardClass(user)">
-        <a :href="user.url" target="_blank" rel="noopener noreferrer">
+        <a :href="`https://osu.ppy.sh/u/${user.uid}`" target="_blank" rel="noopener noreferrer">
           <img
             :src="`https://a.ppy.sh/${user.uid}`"
             :alt="user.name"
@@ -34,7 +34,6 @@ interface User {
   stuff?: boolean;
   uid: string;
   name: string;
-  url: string;
   date?: number[];
 }
 
@@ -44,7 +43,7 @@ defineProps<{
 
 const handleImageError = (e: Event) => {
   const img = e.target as HTMLImageElement;
-  img.src = "/images/defaultAvatar.png";
+  img.src = "https://a.ppy.sh/";
 };
 
 const getCardClass = (user: User) => {

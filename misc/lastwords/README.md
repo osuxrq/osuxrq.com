@@ -1,10 +1,12 @@
-# 遗言
+---
+title: 出群遗言
+lang: zh-CN
+---
 
-hello test test
+# 出群遗言
 
-<Beatmap
-bid="4478177"
-sid="2129623"
-preview="yandere - fall from grace (Chrisse) [[4K] afterimage]"
-star="4.3"
-/>
+以下是三个示例：
+
+- [\[ Lithromanti \]](./users/32975448.md)
+- [\_AnZai_KoKoRo_](./users/33463029.md)
+- [\[ cz \]](./users/13932883.md)

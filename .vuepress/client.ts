@@ -3,6 +3,7 @@ import { scaleImage } from "./scripts/image-scale";
 import Beatmap from './components/Beatmap.vue'
 import Score from "./components/Score.vue";
 import Player from "./components/Player.vue";
+import "./styles/index.css";
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {

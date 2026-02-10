@@ -165,51 +165,51 @@ const formattedStar = computed(() => {
 
 <template>
   <a :href="targetUrl" target="_blank" class="data-card-container" title="访问谱面网页">
-    <div class="card-canvas">
+    <span class="card-canvas">
 
-      <div class="download-group">
-        <div class="download-icon official" @click.stop.prevent="handleOfficialDownload" title="使用官方渠道下载谱面">
+      <span class="download-group">
+        <span class="download-icon official" @click.stop.prevent="handleOfficialDownload" title="使用官方渠道下载谱面">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3 3m0 0l-3-3m3 3V10"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </div>
+        </span>
 
-        <div class="download-icon sayo" @click.stop.prevent="handleSayoDownload" title="使用 Sayobot 下载谱面">
+        <span class="download-icon sayo" @click.stop.prevent="handleSayoDownload" title="使用 Sayobot 下载谱面">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v1a2 2 0 002 2h12a2 2 0 002-2v-1"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </div>
-      </div>
+        </span>
+      </span>
 
-      <div class="color-rect" :style="{ backgroundColor: statusColor }"></div>
+      <span class="color-rect" :style="{ backgroundColor: statusColor }"></span>
 
-      <div class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></div>
+      <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
 
-      <div class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
+      <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
            @click="toggleModal" title="查看缩略图">
-        <div class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
+        <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
           {{ formattedStar }}
-        </div>
-        <div class="id-badge" v-if="props.bid" :style="{ backgroundColor: statusColor }">
+        </span>
+        <span class="id-badge" v-if="props.bid" :style="{ backgroundColor: statusColor }">
           {{ props.bid }}
-        </div>
-      </div>
+        </span>
+      </span>
 
-      <div class="text-content">
+      <span class="text-content">
         <span class="part-a">{{ parsedData.title }}</span>
-      </div>
-      <div class="text-content-2">
+      </span>
+      <span class="text-content-2">
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
-      </div>
-      <div class="text-content-3">
+      </span>
+      <span class="text-content-3">
         <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]`}}</span>
-      </div>
-      <div class="text-content-4">
+      </span>
+      <span class="text-content-4">
         <span class="part-d" v-if="parsedData.mode">{{ parsedData.mode }}</span>
-      </div>
-    </div>
+      </span>
+    </span>
   </a>
 
   <Teleport to="body">
@@ -272,6 +272,7 @@ const formattedStar = computed(() => {
 }
 
 .card-canvas {
+  display: block;
   position: relative;
   width: 100%;
   height: 100%;
@@ -280,6 +281,7 @@ const formattedStar = computed(() => {
 
 /* 颜色矩形 */
 .color-rect {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -292,6 +294,7 @@ const formattedStar = computed(() => {
 
 /* 底板矩形: x=176, width=724 -> left: (176/900)*100%, width: (724/900)*100% */
 .background-rect {
+  display: block;
   position: absolute;
   left: 14.889%;
   top: 0;
@@ -521,14 +524,6 @@ const formattedStar = computed(() => {
   color: white;
   font-size: 30px;
   cursor: pointer;
-}
-
-/* 简单的淡入淡出动画 */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
 }
 
 /* 新增：下载按钮组容器 */

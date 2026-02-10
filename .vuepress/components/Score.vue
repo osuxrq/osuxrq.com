@@ -13,7 +13,7 @@ const props = defineProps({
   star: [String, Number],
   mode: [String],
 
-  accuracy: [Number],
+  accuracy: [String, Number],
   combo: [Number],
   max: [Number],
   rank: [String],
@@ -200,7 +200,7 @@ const rankMarquee = computed(() => {
       colors = ['#4FACFE', '#00F2FE']
       break;
     default:
-      colors = ['none', 'none'];
+      colors = ['#2A2226', '#2A2226'];
   }
 
   return colors
@@ -245,21 +245,21 @@ const rankMarquee = computed(() => {
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
       </span>
       <span class="text-content-3">
-        <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]${parsedData.statistics}`}}</span>
+        <span class="part-c" v-if="parsedData.difficulty">[{{ parsedData.difficulty }}]{{ parsedData.statistics }}</span>
       </span>
     </span>
   </a>
 
-  <Teleport to="body">
-    <Transition name="fade">
-      <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
-        <div class="modal-content">
-          <img :src="imgSrc" alt="Preview" class="full-image" />
+  <ClientOnly>
+    <Teleport to="body" v-if="isMounted && isModalOpen">
+      <div class="image-modal-overlay" @click="isModalOpen = false">
+        <div class="modal-content" @click.stop>
+          <img :src="imgSrc" class="full-image" alt="预览图"/>
           <div class="close-btn">×</div>
         </div>
       </div>
-    </Transition>
-  </Teleport>
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>
@@ -378,6 +378,9 @@ const rankMarquee = computed(() => {
   align-items: center;
   transition: filter 0.3s ease;
   box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* 增加一点左侧阴影层次感 */
+
+  --color-1: #2A2226;
+  --color-2: #2A2226;
 
   /* 1. 平滑渐变设计：A -> B -> A 循环模式 */
   /* 使用 120deg 配合 background-position 实现视觉上的 30度角向右上移动 */

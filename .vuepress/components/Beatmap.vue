@@ -217,17 +217,18 @@ const formattedStar = computed(() => {
     </span>
   </a>
 
-  <Teleport to="body">
-    <Transition name="fade">
-      <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
-        <div class="modal-content">
-          <img :src="imgSrc" alt="Preview" class="full-image" />
-          <div class="close-btn">×</div>
+  <ClientOnly>
+    <Teleport to="body">
+      <Transition name="fade">
+        <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
+          <div class="modal-content">
+            <img :src="imgSrc" alt="Preview" class="full-image" />
+            <div class="close-btn">×</div>
+          </div>
         </div>
-      </div>
-    </Transition>
-  </Teleport>
-
+      </Transition>
+    </Teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>

@@ -10,9 +10,9 @@ onMounted(() => {
 const props = defineProps({
   bid: [String, Number],
   sid: [String, Number],
-  preview: String,
-  star: [String, Number],
-  mode: [String],
+  preview: { type: String, default: "" },
+  star: { type: [String, Number], default: 0 },
+  mode: { type: String, default: "o" },
 })
 
 const thumbSrc = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`)
@@ -31,7 +31,7 @@ const targetUrl = computed(() => {
 const parsedData = computed(() => {
   const str = props.preview || ""
   // 匹配 A - B (C) [D]
-  const regex = /^(.*?)\s*-\s*(.*)\s+\(([^()]*)\)\s+\[(.*)]$/;
+  const regex = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)\s+\[(.*)]\s*$/;
   const match = str.match(regex);
 
   let mode
@@ -294,7 +294,6 @@ const formattedStar = computed(() => {
   width: 21.77%;
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   z-index: 1;
 }
 
@@ -307,7 +306,6 @@ const formattedStar = computed(() => {
   width: 85.111%;
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -338,7 +336,6 @@ const formattedStar = computed(() => {
   background-size: cover;
   background-position: center;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   z-index: 3;
 }
 

@@ -9,16 +9,15 @@ onMounted(() => {
 const props = defineProps({
   bid: [String, Number],
   sid: [String, Number],
-  preview: String,
-  star: [String, Number],
-  mode: [String],
-
-  accuracy: [String, Number],
-  combo: [Number],
-  max: [Number],
-  rank: [String],
-  performance: [Number],
-  mods: [String],
+  preview: { type: String, default: "" },
+  star: { type: [String, Number], default: 0 },
+  mode: { type: String, default: "o" },
+  accuracy: { type: [String, Number], default: 0 },
+  combo: { type: [Number, String], default: 0 },
+  max: { type: [Number, String], default: 0 },
+  rank: { type: String, default: "" },
+  performance: { type: [Number, String], default: 0 },
+  mods: String,
 })
 
 const thumbSrc = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`)
@@ -36,8 +35,7 @@ const targetUrl = computed(() => {
 
 const parsedData = computed(() => {
   const str = props.preview || ""
-  // 匹配 A - B (C) [D]
-  const regex = /^(.*?)\s*-\s*(.*)\s+\(([^()]*)\)\s+\[(.*)]$/;
+  const regex = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)\s+\[(.*)]\s*$/;
   const match = str.match(regex);
 
   let mode
@@ -69,10 +67,10 @@ const parsedData = computed(() => {
 
   if (match) {
     return {
-      artist: match[1]?.trim(), // yandere
-      title: match[2]?.trim(), // fall from grace
-      creator: match[3]?.trim(), // Chrisse
-      difficulty: match[4]?.trim(),  // [4K] afterimage
+      artist: match[1]?.trim(),
+      title: match[2]?.trim(),
+      creator: match[3]?.trim(),
+      difficulty: match[4]?.trim(),
       statistics: ` - ${acc}% ${props.combo}x/${props.max}x`,
       bid: props.bid?.toString() ?? '0',
       mode: mode
@@ -99,7 +97,6 @@ const statusColor = computed(() => {
 
   const GAMMA = 2.2;
 
-  // 配置表：[阈值, R, G, B]
   const stops = [
     [0.1,  66,  144, 251],
     [1.25, 79,  192, 255],
@@ -329,7 +326,6 @@ const rankMarquee = computed(() => {
   width: 21.77%;
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   z-index: 3;
 }
 
@@ -482,7 +478,6 @@ const rankMarquee = computed(() => {
   background-size: cover;
   background-position: center;
   border-radius: clamp(8px, 2.222cqw, 20px);
-  //border-radius: 20px;
   z-index: 4;
 }
 

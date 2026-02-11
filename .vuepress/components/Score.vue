@@ -15,7 +15,7 @@ const props = defineProps({
   accuracy: { type: [String, Number], default: 0 },
   combo: { type: [Number, String], default: 0 },
   max: { type: [Number, String], default: 0 },
-  rank: { type: String, default: "" },
+  rank: { type: String, default: "F" },
   performance: { type: [Number, String], default: 0 },
   mods: String,
 })
@@ -266,7 +266,7 @@ const rankMarquee = computed(() => {
   width: 100%;
   max-width: 900px;
   aspect-ratio: 900 / 110;
-  margin: 20px auto;
+  margin: clamp(8px, 2.222cqw, 20px) auto;
   text-decoration: none !important;
   /* 移到最外层 */
   border-radius: clamp(8px, 2.222cqw, 20px);
@@ -375,34 +375,34 @@ const rankMarquee = computed(() => {
   transition: filter 0.3s ease;
   box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* 增加一点左侧阴影层次感 */
 
-  --color-1: #2A2226;
+  --color-1: #1C1719;
   --color-2: #2A2226;
 
   /* 1. 平滑渐变设计：A -> B -> A 循环模式 */
   /* 使用 120deg 配合 background-position 实现视觉上的 30度角向右上移动 */
   background: linear-gradient(
       120deg,
-      var(--color-1) 0%,
+      var(--color-1) 5%,
       var(--color-2) 50%,
-      var(--color-1) 100%
+      var(--color-1) 95%
   );
 
   /* 2. 拉大背景宽度，为位移留出空间 */
   background-size: 200% 100%;
 
-  /* 3. 动画：3秒匀速无限循环 */
-  animation: move-gradient 3s linear infinite;
+  /* 3. 动画：4秒匀速无限循环 */
+  animation: move-gradient 4s linear infinite;
 }
 
 /* 4. 定义 30度向右上方移动的动画 */
 @keyframes move-gradient {
   0% {
     /* 起始位置 */
-    background-position: 0 50%;
+    background-position: 200% 50%;
   }
   100% {
     /* 移动到 200% 正好完成一个 A-B-A 的循环，实现无缝衔接 */
-    background-position: 200% 50%;
+    background-position: 0 50%;
   }
 }
 
@@ -428,13 +428,14 @@ const rankMarquee = computed(() => {
   left: 50%;
   transform: translateX(-50%); /* 水平居中对齐 815px 线 */
 
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus Bold", "Torus SemiBold", sans-serif;
   font-size: 2cqw;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
 
   /* 距离下方文字的微调间距 */
   margin-bottom: 2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* 内部对齐容器 */
@@ -488,7 +489,7 @@ const rankMarquee = computed(() => {
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus Bold", "Torus SemiBold", sans-serif;
   font-size: 2cqw;
 
   /* 基础形状 */
@@ -516,7 +517,7 @@ const rankMarquee = computed(() => {
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus Bold", "Torus SemiBold", sans-serif;
   font-size: 2cqw;
 
   /* 基础形状 */
@@ -541,7 +542,7 @@ const rankMarquee = computed(() => {
   .text-content {
     position: absolute;
     left: 23.55%;
-    top: 7%;
+    top: 0.6cqw;
 
     width: 55.555%;
     z-index: 5;
@@ -561,7 +562,7 @@ const rankMarquee = computed(() => {
   .text-content-2 {
     position: absolute;
     left: 23.55%;
-    top: 44%;
+    top: 5.1cqw;
 
     width: 55.555%;
     z-index: 5;
@@ -581,7 +582,7 @@ const rankMarquee = computed(() => {
   .text-content-3 {
     position: absolute;
     left: 23.55%;
-    top: 70%;
+    top: 8.6cqw;
 
     width: 55.555%;
     z-index: 5;

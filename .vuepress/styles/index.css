@@ -1,7 +1,16 @@
 @font-face {
   font-family: 'Torus SemiBold';
   src: url('/fonts/Torus-SemiBold.woff2') format('woff2'),
-        url('/fonts/Torus-SemiBold.woff') format('woff');
+  url('/fonts/Torus-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Torus Bold';
+  src: url('/fonts/Torus-Bold.woff2') format('woff2'),
+  url('/fonts/Torus-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;

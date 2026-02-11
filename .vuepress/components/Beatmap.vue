@@ -134,22 +134,30 @@ const handleOfficialDownload = () => {
 }
 
 const handleSayoDownload = () => {
-  // 获取 bid，如果不存在则设为 0 或空
   const v = parsedData.value ?? {}
-  const bid = v.bid ?? props.bid?.toString() ?? '0'
+  const sid = props.sid?.toString() ?? '0'
+
+  const title = v.title?.trim() ?? '';
+  const artist = v.artist?.trim() ?? '';
+
+  let filename
+
+  if (title && artist) {
+    filename = `${sid} ${artist} - ${title}`.replace(/[\\/:*?"<>|]/g, '')
+  } else {
+    filename = sid.toString()
+  }
 
   let path1
   let path2
 
-  if (bid.length >= 4) {
-    path1 = parseInt(bid.slice(0, -4), 10)
-    path2 = parseInt(bid.slice(-4), 10)
+  if (sid.length >= 4) {
+    path1 = parseInt(sid.slice(0, -4), 10)
+    path2 = parseInt(sid.slice(-4), 10)
   } else {
     path1 = 0
-    path2 = parseInt(bid, 10)
+    path2 = parseInt(sid, 10)
   }
-
-  const filename = `${bid} ${v.artist} - ${v.title}`
 
   // 构建目标网址
   const downloadUrl = encodeURI(`https://cmcc.sayobot.cn:25225/beatmaps/${path1}/${path2}/full?filename=${filename}`) ;
@@ -193,7 +201,7 @@ const formattedStar = computed(() => {
       <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
 
       <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
-           @click="toggleModal" title="查看缩略图">
+            @click="toggleModal" title="查看缩略图">
         <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
           {{ formattedStar }}
         </span>
@@ -238,7 +246,7 @@ const formattedStar = computed(() => {
   width: 100%;
   max-width: 900px;
   aspect-ratio: 900 / 110;
-  margin: 20px auto;
+  margin: clamp(8px, 2.222cqw, 20px) auto;
   text-decoration: none !important;
   /* 移到最外层 */
   border-radius: clamp(8px, 2.222cqw, 20px);
@@ -346,7 +354,7 @@ const formattedStar = computed(() => {
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus Bold", "Torus SemiBold", sans-serif;
   font-size: 2cqw;
 
   /* 基础形状 */
@@ -374,7 +382,7 @@ const formattedStar = computed(() => {
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus Bold", "Torus SemiBold", sans-serif;
   font-size: 2cqw;
 
   /* 基础形状 */
@@ -399,7 +407,7 @@ const formattedStar = computed(() => {
   .text-content {
     position: absolute;
     left: 23.55%;
-    top: 7%;
+    top: 0.6cqw;
 
     width: 55.555%;
     z-index: 4;
@@ -420,7 +428,7 @@ const formattedStar = computed(() => {
   .text-content-2 {
     position: absolute;
     left: 23.55%;
-    top: 44%;
+    top: 5.1cqw;
 
     width: 55.555%;
     z-index: 4;
@@ -441,12 +449,12 @@ const formattedStar = computed(() => {
   .text-content-3 {
     position: absolute;
     left: 23.55%;
-    top: 70%;
+    top: 8.6cqw;
 
     width: 55.555%;
     z-index: 4;
 
-    font-family: "Torus SemiBold", sans-serif;
+    font-family: "Torus SemiBold", "Torus SemiBold", sans-serif;
     font-size: 2.5cqw;
     line-height: 1;
     color: #aaaaaa;
@@ -464,7 +472,7 @@ const formattedStar = computed(() => {
 
   position: absolute;
   right: 1.67%;
-  top: 70%;
+  top: 8.6cqw;
 
   width: auto;
   white-space: nowrap;

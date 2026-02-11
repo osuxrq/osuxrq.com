@@ -23,6 +23,18 @@ export default defineUserConfig({
                 href: "/fonts/Torus-SemiBold.woff",
                 rel: "stylesheet",
             },
+        ], [
+            "link",
+            {
+                href: "/fonts/Torus-Bold.woff2",
+                rel: "stylesheet",
+            },
+        ], [
+            "link",
+            {
+                href: "/fonts/Torus-Bold.woff",
+                rel: "stylesheet",
+            },
         ],
     ],
     locales: {

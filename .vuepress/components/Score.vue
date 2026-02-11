@@ -62,7 +62,14 @@ const parsedData = computed(() => {
   } else if (pa <= 10000) {
     acc = Number(pa.toFixed(2)).toString()
   } else {
-    acc = '0'
+    acc = ''
+  }
+
+  let stat
+  if (props.combo && props.max) {
+    stat = ` - ${acc}% ${props.combo}x/${props.max}x`
+  } else {
+    stat = ''
   }
 
   if (match) {
@@ -71,7 +78,7 @@ const parsedData = computed(() => {
       title: match[2]?.trim(),
       creator: match[3]?.trim(),
       difficulty: match[4]?.trim(),
-      statistics: ` - ${acc}% ${props.combo}x/${props.max}x`,
+      statistics: stat,
       bid: props.bid?.toString() ?? '0',
       mode: mode
     };
@@ -81,7 +88,7 @@ const parsedData = computed(() => {
       title: '',
       creator: '',
       difficulty: '',
-      statistics: acc,
+      statistics: '',
       bid: props.bid?.toString() ?? '0',
       mode: mode
     };
@@ -542,7 +549,7 @@ const rankMarquee = computed(() => {
   .text-content {
     position: absolute;
     left: 23.55%;
-    top: 0.6cqw;
+    top: 0.8cqw;
 
     width: 55.555%;
     z-index: 5;
@@ -582,7 +589,7 @@ const rankMarquee = computed(() => {
   .text-content-3 {
     position: absolute;
     left: 23.55%;
-    top: 8.6cqw;
+    top: 8.4cqw;
 
     width: 55.555%;
     z-index: 5;

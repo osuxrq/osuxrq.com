@@ -407,7 +407,7 @@ const formattedStar = computed(() => {
   .text-content {
     position: absolute;
     left: 23.55%;
-    top: 0.6cqw;
+    top: 0.8cqw;
 
     width: 55.555%;
     z-index: 4;
@@ -449,7 +449,7 @@ const formattedStar = computed(() => {
   .text-content-3 {
     position: absolute;
     left: 23.55%;
-    top: 8.6cqw;
+    top: 8.4cqw;
 
     width: 55.555%;
     z-index: 4;
@@ -472,7 +472,7 @@ const formattedStar = computed(() => {
 
   position: absolute;
   right: 1.67%;
-  top: 8.6cqw;
+  top: 8.4cqw;
 
   width: auto;
   white-space: nowrap;

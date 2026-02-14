@@ -116,13 +116,6 @@ const statusColor = computed(() => {
 
 const isModalOpen = ref(false) // 控制模态框显示
 
-const toggleModal = (e) => {
-  // 阻止冒泡，防止点击预览图时触发卡片外层的 <a> 标签跳转
-  e.preventDefault()
-  e.stopPropagation()
-  isModalOpen.value = !isModalOpen.value
-}
-
 const handleOfficialDownload = () => {
   const sid = props.sid?.toString() ?? '0'
 
@@ -174,6 +167,29 @@ const formattedStar = computed(() => {
   return Number(num.toFixed(1)).toString();
 })
 
+const fullSrc = ref('')
+
+const toggleModal = (e) => {
+  e.preventDefault()
+  e.stopPropagation()
+
+  // 1. 定义新网址 (替换为你需要的 URL 规则)
+  const sid = props.sid?.toString() ?? '0'
+
+  // 2. 先尝试加载新网址
+  fullSrc.value = `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`
+  isModalOpen.value = true
+}
+
+// 新增：处理图片加载错误的函数
+const handleModalImgError = () => {
+  console.warn("新图片加载失败，正在回退到原始图片...")
+  // 如果新网址加载失败，退回到现有的 imgSrc
+  if (fullSrc.value !== imgSrc.value) {
+    fullSrc.value = imgSrc.value
+  }
+}
+
 </script>
 
 <template>
@@ -183,7 +199,7 @@ const formattedStar = computed(() => {
       <span class="download-group">
         <span class="download-icon official" @click.stop.prevent="handleOfficialDownload" title="使用官方渠道下载谱面">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3 3m0 0l-3-3m3 3V10"
+            <path d="M7 17.5a4 4 0 01-.88-7.903A5 5 0 1115.9 7.5L16 7.5a5 5 0 011 9.9M15 14.5l-3 3m0 0l-3-3m3 3V11.5"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </span>
@@ -201,7 +217,7 @@ const formattedStar = computed(() => {
       <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
 
       <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
-            @click="toggleModal" title="查看缩略图">
+            @click="toggleModal" title="查看完整背景">
         <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
           {{ formattedStar }}
         </span>
@@ -229,9 +245,15 @@ const formattedStar = computed(() => {
     <Teleport to="body">
       <Transition name="fade">
         <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
-          <div class="modal-content">
-            <img :src="imgSrc" alt="Preview" class="full-image" />
-            <div class="close-btn">×</div>
+          <div class="modal-content" @click.stop> <img
+              :src="fullSrc"
+              alt="Preview"
+              class="full-image"
+              @error="handleModalImgError"
+          />
+            <div class="close-btn" @click="isModalOpen = false">×</div>
+
+            <div v-if="!fullSrc" class="loading-spinner">Loading...</div>
           </div>
         </div>
       </Transition>
@@ -245,6 +267,7 @@ const formattedStar = computed(() => {
   display: block;
   width: 100%;
   max-width: 900px;
+  min-width: 300px;
   aspect-ratio: 900 / 110;
   margin: clamp(8px, 2.222cqw, 20px) auto;
   text-decoration: none !important;
@@ -409,7 +432,7 @@ const formattedStar = computed(() => {
     left: 23.55%;
     top: 0.8cqw;
 
-    width: 55.555%;
+    width: 62%;
     z-index: 4;
 
     font-family: "Torus SemiBold", sans-serif;
@@ -430,7 +453,7 @@ const formattedStar = computed(() => {
     left: 23.55%;
     top: 5.1cqw;
 
-    width: 55.555%;
+    width: 62%;
     z-index: 4;
 
     font-family: "Torus SemiBold", sans-serif;
@@ -451,7 +474,7 @@ const formattedStar = computed(() => {
     left: 23.55%;
     top: 8.4cqw;
 
-    width: 55.555%;
+    width: 62%;
     z-index: 4;
 
     font-family: "Torus SemiBold", "Torus SemiBold", sans-serif;
@@ -550,17 +573,30 @@ const formattedStar = computed(() => {
 /* 下载图标 */
 .download-icon {
   position: relative;
-  width: 4.444cqw;
-  height: 4.444cqw;
+  /* 语法：clamp(最小值, 首选值, 最大值) */
+  width: clamp(25px, 4.444cqw, 60px);
+  height: clamp(25px, 4.444cqw, 60px);
+
+  /* 圆角也需要相应固定，防止变成奇怪的形状 */
+  border-radius: clamp(8px, 1.667cqw, 15px);
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.4);
   color: white;
-  border-radius: 1.667cqw;
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(4px);
+}
+
+.download-icon::after {
+  content: '';
+  position: absolute;
+  top: -5px;  /* 向四周延伸 10px 的感应范围 */
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  /* background: rgba(255,0,0,0.3); 调试时可以打开看热区范围 */
 }
 
 /* 可选：给第二个下载按钮一点颜色区分 */
@@ -580,6 +616,22 @@ const formattedStar = computed(() => {
   height: 60%;
   /* 增加一个小阴影让图标在浅色背景图上更清晰 */
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* 在 <style> 中添加 */
+.modal-content {
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.05); /* 占位背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 确保关闭按钮在任何时候都可见 */
+.close-btn {
+  z-index: 10001;
 }
 
 </style>

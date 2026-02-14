@@ -144,13 +144,6 @@ const statusColor = computed(() => {
 
 const isModalOpen = ref(false) // 控制模态框显示
 
-const toggleModal = (e) => {
-  // 阻止冒泡，防止点击预览图时触发卡片外层的 <a> 标签跳转
-  e.preventDefault()
-  e.stopPropagation()
-  isModalOpen.value = !isModalOpen.value
-}
-
 // 显示星数
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
@@ -210,6 +203,29 @@ const rankMarquee = computed(() => {
   return colors
 })
 
+const fullSrc = ref('')
+
+const toggleModal = (e) => {
+  e.preventDefault()
+  e.stopPropagation()
+
+  // 1. 定义新网址 (替换为你需要的 URL 规则)
+  const sid = props.sid?.toString() ?? '0'
+
+  // 2. 先尝试加载新网址
+  fullSrc.value = `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`
+  isModalOpen.value = true
+}
+
+// 新增：处理图片加载错误的函数
+const handleModalImgError = () => {
+  console.warn("新图片加载失败，正在回退到原始图片...")
+  // 如果新网址加载失败，退回到现有的 imgSrc
+  if (fullSrc.value !== imgSrc.value) {
+    fullSrc.value = imgSrc.value
+  }
+}
+
 </script>
 
 <template>
@@ -233,7 +249,7 @@ const rankMarquee = computed(() => {
       <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
 
       <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
-           @click="toggleModal" title="查看缩略图">
+           @click="toggleModal" title="查看完整背景">
         <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
           {{ formattedStar }}
         </span>
@@ -255,13 +271,21 @@ const rankMarquee = computed(() => {
   </a>
 
   <ClientOnly>
-    <Teleport to="body" v-if="isMounted && isModalOpen">
-      <div class="image-modal-overlay" @click="isModalOpen = false">
-        <div class="modal-content" @click.stop>
-          <img :src="imgSrc" class="full-image" alt="预览图"/>
-          <div class="close-btn">×</div>
+    <Teleport to="body">
+      <Transition name="fade">
+        <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
+          <div class="modal-content" @click.stop> <img
+              :src="fullSrc"
+              alt="Preview"
+              class="full-image"
+              @error="handleModalImgError"
+          />
+            <div class="close-btn" @click="isModalOpen = false">×</div>
+
+            <div v-if="!fullSrc" class="loading-spinner">Loading...</div>
+          </div>
         </div>
-      </div>
+      </Transition>
     </Teleport>
   </ClientOnly>
 </template>
@@ -272,6 +296,7 @@ const rankMarquee = computed(() => {
   display: block;
   width: 100%;
   max-width: 900px;
+  min-width: 300px;
   aspect-ratio: 900 / 110;
   margin: clamp(8px, 2.222cqw, 20px) auto;
   text-decoration: none !important;
@@ -656,6 +681,22 @@ const rankMarquee = computed(() => {
   color: white;
   font-size: 30px;
   cursor: pointer;
+}
+
+/* 在 <style> 中添加 */
+.modal-content {
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.05); /* 占位背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 确保关闭按钮在任何时候都可见 */
+.close-btn {
+  z-index: 10001;
 }
 
 </style>

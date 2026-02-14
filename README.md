@@ -22,8 +22,8 @@ features:
     details: 多个主流 Bot 入驻，随时分享你的精彩表现！
   - title: 参与活动
     details: 不定期举办群赛、悬赏等活动，参与并赢取奖品和 osu! 支持者！(Supporter)
-  - title: 加入团队
-    details: 想要加入新人群管理团队并发光发热？联系我们！
+  - title: 流芳千古
+    details: 即使超出了群限制，您也可以留下想对其他新人说的话。优秀的文章会被更多人看到！
 
 footer: |
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">

@@ -1,7 +1,47 @@
-import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { viteBundler } from '@vuepress/bundler-vite'
-import * as path from "node:path";
+import {defineUserConfig} from 'vuepress'
+import {defaultTheme} from '@vuepress/theme-default'
+import {viteBundler} from '@vuepress/bundler-vite'
+
+import {existsSync, readdirSync} from 'node:fs';
+import * as path from 'node:path';
+import {join} from 'node:path';
+
+function getSortedFiles(dir: string): string[] {
+    // process.cwd() 获取项目根目录 (通常是包含 docs 的那一层)
+    const dirPath = join(process.cwd(), dir);
+
+    // 打印一下路径，确保它指向了正确的文件夹
+    console.log('--- 正在扫描目录:', dirPath);
+
+    if (!existsSync(dirPath)) {
+        console.warn(`目录不存在: ${dirPath}`);
+        return [];
+    }
+
+    return readdirSync(dirPath)
+        .filter(file => file.endsWith('.md') && file.toLowerCase() !== 'readme.md')
+        .sort((a, b) => {
+            const nameA = a.replace('.md', '');
+            const nameB = b.replace('.md', '');
+
+            const isNumA = /^\d+$/.test(nameA);
+            const isNumB = /^\d+$/.test(nameB);
+
+            // 1. 数字在前
+            if (isNumA && !isNumB) return -1;
+            if (!isNumA && isNumB) return 1;
+
+            // 2. 纯数字倒序 (33 -> 2)
+            if (isNumA && isNumB) {
+                return parseInt(nameB) - parseInt(nameA);
+            }
+
+            // 3. 字母正序 (a -> z)
+            return nameA.localeCompare(nameB);
+        })
+        // VuePress 的侧边栏路径需要以 / 开头
+        .map(file => `/${dir}/${file}`);
+}
 
 export default defineUserConfig({
     head: [
@@ -107,7 +147,8 @@ export default defineUserConfig({
                             },
                             {
                                 text: "出群遗言",
-                                link: "/misc/lastwords/"
+                                link: "/misc/lastwords/",
+                                activeMatch: "^/misc/lastwords/$",
                             },
                             {
                                 text: "新人群的回忆",
@@ -147,43 +188,14 @@ export default defineUserConfig({
                             text: "群赛",
                             children: [
                                 "/events/matches/README.md",
-                                "/events/matches/33.md",
-                                "/events/matches/32.md",
-                                "/events/matches/31.md",
-                                "/events/matches/30.md",
-                                "/events/matches/29.md",
-                                "/events/matches/28.md",
-                                "/events/matches/27.md",
-                                "/events/matches/26.md",
-                                "/events/matches/25.md",
-                                "/events/matches/24.md",
-                                "/events/matches/23.md",
-                                "/events/matches/22.md",
-                                "/events/matches/21.md",
-                                "/events/matches/20.md",
-                                "/events/matches/2.md",
-                                "/events/matches/a2.md",
-                                "/events/matches/a1.md",
-                                "/events/matches/y4.md",
-                                "/events/matches/y3.md",
-                                "/events/matches/y2.md",
-                                "/events/matches/y1.md",
+                                ...getSortedFiles('events/matches'),
                             ],
                         },
                         {
                             text: "月赛",
                             children: [
                                 "/events/charts/README.md",
-                                "/events/charts/h2312.md",
-                                "/events/charts/h2311.md",
-                                "/events/charts/h2310.md",
-                                "/events/charts/h2309.md",
-                                "/events/charts/h2308.md",
-                                "/events/charts/h2307.md",
-                                "/events/charts/h2306.md",
-                                "/events/charts/h2305.md",
-                                "/events/charts/h2304.md",
-                                "/events/charts/h2303.md",
+                                ...getSortedFiles('events/charts'),
                             ],
                         },
                         {
@@ -213,7 +225,15 @@ export default defineUserConfig({
                         "/people/administrators.md",
                         "/people/alumni.md",
                     ],
-                    "/misc/": false
+                    "/misc/": [
+                        {
+                            text: "出群遗言",
+                            children: [
+                                "/misc/lastwords/README.md",
+                                ...getSortedFiles('misc/lastwords/users'),
+                            ]
+                        }
+                    ]
                 },
                 logo: "/images/hero.png",
                 editLink: true,

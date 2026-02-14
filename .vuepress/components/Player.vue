@@ -98,6 +98,7 @@ const countryFlag = computed (() => {
   container-type: inline-size;
   width: 100%;
   max-width: 430px; /* 默认最大宽度 */
+  min-width: 200px;
 }
 
 /* 动画定义：移动背景图的位置 */

@@ -144,6 +144,26 @@ const statusColor = computed(() => {
 
 const isModalOpen = ref(false) // 控制模态框显示
 
+const handleSayoNoVideoDownload = () => {
+  const sid = props.sid?.toString() ?? '0'
+  if (sid === '0') {
+    alert("配置的谱面集编号无效，无法下载。")
+    return
+  }
+  const downloadUrl = encodeURI(`https://dl.sayobot.cn/beatmaps/download/novideo/${sid}?server=auto`);
+  window.open(downloadUrl, '_blank');
+}
+
+const handleSayoFullDownload = () => {
+  const sid = props.sid?.toString() ?? '0'
+  if (sid === '0') {
+    alert("配置的谱面集编号无效，无法下载。")
+    return
+  }
+  const downloadUrl = encodeURI(`https://dl.sayobot.cn/beatmaps/download/full/${sid}?server=auto`);
+  window.open(downloadUrl, '_blank');
+};
+
 // 显示星数
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
@@ -231,6 +251,21 @@ const handleModalImgError = () => {
 <template>
   <a :href="targetUrl" target="_blank" class="data-card-container" title="访问谱面网页">
     <span class="card-canvas">
+      <span class="download-group">
+        <span class="download-icon official" @click.stop.prevent="handleSayoNoVideoDownload" title="使用 Sayobot 下载谱面（不包含视频）">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17.5a4 4 0 01-.88-7.903A5 5 0 1115.9 7.5L16 7.5a5 5 0 011 9.9M15 14.5l-3 3m0 0l-3-3m3 3V11.5"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="download-icon sayo" @click.stop.prevent="handleSayoFullDownload" title="使用 Sayobot 下载谱面">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 15V3m0 12l-4-4m4 4l4-4M4 17v1a2 2 0 002 2h12a2 2 0 002-2v-1"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </span>
+
       <span class="color-rect" :style="{ backgroundColor: statusColor }"></span>
 
       <span class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
@@ -274,7 +309,7 @@ const handleModalImgError = () => {
     <Teleport to="body">
       <Transition name="fade">
         <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
-          <div class="modal-content" @click.stop> <img
+          <div class="modal-content"> <img
               :src="fullSrc"
               alt="Preview"
               class="full-image"
@@ -576,7 +611,8 @@ const handleModalImgError = () => {
     left: 23.55%;
     top: 0.8cqw;
 
-    width: 55.555%;
+    right: 30%; /* 加了下载组件 width: 55.555%; */
+
     z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
@@ -596,7 +632,8 @@ const handleModalImgError = () => {
     left: 23.55%;
     top: 5.1cqw;
 
-    width: 55.555%;
+    right: 30%; /* 加了下载组件 width: 55.555%; */
+
     z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
@@ -616,7 +653,7 @@ const handleModalImgError = () => {
     left: 23.55%;
     top: 8.4cqw;
 
-    width: 55.555%;
+    width: 55.555%; /* 加了下载组件也可以超长 */
     z-index: 5;
 
     font-family: "Torus SemiBold", sans-serif;
@@ -665,7 +702,7 @@ const handleModalImgError = () => {
 
 .full-image {
   display: block;
-  max-width: 100%;
+  max-width: 90vw;
   max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -676,27 +713,103 @@ const handleModalImgError = () => {
 
 .close-btn {
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -1cqw;
+  right: -2.5cqw;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
+  align-content: baseline;
+  z-index: 10001;
 }
 
-/* 在 <style> 中添加 */
+.close-btn:hover {
+  scale: 1.4;
+}
+
+/* --- 下载按钮组容器 --- */
+.download-group {
+  position: absolute;
+  top: 1.2cqw;
+  right: 20%; /* 1.2 cqw */
+  display: flex;
+  gap: 0.8cqw;
+  z-index: 15; /* 确保在 extra-rect 之上 */
+}
+
+/* 下载图标基础样式 */
+.download-icon {
+  position: relative;
+  width: clamp(25px, 4.444cqw, 60px);
+  height: clamp(25px, 4.444cqw, 60px);
+  border-radius: clamp(8px, 1.667cqw, 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.download-icon::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+}
+
+.download-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffcc22;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.download-icon svg {
+  width: 60%;
+  height: 60%;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
 .modal-content {
   position: relative;
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 128px;
+  min-height: 72px;
   background: rgba(255, 255, 255, 0.05); /* 占位背景 */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* --- 动画过渡核心 --- */
 
-/* 确保关闭按钮在任何时候都可见 */
-.close-btn {
-  z-index: 10001;
+/* 1. 整个遮罩层的淡入淡出 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
 }
+
+/* 2. 定义进入前和离开后的状态：透明度为0 */
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 3. 嵌套动画：当父级 .fade 激活时，内部的 .modal-content 执行缩放 */
+.fade-enter-active .modal-content {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* 带一点回弹效果 */
+}
+
+.fade-leave-active .modal-content {
+  transition: transform 0.2s ease-in;
+}
+
+.fade-enter-from .modal-content,
+.fade-leave-to .modal-content {
+  transform: scale(0.9) translateY(20px);
+}
+
 
 </style>

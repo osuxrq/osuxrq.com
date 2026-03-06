@@ -1,5 +1,6 @@
 <script setup>
 import {computed, ref, onMounted} from 'vue'
+import LazyImage from "./LazyImage.vue";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -18,10 +19,20 @@ const props = defineProps({
   rank: { type: String, default: "F" },
   performance: { type: [Number, String], default: 0 },
   mods: String,
+  color: { type: [String], default: null }
 })
 
-const thumbSrc = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`)
-const imgSrc = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`)
+const thumbSrc = computed(() => {
+  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
+  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
+  return `url(${official}), url(${sayobot})`;
+});
+
+const imgSrc = computed(() => {
+  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`;
+  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
+  return `url(${official}), url(${sayobot})`;
+});
 
 const targetUrl = computed(() => {
   if (props.bid != null) {
@@ -96,51 +107,43 @@ const parsedData = computed(() => {
 })
 
 
-const statusColor = computed(() => {
-  const star = parseFloat(props.star)
-
+const getStarColor = (starValue) => {
+  const star = parseFloat(starValue);
   if (star == null || Number.isNaN(star) || star < 0.1) return '#AAAAAA';
   if (star >= 9) return '#000000';
 
   const GAMMA = 2.2;
-
   const stops = [
-    [0.1,  66,  144, 251],
-    [1.25, 79,  192, 255],
-    [2,    79,  255, 213],
-    [2.5,  124, 255, 79],
-    [3.3,  246, 240, 92],
-    [4.2,  255, 104, 104],
-    [4.9,  255, 78,  111],
-    [5.8,  198, 69,  184],
-    [6.7,  101, 99,  222],
-    [7.7,  24,  21,  142],
-    [9,    0,   0,   0]
+    [0.1, 66, 144, 251], [1.25, 79, 192, 255], [2, 79, 255, 213],
+    [2.5, 124, 255, 79], [3.3, 246, 240, 92], [4.2, 255, 104, 104],
+    [4.9, 255, 78, 111], [5.8, 198, 69, 184], [6.7, 101, 99, 222],
+    [7.7, 24, 21, 142], [9, 0, 0, 0]
   ];
 
-  // 1. 找到当前 star 落在哪个区间
   let i = stops.findIndex(stop => star < stop[0]);
   if (i === -1) i = stops.length - 1;
 
   const [bottom, r0, g0, b0] = stops[i - 1];
   const [top, r1, g1, b1] = stops[i];
-
-  // 2. 计算插值比例
   const s = (star - bottom) / (top - bottom);
 
-  // 3. 伽马校正插值函数
   const interpolate = (c0, c1) => {
-    const val = Math.pow(
-        (1 - s) * Math.pow(c0, GAMMA) + s * Math.pow(c1, GAMMA),
-        1 / GAMMA
-    );
-
-    const hex = Math.round(val).toString(16);
-    return ("00" + hex).slice(-2);
+    const val = Math.pow((1 - s) * Math.pow(c0, GAMMA) + s * Math.pow(c1, GAMMA), 1 / GAMMA);
+    return Math.round(val).toString(16).padStart(2, '0');
   };
 
   return `#${interpolate(r0, r1)}${interpolate(g0, g1)}${interpolate(b0, b1)}`;
-})
+};
+
+const statusColor = computed(() => getStarColor(props.star));
+
+const backgroundColor = computed(() => {
+  if (props.color != null && props.color.toString().startsWith('#')) {
+    return props.color
+  } else {
+    return getStarColor(props.star)
+  }
+});
 
 const isModalOpen = ref(false) // 控制模态框显示
 
@@ -171,6 +174,28 @@ const formattedStar = computed(() => {
 
   return Number(num.toFixed(1)).toString();
 })
+
+// 动态计算徽章的文字颜色和阴影
+const badgeTextStyle = computed(() => {
+  const starNum = parseFloat(props.star);
+
+  // 设定你想改变颜色的星数区间
+  const minStar = 2.8;
+  const maxStar = 4.0;
+
+  if (!isNaN(starNum) && starNum >= minStar && starNum < maxStar) {
+    return {
+      color: '#1c1719',
+      textShadow: '0 1px 2px rgba(0, 0, 0, 0.2)'
+    };
+  }
+
+  // 不在区间内，返回默认的白色和原有阴影
+  return {
+    color: '#ffffff',
+    textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)'
+  };
+});
 
 // 绘制评级跑马灯
 
@@ -225,26 +250,46 @@ const rankMarquee = computed(() => {
 
 const fullSrc = ref('')
 
+// 存储备选图片列表
+const fallbackUrls = ref([]);
+const currentFallbackIndex = ref(0);
+
 const toggleModal = (e) => {
-  e.preventDefault()
-  e.stopPropagation()
+  e.preventDefault();
+  e.stopPropagation();
 
-  // 1. 定义新网址 (替换为你需要的 URL 规则)
-  const sid = props.sid?.toString() ?? '0'
+  const sid = props.sid?.toString() ?? '0';
 
-  // 2. 先尝试加载新网址
-  fullSrc.value = `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`
-  isModalOpen.value = true
-}
+  fallbackUrls.value = [
+    `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`,
+    `https://a.sayobot.cn/beatmaps/${sid}/covers/cover.webp`,
+    imgSrc.value // 最后的保底
+  ];
 
-// 新增：处理图片加载错误的函数
+  currentFallbackIndex.value = 0;
+  fullSrc.value = fallbackUrls.value[0];
+  isModalOpen.value = true;
+};
+
 const handleModalImgError = () => {
-  console.warn("新图片加载失败，正在回退到原始图片...")
-  // 如果新网址加载失败，退回到现有的 imgSrc
-  if (fullSrc.value !== imgSrc.value) {
-    fullSrc.value = imgSrc.value
+  if (currentFallbackIndex.value < fallbackUrls.value.length - 1) {
+    currentFallbackIndex.value++;
+    console.warn(`图片加载失败，正在尝试备选源 ${currentFallbackIndex.value}: ${fallbackUrls.value[currentFallbackIndex.value]}`);
+    fullSrc.value = fallbackUrls.value[currentFallbackIndex.value];
+  } else {
+    console.error("所有图片源均加载失败");
   }
-}
+};
+
+let timer = null;
+
+const startTimeout = () => {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    // 如果图片还没加载完（可以配合 @load 事件清除 timer）
+    handleModalImgError();
+  }, 5000); // 5秒超时
+};
 
 </script>
 
@@ -266,7 +311,7 @@ const handleModalImgError = () => {
         </span>
       </span>
 
-      <span class="color-rect" :style="{ backgroundColor: statusColor }"></span>
+      <span class="color-rect" :style="{ backgroundColor: backgroundColor }"></span>
 
       <span class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
         <span class="symbol-wrapper">
@@ -281,17 +326,26 @@ const handleModalImgError = () => {
 
       <span class="base-rect" :style="{ backgroundColor: '#2A2226' }"></span>
 
-      <span class="background-rect" :style="{ backgroundImage: `url(${imgSrc})` }"></span>
-
-      <span class="preview-rect" :style="{ backgroundImage: `url(${thumbSrc})` }"
-           @click="toggleModal" title="查看完整背景">
-        <span class="star-badge" v-if="props.star" :style="{ backgroundColor: statusColor }">
+        <span class="star-badge" v-if="props.star" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
           {{ formattedStar }}
         </span>
-        <span class="id-badge" v-if="props.bid" :style="{ backgroundColor: statusColor }">
-          {{ props.bid }}
+        <span class="id-badge" v-if="props.bid || props.sid" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
+          {{ props.bid || `s${props.sid}` }}
         </span>
-      </span>
+
+      <LazyImage
+          :src="imgSrc"
+          class="background-rect"
+      />
+
+      <LazyImage
+          :class="{ 'is-disabled': props.disabled }"
+          :src="thumbSrc"
+          class="preview-rect"
+          title="查看完整背景"
+          @click="toggleModal"
+      >
+      </LazyImage>
 
       <span class="text-content">
         <span class="part-a">{{ parsedData.title }}</span>
@@ -333,7 +387,7 @@ const handleModalImgError = () => {
   max-width: 900px;
   min-width: 300px;
   aspect-ratio: 900 / 110;
-  margin: clamp(8px, 2.222cqw, 20px) auto;
+  margin: clamp(8px, 2.222cqw, 20px) auto 0; /* 最底下是 0 */
   text-decoration: none !important;
   /* 移到最外层 */
   border-radius: clamp(8px, 2.222cqw, 20px);
@@ -373,6 +427,14 @@ const handleModalImgError = () => {
 }
 
 .data-card-container:hover .color-rect {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.data-card-container:hover .id-badge {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.data-card-container:hover .star-badge {
   filter: brightness(1.1) contrast(1.1);
 }
 
@@ -552,7 +614,7 @@ const handleModalImgError = () => {
 .star-badge {
   position: absolute;
   top: 1cqw;
-  left: 1cqw;
+  left: 3.444cqw; /* 层级变了，原来是 1cqw */
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
@@ -560,7 +622,7 @@ const handleModalImgError = () => {
   font-size: 2cqw;
 
   /* 基础形状 */
-  padding: 0.1cqw 1cqw 0.3cqw 1cqw;
+  padding: 0.1cqw 1cqw 0.4cqw 1cqw;
   border-radius: 2cqw;
 
   /* 视觉层叠 */
@@ -580,7 +642,7 @@ const handleModalImgError = () => {
 .id-badge {
   position: absolute;
   bottom: 1cqw;
-  left: 1cqw;
+  left: 3.444cqw; /* 层级变了，原来是 1cqw */
 
   background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
   color: #fff;
@@ -588,7 +650,7 @@ const handleModalImgError = () => {
   font-size: 2cqw;
 
   /* 基础形状 */
-  padding: 0.1cqw 1cqw 0.3cqw 1cqw;
+  padding: 0.1cqw 1cqw 0.4cqw 1cqw;
   border-radius: 2cqw;
 
   /* 视觉层叠 */

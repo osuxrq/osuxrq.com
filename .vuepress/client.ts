@@ -1,25 +1,27 @@
-import { defineClientConfig } from "vuepress/client";
-import { scaleImage } from "./scripts/image-scale";
+import {defineClientConfig} from "@vuepress/client";
+import {scaleImage} from "./scripts/image-scale";
 import Beatmap from './components/Beatmap.vue'
 import Score from "./components/Score.vue";
 import Player from "./components/Player.vue";
+import LazyImage from "./components/LazyImage.vue";
 import "./styles/index.css";
 
 export default defineClientConfig({
-  enhance({ app, router, siteData }) {
-    router.beforeEach((to) => {
-        // console.log('before navigation')
-    });
+    enhance({app, router, siteData}) {
+        router.beforeEach((to) => {
+            // console.log('before navigation')
+        });
 
-    router.afterEach((to) => {
-        setTimeout(() => {
-            scaleImage();
-            // console.log('after navigation');
-        }, 500); // wait for the page to be fully rendered
-    });
+        router.afterEach((to) => {
+            setTimeout(() => {
+                scaleImage();
+                // console.log('after navigation');
+            }, 500); // wait for the page to be fully rendered
+        });
 
-    app.component('Beatmap', Beatmap)
-    app.component('Score', Score)
-    app.component('Player', Player)
-  },
+        app.component('Beatmap', Beatmap)
+        app.component('Score', Score)
+        app.component('Player', Player)
+        app.component('LazyImage', LazyImage)
+    },
 });

@@ -76,6 +76,8 @@ export default defineUserConfig({
                 rel: "stylesheet",
             },
         ],
+
+        ['meta', { name: 'referrer', content: 'no-referrer' }],
     ],
     locales: {
         '/': {
@@ -112,7 +114,7 @@ export default defineUserConfig({
                         text: "管理",
                         children: [
                             {
-                                text: "管理组",
+                                text: "管理组介绍",
                                 link: "/people/",
                                 activeMatch: "^/people/$",
                             },
@@ -125,13 +127,28 @@ export default defineUserConfig({
                         text: '活动',
                         children: [
                             {
-                                text: "活动",
+                                text: "活动介绍",
                                 link: "/events/README.md",
                                 activeMatch: "^/events/$",
                             },
                             "/events/matches/",
                             "/events/charts/",
                             "/events/collections/"
+                        ]
+                    },
+                    {
+                        text: '文档',
+                        children: [
+                            {
+                                text: "谱面推荐",
+                                link: "/article/recommend/README.md",
+                                activeMatch: "^/article/recommend/$",
+                            },
+                            {
+                                text: "出群遗言",
+                                link: "/article/lastwords/README.md",
+                                activeMatch: "^/article/lastwords/$",
+                            },
                         ]
                     },
                     {
@@ -144,11 +161,6 @@ export default defineUserConfig({
                             {
                                 text: "吉祥物",
                                 link: "/misc/mascots/"
-                            },
-                            {
-                                text: "出群遗言",
-                                link: "/misc/lastwords/",
-                                activeMatch: "^/misc/lastwords/$",
                             },
                             {
                                 text: "新人群的回忆",
@@ -183,18 +195,15 @@ export default defineUserConfig({
                         "/introduction/history.md",
                     ],
                     "/events/": [
-                        "/events/README.md",
                         {
                             text: "群赛",
                             children: [
-                                "/events/matches/README.md",
                                 ...getSortedFiles('events/matches'),
                             ],
                         },
                         {
                             text: "月赛",
                             children: [
-                                "/events/charts/README.md",
                                 ...getSortedFiles('events/charts'),
                             ],
                         },
@@ -211,6 +220,18 @@ export default defineUserConfig({
                             ],
                         },
                     ],
+                    "/article/recommend/": [
+                        {
+                            text: "谱面推荐",
+                            children: getSortedFiles('article/recommend'),
+                        },
+                    ],
+                    "/article/lastwords/": [
+                        {
+                            text: "出群遗言",
+                            children: getSortedFiles('article/lastwords/users'),
+                        }
+                    ],
                     "/meta/": [
                         "/meta/contribution-guide.md",
                         "/meta/contributors.md",
@@ -225,15 +246,6 @@ export default defineUserConfig({
                         "/people/administrators.md",
                         "/people/alumni.md",
                     ],
-                    "/misc/": [
-                        {
-                            text: "出群遗言",
-                            children: [
-                                "/misc/lastwords/README.md",
-                                ...getSortedFiles('misc/lastwords/users'),
-                            ]
-                        }
-                    ]
                 },
                 logo: "/images/hero.png",
                 editLink: true,

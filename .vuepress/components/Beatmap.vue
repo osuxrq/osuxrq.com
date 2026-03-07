@@ -18,6 +18,15 @@ const props = defineProps({
   difficulties: { type: Array, String, default: () => [] },
   disabled: { type: Boolean, String, default: false },
   color: { type: String, default: null },
+  alias: { type: String, default: null },
+})
+
+const disabled = computed(() => {
+  const d = props.disabled;
+  if (d === 'false' || d === 0 || d === null || d === undefined || d === false) {
+    return false;
+  }
+  return !!d;
 })
 
 const thumbSrc = computed(() => {
@@ -259,9 +268,9 @@ const processedDifficulties = computed(() => {
       :href="targetUrl"
       target="_blank"
       class="data-card-container"
-      :class="{ 'is-disabled': props.disabled }"
-      :title="props.disabled ? '谱面被删除或被版权，不建议访问网页' : '访问谱面网页'"
-      @click="props.disabled && $event.preventDefault()"
+      :class="{ 'is-disabled': disabled }"
+      :title="disabled ? '谱面被删除或被版权，不建议访问网页' : '访问谱面网页'"
+      @click="disabled && $event.preventDefault()"
   >
     <span class="card-canvas">
 
@@ -296,7 +305,7 @@ const processedDifficulties = computed(() => {
       />
 
       <LazyImage
-          :class="{ 'is-disabled': props.disabled }"
+          :class="{ 'is-disabled': disabled }"
           :src="thumbSrc"
           class="preview-rect"
           title="查看完整背景"
@@ -306,6 +315,7 @@ const processedDifficulties = computed(() => {
 
       <span class="text-content">
         <span class="part-a">{{ parsedData.title }}</span>
+        <span v-if="props.alias" class="alias-badge">{{ props.alias }}</span>
       </span>
       <span class="text-content-2">
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
@@ -525,22 +535,41 @@ const processedDifficulties = computed(() => {
   .text-content {
     position: absolute;
     left: 23.55%;
-    top: 0.8cqw;
-
-    width: 62%;
+    top: 0;
+    width: 60%;
     z-index: 4;
+    height: 5cqw;
 
-    font-family: "Torus SemiBold", sans-serif;
+    /* 改用 Flex 布局实现自动挤压效果 */
+    display: flex;
+    align-items: center;
+    gap: 0.8cqw; /* 标题与别名之间的间距 */
+  }
+
+  .part-a {
+    /* 原 text-content 的字体样式移到这里 */
+    font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 3.5cqw;
-    line-height: 1;
+    line-height: 1.1;
     color: #ffffff;
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 
-    height: 4cqw;
-
+    /* 溢出挤压核心逻辑 */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex-shrink: 1; /* 允许在空间不足时被挤压缩小 */
+  }
+
+  .alias-badge {
+    flex-shrink: 0; /* 保持自身宽度，绝不被挤压 */
+    font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
+    font-size: 2cqw;
+    font-style: italic;
+    color: #aaa;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    /* 视觉微调，使其和文字基线对齐更和谐 */
+    transform: translateY(0.5cqw);
   }
 
   .text-content-2 {
@@ -551,7 +580,7 @@ const processedDifficulties = computed(() => {
     width: 62%;
     z-index: 4;
 
-    font-family: "Torus SemiBold", sans-serif;
+    font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 2.5cqw;
     line-height: 1;
     color: #aaaaaa;
@@ -597,7 +626,7 @@ const processedDifficulties = computed(() => {
   overflow: visible;
   z-index: 4;
 
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
   font-size: 2.5cqw;
   line-height: 1;
   color: #aaaaaa;

@@ -1,42 +1,42 @@
 # Sayori's Stage v1.1 （1000pp+综合向）
 
-<Player 
+<Player
   id=7183040
   name="Sayori_yui"
   country=0
-  global=0
+  global=6570^
   from="CN"
   accuracy=98.41
   level=101
   progress=41
-  performance=0
+  performance=7532
 />
 
 ## 解释
 
-这个是综合向 Stage，有可能会出现难度不均的情况（
+这个是综合向 Stage（阶段），有可能会出现难度不均的情况（
 
 难度从 4.0 开始算起，记为 Stage 1（最高16，即本群星数上限）
 
-每一个 Stage 的star取值范围为[3.9+Stage/10,4+Stage/10）
+每一个 Stage 的星数取值范围为[3.9+Stage/10, 4+Stage/10）
 
-### Comprehensive
+### 🟣 Comprehensive
 
-本Stage仅为参考，有可能自己觉得好听的也会放（有的可能找不到图就找了个别的比较相似的代替了）
+本 Stage 仅为参考，有可能自己觉得好听的也会放（有的可能找不到图就找了个别的比较相似的代替了）
 
 第一次做，不好的话多提一点建议（（（草 为什么专门的这么难找 还是直接放综合好了 想练专门技能可以尝试其他的推图
 
-~~只是ver1.0，以后可能会修改，也可能会咕咕~~
+~~只是 ver1.0，以后可能会修改，也可能会咕咕~~
 
-强烈不推荐 1000pp 以下玩家的尝试本Stage！！！
+强烈不推荐 1000pp 以下玩家的尝试本 Stage！！！
 
-### Black
+### ⚫ Black
 
 黑色的有一定难度 请谨慎（x）努力尝试
 
 做了一点，发现好像定要求有点难，就 pass 和 fc 两个要求吧（以后可能会修正 详情计分方式见下页
 
-当你打不了这个Stage的时候，找找别的图打打，练一下技术再尝试吧（
+当你打不了这个 Stage 的时候，找找别的图打打，练一下技术再尝试吧（
 
 1-12 段针对新人群 13-20 段针对进阶群
 
@@ -123,7 +123,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Raven's Jig - Neige Immaculee (Maardhen) [Un Tresor Depose par le Vent d'Hiver]"
   star=4.10
   max=684
-  color="#444"
+  color="#333"
 />
 
 ### 2
@@ -161,7 +161,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="sakuzyo - Senkyou Ranbu (ktgster) [Insane]"
   star=4.51
   max=1424
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -170,7 +170,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Infected Mushroom - Sa'eed (Nemis) [Hope]"
   star=4.41
   max=2086
-  color="#444"
+  color="#333"
 />
 
 ### 3
@@ -190,7 +190,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="zts - lastendconductor (EvilElvis) [Insane]"
   star=4.41
   max=1534
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -237,7 +237,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Daisuke Achiwa - BASARA (100pa-) [BASARA]"
   star=4.67
   max=987
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -255,7 +255,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="xi - Halcyon -Long Version- (Natsu) [Human]"
   star=4.52
   max=2040
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -275,7 +275,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="senya - Zetsubou no Fuchi (-Mo-) [Insane]"
   star=4.84
   max=1062
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -302,7 +302,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="ZUN remixed by LeaF - Resurrection Spell (Muya) [Hyper]"
   star=4.58
   max=858
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -331,7 +331,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Meramipop - Rakujitsu Romance (Loneight) [Romance]"
   star=4.90
   max=1832
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -369,7 +369,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="DJ Genki vs. Camellia feat. moimoi - Sunshine (Smug Nanachi) [Insane]"
   star=4.95
   max=1458
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -378,7 +378,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Foreground Eclipse - Storytellers (Seni) [Lunatic]"
   star=4.79
   max=1250
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -405,7 +405,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Nanahoshi Kangengakudan - Meikaruza (pkk) [Insane]"
   star=4.62
   max=1584
-  color="#444"
+  color="#333"
 />
 
 ### 8
@@ -443,7 +443,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="96neko - Buriki no Dance (Lasse) [Insane]"
   star=4.98
   max=1216
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -463,7 +463,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Amemori Sayo x Kudou Chitose - White Lily (Yugu) [Tt's Insane]"
   star=5.00
   max=1079
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -472,7 +472,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Halozy - Genryuu Kaiko (pkk) [Death Melody]"
   star=5.10
   max=1618
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -519,7 +519,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Demetori - Silent Voyage to Eternity (brikel) [Extra]"
   star=5.21
   max=1382
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -528,7 +528,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="tsunamix_underground - Period. ~ Seishin no Kousoku to Jiyuu o Tsukamu Jouka (TicClick) [Lunatic]"
   star=5.01
   max=784
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -546,8 +546,8 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Yousei Teikoku - Shadow Corps (Lune Hivernale) [Insane]"
   star=4.90
   max=1597
-  disabled=true
-  color="#444"
+  disabled=false
+  color="#333"
 />
 
 ### 11
@@ -567,7 +567,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Demetori - Emotional Skyscraper ~ World's End (happy30) [Extra Stage]"
   star=5.39
   max=2012
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -605,7 +605,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Xe vs. cYsmix - Youkai Saisandou -Oriental Swing- (Yami Sun) [Arcareh's Swing]"
   star=5.52
   max=1736
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -623,7 +623,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Camellia vs Akira Complex - Railgun Roulette (VIP) (NeilPerry) [LowBot's Insane]"
   star=5.26
   max=1661
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -652,7 +652,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="V.A. - streams for beginner (Firika) [DJ Sharpnel-20031023-179]"
   star=5.40
   max=1733
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -661,7 +661,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Yonezu Kenshi - LOSER (Skystar) [WINNER]"
   star=5.51
   max=1328
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -670,7 +670,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="UNDEAD CORPORATION - Yoru Naku Usagi wa Yume o Miru (Smoothie) [Lunatic]"
   star=5.45
   max=1505
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -679,7 +679,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="kors k - Playing With Fire (Sota Fujimori Remix) (xlni) [Pyrotechnics]"
   star=5.42
   max=2330
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -688,7 +688,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Rohi - Kakuzetsu Thanatos (NatsumeRin) [Pokie]"
   star=5.56
   max=1422
-  color="#444"
+  color="#333"
 />
 
 ### 14
@@ -699,7 +699,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="V.A. - streams for beginner (Firika) [F-777 -Airborne Robots-200]"
   star=5.67
   max=900
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -708,7 +708,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Yuyoyuppe - AiAe (Fort) [Expert]"
   star=5.61
   max=1950
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -717,7 +717,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Shoji Meguro - Kimi no Kioku (Aethral Remix) (Akali) [Remembrance]"
   star=5.78
   max=2257
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -726,7 +726,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Teminite - Beastmode (Yamicchi) [GONE WILD]"
   star=5.31
   max=1704
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -735,7 +735,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Ray - Hajimete Girls! (Meyrink) [Skystar's Pin Pon~]"
   star=5.56
   max=657
-  color="#444"
+  color="#333"
 />
 
 ### 15
@@ -764,7 +764,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="a_hisa - Anhedonia (RLC) [Euphoria]"
   star=5.97
   max=3588
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -773,7 +773,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Yunomi - Wakusei Rabbit (feat. TORIENA) (Nathan) [PYON]"
   star=5.87
   max=1422
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -782,7 +782,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="ABSOLUTE CASTAWAY - Halloween Night Parade (Hey lululu) [Halloween Party!]"
   star=5.56
   max=1706
-  color="#444"
+  color="#333"
 />
 
 ### 16
@@ -802,7 +802,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="HIELO - La Posesion Du Mimi - ILLUMINATEK Rmx - HIELO Refuck! (Euny) [Sweet vanilla love]"
   star=5.73
   max=1951
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -811,7 +811,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Lily - Scarlet Rose (val0108) [0108 style]"
   star=5.57
   max=1441
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -820,7 +820,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="a_hisa - Anhedonia (RLC) [Collab Extra]"
   star=5.81
   max=3505
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -829,7 +829,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Himeringo - Yotsuya-san ni Yoroshiku (RLC) [Skystar's Extra]"
   star=5.77
   max=997
-  color="#444"
+  color="#333"
 />
 
 ### 17
@@ -840,7 +840,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="kors k - Insane Techniques (Extended) (sukiNathan) [Hi-Tech]"
   star=6.16
   max=2271
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -849,7 +849,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Halozy - Kanshou no Matenrou (sodarose) [The Great Magician]"
   star=5.77
   max=2012
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -858,7 +858,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="xi - Akasha (Atsuro) [N/A's Another]"
   star=5.90
   max=1977
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -867,7 +867,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Sharlo - Fantastic Future (sahuang) [yf's Expert]"
   star=5.88
   max=1435
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -876,7 +876,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Camellia feat. Nanahira - Bassdrop Freaks (2018 &quot;Redrop&quot; ver.) (Mir) [Lasse's Extra]"
   star=5.86
   max=2152
-  color="#444"
+  color="#333"
 />
 
 ### 18
@@ -887,7 +887,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Camellia - Exit This Earth's Atomosphere (Girl) [GiRLC's Intangible]"
   star=6.07
   max=2195
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -896,7 +896,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Camellia - dreamless wanderer (deetz) [lost]"
   star=6.16
   max=1737
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -905,7 +905,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="THE ORAL CIGARETTES - Kyouran Hey Kids!! (monstrata) [God of Speed]"
   star=5.77
   max=1665
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -914,7 +914,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Nanahoshi Kangengakudan feat.Matsushita - Dance Number o Tomo ni (pkk) [Dance Number]"
   star=5.84
   max=2064
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -923,7 +923,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="DJ Noriken - #The_Relentless_(Modified) (captin1) [Unstoppable]"
   star=5.95
   max=2560
-  color="#444"
+  color="#333"
 />
 
 ### 19
@@ -934,7 +934,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Ceui - Hana ni Natta Shounen no Shinwa (_MiaoFUuU_) [Calendula]"
   star=5.81
   max=3533
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -943,7 +943,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="NOMA - Brain Power Long Version (Skystar) [Overdrive]"
   star=6.01
   max=2940
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -952,7 +952,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="kamome sano - starlights feat. TEA (MoeMoeKyunNN) [Labradorite]"
   star=5.97
   max=2034
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -961,7 +961,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="REOL - YoiYoi Kokon (Pho) [Timeless Dance]"
   star=5.88
   max=1814
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -970,7 +970,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Our Stolen Theory - United (L.A.O.S Remix) (Asphyxia) [Infinity]"
   star=6.09
   max=2275
-  color="#444"
+  color="#333"
 />
 
 ### 20
@@ -981,7 +981,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Hatsune Miku - Mythologia's End (val0108) [Myth0108ia]"
   star=6.23
   max=2368
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -990,7 +990,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="t+pazolite - Party in the HOLLOWood feat. Nanahira (eiri-) [EXTreme]"
   star=5.99
   max=1485
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -999,7 +999,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="Masayoshi Minoshima feat.nomico - Lost Emotion (Amane UK Hardcore Remix) (xLolicore-) [Emotionless]"
   star=6.19
   max=2180
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -1008,7 +1008,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="O2i3 - TSLove (Fanteer) [Extra]"
   star=6.11
   max=785
-  color="#444"
+  color="#333"
 />
 
 <Beatmap
@@ -1017,5 +1017,5 @@ ver1.1 分段规则：无论 pass 或者 fc
   preview="PSYQUI - Hype feat. Such (NeilPerry) [Phosphene]"
   star=6.43
   max=1963
-  color="#444"
+  color="#333"
 />

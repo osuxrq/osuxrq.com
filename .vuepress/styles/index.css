@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Torus SemiBold';
   src: url('/fonts/Torus-SemiBold.woff2') format('woff2'),
-  url('/fonts/Torus-SemiBold.woff') format('woff');
-  font-weight: 600;
+       url('/fonts/Torus-SemiBold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -10,8 +10,20 @@
 @font-face {
   font-family: 'Torus Bold';
   src: url('/fonts/Torus-Bold.woff2') format('woff2'),
-  url('/fonts/Torus-Bold.woff') format('woff');
-  font-weight: 600;
+       url('/fonts/Torus-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alibaba PuHuiTi Regular';
+  src: url('/fonts/AlibabaPuHuiTi-2-55-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", "PingFang SC", "Microsoft YaHei", sans-serif;
 }

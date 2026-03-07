@@ -1,6 +1,18 @@
 # Atahana 精选 DJ 图包
 
-*编者注：这玩意在群里占用 1 GB，但是这篇文章只有 17.3 KB。*
+<Player 
+  id=24684205
+  name="Atahana"
+  country=1297
+  global=71248
+  from="CN"
+  accuracy=98.21
+  level=100
+  progress=54
+  performance=5671
+/>
+
+*编者注：这玩意在群里占用 1.04 GB，但是这篇文章只有 17.3 KB，节省了至少 99.9984% 的空间。*
 
 ## 1-30
 

@@ -153,7 +153,7 @@ const countryFlag = computed (() => {
   height: 48.837cqw; /* 210px / 430px */
   background-color: #2a2226;
   border-radius: 3.488cqw; /* 15px */
-  font-family: "Torus SemiBold", sans-serif;
+  font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
   color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }

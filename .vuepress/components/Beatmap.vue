@@ -15,8 +15,8 @@ const props = defineProps({
   star: { type: [String, Number], default: 0 },
   max: {type: [String, Number], default: ''},
   mode: { type: String, default: "o" },
-  difficulties: { type: Array, String, default: () => [] },
-  disabled: { type: Boolean, String, default: false },
+  difficulties: { type: [Array, String], default: () => [] },
+  disabled: { type: [Boolean, String], default: false },
   color: { type: String, default: null },
   alias: { type: String, default: null },
 })
@@ -569,7 +569,7 @@ const processedDifficulties = computed(() => {
     color: #aaa;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     /* 视觉微调，使其和文字基线对齐更和谐 */
-    transform: translateY(0.5cqw);
+    transform: translateY(0.6cqw);
   }
 
   .text-content-2 {

@@ -35,6 +35,7 @@
   preview="DJ Mars - Lemon Tree (MetalMario201)"
   star=4.21
   difficulties=[2.75,3.18,4.21]
+  alias="柠檬树"
 />
 
 <Beatmap
@@ -42,6 +43,7 @@
   preview="DJ Satomi - Castles in the Sky (xxheroxx)"
   star=4.89
   difficulties=[2.35,3.97,4.10,4.34,4.82,4.89]
+  alias="天空城堡"
 />
 
 <Beatmap
@@ -162,6 +164,7 @@
   preview="DJ Genericname - Dango Dango Drum and Bass (Moway)"
   star=4.87
   difficulties=[1.72,2.13,3.51,4.87,2.70,4.16]
+  alias="团子大家族"
 />
 
 <Beatmap
@@ -183,6 +186,7 @@
   preview="DJ YOSHITAKA - A Kiss for the FLOWER (Silynn)"
   star=6.94
   difficulties=[6.94]
+  alias="花吻"
 />
 
 <Beatmap
@@ -227,6 +231,7 @@
   preview="seiya-murai feat.ALT - Sumidagawa Karenka (Sakaue Nachi)"
   star=5.85
   difficulties=[1.97,2.28,3.61,4.82,5.32,5.85]
+  alias="隅田川夏恋歌"
 />
 
 <Beatmap
@@ -234,6 +239,7 @@
   preview="JerryC - Canon Rock (momo1101)"
   star=6.17
   difficulties=[1.70,2.22,3.80,5.94,6.17,1.94,4.10,5.31,5.70,1.20,1.94,3.05,4.32,5.23]
+  alias="摇滚卡农"
 />
 
 <Beatmap
@@ -255,6 +261,7 @@
   preview="DJ Okawari - Flower Dance (Short Ver.) (-Hanayuki-)"
   star=6.85
   difficulties=[6.00,6.00,6.00,6.55,6.55,6.55,6.82,6.85]
+  alias="花舞"
 />
 
 <Beatmap
@@ -269,6 +276,7 @@
   preview="Sunny Wang - Wu Ye DJ (Hrs Club Remix) (blueloniess)"
   star=4.01
   difficulties=[4.01]
+  alias="午夜 DJ"
 />
 
 <Beatmap
@@ -283,6 +291,7 @@
   preview="Yooh - Ice Angel (ktgster)"
   star=5.89
   difficulties=[5.89]
+  alias="冰天使"
 />
 
 <Beatmap
@@ -332,6 +341,7 @@
   preview="LeaF - Calamity Fortune (Frostings)"
   star=6.25
   difficulties=[1.81,2.30,3.52,4.85,6.25]
+  alias="CF"
 />
 
 <Beatmap
@@ -346,6 +356,7 @@
   preview="NOMA - Brain Power Long Version (Skystar)"
   star=6.01
   difficulties=[6.01]
+  alias="脑力"
 />
 
 <Beatmap
@@ -558,6 +569,7 @@
   preview="DJ Genericname - Dango Dango Daikazoku (Drum and Bass Remix) (NekuMagetsu)"
   star=4.92
   difficulties=[1.96,2.17,3.44,4.39,4.92]
+  alias="团子大家族"
 />
 
 <Beatmap
@@ -565,6 +577,7 @@
   preview="OnlyRight - Mermaid Girl [Gachi Remix] (Yooh)"
   star=6.33
   difficulties=[2.27,3.53,4.81,5.68,6.33]
+  alias="美人鱼女孩"
 />
 
 <Beatmap
@@ -658,6 +671,7 @@
   preview="VaVa - Wo Xiang Dui Ni Shuo Baby (Yu vs. CTM Radio Mix) (Nightcore Mix) (__Ag)"
   star=6.39
   difficulties=[2.34,3.71,4.94,5.42,5.92,6.39]
+  alias="我想对你说 Baby"
 />
 
 <Beatmap
@@ -672,6 +686,7 @@
   preview="DJ SHARPNEL - BLUE ARMY (AdeAAa)"
   star=6.82
   difficulties=[5.90,6.82]
+  alias="蓝军"
 />
 
 <Beatmap
@@ -707,6 +722,7 @@
   preview="HO-KAGO TEA TIME - Tenshi ni Fureta yo! (Asterisk DnB Remix) (sanairrt)"
   star=6.15
   difficulties=[1.97,2.39,3.71,5.00,5.53,6.15]
+  alias="触碰天使"
 />
 
 <Beatmap
@@ -721,6 +737,7 @@
   preview="SMiLE.dk - Koko Soko (AKIBA KOUBOU Eurobeat Remix) (HyperPigeon)"
   star=5.17
   difficulties=[2.19,3.42,4.33,5.17]
+  alias="KKSK"
 />
 
 <Beatmap
@@ -728,6 +745,7 @@
   preview="Slax - Loli Bomb (Cut Ver.) (smolship)"
   star=6.36
   difficulties=[2.54,3.06,3.81,5.03,5.67,6.36]
+  alias="萝莉炸弹"
 />
 
 <Beatmap
@@ -763,6 +781,7 @@
   preview="Guo Gao Ming - Ye Mo Tuo (DJ A Zhuo Ver.) (Cut Ver.) (Yorita Yoshino)"
   star=4.54
   difficulties=[2.09,3.22,4.54]
+  alias="野摩托"
 />
 
 <Beatmap
@@ -770,6 +789,7 @@
   preview="Tsukasa (Arte Refact) - Fragrance (XinBai-HW Remix) (MeAqua tete)"
   star=7.13
   difficulties=[2.44,3.84,4.68,5.73,7.08,7.13]
+  alias="电棍香水"
 />
 
 <Beatmap
@@ -849,4 +869,5 @@
   preview="Ying Jiang - Jin Ye Xing Guang Shan Shan (Dong Official Remix) (App)"
   star=4.20
   difficulties=[1.76,3.16,4.20]
+  alias="今夜星光闪闪"
 />

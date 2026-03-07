@@ -88,6 +88,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.38
   max=481
   color="#92e"
+  alias="金坷垃与你同在"
 />
 
 <Beatmap
@@ -135,6 +136,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.07
   max=1146
   color="#92e"
+  alias="星屑"
 />
 
 <Beatmap
@@ -162,6 +164,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.51
   max=1424
   color="#333"
+  alias="战狂乱舞"
 />
 
 <Beatmap
@@ -256,6 +259,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.52
   max=2040
   color="#333"
+  alias="翡翠鸡"
 />
 
 <Beatmap
@@ -276,6 +280,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.84
   max=1062
   color="#333"
+  alias="绝望之渊"
 />
 
 <Beatmap
@@ -285,6 +290,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.52
   max=828
   color="#92e"
+  alias="DDLC"
 />
 
 <Beatmap
@@ -312,6 +318,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.62
   max=1040
   color="#92e"
+  alias="夜骑"
 />
 
 ### 6
@@ -332,6 +339,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.90
   max=1832
   color="#333"
+  alias="落日浪漫"
 />
 
 <Beatmap
@@ -341,6 +349,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.87
   max=1028
   color="#92e"
+  alias="魔理沙"
 />
 
 <Beatmap
@@ -359,6 +368,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.85
   max=942
   color="#92e"
+  alias="奇迹的碎片"
 />
 
 ### 7
@@ -397,6 +407,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.55
   max=1498
   color="#92e"
+  alias="FD"
 />
 
 <Beatmap
@@ -444,6 +455,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.98
   max=1216
   color="#333"
+  alias="锡舞"
 />
 
 <Beatmap
@@ -464,6 +476,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.00
   max=1079
   color="#333"
+  alias="白百合"
 />
 
 <Beatmap
@@ -473,6 +486,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.10
   max=1618
   color="#333"
+  alias="源流怀古"
 />
 
 <Beatmap
@@ -500,6 +514,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.15
   max=1627
   color="#92e"
+  alias="回转"
 />
 
 ### 10
@@ -520,6 +535,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.21
   max=1382
   color="#333"
+  alias="鼠之力"
 />
 
 <Beatmap
@@ -559,6 +575,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.94
   max=1391
   color="#92e"
+  alias="不对称"
 />
 
 <Beatmap
@@ -568,6 +585,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.39
   max=2012
   color="#333"
+  alias="2012"
 />
 
 <Beatmap
@@ -577,6 +595,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.04
   max=901
   color="#92e"
+  alias="DDLC"
 />
 
 <Beatmap
@@ -595,6 +614,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.96
   max=1123
   color="#92e"
+  alias="幸福的遗落物"
 />
 
 ### 12
@@ -633,6 +653,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.00
   max=1047
   color="#92e"
+  alias="旧地狱街道之旅"
 />
 
 <Beatmap
@@ -662,6 +683,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.51
   max=1328
   color="#333"
+  alias="你"
 />
 
 <Beatmap
@@ -671,6 +693,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.45
   max=1505
   color="#333"
+  alias="夜啼兔"
 />
 
 <Beatmap
@@ -680,6 +703,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.42
   max=2330
   color="#333"
+  alias="玩火"
 />
 
 <Beatmap
@@ -718,6 +742,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.78
   max=2257
   color="#333"
+  alias="你的记忆"
 />
 
 <Beatmap
@@ -747,6 +772,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.56
   max=1748
   color="#92e"
+  alias="我呼唤你的日子"
 />
 
 <Beatmap
@@ -774,6 +800,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.87
   max=1422
   color="#333"
+  alias="行星兔子"
 />
 
 <Beatmap
@@ -794,6 +821,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.48
   max=555
   color="#92e"
+  alias="恋爱少女"
 />
 
 <Beatmap
@@ -812,6 +840,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.57
   max=1441
   color="#333"
+  alias="血玫瑰"
 />
 
 <Beatmap
@@ -830,6 +859,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.77
   max=997
   color="#333"
+  alias="四谷"
 />
 
 ### 17
@@ -877,6 +907,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.86
   max=2152
   color="#333"
+  alias="贝斯大老婆"
 />
 
 ### 18
@@ -888,6 +919,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=6.07
   max=2195
   color="#333"
+  alias="大气层"
 />
 
 <Beatmap
@@ -906,6 +938,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.77
   max=1665
   color="#333"
+  alias="狂乱"
 />
 
 <Beatmap
@@ -915,6 +948,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.84
   max=2064
   color="#333"
+  alias="数字舞"
 />
 
 <Beatmap
@@ -944,6 +978,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=6.01
   max=2940
   color="#333"
+  alias="脑力"
 />
 
 <Beatmap
@@ -962,6 +997,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.88
   max=1814
   color="#333"
+  alias="宵宵古今"
 />
 
 <Beatmap

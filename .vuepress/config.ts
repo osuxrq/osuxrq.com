@@ -8,6 +8,7 @@ import {join} from 'node:path';
 
 function getSortedFiles(dir: string): string[] {
     // process.cwd() 获取项目根目录 (通常是包含 docs 的那一层)
+    // 随便写点来触发更新
     const dirPath = join(process.cwd(), dir);
 
     // 打印一下路径，确保它指向了正确的文件夹

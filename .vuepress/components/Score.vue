@@ -708,7 +708,7 @@ const startTimeout = () => {
     color: #aaa;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     /* 视觉微调，使其和文字基线对齐更和谐 */
-    transform: translateY(0.5cqw);
+    transform: translateY(0.6cqw);
   }
 
   .text-content-2 {

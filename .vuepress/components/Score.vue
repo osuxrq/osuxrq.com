@@ -146,6 +146,16 @@ const backgroundColor = computed(() => {
   }
 });
 
+const pp = computed(() => {
+  const p = Number.parseFloat(props.performance)
+
+  if (props.performance != null && Number.isFinite(p)) {
+    return "PP"
+  } else {
+    return ""
+  }
+})
+
 const isModalOpen = ref(false) // 控制模态框显示
 
 const handleSayoNoVideoDownload = () => {
@@ -320,7 +330,7 @@ const startTimeout = () => {
 
           <span class="baseline-container">
             <span class="text-large">{{ props.performance ?? 0 }}</span>
-            <span class="text-small">PP</span>
+            <span class="text-small">{{ pp }}</span>
           </span>
         </span>
       </span>

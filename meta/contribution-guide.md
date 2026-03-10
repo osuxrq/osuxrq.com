@@ -266,6 +266,8 @@ performance=727
 />
 ```
 
+如果对应的成绩没有可用的表现分，可以在 performance 的位置填入 "..." 的字符串，PP 字样会自动消失。
+
 ## 许可声明
 
 除非另有说明，本站内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 协议授权。

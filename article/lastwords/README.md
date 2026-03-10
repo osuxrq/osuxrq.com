@@ -10,6 +10,7 @@ TODO：正在施工
 - 文章较长
   - [142qwq](./users/28446169.md)
   - [alphaRaWaY](./users/34346018.md)
+  - [hiki8man](./users/15846580.md)
 - 谱面推荐
   - [21awa12](./users/36062235.md)
 - 常规
@@ -27,8 +28,10 @@ TODO：正在施工
   - [akballoon](./users/33888415.md)
   - [Akimizussq](./users/31485633.md)
   - [alone_1324](./users/30320667.md)
+  - [Nana Sakura](./users/32452774.md)
 - 言简意赅
   - [Adversity0721](./users/27552230.md)
 - 来源不明
   - [99p](./users/0.md#99p-的出群遗言)
   - [AI](./users/0.md#AI-的遗言)
+  - [Mijikuru](./users/0.md#Mijikuru-的遗言)

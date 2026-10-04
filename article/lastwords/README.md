@@ -11,6 +11,7 @@ TODO：正在施工
   - [142qwq](./users/28446169.md)
   - [alphaRaWaY](./users/34346018.md)
   - [hiki8man](./users/15846580.md)
+  - [Desolation](./users/14353421.md)
 - 谱面推荐
   - [21awa12](./users/36062235.md)
 - 常规
@@ -35,8 +36,14 @@ TODO：正在施工
   - [Osu_Autp](./users/37449856.md)
   - [\- Awathon \-](./users/36846545.md)
   - [Nana Sakura](./users/32452774.md)
+  - [BenPhantom](./users/5162173.md)
+  - [Chiyarara](./users/36409902.md)
+  - [ChiliJay](./users/16027612.md)
 - 言简意赅
   - [Adversity0721](./users/27552230.md)
+  - [dongguadongde](./users/28494479.md)
+  - [BloodEngine](./users/28494479.md)
+  - [ChengAe](./users/30125315.md)
 - 来源不明
   - [99p](./users/0.md#99p-的出群遗言)
   - [AI](./users/0.md#AI-的遗言)

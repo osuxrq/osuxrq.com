@@ -455,7 +455,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=4.98
   max=1216
   color="#333"
-  alias="锡舞"
+  alias="马口铁之舞"
 />
 
 <Beatmap

@@ -175,7 +175,7 @@ const badgeTextStyle = computed(() => {
   const starNum = parseFloat(props.star);
 
   // 设定你想改变颜色的星数区间
-  const minStar = 2.8;
+  const minStar = 0.1;
   const maxStar = 4.0;
 
   if (!isNaN(starNum) && starNum >= minStar && starNum < maxStar) {

@@ -1,6 +1,7 @@
 <script setup>
-import {computed, ref, onMounted} from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import LazyImage from "./LazyImage.vue";
+import {MOD_CONFIG, VALID_MOD_KEYS} from "../constants/mod.js";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -18,10 +19,47 @@ const props = defineProps({
   max: { type: [Number, String], default: 0 },
   rank: { type: String, default: "F" },
   performance: { type: [Number, String], default: 0 },
-  mods: String,
+  // 修改：支持传入数组 ['HD', 'HR'] 或字符串 "HDHR" / "HD, HR"
+  mods: { type: [Array, String], default: () => [] },
   color: { type: [String], default: null },
   alias: { type: [String], default: null },
 })
+
+
+// 获取 Mod 信息的帮助函数
+const getModInfo = (modKey) => {
+  if (!modKey) return MOD_CONFIG.DEFAULT
+  const key = modKey.toString().toUpperCase().trim()
+  return MOD_CONFIG[key] || { name: key, ...MOD_CONFIG.DEFAULT }
+}
+
+// 解析传入的 mods 属性为统一的大写数组
+const parsedMods = computed(() => {
+  if (!props.mods) return []
+  if (Array.isArray(props.mods)) {
+    return props.mods.map(m => m.toString().toUpperCase().trim()).filter(Boolean)
+  }
+  if (typeof props.mods === 'string') {
+    const str = props.mods.toString().replace(/[+\[\]]/g, '').trim()
+
+    if (!str) return []
+
+    if (str.length <= 3 && VALID_MOD_KEYS.has(str.toUpperCase())) {
+      return [str.toUpperCase()]
+    }
+
+    if (str.includes(',')) {
+      return str.split(',').map(m => m.trim().toUpperCase()).filter(Boolean)
+    }
+
+    // 自动按两字符拆分，如 "HDHR" -> ["HD", "HR"]
+    const matches = str.match(/.{1,2}/g) || []
+    return matches.map(m => m.toUpperCase())
+  }
+  return []
+})
+
+// =========================================================================
 
 const thumbSrc = computed(() => {
   const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
@@ -57,12 +95,10 @@ const parsedData = computed(() => {
     case 't': mode = 'osu!taiko'; break;
     case 'c': case 'f': mode = 'osu!catch'; break;
     case 'm': mode = 'osu!mania'; break;
-
     default: mode = 'osu!standard'; break;
   }
 
   let pa = parseFloat(props.accuracy)
-
   let acc
 
   if (isNaN(pa)) {
@@ -107,7 +143,6 @@ const parsedData = computed(() => {
   }
 })
 
-
 const getStarColor = (starValue) => {
   const star = parseFloat(starValue);
   if (star == null || Number.isNaN(star) || star < 0.1) return '#AAAAAA';
@@ -148,7 +183,6 @@ const backgroundColor = computed(() => {
 
 const pp = computed(() => {
   const p = Number.parseFloat(props.performance)
-
   if (props.performance != null && Number.isFinite(p)) {
     return "PP"
   } else {
@@ -156,7 +190,7 @@ const pp = computed(() => {
   }
 })
 
-const isModalOpen = ref(false) // 控制模态框显示
+const isModalOpen = ref(false)
 
 const handleSayoNoVideoDownload = () => {
   const sid = props.sid?.toString() ?? '0'
@@ -178,20 +212,15 @@ const handleSayoFullDownload = () => {
   window.open(downloadUrl, '_blank');
 };
 
-// 显示星数
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
   if (isNaN(num)) return '0';
-
   return Number(num.toFixed(1)).toString();
 })
 
-// 动态计算徽章的文字颜色和阴影
 const badgeTextStyle = computed(() => {
   const starNum = parseFloat(props.star);
-
-  // 设定你想改变颜色的星数区间
-  const minStar = 2.8;
+  const minStar = 0.1;
   const maxStar = 4.0;
 
   if (!isNaN(starNum) && starNum >= minStar && starNum < maxStar) {
@@ -201,67 +230,44 @@ const badgeTextStyle = computed(() => {
     };
   }
 
-  // 不在区间内，返回默认的白色和原有阴影
   return {
     color: '#ffffff',
     textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)'
   };
 });
 
-// 绘制评级跑马灯
-
 const rankMarquee = computed(() => {
   let colors
   switch (props.rank?.toUpperCase()) {
-    case "PF":
-    case "XH":
-    case "SSH":
-    case "EX":
-    case "X+":
-      colors = ['#ccc', '#fafafa']
-      break;
-    case "X":
-    case "SS":
-      colors = ['#FFC86B', '#FFFF00']
-      break;
+    case "PF": case "XH": case "SSH": case "EX": case "X+":
+      colors = ['#ccc', '#fafafa']; break;
+    case "X": case "SS":
+      colors = ['#FFC86B', '#FFFF00']; break;
     case "SH":
-      colors = ['#999', '#ccc']
-      break;
-    case "SP":
-    case "S+":
-      colors = ['#FF4E6F', '#FAD126'] // S+
-      break;
+      colors = ['#999', '#ccc']; break;
+    case "SP": case "S+":
+      colors = ['#FF4E6F', '#FAD126']; break;
     case "S":
-      colors = ['#EC6841', '#FF9800']
-      break;
+      colors = ['#EC6841', '#FF9800']; break;
     case "A":
-      colors = ['#31B16C', '#12B4B1']
-      break;
+      colors = ['#31B16C', '#12B4B1']; break;
     case "B":
-      colors = ['#7776FF', '#4FACFE']
-      break;
+      colors = ['#7776FF', '#4FACFE']; break;
     case "C":
-      colors = ['#9922EE', '#F772D1']
-      break;
+      colors = ['#9922EE', '#F772D1']; break;
     case "D":
-      colors = ['#D32F2F', '#FD5392']
-      break;
+      colors = ['#D32F2F', '#FD5392']; break;
     case "F":
-      colors = ['#666', '#999']
-      break;
+      colors = ['#666', '#999']; break;
     case "FC":
-      colors = ['#4FACFE', '#00F2FE']
-      break;
+      colors = ['#4FACFE', '#00F2FE']; break;
     default:
       colors = ['#2A2226', '#2A2226'];
   }
-
   return colors
 })
 
 const fullSrc = ref('')
-
-// 存储备选图片列表
 const fallbackUrls = ref([]);
 const currentFallbackIndex = ref(0);
 
@@ -274,7 +280,7 @@ const toggleModal = (e) => {
   fallbackUrls.value = [
     `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`,
     `https://a.sayobot.cn/beatmaps/${sid}/covers/cover.webp`,
-    imgSrc.value // 最后的保底
+    imgSrc.value
   ];
 
   currentFallbackIndex.value = 0;
@@ -292,15 +298,9 @@ const handleModalImgError = () => {
   }
 };
 
-let timer = null;
-
-const startTimeout = () => {
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    // 如果图片还没加载完（可以配合 @load 事件清除 timer）
-    handleModalImgError();
-  }, 5000); // 5秒超时
-};
+const textRight = computed(() => {
+  return parsedMods.value.length === 0 ? '30%' : '40%'
+})
 
 </script>
 
@@ -308,6 +308,24 @@ const startTimeout = () => {
   <a :href="targetUrl" target="_blank" class="data-card-container" title="访问谱面网页">
     <span class="card-canvas">
       <span class="download-group">
+        <!-- Mods 显示区域矩形 (置于下载按钮左侧) -->
+        <span v-if="parsedMods.length" class="mods-box" title="启用模组">
+          <span
+              v-for="(mod, index) in parsedMods"
+              :key="mod"
+              class="mod-badge"
+              :style="{
+              backgroundColor: getModInfo(mod).bg,
+              color: getModInfo(mod).color,
+              zIndex: index + 1, /* 右侧（Index 大）的在最上层 */
+              right: `${(parsedMods.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
+            }"
+              :title="`${getModInfo(mod).name} (${mod})`"
+          >
+            {{ mod }}
+          </span>
+        </span>
+
         <span class="download-icon official" @click.stop.prevent="handleSayoNoVideoDownload" title="使用 Sayobot 下载谱面（不包含视频）">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 17.5a4 4 0 01-.88-7.903A5 5 0 1115.9 7.5L16 7.5a5 5 0 011 9.9M15 14.5l-3 3m0 0l-3-3m3 3V11.5"
@@ -326,8 +344,6 @@ const startTimeout = () => {
 
       <span class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
         <span class="symbol-wrapper">
-          <span class="mods-text" v-if="props.mods">+{{ props.mods }}</span>
-
           <span class="baseline-container">
             <span class="text-large">{{ props.performance ?? 0 }}</span>
             <span class="text-small">{{ pp }}</span>
@@ -337,12 +353,12 @@ const startTimeout = () => {
 
       <span class="base-rect" :style="{ backgroundColor: '#2A2226' }"></span>
 
-        <span class="star-badge" v-if="props.star" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
-          {{ formattedStar }}
-        </span>
-        <span class="id-badge" v-if="props.bid || props.sid" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
-          {{ props.bid || `s${props.sid}` }}
-        </span>
+      <span class="star-badge" v-if="props.star" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
+        {{ formattedStar }}
+      </span>
+      <span class="id-badge" v-if="props.bid || props.sid" :style="[{ backgroundColor: statusColor }, badgeTextStyle]">
+        {{ props.bid || `s${props.sid}` }}
+      </span>
 
       <LazyImage
           :src="imgSrc"
@@ -355,14 +371,13 @@ const startTimeout = () => {
           class="preview-rect"
           title="查看完整背景"
           @click="toggleModal"
-      >
-      </LazyImage>
+      />
 
-      <span class="text-content">
+      <span class="text-content" :style="{ right: textRight }">
         <span class="part-a">{{ parsedData.title }}</span>
         <span v-if="props.alias" class="alias-badge">{{ props.alias }}</span>
       </span>
-      <span class="text-content-2">
+      <span class="text-content-2" :style="{ right: textRight }">
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>
       </span>
       <span class="text-content-3">
@@ -375,14 +390,14 @@ const startTimeout = () => {
     <Teleport to="body">
       <Transition name="fade">
         <div v-if="isMounted && isModalOpen" class="image-modal-overlay" @click="isModalOpen = false">
-          <div class="modal-content"> <img
-              :src="fullSrc"
-              alt="Preview"
-              class="full-image"
-              @error="handleModalImgError"
-          />
+          <div class="modal-content">
+            <img
+                :src="fullSrc"
+                alt="Preview"
+                class="full-image"
+                @error="handleModalImgError"
+            />
             <div class="close-btn" @click="isModalOpen = false">×</div>
-
             <div v-if="!fullSrc" class="loading-spinner">Loading...</div>
           </div>
         </div>
@@ -392,39 +407,30 @@ const startTimeout = () => {
 </template>
 
 <style scoped>
-
 .data-card-container {
   display: block;
   width: 100%;
   max-width: 900px;
   min-width: 300px;
   aspect-ratio: 900 / 110;
-  margin: clamp(8px, 2.222cqw, 20px) auto 0; /* 最底下是 0 */
+  margin: clamp(8px, 2.222cqw, 20px) auto 0;
   text-decoration: none !important;
-  /* 移到最外层 */
   border-radius: clamp(8px, 2.222cqw, 20px);
   overflow: hidden;
   container-type: inline-size;
-
-  /* 参数含义：水平偏移(10px) 垂直偏移(10px) 模糊半径(20px) 阴影扩散(0) 颜色(透明黑) */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-
-  /* 为了让阴影在悬停时更有活力，也可以增加过渡 */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 点击瞬间：缩小 */
 .data-card-container:active {
   transform: scale(0.99);
   transition: transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* 给背景图增加过渡 */
 .background-rect, .preview-rect {
   transition: filter 0.3s ease, transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* 悬停时：背景变暗 + 图片微扩 */
 .data-card-container:hover .background-rect {
   filter: brightness(0.6) contrast(1.1);
 }
@@ -433,7 +439,6 @@ const startTimeout = () => {
   filter: brightness(0.6) contrast(1.1);
 }
 
-/* 悬停时：预览图边缘发光 */
 .data-card-container:hover .preview-rect {
   filter: brightness(1.1) contrast(1.1);
 }
@@ -458,7 +463,6 @@ const startTimeout = () => {
   background: #2a2226;
 }
 
-/* 颜色矩形 */
 .color-rect {
   display: block;
   position: absolute;
@@ -470,13 +474,12 @@ const startTimeout = () => {
   z-index: 3;
 }
 
-/* 调整背景图宽度，留出右侧空间 */
 .background-rect {
   display: block;
   position: absolute;
   left: 14.889%;
   top: 0;
-  width: 66.222%; /* 从 85% 缩减，为右侧留出约 12% 的空间 */
+  width: 66.222%;
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
   background-size: cover;
@@ -491,7 +494,7 @@ const startTimeout = () => {
   position: absolute;
   left: 14.889%;
   top: 0;
-  width: 66.222%; /* 从 85% 缩减，为右侧留出约 12% 的空间 */
+  width: 66.222%;
   height: 100%;
   border-radius: clamp(8px, 2.222cqw, 20px);
   background-size: cover;
@@ -501,7 +504,6 @@ const startTimeout = () => {
   transition: filter 0.3s ease;
 }
 
-/* 新增：右侧独立矩形 */
 .extra-rect {
   display: flex;
   position: absolute;
@@ -514,79 +516,43 @@ const startTimeout = () => {
   justify-content: flex-end;
   align-items: center;
   transition: filter 0.3s ease;
-  box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* 增加一点左侧阴影层次感 */
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
 
   --color-1: #1C1719;
   --color-2: #2A2226;
 
-  /* 1. 平滑渐变设计：A -> B -> A 循环模式 */
-  /* 使用 120deg 配合 background-position 实现视觉上的 30度角向右上移动 */
   background: linear-gradient(
       120deg,
       var(--color-1) 5%,
       var(--color-2) 50%,
       var(--color-1) 95%
   );
-
-  /* 2. 拉大背景宽度，为位移留出空间 */
   background-size: 200% 100%;
-
-  /* 3. 动画：4秒匀速无限循环 */
   animation: move-gradient 4s linear infinite;
 }
 
-/* 4. 定义 30度向右上方移动的动画 */
 @keyframes move-gradient {
-  0% {
-    /* 起始位置 */
-    background-position: 200% 50%;
-  }
-  100% {
-    /* 移动到 200% 正好完成一个 A-B-A 的循环，实现无缝衔接 */
-    background-position: 0 50%;
-  }
+  0% { background-position: 200% 50%; }
+  100% { background-position: 0 50%; }
 }
 
-/* 1. 精确对齐容器 */
 .symbol-wrapper {
   position: absolute;
-  left: 90.50%; /* 90.55% 锁定 815px */
+  left: 90.50%;
   top: 48%;
   transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
 }
-/* 模组 */
-.mods-text {
-  display: block;
-  position: absolute;
-  /* 关键：定位在主容器中心线上方 */
-  /* 如果想放下面，就把 bottom 换成 top */
-  bottom: 78%;
-  left: 50%;
-  transform: translateX(-50%); /* 水平居中对齐 815px 线 */
 
-  font-family: "Torus Bold", "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
-  font-size: 2cqw;
-  color: rgba(255, 255, 255, 0.9);
-  white-space: nowrap;
-
-  /* 距离下方文字的微调间距 */
-  margin-bottom: 2px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-/* 内部对齐容器 */
 .baseline-container {
   display: flex;
-  align-items: baseline; /* 关键：基线对齐 */
-  gap: 0.2cqw; /* 两个文字之间的间距 */
+  align-items: baseline;
+  gap: 0.2cqw;
 }
 
-/* 大字样式 48px */
 .text-large {
   color: white;
   font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
@@ -596,7 +562,6 @@ const startTimeout = () => {
   white-space: nowrap;
 }
 
-/* 小字样式 36px */
 .text-small {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
@@ -605,7 +570,6 @@ const startTimeout = () => {
   white-space: nowrap;
 }
 
-/* 悬停效果更新 */
 .data-card-container:hover .extra-rect {
   filter: brightness(1.15);
 }
@@ -626,26 +590,17 @@ const startTimeout = () => {
 .star-badge {
   position: absolute;
   top: 1cqw;
-  left: 3.444cqw; /* 层级变了，原来是 1cqw */
-
-  background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
+  left: 3.444cqw;
+  background: rgba(0, 0, 0, 0.65);
   color: #fff;
   font-family: "Torus Bold", "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
   font-size: 2cqw;
-
-  /* 基础形状 */
   padding: 0.1cqw 1cqw 0.4cqw 1cqw;
   border-radius: 2cqw;
-
-  /* 视觉层叠 */
   z-index: 6;
   pointer-events: none;
-
-  /* 阴影：增加立体感，确保在亮色背景下也能看清 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-
-  /* 对齐 */
   display: flex;
   align-items: center;
   gap: 2px;
@@ -654,70 +609,55 @@ const startTimeout = () => {
 .id-badge {
   position: absolute;
   bottom: 1cqw;
-  left: 3.444cqw; /* 层级变了，原来是 1cqw */
-
-  background: rgba(0, 0, 0, 0.65); /* 半透明黑色背景 */
+  left: 3.444cqw;
+  background: rgba(0, 0, 0, 0.65);
   color: #fff;
   font-family: "Torus Bold", "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
   font-size: 2cqw;
-
-  /* 基础形状 */
   padding: 0.1cqw 1cqw 0.4cqw 1cqw;
   border-radius: 2cqw;
-
-  /* 视觉层叠 */
   z-index: 6;
   pointer-events: none;
-
-  /* 阴影：增加立体感，确保在亮色背景下也能看清 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-
-  /* 对齐 */
   display: flex;
   align-items: center;
   gap: 2px;
 }
 
 @container (min-width: 0px) {
+  /* 调整标题与第二行右边缘至 44%，为 Mods 专属矩形保留安全空间 */
   .text-content {
     position: absolute;
     left: 23.55%;
     top: 0;
-    right: 30%; /* 加了下载组件 width: 55.555%; */
+    right: 40%;
     z-index: 4;
     height: 5cqw;
-
-    /* 改用 Flex 布局实现自动挤压效果 */
     display: flex;
     align-items: center;
-    gap: 0.8cqw; /* 标题与别名之间的间距 */
+    gap: 0.8cqw;
   }
 
-
   .part-a {
-    /* 原 text-content 的字体样式移到这里 */
     font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 3.5cqw;
     line-height: 1.1;
     color: #ffffff;
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-
-    /* 溢出挤压核心逻辑 */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex-shrink: 1; /* 允许在空间不足时被挤压缩小 */
+    flex-shrink: 1;
   }
 
   .alias-badge {
-    flex-shrink: 0; /* 保持自身宽度，绝不被挤压 */
+    flex-shrink: 0;
     font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 2cqw;
     font-style: italic;
     color: #aaa;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    /* 视觉微调，使其和文字基线对齐更和谐 */
     transform: translateY(0.6cqw);
   }
 
@@ -725,37 +665,31 @@ const startTimeout = () => {
     position: absolute;
     left: 23.55%;
     top: 5.1cqw;
-
-    right: 30%; /* 加了下载组件 width: 55.555%; */
-
+    right: 40%; /* 与第一行保持一致 */
     z-index: 5;
-
     font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 2.5cqw;
     line-height: 1;
     color: #aaaaaa;
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-
     height: 3cqw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
+  /* 第 3 行不被 Mods 矩形占用，保持原有尺寸即可 */
   .text-content-3 {
     position: absolute;
     left: 23.55%;
     top: 8.4cqw;
-
-    width: 55.555%; /* 加了下载组件也可以超长 */
+    width: 55.555%;
     z-index: 5;
-
     font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
     font-size: 2.5cqw;
     line-height: 1;
     color: #aaaaaa;
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-
     height: 3cqw;
     white-space: nowrap;
     overflow: hidden;
@@ -763,16 +697,10 @@ const startTimeout = () => {
   }
 }
 
-.data-card-container {
-  container-type: inline-size;
-}
-
-/* 鼠标悬停在预览图上显示手型，暗示可点 */
 .preview-rect {
   cursor: zoom-in;
 }
 
-/* 遮罩层 */
 .image-modal-overlay {
   position: fixed;
   top: 0;
@@ -785,7 +713,7 @@ const startTimeout = () => {
   align-items: center;
   z-index: 9999;
   cursor: zoom-out;
-  backdrop-filter: blur(8px); /* 磨砂玻璃效果 */
+  backdrop-filter: blur(8px);
 }
 
 .modal-content {
@@ -800,7 +728,6 @@ const startTimeout = () => {
   max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
-  /* 进阶：防止图片被拖拽 */
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -820,14 +747,15 @@ const startTimeout = () => {
   scale: 1.4;
 }
 
-/* --- 下载按钮组容器 --- */
+/* --- 下载与 Mods 按钮组容器 --- */
 .download-group {
   position: absolute;
   top: 1.2cqw;
-  right: 20%; /* 1.2 cqw */
+  right: 20%;
   display: flex;
-  gap: 0.8cqw;
-  z-index: 15; /* 确保在 extra-rect 之上 */
+  align-items: flex-start; /* 顶部对齐 */
+  gap: 0.8cqw; /* Mods 矩形与下载按钮间距，和按钮内部间距完全一致 */
+  z-index: 15;
 }
 
 /* 下载图标基础样式 */
@@ -868,32 +796,91 @@ const startTimeout = () => {
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
 }
 
+/* --- Mods 右对齐容器 --- */
+.mods-box {
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  height: clamp(25px, 4.444cqw, 60px);
+  width: clamp(30px, 5cqw, 68px);
+
+  /* 右侧与下载按钮保持适当间距，无需向右预留伸展边距 */
+  margin-right: 0.4cqw;
+  display: inline-flex;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* --- 单个 Mod 扑克牌（右对齐定位） --- */
+.mod-badge {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: clamp(25px, 4.444cqw, 60px);
+  width: clamp(30px, 5cqw, 68px);
+
+  border-radius: clamp(8px, 1.667cqw, 15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-family: "Torus Bold", "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
+  font-size: clamp(13px, 2.3cqw, 23px);
+  font-weight: 900;
+  line-height: 1;
+
+  /* 改为左侧阴影，配合向左叠放效果 */
+  box-shadow: -3px 2px 8px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+
+  cursor: help;
+  user-select: none;
+  white-space: nowrap;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mods-box:hover .mod-badge {
+  filter: brightness(1.08);
+}
+
+/* 单个 Hover：保持右对齐原位向上弹起，放大置顶 */
+.mod-badge:hover {
+  z-index: 100 !important;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: -4px 6px 14px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.2) !important;
+}
+
 .modal-content {
   position: relative;
   min-width: 128px;
   min-height: 72px;
-  background: rgba(255, 255, 255, 0.05); /* 占位背景 */
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* --- 动画过渡核心 --- */
 
-/* 1. 整个遮罩层的淡入淡出 */
+/* --- 动画过渡 --- */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s ease;
 }
 
-/* 2. 定义进入前和离开后的状态：透明度为0 */
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
 
-/* 3. 嵌套动画：当父级 .fade 激活时，内部的 .modal-content 执行缩放 */
 .fade-enter-active .modal-content {
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* 带一点回弹效果 */
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .fade-leave-active .modal-content {
@@ -904,6 +891,4 @@ const startTimeout = () => {
 .fade-leave-to .modal-content {
   transform: scale(0.9) translateY(20px);
 }
-
-
 </style>

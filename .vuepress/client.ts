@@ -3,6 +3,7 @@ import {scaleImage} from "./scripts/image-scale";
 import Beatmap from './components/Beatmap.vue'
 import Score from "./components/Score.vue";
 import Player from "./components/Player.vue";
+import Pool from "./components/Pool.vue";
 import LazyImage from "./components/LazyImage.vue";
 import "./styles/index.css";
 
@@ -22,6 +23,7 @@ export default defineClientConfig({
         app.component('Beatmap', Beatmap)
         app.component('Score', Score)
         app.component('Player', Player)
+        app.component('Pool', Pool)
         app.component('LazyImage', LazyImage)
     },
 });

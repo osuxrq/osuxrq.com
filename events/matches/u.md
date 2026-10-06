@@ -8,7 +8,9 @@ lang: zh-CN
 
 ## 第一轮
 
-NM
+<Pool
+mod=NM
+/>
 
 <Beatmap
 bid=1289398
@@ -34,7 +36,9 @@ star=4.76
 max=991
 />
 
-FM
+<Pool
+mod=FM
+/>
 
 <Beatmap
 bid=831035
@@ -52,7 +56,9 @@ star=4.18
 max=490
 />
 
-HD
+<Pool
+mod=HD
+/>
 
 <Beatmap
 bid=845170
@@ -72,7 +78,9 @@ max=1025
 alias="花舞"
 />
 
-DT
+<Pool
+mod=DT
+/>
 
 <Beatmap
 bid=1770070
@@ -101,7 +109,9 @@ max=1020
 alias="宵暗花火"
 />
 
-JB
+<Pool
+mod=JB
+/>
 
 <Beatmap
 bid=183350
@@ -112,7 +122,9 @@ max=1101
 alias="爆乳音头"
 />
 
-ACC
+<Pool
+mod=ACC
+/>
 
 <Beatmap
 bid=210078
@@ -123,7 +135,9 @@ max=1313
 disabled=true
 />
 
-TB
+<Pool
+mod=TB
+/>
 
 <Beatmap
 bid=691893
@@ -135,7 +149,9 @@ max=1440
 
 ## 第二轮
 
-NM
+<Pool
+mod=NM
+/>
 
 <Beatmap
 bid=105534
@@ -170,7 +186,9 @@ max=1168
 alias="樱色时间胶囊"
 />
 
-FM
+<Pool
+mod=FM
+/>
 
 <Beatmap
 bid=167819
@@ -189,7 +207,9 @@ max=1027
 alias="Outside of Melancholy 〜憂鬱の向こう側〜"
 />
 
-HD
+<Pool
+mod=HD
+/>
 
 <Beatmap
 bid=321946
@@ -207,7 +227,9 @@ star=5.55
 max=1530
 />
 
-DT
+<Pool
+mod=DT
+/>
 
 <Beatmap
 bid=153246
@@ -233,7 +255,10 @@ star=5.18
 max=995
 />
 
-JB
+<Pool
+mod=JB
+other="Score V1"
+/>
 
 <Beatmap
 bid=1443057
@@ -243,7 +268,9 @@ star=5.80
 max=1596
 />
 
-ACC
+<Pool
+mod=ACC
+/>
 
 <Beatmap
 bid=919757
@@ -253,7 +280,9 @@ star=5.36
 max=823
 />
 
-TB
+<Pool
+mod=TB
+/>
 
 <Beatmap
 bid=606661

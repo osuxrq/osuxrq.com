@@ -220,7 +220,7 @@ const formattedStar = computed(() => {
 
 const badgeTextStyle = computed(() => {
   const starNum = parseFloat(props.star);
-  const minStar = 2.8;
+  const minStar = 0.1;
   const maxStar = 4.0;
 
   if (!isNaN(starNum) && starNum >= minStar && starNum < maxStar) {

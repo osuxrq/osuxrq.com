@@ -233,7 +233,7 @@ star=5.18
 max=995
 />
 
-JB
+JB ScoreV1
 
 <Beatmap
 bid=1443057

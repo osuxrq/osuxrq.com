@@ -6,12 +6,17 @@ import {existsSync, readdirSync} from 'node:fs';
 import * as path from 'node:path';
 import {join} from 'node:path';
 
-function getSortedFiles(dir: string): string[] {
-    // process.cwd() 获取项目根目录 (通常是包含 docs 的那一层)
-    // 随便写点来触发更新
+/**
+ * 获取排序后的文档列表
+ * @param {string} dir - 扫描的目录路径
+ * @param {RegExp} [pattern] - 可选，匹配不含后缀文件名的正则表达式
+ * @param {boolean} [isNumAsc=false] - 纯数字排序方向：true 为正序 (1->33，默认)，false 为倒序 (33->1)
+ * @param {boolean} [isAlphaAsc=true] - 非纯数字/字母排序方向：true 为正序 (a->z，默认)，false 为倒序 (z->a)
+ * @returns {string[]}
+ */
+function getSortedFiles(dir: string, pattern: RegExp = null, isNumAsc: boolean = true, isAlphaAsc: boolean = true): string[] {
     const dirPath = join(process.cwd(), dir);
 
-    // 打印一下路径，确保它指向了正确的文件夹
     console.log('--- 正在扫描目录:', dirPath);
 
     if (!existsSync(dirPath)) {
@@ -19,28 +24,71 @@ function getSortedFiles(dir: string): string[] {
         return [];
     }
 
+    // 辅助函数：将文件名解析为 [字母/非数字前缀, 数字后缀]
+    // 例如 "a2" -> ["a", 2]，"a" -> ["a", NaN]，"123" -> ["", 123]
+    const parseName = (name: string) => {
+        // 匹配末尾可能带小数点的数字（如 1.5 或 2）
+        const match = name.match(/^(.*?)((\d+\.\d+)|\d+)?$/);
+        const prefix = match ? match[1] : '';
+        const numStr = match && match[2] !== undefined ? match[2] : null;
+        const num = numStr !== null ? parseFloat(numStr) : NaN;
+        return { prefix, num };
+    };
+
     return readdirSync(dirPath)
-        .filter(file => file.endsWith('.md') && file.toLowerCase() !== 'readme.md')
-        .sort((a, b) => {
-            const nameA = a.replace('.md', '');
-            const nameB = b.replace('.md', '');
-
-            const isNumA = /^\d+$/.test(nameA);
-            const isNumB = /^\d+$/.test(nameB);
-
-            // 1. 数字在前
-            if (isNumA && !isNumB) return -1;
-            if (!isNumA && isNumB) return 1;
-
-            // 2. 纯数字倒序 (33 -> 2)
-            if (isNumA && isNumB) {
-                return parseInt(nameB) - parseInt(nameA);
+        .filter(file => {
+            if (!file.endsWith('.md') || file.toLowerCase() === 'readme.md') {
+                return false;
             }
 
-            // 3. 字母正序 (a -> z)
-            return nameA.localeCompare(nameB);
+            const fileNameWithoutExt = file.replace(/\.md$/i, '');
+
+            return !(pattern && !pattern.test(fileNameWithoutExt));
+
+
         })
-        // VuePress 的侧边栏路径需要以 / 开头
+        .sort((a, b) => {
+            const nameA = a.replace(/\.md$/i, '');
+            const nameB = b.replace(/\.md$/i, '');
+
+            const isPureNumA = /^\d+$/.test(nameA);
+            const isPureNumB = /^\d+$/.test(nameB);
+
+            // 1. 纯数字文件 优先级高于 带字母的文件
+            if (isPureNumA && !isPureNumB) return -1;
+            if (!isPureNumA && isPureNumB) return 1;
+
+            // 2. 纯数字间的排序
+            if (isPureNumA && isPureNumB) {
+                const diff = parseInt(nameA, 10) - parseInt(nameB, 10);
+                return isNumAsc ? diff : -diff;
+            }
+
+            // 3. 混合类型 (如 a1, a2, b1) 拆分比较
+            const parsedA = parseName(nameA);
+            const parsedB = parseName(nameB);
+
+            // 3.1 先比较前缀字母
+            const prefixCompare = parsedA.prefix.localeCompare(parsedB.prefix, undefined, { sensitivity: 'base' });
+            if (prefixCompare !== 0) {
+                return isAlphaAsc ? prefixCompare : -prefixCompare;
+            }
+
+            // 3.2 前缀相同时，比较后缀数字
+            const hasNumA = !isNaN(parsedA.num);
+            const hasNumB = !isNaN(parsedB.num);
+
+            if (hasNumA && hasNumB) {
+                const numDiff = parsedA.num - parsedB.num;
+                return isNumAsc ? numDiff : -numDiff;
+            }
+
+            // 无数字的排在有数字的前面
+            if (!hasNumA && hasNumB) return -1;
+            if (hasNumA && !hasNumB) return 1;
+
+            return 0;
+        })
         .map(file => `/${dir}/${file}`);
 }
 
@@ -202,15 +250,27 @@ export default defineUserConfig({
                     ],
                     "/events/": [
                         {
-                            text: "群赛",
+                            text: "新人群群赛",
                             children: [
-                                ...getSortedFiles('events/matches'),
+                                ...getSortedFiles('events/matches', /^[0-9.]+$/, false),
+                            ],
+                        },
+                        {
+                            text: "进阶群群赛",
+                            children: [
+                                ...getSortedFiles('events/matches', /^[ao]/i, false),
+                            ],
+                        },
+                        {
+                            text: "其他群赛",
+                            children: [
+                                ...getSortedFiles('events/matches', /^(?![0-9.]+$)(?![ao])/i, false),
                             ],
                         },
                         {
                             text: "月赛",
                             children: [
-                                ...getSortedFiles('events/charts'),
+                                ...getSortedFiles('events/charts', undefined, false),
                             ],
                         },
                         {

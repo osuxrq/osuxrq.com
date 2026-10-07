@@ -2,6 +2,7 @@
 <script setup>
 import {computed, onMounted, ref} from 'vue'
 import LazyImage from "./LazyImage.vue";
+import {useAudioStore} from "../constants/audioStore.js";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -261,6 +262,32 @@ const processedDifficulties = computed(() => {
   return [];
 });
 
+// 试听组件
+const { state, playAudio } = useAudioStore()
+
+const currentAudioUrl = computed(() => {
+  const sid = props.sid?.toString() ?? '0'
+  return sid !== '0' ? `https://b.ppy.sh/preview/${sid}.mp3` : ''
+})
+
+// 判断当前卡片是否正在播放
+const isCurrentPlaying = computed(() => {
+  return state.src === currentAudioUrl.value && state.isPlaying
+})
+
+// 点击触发播放/暂停
+const handlePreviewPlay = () => {
+  if (!currentAudioUrl.value) return
+
+  const alias = props.alias ? ` (${props.alias || ''})` : ''
+
+  const audioTitle = parsedData.value.title
+      ? `${parsedData.value.artist || ''} - ${parsedData.value.title}${alias}`
+      : `Beatmap ${props.sid}`
+
+  playAudio(currentAudioUrl.value, audioTitle)
+}
+
 </script>
 
 <template>
@@ -311,6 +338,22 @@ const processedDifficulties = computed(() => {
           title="查看完整背景"
           @click="toggleModal"
       >
+       <!-- 试听按钮 -->
+       <span
+           class="preview-play-btn"
+           @click.stop.prevent="props.sid && !disabled && handlePreviewPlay()"
+           :title="props.sid ? (disabled ? '谱面已被禁用，无法试听' : (isCurrentPlaying ? '暂停试听' : `试听 ${parsedData.title || props.sid}`)) : '谱面不可用'"
+       >
+        <!-- 状态 1: 正在播放中，显示暂停图标 -->
+        <svg v-if="isCurrentPlaying" viewBox="0 0 24 24" :fill="statusColor" class="pause-icon">
+          <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+        </svg>
+
+        <!-- 状态 2: 未播放/已暂停，显示播放图标 -->
+        <svg v-else viewBox="0 0 24 24" fill="currentColor" class="play-icon">
+          <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/>
+        </svg>
+      </span>
       </LazyImage>
 
       <span class="text-content">
@@ -398,7 +441,8 @@ const processedDifficulties = computed(() => {
 
 /* 悬停时：预览图边缘发光 */
 .data-card-container:hover .preview-rect {
-  filter: brightness(1.1) contrast(1.1);
+  filter: saturate(1.4) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  transition: filter 0.3s ease;
 }
 
 .data-card-container:hover .color-rect {
@@ -826,6 +870,82 @@ const processedDifficulties = computed(() => {
 .fade-enter-from .modal-content,
 .fade-leave-to .modal-content {
   transform: scale(0.9) translateY(20px);
+}
+
+/* 试听按钮样式 */
+.preview-play-btn {
+  position: absolute;
+  /* 减去 preview-rect 的 left 偏移后，完美契合 id-badge 的实际相对边距 */
+  right: 1.224cqw;
+  bottom: 1cqw;
+
+  /* 直径等同于 id-badge 的高度 */
+  width: 3.5cqw;
+  height: 3.5cqw;
+  border-radius: 50%; /* 圆形 */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 6;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+/* 扩展手势点击感应区 */
+.preview-play-btn::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+}
+
+/* Hover 与点击状态 */
+.preview-play-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffcc22;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.preview-play-btn:active {
+  transform: scale(0.95);
+}
+
+/* SVG 播放图标微调居中 */
+.preview-play-btn svg {
+  width: 68%;
+  height: 68%;
+
+  margin-left: 0;
+
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* 试听按钮禁用样式 */
+.preview-play-btn.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  pointer-events: auto; /* 确保 hover 时能看到 not-allowed 鼠标指针和 title 提示 */
+}
+
+/* 禁用状态下取消 Hover 放大与颜色改变等交互效果 */
+.preview-play-btn.is-disabled:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  transform: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.preview-play-btn.is-disabled:active {
+  transform: none;
 }
 
 </style>

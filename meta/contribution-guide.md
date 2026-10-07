@@ -173,6 +173,9 @@ alias="影之军团"
 - 如果原标题是日文汉字占主导的标题，或是别名含有舶来语（通常原标题就是那个英语单词或者法语单词等），可以尝试翻译它。
   - 比如：`モノクロ・インザナイト` -> `Monochrome In the Night` -> `夜色中的单色`
   - 可以丢给 AI 来翻译。它们比翻译软件做得好。
+- 如果原标题是自造语言或者无意义的形声词，可以保持原样。
+  - 比如：`La gis sulva za Celow`
+  - 比如：`チュルリラ・チュルリラ・ダッダッダ！` 一般不翻译成 `啾噜哩啦·啾噜哩啦·哒哒哒！`
 - 如果原标题是英文单词组合，或是比较无意义的音游曲标题，可以直接删掉 alias。
 - 如果原标题完全是简体中文，直接保留即可。
 - 如果原标题含有繁体中文，可以尽量改成简体中文。
@@ -293,7 +296,151 @@ performance=727
 
 如果对应的成绩没有可用的表现分，可以在 performance 的位置填入 "..." 的字符串，PP 字样会自动消失。
 
+### 时间线
+
+测试使用。
+
+<Timeline :items="[
+{ date: '2023-03-16', title: '项目初始化', description: '完成搭建与框架选型' },
+{ date: '2026-05-20', title: '发布 V1.0 正式版', description: '上线核心功能组件' },
+{ date: '2026-03-01', title: '测试版本发布', description: '内部 Beta 测试' }
+]" />
+
+```vue
+<Timeline :items="[
+  { date: '2023-03-16', title: '项目初始化', description: '完成搭建与框架选型' },
+  { date: '2026-05-20', title: '发布 V1.0 正式版', description: '上线核心功能组件' },
+  { date: '2026-03-01', title: '测试版本发布', description: '内部 Beta 测试' }
+]" />
+```
+
 ## 许可声明
 
 除非另有说明，本站内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 协议授权。
 提交贡献即表示您同意将内容置于相同协议之下。
+
+## 测试代码：色盲无障碍模式
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="ssh"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="ss"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="sh"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="s"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="a"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="b"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="c"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="d"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="f"
+performance=727
+/>
+
+

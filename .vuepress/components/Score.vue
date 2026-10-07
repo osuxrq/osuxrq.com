@@ -1006,9 +1006,8 @@ const handlePreviewPlay = () => {
 
   mix-blend-mode: overlay;
 
-  /* 调整合适的大图尺寸，保证旋转后只露出左上角 */
-  width: clamp(80px, 16cqw, 180px);
-  height: clamp(80px, 16cqw, 180px);
+  width: 16cqw;
+  height: 16cqw;
 
   /* 1. 使用白色作为基色，透明度设为 0.1 */
   background-color: #ffffff;

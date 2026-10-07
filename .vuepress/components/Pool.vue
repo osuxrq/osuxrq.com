@@ -99,6 +99,35 @@ const badgeStyle = computed(() => ({
   borderRadius: `${props.radius}px`,
   transform: `scale(${finalScale.value})`,
 }))
+
+// 辅助函数：解析 hex 并计算相对亮度 (0 ~ 1)
+function getLuminance(hex) {
+  let h = String(hex).replace('#', '').trim()
+  if (h.length === 3) h = h.split('').map((c) => c + c).join('')
+  const num = parseInt(h, 16)
+  if (isNaN(num)) return 0.5
+
+  const r = (num >> 16) & 255
+  const g = (num >> 8) & 255
+  const b = num & 255
+
+  // 使用 W3C 标准相对亮度公式
+  return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255
+}
+
+// 动态选择适合的 mix-blend-mode
+const overlayBlendMode = computed(() => {
+  const bgHex = modConf.value.bg || '#000000'
+  const lum = getLuminance(bgHex)
+  if (lum < 0.1) {
+    return 'screen'
+  } else if (lum > 0.8) {
+    return 'overlay'
+  } else {
+    return 'overlay'
+  }
+})
+
 </script>
 
 <template>
@@ -111,7 +140,14 @@ const badgeStyle = computed(() => ({
       @mouseleave="onBadgeLeave"
   >
     <div class="badge" :style="badgeStyle">
-      <img class="badge__overlay" :src="overlay" alt="" aria-hidden="true" draggable="false" />
+      <img
+          class="badge__overlay"
+          :src="overlay"
+          :style="{ mixBlendMode: overlayBlendMode }"
+          alt=""
+          aria-hidden="true"
+          draggable="false"
+      />
       <div
           v-if="descText && tipVisible"
           class="badge__tip"
@@ -180,7 +216,6 @@ const badgeStyle = computed(() => ({
   object-fit: fill;
   pointer-events: none;
   user-select: none;
-  mix-blend-mode: overlay;
 }
 
 /* 角落文字通用样式 */

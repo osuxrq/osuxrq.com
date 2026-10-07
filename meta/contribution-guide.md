@@ -296,7 +296,151 @@ performance=727
 
 如果对应的成绩没有可用的表现分，可以在 performance 的位置填入 "..." 的字符串，PP 字样会自动消失。
 
+### 时间线
+
+测试使用。
+
+<Timeline :items="[
+{ date: '2023-03-16', title: '项目初始化', description: '完成搭建与框架选型' },
+{ date: '2026-05-20', title: '发布 V1.0 正式版', description: '上线核心功能组件' },
+{ date: '2026-03-01', title: '测试版本发布', description: '内部 Beta 测试' }
+]" />
+
+```vue
+<Timeline :items="[
+  { date: '2023-03-16', title: '项目初始化', description: '完成搭建与框架选型' },
+  { date: '2026-05-20', title: '发布 V1.0 正式版', description: '上线核心功能组件' },
+  { date: '2026-03-01', title: '测试版本发布', description: '内部 Beta 测试' }
+]" />
+```
+
 ## 许可声明
 
 除非另有说明，本站内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 协议授权。
 提交贡献即表示您同意将内容置于相同协议之下。
+
+## 测试代码：色盲无障碍模式
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="ssh"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="ss"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="sh"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="s"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="a"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="b"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="c"
+performance=727
+/>
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="d"
+performance=727
+/>
+
+
+<Score
+bid=658127
+sid=292301
+preview="xi - Blue Zenith (Asphyxia) [FOUR DIMENSIONS]"
+star=7.17
+max=2402
+mode="o"
+accuracy=99.06
+combo=2364
+rank="f"
+performance=727
+/>
+
+

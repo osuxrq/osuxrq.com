@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 经典正六角星 / 大卫之星轮廓 -->
+  <path d="M32 8L52 44H12L32 8Z" />
+  <path d="M32 56L12 20H52L32 56Z" />
+</svg>

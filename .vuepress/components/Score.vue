@@ -245,6 +245,35 @@ const badgeTextStyle = computed(() => {
   };
 });
 
+const rankBackground = computed(() => {
+  let colors = '/images/rank/'
+
+  switch (props.rank?.toUpperCase()) {
+    case "PF": case "XH": case "SSH": case "EX": case "X+":
+      colors += 'XH'; break;
+    case "X": case "SS":
+      colors += 'X'; break;
+    case "SH": case "SP": case "S+":
+      colors += 'SH'; break;
+    case "S":
+      colors += 'S'; break;
+    case "A":
+      colors += 'A'; break;
+    case "B":
+      colors += 'B'; break;
+    case "C":
+      colors += 'C'; break;
+    case "D":
+      colors += 'D'; break;
+    case "F":
+      colors += 'F'; break;
+    default:
+      return '';
+  }
+  return colors + '.svg'
+
+})
+
 const rankMarquee = computed(() => {
   let colors
   switch (props.rank?.toUpperCase()) {
@@ -268,8 +297,6 @@ const rankMarquee = computed(() => {
       colors = ['#D32F2F', '#FD5392']; break;
     case "F":
       colors = ['#666', '#999']; break;
-    case "FC":
-      colors = ['#4FACFE', '#00F2FE']; break;
     default:
       colors = ['#2A2226', '#2A2226'];
   }
@@ -378,6 +405,15 @@ const handlePreviewPlay = () => {
       <span class="color-rect" :style="{ backgroundColor: backgroundColor }"></span>
 
       <span class="extra-rect" :style="{ '--color-1': rankMarquee[0], '--color-2': rankMarquee[1] }">
+        <span
+            v-if="rankBackground"
+            class="decoration-rect"
+            :style="{
+              maskImage: `url(${rankBackground})`,
+              WebkitMaskImage: `url(${rankBackground})`
+            }"
+        ></span>
+
         <span class="symbol-wrapper">
           <span class="baseline-container">
             <span class="text-large">{{ props.performance ?? 0 }}</span>
@@ -960,6 +996,38 @@ const handlePreviewPlay = () => {
   transform: scale(0.9) translateY(20px);
 }
 
+/* --- extra-rect 内部右下角倾斜装饰块 --- */
+/* --- extra-rect 内部右下角 SVG 倾斜装饰块 --- */
+.decoration-rect {
+  position: absolute;
+  right: -2%;
+  bottom: -40%;
+
+  mix-blend-mode: overlay;
+
+  /* 调整合适的大图尺寸，保证旋转后只露出左上角 */
+  width: clamp(80px, 16cqw, 180px);
+  height: clamp(80px, 16cqw, 180px);
+
+  /* 1. 使用白色作为基色，透明度设为 0.1 */
+  background-color: #ffffff;
+  opacity: 0.3;
+  pointer-events: none;
+
+  /* 2. 将计算得到的 SVG 文件作为 Mask 遮罩 */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  transform-origin: 0 0;
+  transform: rotate(-10deg);
+
+  /* 4. 层级设为 1，位于 extra-rect 内部，文字 (.symbol-wrapper z-index:10) 下方 */
+  z-index: 1;
+}
 
 /* 试听按钮样式 */
 .preview-play-btn {

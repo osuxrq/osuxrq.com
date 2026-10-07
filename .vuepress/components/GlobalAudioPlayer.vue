@@ -151,11 +151,11 @@ onMounted(() => {
   bottom: 20px;
   left: 20px;
   z-index: 99999;
-  background: #ffffff;
+  background: var(--vp-c-bg);
   padding: 12px 16px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--vp-c-bg);
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -172,7 +172,7 @@ onMounted(() => {
   border: none;
   background: transparent;
   cursor: pointer;
-  color: #718096;
+  color: var(--vp-c-text-subtle);
   font-size: 14px;
   width: 24px;
   height: 24px;
@@ -186,8 +186,8 @@ onMounted(() => {
 }
 
 .toggle-btn:hover {
-  background: #edf2f7;
-  color: #2d3748;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text);
 }
 
 /* ------------------------------------------- */
@@ -203,8 +203,8 @@ onMounted(() => {
   left: 20px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border: 2px solid #3eaf7c;
-  background: #ffffff;
+  border: 2px solid var(--vp-c-accent);
+  background: var(--vp-c-bg);
 }
 
 /* 收起状态下的切换按钮：充满整个小圆圈 */
@@ -213,15 +213,15 @@ onMounted(() => {
   width: 100% !important;
   height: 100% !important;
   border-radius: 50% !important;
-  background: #ffffff;
-  color: #3eaf7c;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-accent);
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
 
 .global-audio-player.is-collapsed .toggle-btn:hover {
-  background: #f0fdf4;
+  background: var(--vp-c-bg);
 }
 
 .global-audio-player.is-collapsed .toggle-btn svg {
@@ -251,7 +251,7 @@ onMounted(() => {
 .audio-header .title {
   font-size: 14px;
   font-weight: 600;
-  color: #2d3748;
+  color: var(--vp-c-text);
 }
 
 /* 仅在滚动模式下，文本之间留出间距 */

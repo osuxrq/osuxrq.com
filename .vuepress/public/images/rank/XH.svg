@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 皇冠 (缩放并下移) -->
+  <path d="M10 50L7 28L19 35L27 22L35 35L47 28L44 50H10Z" />
+  <!-- 右上角加号 -->
+  <path d="M52 10V22" />
+  <path d="M46 16H58" />
+</svg>

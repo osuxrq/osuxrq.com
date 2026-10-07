@@ -7,6 +7,7 @@ import Player from "./components/Player.vue";
 import Pool from "./components/Pool.vue";
 import LazyImage from "./components/LazyImage.vue";
 import GlobalAudioPlayer from "./components/GlobalAudioPlayer.vue";
+import Timeline from "./components/Timeline.vue";
 export default defineClientConfig({
 
     setup() {
@@ -36,5 +37,6 @@ export default defineClientConfig({
         app.component('Pool', Pool)
         app.component('LazyImage', LazyImage)
         app.component('GlobalAudioPlayer', GlobalAudioPlayer)
+        app.component('Timeline', Timeline)
     },
 });

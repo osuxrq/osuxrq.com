@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 六角星 (调整位置避开右上角) -->
+  <path d="M26 14L43 45H9L26 14Z" />
+  <path d="M26 55L9 24H43L26 55Z" />
+  <!-- 右上角加号 -->
+  <path d="M52 10V22" />
+  <path d="M46 16H58" />
+</svg>

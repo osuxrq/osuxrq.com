@@ -341,8 +341,8 @@ const handlePreviewPlay = () => {
        <!-- 试听按钮 -->
        <span
            class="preview-play-btn"
-           @click.stop.prevent="!disabled && handlePreviewPlay()"
-           :title="disabled ? '谱面已被禁用，无法试听' : (isCurrentPlaying ? '暂停试听' : `试听 ${parsedData.title || props.sid}`)"
+           @click.stop.prevent="props.sid && !disabled && handlePreviewPlay()"
+           :title="props.sid ? (disabled ? '谱面已被禁用，无法试听' : (isCurrentPlaying ? '暂停试听' : `试听 ${parsedData.title || props.sid}`)) : '谱面不可用'"
        >
         <!-- 状态 1: 正在播放中，显示暂停图标 -->
         <svg v-if="isCurrentPlaying" viewBox="0 0 24 24" :fill="statusColor" class="pause-icon">
@@ -441,7 +441,8 @@ const handlePreviewPlay = () => {
 
 /* 悬停时：预览图边缘发光 */
 .data-card-container:hover .preview-rect {
-  filter: brightness(1.1) contrast(1.1);
+  filter: saturate(1.4) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  transition: filter 0.3s ease;
 }
 
 .data-card-container:hover .color-rect {

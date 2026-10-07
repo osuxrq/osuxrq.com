@@ -151,11 +151,11 @@ onMounted(() => {
   bottom: 20px;
   left: 20px;
   z-index: 99999;
-  background: var(--vp-c-bg);
+  background: var(--vp-c-bg-alt);
   padding: 12px 16px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
   display: flex;
   flex-direction: column;
   gap: 8px;

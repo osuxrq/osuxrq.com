@@ -180,6 +180,7 @@ const badgeStyle = computed(() => ({
   object-fit: fill;
   pointer-events: none;
   user-select: none;
+  mix-blend-mode: overlay;
 }
 
 /* 角落文字通用样式 */

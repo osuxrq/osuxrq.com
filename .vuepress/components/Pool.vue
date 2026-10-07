@@ -61,11 +61,18 @@ onBeforeUnmount(() => ro?.disconnect())
 
 const finalScale = computed(() => autoScale.value * props.scale)
 
-/** 统一算出当前 mod 的配置，避免重复取 */
-const modKey = computed(() => String(props.mod || '')
-    .replace(/[0-9]+$/g, '').trim().toUpperCase())
+const rawMod = computed(() => String(props.mod || '').trim().toUpperCase())
+
+const modKey = computed(() => {
+  const s = rawMod.value
+  if (/V\d+$/i.test(s)) return s          // i 忽略大小写
+  return s.replace(/[0-9]+$/g, '').trim()
+})
+
 const modNum = computed(() => {
-  const m = String(props.mod || '').match(/(\d+)$/)
+  const s = rawMod.value
+  if (/V\d+$/i.test(s)) return ''
+  const m = s.match(/(\d+)$/)
   return m ? m[1] : ''
 })
 

@@ -880,8 +880,8 @@ const handlePreviewPlay = () => {
   bottom: 1cqw;
 
   /* 直径等同于 id-badge 的高度 */
-  width: 3.5cqw;
-  height: 3.5cqw;
+  width: clamp(20px, 3.5cqw, 60px);
+  height: clamp(20px, 3.5cqw, 60px);
   border-radius: 50%; /* 圆形 */
 
   display: flex;

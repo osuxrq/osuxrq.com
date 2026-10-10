@@ -1528,6 +1528,7 @@ ETIA早期artcore代表作，常规切指。
   star=4.92
   max=1303
   color="#eee"
+  alias="不准 Poi！"
 />
 
 点兔 op2，较低的 bpm 与 od8 以及密集的连打导致 acc 并不很好打。
@@ -1967,6 +1968,7 @@ bpm 较高，物件密度大，对手速有一定要求，好在是 od7。
   preview="Petit Rabbit's - No Poi! (nenpulse bootleg remix) (Skystar) [Rizia's Insane]"
   star=5.16
   max=1564
+  alias="不准 Poi！"
   color="#92e"
 />
 
@@ -2640,6 +2642,7 @@ cs5，且排列较为复杂，需要良好的读图与移动能力。
   star=4.95
   max=1662
   color="#eee"
+  alias="模糊的未来"
 />
 
 <Beatmap
@@ -2649,6 +2652,7 @@ cs5，且排列较为复杂，需要良好的读图与移动能力。
   star=5.34
   max=1562
   color="#eee"
+  alias="模糊的未来"
 />
 
 两个难度均为低bpm连续多段式连打，前一个难度密度更大，后一个难度有较大间距，移动更为困难。
@@ -3527,6 +3531,7 @@ ranked 短版麻婆所作的 unranked 长版。超低 bpm 连打，间距逐渐�
   star=5.73
   max=1365
   color="#eee"
+  alias="将手"
 />
 
 这个难度的连打对 flow 的要求相对比较高，比较扭。

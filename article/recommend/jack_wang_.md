@@ -430,6 +430,7 @@ PS：从这里开始，切指和串可能并没有一个太过于明显的分界
   preview="Fractal Dreamers - Paradigm Shift (appleeaterx) [Collab Insane]"
   star=5.18
   max=1010
+alias="范式转移"
 />
 
 <Beatmap

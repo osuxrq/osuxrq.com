@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref, onMounted } from 'vue'
 import LazyImage from "./LazyImage.vue";
-import {getModInfo, parseMods} from "../constants/mod.js";
+import {getModInfo, getPlaybackRate, parseMods} from "../constants/mod.js";
 import {useAudioStore} from "../constants/audioStore.js";
 import {getStarColor} from "../constants/star.js";
 
@@ -166,7 +166,7 @@ const handleSayoFullDownload = () => {
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
   if (isNaN(num)) return '0';
-  return Number(num.toFixed(1)).toString();
+  return (Math.floor(num * 10) / 10).toString();
 })
 
 const badgeTextStyle = computed(() => {
@@ -293,6 +293,9 @@ const isCurrentPlaying = computed(() => {
   return state.src === currentAudioUrl.value && state.isPlaying
 })
 
+
+const playbackRate = computed(() => getPlaybackRate(parsedMods.value))
+
 // 点击触发播放/暂停
 const handlePreviewPlay = () => {
   if (!currentAudioUrl.value) return
@@ -303,7 +306,7 @@ const handlePreviewPlay = () => {
       ? `${parsedData.value.artist || ''} - ${parsedData.value.title}${alias}`
       : `Beatmap ${props.sid}`
 
-  playAudio(currentAudioUrl.value, audioTitle)
+  playAudio(currentAudioUrl.value, audioTitle, playbackRate.value)
 }
 
 </script>

@@ -4,7 +4,7 @@ import {computed, onMounted, ref} from 'vue'
 import LazyImage from "./LazyImage.vue";
 import {useAudioStore} from "../constants/audioStore.js";
 import {getStarColor} from "../constants/star.js";
-import {getModInfo, parseMods} from "../constants/mod.js";
+import {getModInfo, getPlaybackRate, parseMods} from "../constants/mod.js";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -145,8 +145,7 @@ const handleSayoFullDownload = () => {
 const formattedStar = computed(() => {
   const num = parseFloat(props.star?.toString());
   if (isNaN(num)) return '0';
-
-  return Number(num.toFixed(1)).toString();
+  return (Math.floor(num * 10) / 10).toString();
 })
 
 // 动态计算徽章的文字颜色和阴影
@@ -257,6 +256,8 @@ const isCurrentPlaying = computed(() => {
   return state.src === currentAudioUrl.value && state.isPlaying
 })
 
+const playbackRate = computed(() => getPlaybackRate(parsedMods.value))
+
 // 点击触发播放/暂停
 const handlePreviewPlay = () => {
   if (!currentAudioUrl.value) return
@@ -267,7 +268,7 @@ const handlePreviewPlay = () => {
       ? `${parsedData.value.artist || ''} - ${parsedData.value.title}${alias}`
       : `Beatmap ${props.sid}`
 
-  playAudio(currentAudioUrl.value, audioTitle)
+  playAudio(currentAudioUrl.value, audioTitle, playbackRate.value)
 }
 
 </script>

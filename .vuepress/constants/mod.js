@@ -163,3 +163,10 @@ export function parseMods(mods) {
 
     return []
 }
+
+export const getPlaybackRate = (mods) => {
+    const ms = mods.map(m => m.toUpperCase())
+    if (ms.includes('DT') || ms.includes('NC')) return 1.5
+    if (ms.includes('HT') || ms.includes('DC')) return 0.75
+    return 1
+}

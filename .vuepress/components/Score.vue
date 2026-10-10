@@ -1,8 +1,9 @@
 <script setup>
 import { computed, ref, onMounted } from 'vue'
 import LazyImage from "./LazyImage.vue";
-import {MOD_CONFIG, VALID_MOD_KEYS} from "../constants/mod.js";
+import {getModInfo, parseMods} from "../constants/mod.js";
 import {useAudioStore} from "../constants/audioStore.js";
+import {getStarColor} from "../constants/star.js";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -35,38 +36,7 @@ const disabled = computed(() => {
   return !!d;
 })
 
-// 获取 Mod 信息的帮助函数
-const getModInfo = (modKey) => {
-  if (!modKey) return MOD_CONFIG.DEFAULT
-  const key = modKey.toString().toUpperCase().trim()
-  return MOD_CONFIG[key] || { name: key, ...MOD_CONFIG.DEFAULT }
-}
-
-// 解析传入的 mods 属性为统一的大写数组
-const parsedMods = computed(() => {
-  if (!props.mods) return []
-  if (Array.isArray(props.mods)) {
-    return props.mods.map(m => m.toString().toUpperCase().trim()).filter(Boolean)
-  }
-  if (typeof props.mods === 'string') {
-    const str = props.mods.toString().replace(/[+\[\]]/g, '').trim()
-
-    if (!str) return []
-
-    if (str.length <= 3 && VALID_MOD_KEYS.has(str.toUpperCase())) {
-      return [str.toUpperCase()]
-    }
-
-    if (str.includes(',')) {
-      return str.split(',').map(m => m.trim().toUpperCase()).filter(Boolean)
-    }
-
-    // 自动按两字符拆分，如 "HDHR" -> ["HD", "HR"]
-    const matches = str.match(/.{1,2}/g) || []
-    return matches.map(m => m.toUpperCase())
-  }
-  return []
-})
+const parsedMods = computed(() => parseMods(props.mods))
 
 // =========================================================================
 
@@ -151,34 +121,6 @@ const parsedData = computed(() => {
     };
   }
 })
-
-const getStarColor = (starValue) => {
-  const star = parseFloat(starValue);
-  if (star == null || Number.isNaN(star) || star < 0.1) return '#AAAAAA';
-  if (star >= 9) return '#000000';
-
-  const GAMMA = 2.2;
-  const stops = [
-    [0.1, 66, 144, 251], [1.25, 79, 192, 255], [2, 79, 255, 213],
-    [2.5, 124, 255, 79], [3.3, 246, 240, 92], [4.2, 255, 104, 104],
-    [4.9, 255, 78, 111], [5.8, 198, 69, 184], [6.7, 101, 99, 222],
-    [7.7, 24, 21, 142], [9, 0, 0, 0]
-  ];
-
-  let i = stops.findIndex(stop => star < stop[0]);
-  if (i === -1) i = stops.length - 1;
-
-  const [bottom, r0, g0, b0] = stops[i - 1];
-  const [top, r1, g1, b1] = stops[i];
-  const s = (star - bottom) / (top - bottom);
-
-  const interpolate = (c0, c1) => {
-    const val = Math.pow((1 - s) * Math.pow(c0, GAMMA) + s * Math.pow(c1, GAMMA), 1 / GAMMA);
-    return Math.round(val).toString(16).padStart(2, '0');
-  };
-
-  return `#${interpolate(r0, r1)}${interpolate(g0, g1)}${interpolate(b0, b1)}`;
-};
 
 const statusColor = computed(() => getStarColor(props.star));
 

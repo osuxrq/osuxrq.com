@@ -258,7 +258,7 @@ export default defineUserConfig({
                         {
                             text: "进阶群群赛",
                             children: [
-                                ...getSortedFiles('events/matches', /^[ao]/i, false),
+                                ...getSortedFiles('events/matches', /^[ao]/i, false, false),
                             ],
                         },
                         {

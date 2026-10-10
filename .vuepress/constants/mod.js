@@ -110,6 +110,56 @@ const MOD_CONFIG = {
     DEFAULT: { name: 'Unknown', bg: '#555555', color: '#FFFFFF', desc: "未知模组" }
 }
 
-export const VALID_MOD_KEYS = new Set(
+const VALID_MOD_KEYS = new Set(
     Object.keys(MOD_CONFIG).filter(k => k !== 'DEFAULT')
 )
+
+export const getModInfo = (modKey) => {
+    if (!modKey) return MOD_CONFIG.DEFAULT
+    const key = modKey.toString().toUpperCase().trim()
+    return MOD_CONFIG[key] || { name: key, ...MOD_CONFIG.DEFAULT }
+}
+
+/**
+ * 将传入的 mods 属性解析为统一的大写数组
+ * 支持：
+ *  - 数组：['HD', 'HR']
+ *  - 字符串：'HDHR' / 'HD, HR' / 'HD+HR' / '[HDHR]'
+ *  - 单个 mod：'HD'
+ * @param {Array|String|undefined|null} mods
+ * @returns {string[]}
+ */
+export function parseMods(mods) {
+    if (!mods) return []
+
+    if (Array.isArray(mods)) {
+        return mods
+            .map(m => m.toString().toUpperCase().trim())
+            .filter(Boolean)
+    }
+
+    if (typeof mods === 'string') {
+        const str = mods.toString().replace(/[+\[\]]/g, '').trim()
+
+        if (!str) return []
+
+        // 单个 mod，如 "HD"
+        if (str.length <= 3 && VALID_MOD_KEYS.has(str.toUpperCase())) {
+            return [str.toUpperCase()]
+        }
+
+        // 逗号分隔，如 "HD, HR"
+        if (str.includes(',')) {
+            return str
+                .split(',')
+                .map(m => m.trim().toUpperCase())
+                .filter(Boolean)
+        }
+
+        // 自动按两字符拆分，如 "HDHR" -> ["HD", "HR"]
+        const matches = str.match(/.{1,2}/g) || []
+        return matches.map(m => m.toUpperCase())
+    }
+
+    return []
+}

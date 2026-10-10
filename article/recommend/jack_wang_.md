@@ -389,6 +389,7 @@ acc 可能是个问题，手控要注意。
   preview="Soleily - Renatus (Multiple Creators) [Insane]"
   star=5.27
   max=1328
+  alias="重生纪元"
 />
 
 萌新必备曲（大雾），od 和 bpm 搭配可能会出现一些问题，不过不会太大。

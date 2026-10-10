@@ -3,6 +3,8 @@
 import {computed, onMounted, ref} from 'vue'
 import LazyImage from "./LazyImage.vue";
 import {useAudioStore} from "../constants/audioStore.js";
+import {getStarColor} from "../constants/star.js";
+import {getModInfo, parseMods} from "../constants/mod.js";
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -20,7 +22,11 @@ const props = defineProps({
   disabled: { type: [Boolean, String], default: false },
   color: { type: String, default: null },
   alias: { type: String, default: null },
+  other: { type: [String, Number], default: null },
+  mods: { type: [Array, String], default: () => [] },
 })
+
+const parsedMods = computed(() => parseMods(props.mods))
 
 const disabled = computed(() => {
   const d = props.disabled;
@@ -90,34 +96,6 @@ const parsedData = computed(() => {
     };
   }
 })
-
-const getStarColor = (starValue) => {
-  const star = parseFloat(starValue);
-  if (star == null || Number.isNaN(star) || star < 0.1) return '#AAAAAA';
-  if (star >= 9) return '#000000';
-
-  const GAMMA = 2.2;
-  const stops = [
-    [0.1, 66, 144, 251], [1.25, 79, 192, 255], [2, 79, 255, 213],
-    [2.5, 124, 255, 79], [3.3, 246, 240, 92], [4.2, 255, 104, 104],
-    [4.9, 255, 78, 111], [5.8, 198, 69, 184], [6.7, 101, 99, 222],
-    [7.7, 24, 21, 142], [9, 0, 0, 0]
-  ];
-
-  let i = stops.findIndex(stop => star < stop[0]);
-  if (i === -1) i = stops.length - 1;
-
-  const [bottom, r0, g0, b0] = stops[i - 1];
-  const [top, r1, g1, b1] = stops[i];
-  const s = (star - bottom) / (top - bottom);
-
-  const interpolate = (c0, c1) => {
-    const val = Math.pow((1 - s) * Math.pow(c0, GAMMA) + s * Math.pow(c1, GAMMA), 1 / GAMMA);
-    return Math.round(val).toString(16).padStart(2, '0');
-  };
-
-  return `#${interpolate(r0, r1)}${interpolate(g0, g1)}${interpolate(b0, b1)}`;
-};
 
 const statusColor = computed(() => getStarColor(props.star));
 
@@ -262,6 +240,10 @@ const processedDifficulties = computed(() => {
   return [];
 });
 
+const difficultyColors = computed(() => {
+  return processedDifficulties.value.map(star => getStarColor(star));
+});
+
 // 试听组件
 const { state, playAudio } = useAudioStore()
 
@@ -302,6 +284,25 @@ const handlePreviewPlay = () => {
     <span class="card-canvas">
 
       <span class="download-group">
+
+        <!-- Mods 显示区域矩形 (置于下载按钮左侧) -->
+        <span v-if="parsedMods.length" class="mods-box" title="启用模组">
+          <span
+              v-for="(mod, index) in parsedMods"
+              :key="mod"
+              class="mod-badge"
+              :style="{
+              backgroundColor: getModInfo(mod).bg,
+              color: getModInfo(mod).color,
+              zIndex: index + 1, /* 右侧（Index 大）的在最上层 */
+              right: `${(parsedMods.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
+            }"
+              :title="`${getModInfo(mod).name} (${mod})`"
+          >
+            {{ mod }}
+          </span>
+        </span>
+
         <span class="download-icon official" @click.stop.prevent="handleSayoNoVideoDownload" title="使用 Sayobot 下载谱面（不包含视频）">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 17.5a4 4 0 01-.88-7.903A5 5 0 1115.9 7.5L16 7.5a5 5 0 011 9.9M15 14.5l-3 3m0 0l-3-3m3 3V11.5"
@@ -366,14 +367,16 @@ const handlePreviewPlay = () => {
       <span class="text-content-3">
         <span v-if="props.difficulties && props.difficulties.length > 0" class="rect-star">
         <span
-            v-for="(star) in processedDifficulties"
+            v-for="(star, idx) in processedDifficulties"
             :key="star"
             class="star-rect-item"
-            :style="{ backgroundColor: getStarColor(star) }"
+            :style="{ backgroundColor: difficultyColors[idx] }"
             :title="`星数: ${star}`"
         ></span>
       </span>
-        <span class="part-c" v-if="parsedData.difficulty">{{`[${parsedData.difficulty}]`}}</span>
+        <span class="part-c" v-if="parsedData.difficulty">
+          {{ `[${parsedData.difficulty}]` + (props.other != null && props.other !== '' ? ` (${props.other})` : '') }}
+        </span>
       </span>
       <span class="text-content-4">
         <span class="part-d" v-if="parsedData.mode">{{ parsedData.mode }}</span>
@@ -740,8 +743,9 @@ const handlePreviewPlay = () => {
   top: 1.2cqw;
   right: 1.2cqw;
   display: flex;
-  gap: 0.8cqw;
-  z-index: 10;
+  align-items: flex-start; /* 顶部对齐 */
+  gap: 0.8cqw; /* Mods 矩形与下载按钮间距，和按钮内部间距完全一致 */
+  z-index: 15;
 }
 
 /* 下载图标 */
@@ -870,6 +874,68 @@ const handlePreviewPlay = () => {
 .fade-enter-from .modal-content,
 .fade-leave-to .modal-content {
   transform: scale(0.9) translateY(20px);
+}
+
+/* --- Mods 右对齐容器 --- */
+.mods-box {
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  height: clamp(25px, 4.444cqw, 60px);
+  width: clamp(30px, 5cqw, 68px);
+
+  /* 右侧与下载按钮保持适当间距，无需向右预留伸展边距 */
+  margin-right: 0.4cqw;
+  display: inline-flex;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* --- 单个 Mod 扑克牌（右对齐定位） --- */
+.mod-badge {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: clamp(25px, 4.444cqw, 60px);
+  width: clamp(30px, 5cqw, 68px);
+
+  border-radius: clamp(8px, 1.667cqw, 15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-family: "Torus Bold", "Torus SemiBold", "Alibaba PuHuiTi Regular", sans-serif;
+  font-size: clamp(13px, 2.3cqw, 23px);
+  font-weight: 900;
+  line-height: 1;
+
+  /* 改为左侧阴影，配合向左叠放效果 */
+  box-shadow: -3px 2px 8px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+
+  cursor: help;
+  user-select: none;
+  white-space: nowrap;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mods-box:hover .mod-badge {
+  filter: brightness(1.08);
+}
+
+/* 单个 Hover：保持右对齐原位向上弹起，放大置顶 */
+.mod-badge:hover {
+  z-index: 100 !important;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: -4px 6px 14px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.2) !important;
 }
 
 /* 试听按钮样式 */

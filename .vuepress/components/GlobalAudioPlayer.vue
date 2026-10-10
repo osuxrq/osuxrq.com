@@ -75,6 +75,12 @@ watch(isCollapsed, (collapsed) => {
   }
 })
 
+const syncPlaybackRate = () => {
+  if (audioRef.value) {
+    audioRef.value.playbackRate = state.playbackRate || 1
+  }
+}
+
 const syncAudioVolume = () => {
   if (audioRef.value) {
     audioRef.value.volume = state.volume
@@ -95,6 +101,7 @@ const onAudioEnded = () => {
 
 onMounted(() => {
   syncAudioVolume()
+  syncPlaybackRate()
   checkOverflow() // 👈 3. 组件挂载完成时立即检测一次
 
   watch(
@@ -112,22 +119,33 @@ onMounted(() => {
         if (!audioRef.value) return
         if (playing) {
           syncAudioVolume()
+          syncPlaybackRate()
           audioRef.value.play().catch(() => {})
         } else {
           audioRef.value.pause()
         }
       }
   )
+  watch(
+      () => state.playbackRate,
+      (rate) => {
+        if (audioRef.value) {
+          audioRef.value.playbackRate = rate || 1
+        }
+      }
+  )
 
   watch(
       () => state.src,
-      () => {
+      async () => {
         isCollapsed.value = false // 点击新音频时，自动展开播放器
+        await nextTick()
 
         if (audioRef.value) {
           audioRef.value.volume = state.volume
           if (state.isPlaying) {
             audioRef.value.currentTime = 0
+            audioRef.value.playbackRate = state.playbackRate || 1
             audioRef.value.play().catch(() => {})
           }
         }

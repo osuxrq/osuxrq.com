@@ -389,6 +389,7 @@ acc 可能是个问题，手控要注意。
   preview="Soleily - Renatus (Multiple Creators) [Insane]"
   star=5.27
   max=1328
+  alias="重生纪元"
 />
 
 萌新必备曲（大雾），od 和 bpm 搭配可能会出现一些问题，不过不会太大。
@@ -429,6 +430,7 @@ PS：从这里开始，切指和串可能并没有一个太过于明显的分界
   preview="Fractal Dreamers - Paradigm Shift (appleeaterx) [Collab Insane]"
   star=5.18
   max=1010
+alias="范式转移"
 />
 
 <Beatmap

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import {ref, onMounted, onUnmounted, nextTick} from 'vue';
 
 const props = defineProps({
   // 接收背景图的 url 字符串，比如 "url(1.jpg), url(2.webp)"
@@ -24,23 +24,28 @@ const isVisible = ref(false);
 let observer = null;
 
 onMounted(() => {
-  observer = new IntersectionObserver(([entry]) => {
-    // 当元素进入可视区域（或者达到 rootMargin 设定的提前量）
-    if (entry.isIntersecting) {
-      isVisible.value = true;
-      // 加载后立刻停止监听，节省资源
-      if (targetRef?.value) {
-        observer.unobserve(targetRef.value);
-      }
-    }
-  }, {
-    rootMargin: props.rootMargin,
-    threshold: 0.01
-  });
+  nextTick(() => {
+    // 延迟 100ms，避开 Markdown 渲染时的瞬时布局重排
+    setTimeout(() => {
+      if (!targetRef.value || isVisible.value) return;
 
-  if (targetRef.value) {
-    observer.observe(targetRef.value);
-  }
+      observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting && entry.boundingClientRect.height > 0) {
+          isVisible.value = true;
+          if (targetRef?.value) {
+            observer.unobserve(targetRef.value);
+          }
+        }
+      }, {
+        rootMargin: props.rootMargin,
+        threshold: 0.01
+      });
+
+      if (targetRef.value) {
+        observer.observe(targetRef.value);
+      }
+    }, 100);
+  });
 });
 
 onUnmounted(() => {

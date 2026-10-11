@@ -72,7 +72,7 @@
   preview="Gentle Stick X M2U - Ineffabilis (buhei) [Regraz's Hard]"
   star=3.46
   max=761
-  alias="不可理喻"
+  alias="无可言喻"
   color="#eee"
 />
 

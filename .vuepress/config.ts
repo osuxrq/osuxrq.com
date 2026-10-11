@@ -229,11 +229,9 @@ export default defineUserConfig({
                         ]
                     },
                     {
-                        text: 'Meta',
+                        text: '元信息',
                         children: [
-                            "/meta/contribution-guide",
-                            "/meta/contributors.md",
-                            "/meta/events.md",
+                            ...getSortedFiles('meta')
                         ]
                     },
                 ],
@@ -299,9 +297,10 @@ export default defineUserConfig({
                         }
                     ],
                     "/meta/": [
-                        "/meta/contribution-guide.md",
-                        "/meta/contributors.md",
-                        "/meta/events.md",
+                        {
+                            text: "元信息",
+                            children: getSortedFiles('meta'),
+                        }
                     ],
                     "/history/": [
                         "/history/README.md",

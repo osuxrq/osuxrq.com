@@ -8,9 +8,6 @@ const targetDir = 'article/recommend'
 // 1. 批量读取纯文本
 const modules = import.meta.glob('../../article/recommend/*.md', { eager: true, query: '?raw' })
 
-/**
- * 安全解析函数：只读取前 50 行，提取 Frontmatter、第一个 # 标题以及 <Player> 组件中的 id 和 name
- */
 const parseMarkdown = (rawContent) => {
   let content = ''
   if (typeof rawContent === 'string') {
@@ -33,13 +30,24 @@ const parseMarkdown = (rawContent) => {
   let extractedName = ''
 
   try {
-    const lines = content.split(/\r?\n/)
+    // 【核心优化】：只查找前 50 个换行符的位置，截取出前部内容，避免对整篇大文件 split
+    let lineCount = 0
+    let cutoffIndex = content.length
+    for (let i = 0; i < content.length; i++) {
+      if (content[i] === '\n') {
+        lineCount++
+        if (lineCount >= 50) {
+          cutoffIndex = i + 1
+          break
+        }
+      }
+    }
+    const headContent = content.slice(0, cutoffIndex)
+    const lines = headContent.split(/\r?\n/)
+    const maxLines = lines.length
+
     let inFrontmatter = false
     let frontmatterStarted = false
-    const maxLines = Math.min(lines.length, 50)
-
-    // 截取前 50 行用于后续的正则匹配
-    const headContent = lines.slice(0, maxLines).join('\n')
 
     for (let i = 0; i < maxLines; i++) {
       const line = lines[i]
@@ -67,12 +75,12 @@ const parseMarkdown = (rawContent) => {
         }
       } else {
         if (!bodyHeading && trimmed.startsWith('#')) {
-          bodyHeading = trimmed.replace(/^#+\s*/, '').replace(/\\/g, '')
+          bodyHeading = trimmed.replace(/^#+\s*\\/, '')
         }
       }
     }
 
-    // 在前 50 行内通过正则提取 <Player> 标签中的 id 和 name
+    // 在截取出的头部内容内通过正则提取 <Player> 标签中的 id 和 name
     const idMatch = headContent.match(/<Player\b[^>]*\bid=["']?(\d+)["']?/i)
     const nameMatch = headContent.match(/<Player\b[^>]*\bname=["']([^"']+)["']/i)
 

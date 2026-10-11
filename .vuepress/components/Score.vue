@@ -40,17 +40,13 @@ const parsedMods = computed(() => parseMods(props.mods))
 
 // =========================================================================
 
-const thumbSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// --- 缩略图源拆分 ---
+const officialThumb = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`);
+const sayobotThumb = computed(() => `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`);
 
-const imgSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// --- 完整图源拆分 ---
+const officialImg = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`);
+const sayobotImg = computed(() => `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`);
 
 const targetUrl = computed(() => {
   if (props.bid != null) {
@@ -258,7 +254,6 @@ const toggleModal = (e) => {
   fallbackUrls.value = [
     `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`,
     `https://a.sayobot.cn/beatmaps/${sid}/covers/cover.webp`,
-    imgSrc.value
   ];
 
   currentFallbackIndex.value = 0;
@@ -376,14 +371,18 @@ const handlePreviewPlay = () => {
         {{ props.bid || `s${props.sid}` }}
       </span>
 
+      <!-- 背景大图：优先官网，失败走 sayo，同时保留懒加载 -->
       <LazyImage
-          :src="imgSrc"
+          :src="officialImg"
+          :fallback-src="sayobotImg"
           class="background-rect"
       />
 
+      <!-- 预览小图：优先官网，失败走 sayo，同时保留懒加载 -->
       <LazyImage
-          :class="{ 'is-disabled': props.disabled }"
-          :src="thumbSrc"
+          :class="{ 'is-disabled': disabled }"
+          :src="officialThumb"
+          :fallback-src="sayobotThumb"
           class="preview-rect"
           title="查看完整背景"
           @click="toggleModal"
@@ -453,6 +452,11 @@ const handlePreviewPlay = () => {
   container-type: inline-size;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 告诉浏览器：不在视口内时，跳过布局与渲染计算 */
+  content-visibility: auto;
+  /* 预估一个卡片的高度，防止滚动条抖动（根据你的 aspect-ratio 或实际高度调整） */
+  contain-intrinsic-size: auto 110px;
 }
 
 .data-card-container:active {
@@ -916,17 +920,6 @@ const handlePreviewPlay = () => {
 
 .is-disabled {
   cursor: default;
-}
-
-/* --- 动画过渡 --- */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
 }
 
 .fade-enter-active .modal-content {

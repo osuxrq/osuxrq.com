@@ -8,6 +8,10 @@ import Pool from "./components/Pool.vue";
 import LazyImage from "./components/LazyImage.vue";
 import GlobalAudioPlayer from "./components/GlobalAudioPlayer.vue";
 import Timeline from "./components/Timeline.vue";
+import EasyCard from "./components/EasyCard.vue";
+import EasyWallet from "./components/EasyWallet.vue";
+
+
 export default defineClientConfig({
 
     setup() {
@@ -38,5 +42,7 @@ export default defineClientConfig({
         app.component('LazyImage', LazyImage)
         app.component('GlobalAudioPlayer', GlobalAudioPlayer)
         app.component('Timeline', Timeline)
+        app.component('EasyCard', EasyCard)
+        app.component('EasyWallet', EasyWallet)
     },
 });

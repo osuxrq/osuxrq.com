@@ -1,5 +1,17 @@
 # 新人必备图包 by Muz 1.5
 
+<Player
+id=7003013
+name="Muziyami"
+country=676
+global=0
+from="CN"
+accuracy=99.04
+level=100
+progress=48
+performance=6197
+/>
+
 新人必备图包说明文档 v1.5
 
 因为 qq 群没法放太多文件，所以现以文档形式~~存储网盘链接~~，需要的玩家请酌情自取：
@@ -15,6 +27,7 @@ sid=690222
 preview="Dan Salvato - Sayo-nara (Deppyforce)"
 star=1.21
 difficulties=[0.76,0.96,1.21]
+alias="再见"
 />
 
 <Beatmap

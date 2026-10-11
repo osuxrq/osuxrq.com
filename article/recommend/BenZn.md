@@ -1,5 +1,17 @@
 # BenZn 的跳图推荐\#刷pp！
 
+<Player
+id=32406156
+name="BenZn"
+country=3865
+global=55566
+from="CN"
+accuracy=94.59
+level=95
+progress=53
+performance=2994
+/>
+
 ## 时长 <= 1分钟
 
 ### 0 ~ 160 BPM

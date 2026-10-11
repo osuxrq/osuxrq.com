@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
 import LazyImage from "./LazyImage.vue";
 import {getModInfo, getPlaybackRate, parseMods} from "../constants/mod.js";
 import {useAudioStore} from "../constants/audioStore.js";
@@ -40,17 +40,55 @@ const parsedMods = computed(() => parseMods(props.mods))
 
 // =========================================================================
 
-const thumbSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// ====== 替换原有的 imgSrc 和 thumbSrc 计算属性 ======
+const imgSrc = ref('')
+const thumbSrc = ref('')
 
-const imgSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+const loadImagesWithFallback = (sid) => {
+  const currentSid = sid?.toString() ?? '0'
+  if (currentSid === '0') {
+    imgSrc.value = ''
+    thumbSrc.value = ''
+    return
+  }
+
+  // 1. 大图背景 (imgSrc)
+  const officialCover = `https://assets.ppy.sh/beatmaps/${currentSid}/covers/cover.jpg`
+  const sayobotCover = `https://a.sayobot.cn/beatmaps/${currentSid}/covers/cover.webp`
+
+  const coverImg = new Image()
+  coverImg.src = officialCover
+  coverImg.onload = () => {
+    imgSrc.value = `url(${officialCover})`
+  }
+  coverImg.onerror = () => {
+    imgSrc.value = `url(${sayobotCover})`
+  }
+  imgSrc.value = `url(${officialCover})` // 先默认尝试官方
+
+  // 2. 列表缩略图 (thumbSrc)
+  const officialThumb = `https://assets.ppy.sh/beatmaps/${currentSid}/covers/list.jpg`
+  const sayobotThumb = `https://a.sayobot.cn/beatmaps/${currentSid}/covers/cover.webp`
+
+  const thumbImg = new Image()
+  thumbImg.src = officialThumb
+  thumbImg.onload = () => {
+    thumbSrc.value = `url(${officialThumb})`
+  }
+  thumbImg.onerror = () => {
+    thumbSrc.value = `url(${sayobotThumb})`
+  }
+  thumbSrc.value = `url(${officialThumb})` // 先默认尝试官方
+}
+
+// 监听 sid 变化或初始化时触发加载
+watch(
+    () => props.sid,
+    (newSid) => {
+      loadImagesWithFallback(newSid)
+    },
+    { immediate: true }
+)
 
 const targetUrl = computed(() => {
   if (props.bid != null) {

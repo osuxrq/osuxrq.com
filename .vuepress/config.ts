@@ -94,13 +94,7 @@ function getSortedFiles(dir: string, pattern: RegExp = null, isNumAsc: boolean =
 
 export default defineUserConfig({
     head: [
-        [
-            "link",
-            {
-                "rel": "icon",
-                "href": "/images/hero.png",
-            },
-        ], [
+        ['link', { rel: 'icon', href: '/images/favicon.ico' }], [
             "link",
             {
                 href: "/fonts/Torus-SemiBold.woff2",

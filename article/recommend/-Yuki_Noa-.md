@@ -1,6 +1,19 @@
-# 1687の听歌向旮旯谱推荐
 
- *编者注：你知道怎么在网页版推荐里下图的吧 .jpg*
+# 1687 (-Yuki Noa-) の听歌向旮旯谱推荐
+
+<Player
+id=27999664
+name="-Yuki Noa-"
+country=4065
+global=0
+from="CN"
+accuracy=93.06
+level=98
+progress=57
+performance=2995
+/>
+
+*编者注：你知道怎么在网页版推荐里下图的吧 .jpg*
 
 *部分暗色背景的图就是官网不存在的图，可以去小夜下载。*
 

@@ -459,7 +459,7 @@ alias="范式转移"
   preview="Gentle Stick X M2U - Ineffabilis (buhei) [Yuki's Extra]"
   star=5.18
   max=1083
-  alias="不可言喻"
+  alias="无可言喻"
 />
 
 推荐 buhei 的这组难度，都是精品低 bpm+ 分离串

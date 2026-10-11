@@ -36,17 +36,13 @@ const disabled = computed(() => {
   return !!d;
 })
 
-const thumbSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// --- 缩略图源拆分 ---
+const officialThumb = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`);
+const sayobotThumb = computed(() => `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`);
 
-const imgSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// --- 完整图源拆分 ---
+const officialImg = computed(() => `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`);
+const sayobotImg = computed(() => `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`);
 
 const targetUrl = computed(() => {
   if (props.bid != null) {
@@ -185,7 +181,6 @@ const toggleModal = (e) => {
   fallbackUrls.value = [
     `https://assets.ppy.sh/beatmaps/${sid}/covers/fullsize.jpg`,
     `https://a.sayobot.cn/beatmaps/${sid}/covers/cover.webp`,
-    imgSrc.value // 最后的保底
   ];
 
   currentFallbackIndex.value = 0;
@@ -201,16 +196,6 @@ const handleModalImgError = () => {
   } else {
     console.error("所有图片源均加载失败");
   }
-};
-
-let timer = null;
-
-const startTimeout = () => {
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    // 如果图片还没加载完（可以配合 @load 事件清除 timer）
-    handleModalImgError();
-  }, 5000); // 5秒超时
 };
 
 const processedDifficulties = computed(() => {
@@ -328,14 +313,18 @@ const handlePreviewPlay = () => {
           {{ props.bid || `s${props.sid}` }}
         </span>
 
+      <!-- 背景大图：优先官网，失败走 sayo，同时保留懒加载 -->
       <LazyImage
-          :src="imgSrc"
+          :src="officialImg"
+          :fallback-src="sayobotImg"
           class="background-rect"
       />
 
+      <!-- 预览小图：优先官网，失败走 sayo，同时保留懒加载 -->
       <LazyImage
           :class="{ 'is-disabled': disabled }"
-          :src="thumbSrc"
+          :src="officialThumb"
+          :fallback-src="sayobotThumb"
           class="preview-rect"
           title="查看完整背景"
           @click="toggleModal"
@@ -425,6 +414,11 @@ const handlePreviewPlay = () => {
 
   /* 为了让阴影在悬停时更有活力，也可以增加过渡 */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 告诉浏览器：不在视口内时，跳过布局与渲染计算 */
+  content-visibility: auto;
+  /* 预估一个卡片的高度，防止滚动条抖动（根据你的 aspect-ratio 或实际高度调整） */
+  contain-intrinsic-size: auto 110px;
 }
 
 /* 点击瞬间：缩小 */
@@ -494,20 +488,6 @@ const handlePreviewPlay = () => {
   background-position: center;
   opacity: 0.2;
   z-index: 2;
-}
-
-.base-rect {
-  position: absolute;
-  left: 14.889%;
-  top: 0;
-  width: 85.111%;
-  height: 100%;
-  border-radius: clamp(8px, 2.222cqw, 20px);
-  background-size: cover;
-  background-position: center;
-  opacity: 1;
-  z-index: 2;
-  transition: filter 0.3s ease;
 }
 
 .preview-rect {
@@ -778,11 +758,6 @@ const handlePreviewPlay = () => {
   /* background: rgba(255,0,0,0.3); 调试时可以打开看热区范围 */
 }
 
-/* 可选：给第二个下载按钮一点颜色区分 */
-.download-icon.secondary:hover {
-  color: #66ccff; /* 比如用天蓝色区分原来的黄色 */
-}
-
 .download-icon:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #ffcc22;
@@ -847,20 +822,6 @@ const handlePreviewPlay = () => {
 
 .is-disabled {
   cursor: default;
-}
-
-/* --- 动画过渡核心 --- */
-
-/* 1. 整个遮罩层的淡入淡出 */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease;
-}
-
-/* 2. 定义进入前和离开后的状态：透明度为0 */
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
 }
 
 /* 3. 嵌套动画：当父级 .fade 激活时，内部的 .modal-content 执行缩放 */

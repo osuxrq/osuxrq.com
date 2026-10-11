@@ -1,6 +1,6 @@
 
 <script setup>
-import {computed, onMounted, ref} from 'vue'
+import {computed, onMounted, ref, watch} from 'vue'
 import LazyImage from "./LazyImage.vue";
 import {useAudioStore} from "../constants/audioStore.js";
 import {getStarColor} from "../constants/star.js";
@@ -36,17 +36,57 @@ const disabled = computed(() => {
   return !!d;
 })
 
-const thumbSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/list.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+const imgSrc = ref('')
+const thumbSrc = ref('')
 
-const imgSrc = computed(() => {
-  const official = `https://assets.ppy.sh/beatmaps/${props.sid}/covers/cover.jpg`;
-  const sayobot = `https://a.sayobot.cn/beatmaps/${props.sid}/covers/cover.webp`;
-  return `url(${official}), url(${sayobot})`;
-});
+// 封装带降级处理的图片加载逻辑，避免同时请求多个源导致重复请求
+const loadImagesWithFallback = (sid) => {
+  const currentSid = sid?.toString() ?? '0'
+  if (currentSid === '0') {
+    imgSrc.value = ''
+    thumbSrc.value = ''
+    return
+  }
+
+  // 1. 处理大图背景 (imgSrc)
+  const officialCover = `https://assets.ppy.sh/beatmaps/${currentSid}/covers/cover.jpg`
+  const sayobotCover = `https://a.sayobot.cn/beatmaps/${currentSid}/covers/cover.webp`
+
+  const coverImg = new Image()
+  coverImg.src = officialCover
+  coverImg.onload = () => {
+    imgSrc.value = `url(${officialCover})`
+  }
+  coverImg.onerror = () => {
+    imgSrc.value = `url(${sayobotCover})`
+  }
+  // 默认先尝试加载官方源
+  imgSrc.value = `url(${officialCover})`
+
+  // 2. 处理列表缩略图 (thumbSrc)
+  const officialThumb = `https://assets.ppy.sh/beatmaps/${currentSid}/covers/list.jpg`
+  const sayobotThumb = `https://a.sayobot.cn/beatmaps/${currentSid}/covers/cover.webp`
+
+  const thumbImg = new Image()
+  thumbImg.src = officialThumb
+  thumbImg.onload = () => {
+    thumbSrc.value = `url(${officialThumb})`
+  }
+  thumbImg.onerror = () => {
+    thumbSrc.value = `url(${sayobotThumb})`
+  }
+  // 默认先尝试加载官方源
+  thumbSrc.value = `url(${officialThumb})`
+}
+
+// 监听 sid 变化或初始化时触发加载
+watch(
+    () => props.sid,
+    (newSid) => {
+      loadImagesWithFallback(newSid)
+    },
+    { immediate: true }
+)
 
 const targetUrl = computed(() => {
   if (props.bid != null) {

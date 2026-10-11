@@ -9,9 +9,6 @@ const targetDir = 'article/recommend'
 const modules = import.meta.glob('../../article/recommend/*.md', { eager: true, query: '?raw' })
 
 /**
- * 安全解析函数：只读取前 50 行，提取 Frontmatter 和第一个 # 标题
- */
-/**
  * 安全解析函数：只读取前 50 行，提取 Frontmatter、第一个 # 标题以及 <Player> 组件中的 id 和 name
  */
 const parseMarkdown = (rawContent) => {

@@ -53,7 +53,7 @@ const rawColor = computed(() => {
   return '#666666'
 })
 
-// 核心：将 Hex 转换为 0.2 透明度的 rgba 格式，彻底避开 CSS 自定义属性解析问题
+// 核心：将 Hex 转换为 0.3 透明度的 rgba 格式，彻底避开 CSS 自定义属性解析问题
 const cardBackground = computed(() => {
   let hex = rawColor.value.replace('#', '')
   if (hex.length === 3) {
@@ -65,7 +65,7 @@ const cardBackground = computed(() => {
   const b = num & 255
 
   // 返回 20% 透明度的 rgba，并利用 CSS 多重背景与 VuePress 的 --vp-bg 垫底
-  return `linear-gradient(rgba(${r}, ${g}, ${b}, 0.2), rgba(${r}, ${g}, ${b}, 0.2)), var(--vp-c-bg)`
+  return `linear-gradient(rgba(${r}, ${g}, ${b}, 0.3), rgba(${r}, ${g}, ${b}, 0.3)), var(--vp-c-bg)`
 })
 </script>
 
@@ -167,7 +167,7 @@ const cardBackground = computed(() => {
   align-self: flex-start;
   text-align: left;
   font-size: 16px;
-  color: var(--vp-c-text-subtle, #555);
+  color: var(--vp-c-text-mute, #555);
   line-height: 1.2;
   display: -webkit-box;
   -webkit-line-clamp: 2;

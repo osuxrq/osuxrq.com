@@ -1528,6 +1528,7 @@ ETIA早期artcore代表作，常规切指。
   star=4.92
   max=1303
   color="#eee"
+  alias="不准 Poi！"
 />
 
 点兔 op2，较低的 bpm 与 od8 以及密集的连打导致 acc 并不很好打。
@@ -1562,7 +1563,7 @@ ETIA早期artcore代表作，常规切指。
   star=4.96
   max=1133
   color="#eee"
-  alias="夜空中的哨戒班"
+  alias="明日夜空哨戒班"
 />
 
 哨戒班，注意连打接滑条的移动。
@@ -1693,7 +1694,7 @@ od 很低，检验一下连打精准度了。
   star=5.09
   max=1427
   color="#eee"
-  alias="夜啼兔"
+alias="夜啼的兔子做着梦 / 夜啼兔"
 />
 
 三分钟的长度与200的bpm考验耐力。
@@ -1967,6 +1968,7 @@ bpm 较高，物件密度大，对手速有一定要求，好在是 od7。
   preview="Petit Rabbit's - No Poi! (nenpulse bootleg remix) (Skystar) [Rizia's Insane]"
   star=5.16
   max=1564
+  alias="不准 Poi！"
   color="#92e"
 />
 
@@ -2640,6 +2642,7 @@ cs5，且排列较为复杂，需要良好的读图与移动能力。
   star=4.95
   max=1662
   color="#eee"
+  alias="模糊的未来"
 />
 
 <Beatmap
@@ -2649,6 +2652,7 @@ cs5，且排列较为复杂，需要良好的读图与移动能力。
   star=5.34
   max=1562
   color="#eee"
+  alias="模糊的未来"
 />
 
 两个难度均为低bpm连续多段式连打，前一个难度密度更大，后一个难度有较大间距，移动更为困难。
@@ -3527,6 +3531,7 @@ ranked 短版麻婆所作的 unranked 长版。超低 bpm 连打，间距逐渐�
   star=5.73
   max=1365
   color="#eee"
+  alias="将手"
 />
 
 这个难度的连打对 flow 的要求相对比较高，比较扭。
@@ -3844,6 +3849,7 @@ ranked 短版麻婆所作的 unranked 长版。超低 bpm 连打，间距逐渐�
   star=5.70
   max=1260
   color="#eee"
+alias="范式转移"
 />
 
 综合图，连打难度不是特别大但 bpm 较高，需要练习，同时该图 jump 也较难

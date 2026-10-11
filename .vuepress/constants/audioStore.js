@@ -11,10 +11,11 @@ const state = reactive({
     title: '',
     isPlaying: false,
     volume: getSavedVolume(),
+    playbackRate: 1,
 })
 
 export const useAudioStore = () => {
-    const playAudio = (src, title = '未知音频') => {
+    const playAudio = (src, title = '未知音频', playbackRate = 1) => {
         // 1. 如果点击的是当前正在播放/加载的同音频
         if (state.src === src) {
             state.isPlaying = !state.isPlaying // 切换 播放 / 暂停 状态
@@ -25,6 +26,7 @@ export const useAudioStore = () => {
         state.src = src
         state.title = title
         state.isPlaying = true
+        state.playbackRate = playbackRate
     }
 
     const pauseAudio = () => {

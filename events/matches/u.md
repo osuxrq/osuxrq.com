@@ -67,6 +67,7 @@ preview="Siestail - Magic Lip Service (Hollow Wings) [Yuki's Lunatic]"
 star=5.23
 max=988
 alias="魔法的甜言蜜语"
+mods=HD
 />
 
 <Beatmap
@@ -76,6 +77,7 @@ preview="DJ OKAWARI - Flower Dance (Narcissu) [Little's Insane]"
 star=4.80
 max=1025
 alias="花舞"
+mods=HD
 />
 
 <Pool
@@ -89,6 +91,7 @@ preview="Rocket Girls 101 - Calorie (kanor) [Lodrew's Hard]"
 star=4.99
 max=1047
 alias="卡路里"
+mods=DT
 />
 
 <Beatmap
@@ -98,6 +101,7 @@ preview="senya - Hitorishizuka (Satellite) [Forseen's Hard]"
 star=4.62
 max=884
 alias="一人静"
+mods=DT
 />
 
 <Beatmap
@@ -107,6 +111,7 @@ preview="Hatsuki Yura - Yoiyami Hanabi (Lan wings) [Kotone]"
 star=5.28
 max=1020
 alias="宵暗花火"
+mods=DT
 />
 
 <Pool
@@ -217,6 +222,7 @@ sid=87188
 preview="Memme - NEW Astronomas (Charles445) [Color's Another]"
 star=5.08
 max=776
+mods=HD
 />
 
 <Beatmap
@@ -225,6 +231,7 @@ sid=220220
 preview="Sota Fujimori - Move That Body -Extended Mix- (Amamiya Yuko) [RLC's Insane]"
 star=5.55
 max=1530
+mods=HD
 />
 
 <Pool
@@ -237,6 +244,7 @@ sid=21678
 preview="Kurenainagi Tabibito - Beloved Tomboyish Girl (Glass) [Extended]"
 star=5.47
 max=1600
+mods=DT
 />
 
 <Beatmap
@@ -245,6 +253,7 @@ sid=106359
 preview="Mayumi Morinaga - Affection feat. Another Infinity (Evil_Twilight) [Hard]"
 star=4.95
 max=853
+mods=DT
 />
 
 <Beatmap
@@ -253,6 +262,7 @@ sid=348526
 preview="Ken Arai - NEXT TO YOU (Rakuen) [Insane]"
 star=5.18
 max=995
+mods=DT
 />
 
 <Pool

@@ -693,7 +693,7 @@ ver1.1 分段规则：无论 pass 或者 fc
   star=5.45
   max=1505
   color="#333"
-  alias="夜啼兔"
+alias="夜啼的兔子做着梦 / 夜啼兔"
 />
 
 <Beatmap

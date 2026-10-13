@@ -128,6 +128,15 @@ const backgroundColor = computed(() => {
   }
 });
 
+const pp_value = computed(() => {
+  const p = Number.parseFloat(props.performance)
+  if (props.performance != null && Number.isFinite(p)) {
+    return Math.round(p).toString()
+  } else {
+    return p.toString()
+  }
+})
+
 const pp = computed(() => {
   const p = Number.parseFloat(props.performance)
   if (props.performance != null && Number.isFinite(p)) {
@@ -356,7 +365,7 @@ const handlePreviewPlay = () => {
 
         <span class="symbol-wrapper">
           <span class="baseline-container">
-            <span class="text-large">{{ props.performance ?? 0 }}</span>
+            <span class="text-large">{{ pp_value }}</span>
             <span class="text-small">{{ pp }}</span>
           </span>
         </span>

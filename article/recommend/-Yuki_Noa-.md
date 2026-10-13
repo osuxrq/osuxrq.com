@@ -337,6 +337,7 @@ Ps：制作组你看看这他妈是一个人吗？
   preview="Kotoha - Haru o Tsurete (tomatas95) [A New Chapter Begins Between You and Me~]"
   star=3.94
   max=758
+alias="携春同行"
 />
 
 SANA 篇的谱几乎都被下架了
@@ -749,6 +750,7 @@ alias="给即将启程的你。"
   preview="KOTOKO - Koi Kou Enishi (suzusiro) [Insane]"
   star=4.61
   max=1104
+alias="以恋结缘"
 />
 
 <Beatmap

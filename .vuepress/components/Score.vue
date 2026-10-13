@@ -130,11 +130,7 @@ const backgroundColor = computed(() => {
 
 const pp_value = computed(() => {
   const p = Number.parseFloat(props.performance)
-  if (props.performance != null && Number.isFinite(p)) {
-    return Math.round(p).toString()
-  } else {
-    return p.toString()
-  }
+  return Number.isFinite(p) ? Math.round(p).toString() : props.performance
 })
 
 const pp = computed(() => {

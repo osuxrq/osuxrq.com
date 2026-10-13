@@ -10,6 +10,7 @@ import GlobalAudioPlayer from "./components/GlobalAudioPlayer.vue";
 import Timeline from "./components/Timeline.vue";
 import EasyCard from "./components/EasyCard.vue";
 import EasyWallet from "./components/EasyWallet.vue";
+import EasyHolder from "./components/EasyHolder.vue";
 
 
 export default defineClientConfig({
@@ -44,5 +45,6 @@ export default defineClientConfig({
         app.component('Timeline', Timeline)
         app.component('EasyCard', EasyCard)
         app.component('EasyWallet', EasyWallet)
+        app.component('EasyHolder', EasyHolder)
     },
 });

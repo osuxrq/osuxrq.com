@@ -83,7 +83,7 @@ const countryFlag = computed (() => {
       </span>
 
       <span class="pp-container">
-        <span class="text-perf">{{ props.performance }}</span>
+        <span class="text-perf">{{ Math.round(props.performance ?? 0) }}</span>
         <span class="text-pp">PP</span>
       </span>
     </a>

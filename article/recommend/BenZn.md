@@ -503,7 +503,7 @@ sid=1123162
 preview="Sayuri - Sore wa Chiisana Hikari no Youna (TV Size) (Kuki1537) [Revival]"
 star=4.20
 max=371
-alias="那就是像微光一样的东西"
+alias="犹如微弱的光芒"
 />
 
 <Beatmap

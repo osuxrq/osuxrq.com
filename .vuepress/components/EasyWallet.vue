@@ -75,7 +75,7 @@ const parseMarkdown = (rawContent) => {
         }
       } else {
         if (!bodyHeading && trimmed.startsWith('#')) {
-          bodyHeading = trimmed.replace(/^#+\s*\\/, '')
+          bodyHeading = trimmed.replace(/^#+\s*/, '').replace(/\\/g, '')
         }
       }
     }

@@ -170,10 +170,12 @@ const cardBackground = computed(() => {
   color: var(--vp-c-text-mute, #555);
   line-height: 1.2;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   width: 100%;
+
+  transform: translateY(6px); /* 往下挪 6px，按需调整 */
 }
 </style>

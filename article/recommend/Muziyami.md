@@ -903,6 +903,8 @@ star=5.00
 difficulties=[1.39,2.55,3.42,4.32,4.64,5.00]
 />
 
+[Mili】world.execute(me);](https://www.bilibili.com/video/BV1ds411e7df/)
+
 <Beatmap
 sid=456986
 preview="Komiya Mao - (can you) understand me? (Sotarks)"
@@ -1027,6 +1029,8 @@ star=6.01
 difficulties=[1.33,2.04,2.81,3.49,4.29,5.16,5.56,5.80,5.90,5.95,6.01]
 />
 
+[【Porter Robinson & Madeon】Shelter 官方MV](https://www.bilibili.com/video/BV1qbtLzdEAk/)
+
 <Beatmap
 sid=153776
 preview="yuikonnu & ayaponzu* - Super Nuko World (AllStar12)"
@@ -1079,7 +1083,10 @@ sid=914691
 preview="S3RL - MTC (Different Heaven Remix) (Sylas)"
 star=6.22
 difficulties=[1.90,2.44,3.53,5.15,6.03,6.22]
+alias="对二次元冲"
 />
+
+[我从未听过如此丧心病狂的电音S3RL-MTC（带字幕）](https://www.bilibili.com/video/BV1Js411U78a/)
 
 <Beatmap
 sid=499488
@@ -1370,14 +1377,6 @@ preview="Araragi Tsukihi (CV: Iguchi Yuka) - Platinum Disco (TV Size) (DenYi)"
 star=2.43
 difficulties=[1.13,1.72,2.43]
 alias="白金 Disco"
-/>
-
-<Beatmap
-sid=1135268
-preview="Ling Yuan yousa - Gou Zhi Qi Shi (Madoka2574)"
-star=2.68
-difficulties=[1.36,2.00,2.68]
-alias="勾指起誓"
 />
 
 <Beatmap
@@ -1731,6 +1730,15 @@ star=5.21
 difficulties=[1.61,2.36,3.16,4.11,5.21]
 alias="中华急行"
 mode="c"
+/>
+
+<Beatmap
+sid=1135268
+preview="Ling Yuan yousa - Gou Zhi Qi Shi (Madoka2574)"
+star=2.68
+difficulties=[1.36,2.00,2.68]
+alias="勾指起誓"
+mode="m"
 />
 
 <Beatmap

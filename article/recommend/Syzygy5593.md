@@ -1,0 +1,979 @@
+---
+date: 2024-06-27
+---
+
+# 朔望 [Syzygy5593] 的 pp 刷子心得 & pp 图大放送
+
+<Player
+id=35744851
+name="Syzygy5593"
+country=0
+global=249304
+from="JP"
+accuracy=94.77
+level=78
+progress=25
+performance=3107
+/>
+
+## ★个人经历和介绍
+
+2024.4 注册账号随后备战高考，入坑即为强双+板键玩家，游玩时间不长，全在刷 pp 有其他音游（无轨下落式）基础，跳图玩家，连打苦手，手速低下
+
+今天是 2024.6.27，出群之际写下本文，以供后之览者爽刷 pp
+
+本文将提供支持你从入坑到出群的一系列 pp 图
+
+如果你也想成为像我一样的 pp 刷子，希望本文可以为你提供一些帮助
+
+pp+ 和游玩数据如下：
+
+![35744851-1.jpg](/images/recommend/35744851-1.jpg)
+
+## ★如何寻找 pp 图
+
+关于「如何定义pp图」，可以阅读「[SIyuyuko 的 pp 图心得](./SIyuyuko.md)」，本文不再赘述下面是一些目前我搜集到的 pp 图推荐网站/软件，评价较为主观（主要以我刷不刷得到）在刷的时候建议不要在一个地方的推荐上磕死，如果推荐的太难可以换个网站找
+
+### osu! Farmers Market
+
+[https://pp.bcs.dev/](https://pp.bcs.dev/)，本人的第一款 pp 图推荐网站
+
+优点：可以筛选预期 pp、mod、时长、bpm、ar、cs 和星数等，非常方便找想要的图缺点：不能针对玩家个性化推荐，需要自己去试
+
+另外，这个站谱面推荐的是高 acc（>98），在筛选的时候 maxPP 可以适当写高一点
+
+![35744851-2.jpg](/images/recommend/35744851-2.jpg)
+
+### AlphaOsu!
+
+[https://alphaosu.keytoix.vip/self/pp-recommend](https://alphaosu.keytoix.vip/self/pp-recommend)，强推！！！
+
+优点：可以根据你的 bp 个性化推荐 pp 图，支持星数和 mod 筛选
+
+缺点：对2000pp以下推荐的图普遍偏难，但是可以通过筛选星数规避
+
+![35744851-3.jpg](/images/recommend/35744851-3.jpg)
+
+### osu-pps
+
+[https://osu-pps.com/#/osu/maps](https://osu-pps.com/#/osu/maps)，老牌 pp 图网站
+
+优点：只需要第一次加载，后面即可直接读缓存，加载更快。支持bpm、时长、mod筛选缺点：不支持个性化推荐
+
+![35744851-4.jpg](/images/recommend/35744851-4.jpg)
+
+### Tillerino
+
+bot，游戏内发起聊天即可使用，帮助文档 [https://github.com/Tillerino/Tillerinobot/wiki](https://github.com/Tillerino/Tillerinobot/wiki)
+
+优点：个性化推荐，支持mod筛选，可以看 acc对应的pp
+
+缺点：推的图有时候偏难（在我2000不到的时候给我推了哀の隙間主难），响应有点慢
+
+![35744851-5.jpg](/images/recommend/35744851-5.jpg)
+
+### DalouBot
+
+软件，在群文件有，双击main.exe即可使用
+
+群里没什么人用这个，但是我觉得非常好用
+
+好像是个历史遗物，本人考证无果，或许可以问问管理
+
+优点：推图比较符合当前水平，至少我自己用它吃到了不少pp
+
+缺点：使用的18年以前的离线库，推图比较老，没有近六年的新图
+
+![35744851-6.jpg](/images/recommend/35744851-6.jpg)
+
+## ★pp 图推荐
+
+注意：本文不讨论什么排列可以练跳练串练连打，一切以能刷到pp 为准
+
+以下推荐带有强烈的主观色彩，仅代表我自己可以刷得到
+
+如果你认为某张图很难刷不到，可以打低难或者不刷，刷不到不要硬刷，换张图如果你认为你没图刷了，可以考虑低难 DT或者自己找其他图，pp 图多的是（反正我都给了这么多 你就慢慢试嘛）
+
+### ★知名必刷 pp 图
+
+以下图每个难度基本都能刷，够你从入群刷到出群
+
+如果觉得刷不到了可以试着低难+DT，原ar>8的图慎开DT，小心高 ar综合征
+
+#### PADORU 二则
+
+<Beatmap
+sid=1061287
+preview="Turbo - PADORU / PADORU (DeRandom Otaku)"
+star=5.77
+difficulties=[1.63,2.21,3.44,4.39,4.81,4.86,5.01,5.10,5.19,5.24,5.32,5.42,5.49,5.60,5.68,5.77]
+/>
+
+<Beatmap
+sid=1073074
+preview="Turbo - PADORU / PADORU (Sotarks)"
+star=5.96
+difficulties=[2.33,3.63,4.18,4.42,4.44,4.47,4.47,4.51,4.78,4.81,4.83,5.07,5.13,5.44,5.46,5.46,5.50,5.58,5.59,5.60,5.62,5.73,5.88,5.91,5.96]
+/>
+
+两个都可以刷，acc 太低就别打了，小心倒刷
+
+#### Harumachi 四则
+
+除了这几张还有很多 harumachi，可以自己去搜，但是基本都不太好刷
+
+<Beatmap
+sid=600702
+preview="Hanasaka Yui(CV: M.A.O) - Harumachi Clover (Djulus)"
+star=4.54
+difficulties=[1.36,1.98,2.39,2.85,4.09,4.54]
+alias="等待春天的三叶草"
+/>
+
+<Beatmap
+sid=859783
+preview="Will Stetson - Harumachi Clover (Swing Arrangement) (Will Stetson)"
+star=5.26
+difficulties=[1.95,3.19,4.16,4.17,4.24,4.24,4.34,4.83,4.84,4.86,5.08,5.15,5.23,5.26]
+alias="等待春天的三叶草"
+/>
+
+<Beatmap
+sid=861685
+preview="R3 Music Box - Harumachi Clover (Nao Tomori)"
+star=3.03
+difficulties=[1.99,2.43,3.03]
+alias="等待春天的三叶草"
+/>
+
+<Beatmap
+sid=842412
+preview="Will Stetson - Harumachi Clover (Swing Arrangement) [Dictate Edit] (Sotarks)"
+star=5.13
+difficulties=[2.23,3.27,3.82,3.88,4.27,4.27,4.55,5.13,2.66,3.32]
+alias="等待春天的三叶草"
+/>
+
+#### Granat 五则
+
+第一个最经典最好刷，后面的酌情，可以打两把看看难度，打不了别硬打
+
+<Beatmap
+sid=497769
+preview="Drop - Granat (Left)"
+star=5.05
+difficulties=[2.04,2.81,3.89,5.05]
+/>
+
+<Beatmap
+sid=219763
+preview="Drop - Granat (Kaguya Hourain)"
+star=5.25
+difficulties=[1.88,2.53,3.45,4.13,4.26,5.05,5.25]
+/>
+
+<Beatmap
+sid=720240
+preview="Drop - Granat (Half)"
+star=5.97
+difficulties=[1.84,2.47,3.29,3.93,4.56,4.79,5.02,5.97]
+/>
+
+<Beatmap
+sid=155118
+preview="Drop - Granat (Lan wings)"
+star=5.58
+difficulties=[1.26,1.84,2.88,5.21,5.58]
+/>
+
+<Beatmap
+sid=501992
+preview="Drop - Granat (diraimur)"
+star=6.01
+difficulties=[1.78,2.15,2.83,3.20,4.17,5.06,5.15,5.18,5.87,6.01]
+/>
+
+#### Log Off Now 的 MIMI 三件套
+
+这跳写的比sotarks 好一百倍。爽刷另附串比特供的哀之隙间（但是jump要求也不低）
+
+<Beatmap
+sid=952409
+preview="MIMI feat. Hatsune Miku - Ai no Sukima (Log Off Now)"
+star=5.31
+difficulties=[2.12,3.51,3.95,4.47,4.99,5.31]
+alias="哀伤的隙间"
+/>
+
+<Beatmap
+sid=962088
+preview="MIMI feat. Hatsune Miku - Marshmary (Log Off Now)"
+star=5.11
+difficulties=[2.34,3.46,4.41,5.11]
+alias="棉花糖"
+/>
+
+<Beatmap
+sid=968171
+preview="MIMI feat. Hatsune Miku - Mizuoto to Curtain (Log Off Now)"
+star=5.49
+difficulties=[2.41,3.29,3.91,4.37,4.96,5.49]
+alias="水音与窗帘"
+/>
+
+<Beatmap
+sid=1919786
+preview="MIMI vs. Leah Kate - 10 Things I Hate About Ai no Sukima (Log Off Now)"
+star=6.69
+difficulties=[2.05,2.64,3.27,3.72,4.48,4.93,5.31,5.74,6.16,6.35,6.69]
+alias="我讨厌哀伤的隙间的 10 点"
+/>
+
+#### Cold Green Eyes 三则
+
+还有很多张其他冷绿眼，可以自己找着玩
+
+<Beatmap
+sid=371128
+preview="Station Earth - Cold Green Eyes ft. Roos Denayer (Bearizm)"
+star=4.89
+difficulties=[1.88,2.25,3.03,4.19,4.89]
+alias="冷绿眼"
+/>
+
+<Beatmap
+sid=716719
+preview="Station Earth - Cold Green Eyes ft. Roos Denayer (Mismagius)"
+star=5.34
+difficulties=[1.55,2.22,3.03,3.32,4.42,5.34]
+alias="冷绿眼"
+/>
+
+<Beatmap
+sid=1101976
+preview="Station Earth - Cold Green Eyes feat. Roos Denayer (Sotarks)"
+star=5.32
+difficulties=[3.30,4.26,4.63,5.32]
+alias="冷绿眼"
+/>
+
+#### MY REZHEM KINOLENTY
+
+每个难度都能吃，主难DT 可吃120+pp
+
+<Beatmap
+sid=816264
+preview="55x55 - MY REZHEM KINOLENTY (feat. Cut The Crap) (Shmiklak)"
+star=3.65
+difficulties=[1.35,2.03,2.95,3.65]
+alias="我们裁切着胶片"
+/>
+
+#### 其他
+
+<Beatmap
+sid=503141
+preview="Gom (HoneyWorks) - Zen Zen Zense (MugiwaraSekai)"
+star=4.74
+difficulties=[1.71,2.36,3.37,4.19,4.74]
+alias="前前前世"
+/>
+
+30s 刷不了吃亏刷不了上当，Monstrata 还写了个一分多钟的，也可以刷
+
+<Beatmap
+sid=513590
+preview="RADWIMPS - Zen Zen Zense (movie ver.) (Monstrata)"
+star=5.32
+difficulties=[1.81,2.44,3.52,4.46,4.99,5.02,5.13,5.28,5.32]
+alias="前前前世"
+/>
+
+爽刷，1kpp 段刷 nm，2kpp 段刷 DT
+
+<Beatmap
+sid=542081
+preview="Elmo and Cookie Monster - Cookie-Butter-Choco-Cookie (Monstrata)"
+star=5.06
+difficulties=[1.42,1.88,2.76,2.89,3.48,3.51,3.54,3.62,3.65,3.96,4.00,4.19,4.23,4.46,4.48,5.06,2.28,2.81,3.27]
+alias="曲奇・黄油・巧可・曲奇"
+/>
+
+也是什么分段都能刷的歌
+
+<Beatmap
+sid=705423
+preview="Unknown Artist - Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta (Chromoxx)"
+star=3.71
+difficulties=[1.21,1.49,2.27,2.80,3.55,3.58,3.71,0.99,1.43,1.85,2.40]
+alias="迷你 Ministop 小憩之歌【星期四】学生之歌"
+/>
+
+经典
+
+<Beatmap
+sid=765778
+preview="Icon For Hire - Make a Move (Speed Up Ver.) (Sotarks)"
+star=6.10
+difficulties=[2.33,3.77,4.57,4.73,4.75,5.06,5.08,5.42,5.60,5.70,5.79,5.93,6.09,6.10,3.21,3.97,4.61]
+/>
+
+排列有一点难，不过多打几次就会了
+
+<Beatmap
+sid=325112
+preview="Roses Epicurean - Yoru no Kodomo tachi (CodeS)"
+star=3.80
+difficulties=[1.33,2.11,2.90,3.20,3.80]
+alias="夜之子"
+/>
+
+每个难度都可以吃
+
+<Beatmap
+sid=596704
+preview="ClariS - Hitorigoto -TV MIX- (Doormat)"
+star=4.95
+difficulties=[1.78,1.91,2.25,2.32,3.43,3.62,4.26,4.48,4.55,4.59,4.79,4.95]
+alias="独白"
+/>
+
+有一点难度的跳
+
+<Beatmap
+sid=938926
+preview="Tashiro Tomokazu - Koi no Hime Hime Pettanko (Karaoke) (DakiniBrave)"
+star=5.61
+difficulties=[2.26,3.42,4.26,4.82,5.03,5.22,5.61]
+alias="爱的公主公主平胸妹 (卡拉 OK)"
+/>
+
+没事抽两把，说不定出 bp 了呢
+
+<Beatmap
+sid=206284
+preview="FELT - In my room (Aka)"
+star=4.08
+difficulties=[1.39,2.11,3.10,4.08]
+/>
+
+<Beatmap
+sid=399061
+preview="FELT - In my room (ByBy13)"
+star=4.61
+difficulties=[1.74,2.43,3.24,4.11,4.24,4.61]
+/>
+
+经典抽奖图西酞普，小圈+跳警告，我刷次难 197pp出的群
+
+<Beatmap
+sid=757146
+preview="Tanaka Hirokazu - C-TYPE (Arf)"
+star=6.20
+difficulties=[1.53,2.13,3.26,4.86,4.87,4.91,5.07,5.28,5.46,6.20]
+/>
+
+力作 爽刷
+
+<Beatmap
+sid=798007
+preview="Will Stetson - Despacito ft. R3 Music Box (Sotarks)"
+star=5.53
+difficulties=[2.14,3.50,4.04,4.23,4.30,4.64,4.82,4.84,4.90,5.12,5.31,5.37,5.53,2.80,3.41]
+/>
+
+经典跳图
+
+<Beatmap
+sid=873811
+preview="dj TAKA - quaver (Sotarks)"
+star=6.51
+difficulties=[1.28,1.81,2.35,2.74,3.56,4.23,4.31,4.67,4.73,5.21,5.30,5.37,5.51,5.66,5.79,5.80,5.99,6.03,6.06,6.13,6.15,6.44,6.51,3.05,4.10]
+alias="quaver ♪"
+/>
+
+你群唯一赦免图↓
+
+<Beatmap
+sid=320118
+preview="Reol - No title (VINXIS)"
+star=6.61
+difficulties=[1.13,1.97,2.37,3.53,4.22,4.71,5.10,5.41,5.53,5.56,5.62,5.86,5.94,6.61]
+/>
+
+恐龙妈妈~
+
+<Beatmap
+sid=444335
+preview="HO-KAGO TEA TIME - Kira Kira Days (Kagetsu)"
+star=5.60
+difficulties=[1.68,2.52,3.68,4.08,4.72,5.28,5.60]
+alias="闪耀 Days"
+/>
+
+<Beatmap
+sid=1384619
+preview="HO-KAGO TEA TIME - Kira Kira Days (Cut Ver.) (Sotarks)"
+star=5.86
+difficulties=[2.50,3.66,4.59,5.08,5.86]
+alias="闪耀 Days"
+/>
+
+NSFW 警告
+
+<Beatmap
+sid=983911
+preview="S3RL - Bass Slut (Original Mix) (Fatfan Kolek)"
+star=6.69
+difficulties=[2.42,3.42,4.18,4.52,4.87,5.67,5.68,6.02,6.69]
+/>
+
+我没词了。
+
+<Beatmap
+sid=984684
+preview="Victorious Cast - Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.) (SquareTude)"
+star=5.10
+difficulties=[1.87,2.26,2.70,3.38,3.76,4.23,4.70,5.10]
+/>
+
+### ★60s 以内的超短图
+
+不包含上面提过的图
+
+<Beatmap
+sid=527431
+preview="Brad Breeck - Gravity Falls Theme Song (Alphabet)"
+star=4.24
+difficulties=[1.48,2.14,3.24,3.92,4.24]
+/>
+
+<Beatmap
+sid=1542384
+preview="Rory Doggett - Home Depot TV Theme Song (Aistre)"
+star=4.22
+difficulties=[1.49,2.09,2.80,4.22]
+/>
+
+<Beatmap
+sid=520938
+preview="R3 Music Box - No title (sahuang)"
+star=3.97
+difficulties=[1.17,1.63,2.15,3.04,3.97]
+/>
+
+<Beatmap
+sid=788905
+preview="Sporty-O - Let Me Hit It (Audiostalkers Original Mix) (eiri-)"
+star=4.07
+difficulties=[1.28,1.72,2.43,3.55,3.88,4.07,2.83,3.13]
+/>
+
+<Beatmap
+sid=420765
+preview="Dendei - gabe power (HighTec)"
+star=6.04
+difficulties=[1.26,1.73,1.91,2.89,3.81,4.59,5.01,5.55,6.04]
+/>
+
+<Beatmap
+sid=107009
+preview="Shouta Kageyama - Relic Song (Leader)"
+star=3.45
+difficulties=[1.43,1.81,2.50,3.21,3.45,1.23,1.65,1.21,1.97,2.94,1.31,2.15]
+alias="遗迹之歌"
+/>
+
+<Beatmap
+sid=1207609
+preview="Seth Everman - how to create the weeknd's “blinding lights” (browiec)"
+star=4.56
+difficulties=[2.10,2.98,3.84,4.56]
+/>
+
+<Beatmap
+sid=459149
+preview="Ayase Rie - Yuima-ru*World TVver. (Fycho)"
+star=5.93
+difficulties=[1.54,2.10,3.20,4.28,4.94,5.93]
+alias="互助世界"
+/>
+
+<Beatmap
+sid=726747
+preview="Ayase Rie feat. Hata-tan - Yuima-ru*World TVver. (Hey lululu)"
+star=5.66
+difficulties=[1.65,2.21,3.49,4.46,5.40,5.66]
+alias="互助世界"
+/>
+
+<Beatmap
+sid=1159452
+preview="Cornelius Link - Astronomia (Medieval Style) (Seto Kousuke)"
+star=4.82
+difficulties=[1.78,2.57,3.26,3.37,4.09,4.56,4.82]
+/>
+
+<Beatmap
+sid=2121355
+preview="DJ Genki - Introduction (KaedeharaKazuha)"
+star=5.62
+difficulties=[2.04,2.53,3.52,4.67,5.62]
+/>
+
+<Beatmap
+sid=331190
+preview="Asterisk - Ren-chon no Drum 'n' Bass (Deppyforce)"
+star=5.54
+difficulties=[1.54,2.15,3.56,4.65,5.54]
+alias="莲酱的鼓打贝斯"
+/>
+
+<Beatmap
+sid=1280506
+preview="EDOGA-SULLIVAN - WONDERFUL WONDER (TV Size) (Kuki1537)"
+star=4.93
+difficulties=[2.21,3.44,4.29,4.93]
+/>
+
+<Beatmap
+sid=485903
+preview="DZIDZIO - Yalta (wajinshu)"
+star=3.98
+difficulties=[1.58,2.28,3.06,3.98]
+alias="Ялта"
+/>
+
+<Beatmap
+sid=109570
+preview="Griffin Lewis - Princess of the Night (Fatfan Kolek)"
+star=4.35
+difficulties=[1.17,1.57,2.81,3.40,4.35]
+/>
+
+<Beatmap
+sid=1011341
+preview="Puffy AmiYumi - TEEN TITANS THEME (TV Size) (yShadowXOP_)"
+star=5.08
+difficulties=[2.23,3.34,4.37,5.08]
+/>
+
+<Beatmap
+sid=2009205
+preview="Aiobahn - INTERNET ANGEL (bnmc)"
+star=5.92
+difficulties=[1.80,2.26,3.54,4.54,4.84,5.44,5.92]
+/>
+
+<Beatmap
+sid=662679
+preview="Koji Kondo - MAP4(Native Star) (MoodyRPG)"
+star=2.86
+difficulties=[1.25,1.87,2.62,2.86]
+/>
+
+<Beatmap
+sid=189825
+preview="Disasterpeace - Jolly Frolic (Timorisu)"
+star=4.49
+difficulties=[1.65,2.41,3.53,4.49,2.56,3.48]
+/>
+
+<Beatmap
+sid=874602
+preview="R3 Music Box - Zankoku na Tenshi no These (CptSqBany)"
+star=2.60
+difficulties=[1.01,1.34,2.17,2.60]
+alias="残酷天使的行动纲领"
+/>
+
+<Beatmap
+sid=1004468
+preview="Parry Gripp - Guinea Pig Bridge (Sotarks)"
+star=5.52
+difficulties=[2.40,3.33,3.98,4.52,4.95,5.52]
+/>
+
+串图警告
+
+<Beatmap
+sid=573894
+preview="3R2 - Bunny Panic!!! (Kyubey)"
+star=6.06
+difficulties=[2.15,3.13,3.71,4.83,6.06]
+/>
+
+<Beatmap
+sid=1293791
+preview="Cadence and The Penguin Band - Cool in the Cold (Cut Ver.) ([-Evil-])"
+star=3.73
+difficulties=[1.57,2.15,2.96,3.73]
+/>
+
+### ★DT 图
+
+本人 DT 玩的不精，可以去参考其他前辈的 DT 推荐
+
+<Beatmap
+sid=557532
+preview="bradbreeck - Emotional Uplifting Orchestral (Venix)"
+star=2.84
+difficulties=[0.92,1.25,2.00,2.84]
+/>
+
+<Beatmap
+sid=346339
+preview="Three Days Grace - Unbreakable Heart (Lumael)"
+star=3.48
+difficulties=[1.55,1.75,2.89,3.48]
+/>
+
+<Beatmap
+sid=175968
+preview="Trident - Blue Field (CelsiusLK)"
+star=3.71
+difficulties=[1.61,2.11,3.19,3.71]
+alias="蓝场"
+/>
+
+<Beatmap
+sid=1004468
+preview="Parry Gripp - Guinea Pig Bridge (Sotarks)"
+star=5.52
+difficulties=[2.40,3.33,3.98,4.52,4.95,5.52]
+/>
+
+<Beatmap
+sid=584575
+preview="toby fox - sans. (Error-)"
+star=3.33
+difficulties=[1.38,1.67,2.34,3.33,2.86]
+/>
+
+<Beatmap
+sid=1061694
+preview="Paul K. Joyce feat. Neil Morrissey - Can We Fix It? (TV Size) (Kyoshiro)"
+star=3.82
+difficulties=[1.85,2.94,3.82]
+/>
+
+<Beatmap
+sid=558938
+preview="bradbreeck - Step Off Playa (Chalwa)"
+star=3.81
+difficulties=[1.48,2.35,2.98,3.81]
+/>
+
+<Beatmap
+sid=1813523
+preview="Miki Sayaka (CV: Kitamura Eri), Sakura Kyoko (CV: Nonaka Ai) - and I'm home (TV Size) (crewfantasy)"
+star=3.61
+difficulties=[1.70,2.66,3.20,3.61]
+/>
+
+<Beatmap
+sid=470741
+preview="Mariya Nishiuchi - Don't let me down (Jonawaga)"
+star=3.31
+difficulties=[1.43,2.14,3.31]
+/>
+
+<Beatmap
+sid=1123162
+preview="Sayuri - Sore wa Chiisana Hikari no Youna (TV Size) (Kuki1537)"
+star=4.20
+difficulties=[2.06,2.98,3.56,4.03,4.20]
+alias="犹如微弱的光芒"
+/>
+
+<Beatmap
+sid=627629
+preview="55x55 - MUZYKA NE MUZYKANTA (feat. Snailkick) (Shmiklak)"
+star=3.05
+difficulties=[1.34,2.16,3.05]
+/>
+
+<Beatmap
+sid=235551
+preview="Rammstein - Los (Sieg)"
+star=3.75
+difficulties=[2.08,2.61,3.75]
+/>
+
+<Beatmap
+sid=608723
+preview="RADWIMPS - Katawaredoki (Monstrata)"
+star=3.36
+difficulties=[1.64,2.53,3.36]
+alias="黄昏之时"
+/>
+
+DT 后 ar9.8 警告
+
+<Beatmap
+sid=818349
+preview="Tanizawa Tomofumi - Sawakaze (TV Size) (Nyantiaz)"
+star=3.82
+difficulties=[1.88,2.82,3.82]
+alias="爽风"
+/>
+
+### ★其他 pp 图（TV size 合集）
+
+<Beatmap
+sid=495334
+preview="Raujika - Roseo Neige (sahuang)"
+star=4.80
+difficulties=[1.90,2.30,3.53,4.57,4.80]
+/>
+
+<Beatmap
+sid=357466
+preview="ARCIEN - Future Son (Mishima Yurara)"
+star=4.45
+difficulties=[1.77,2.20,3.15,4.38,4.45]
+/>
+
+<Beatmap
+sid=1328989
+preview="YOASOBI - Kaibutsu (TV Size) ([-Evil-])"
+star=4.96
+difficulties=[1.90,2.30,3.48,4.26,4.53,4.68,4.96]
+alias="怪物"
+/>
+
+<Beatmap
+sid=1147361
+preview="Suzuki Masayuki - DADDY ! DADDY ! DO ! feat. Suzuki Airi (TV Size) (hypercyte)"
+star=4.66
+difficulties=[1.62,2.00,3.21,4.00,4.66]
+/>
+
+<Beatmap
+sid=497942
+preview="mimimemeMIMI - Harebare Fanfare (Luna-)"
+star=5.04
+difficulties=[1.64,2.17,3.29,4.19,5.04]
+alias="晴朗号角"
+/>
+
+<Beatmap
+sid=190222
+preview="Aoi Eir - IGNITE (TV size ver.) (Guy)"
+star=4.97
+difficulties=[1.73,2.33,3.43,4.97]
+/>
+
+<Beatmap
+sid=446418
+preview="ULTRA TOWER - Kibou no Uta (TV Size) (Nevo)"
+star=4.53
+difficulties=[2.14,3.09,4.03,4.53]
+alias="希望之歌"
+/>
+
+<Beatmap
+sid=130104
+preview="Fujijo Seitokai Shikkou-bu - Best FriendS -TV Size- (Flask)"
+star=4.65
+difficulties=[1.71,2.13,3.37,4.43,4.65]
+/>
+
+<Beatmap
+sid=2145273
+preview="Aoi Eir - IGNITE (TV Size) (Paradoxal)"
+star=5.47
+difficulties=[2.26,3.56,4.09,4.70,5.47]
+/>
+
+写的很舒服的跳
+
+<Beatmap
+sid=1034008
+preview="DIVELA feat. Hatsune Miku - Beat Syncer (Log Off Now)"
+star=5.72
+difficulties=[2.47,3.44,4.58,5.27,5.72]
+alias="节奏同步者"
+/>
+
+<Beatmap
+sid=361740
+preview="Agnete Kjolsrud - Get Jinxed (Tarrasky)"
+star=6.09
+difficulties=[1.90,2.52,3.48,4.34,5.63,5.67,6.09]
+/>
+
+<Beatmap
+sid=236292
+preview="Agressor Bunx - Tornado (Original Mix) (Shadren)"
+star=4.06
+difficulties=[1.65,2.11,3.21,4.06]
+/>
+
+<Beatmap
+sid=1418780
+preview="Ren feat. Hatsune Miku - Tougetsu, Rinzen ni Kisu. (Log Off Now)"
+star=5.38
+difficulties=[2.54,3.60,4.51,5.38]
+alias="冬月，归于凛然。"
+/>
+
+<Beatmap
+sid=1685799
+preview="m1v - you (i love ganyu)"
+star=4.78
+difficulties=[2.23,3.50,4.08,4.78]
+/>
+
+<Beatmap
+sid=819112
+preview="Simple Plan - You Suck At Love (Speed Up Ver.) (Reform)"
+star=5.56
+difficulties=[2.14,3.62,4.39,5.17,5.45,5.56]
+/>
+
+<Beatmap
+sid=599556
+preview="(K)NoW_NAME - Freesia (Vert)"
+star=5.21
+difficulties=[1.92,3.22,4.27,5.21]
+/>
+
+<Beatmap
+sid=456986
+preview="Komiya Mao - (can you) understand me? (Sotarks)"
+star=5.01
+difficulties=[2.09,3.52,4.29,5.01]
+/>
+
+<Beatmap
+sid=765169
+preview="Komiya Mao - (can you) understand me? (Sotarks)"
+star=4.99
+difficulties=[2.27,3.66,4.96,4.98,4.99]
+/>
+
+<Beatmap
+sid=770300
+preview="Aitsuki Nakuru - Monochrome Butterfly (Sotarks)"
+star=5.83
+difficulties=[2.23,3.64,4.46,5.07,5.44,5.70,5.83]
+/>
+
+<Beatmap
+sid=503486
+preview="Tia - The Glory Days (Beomsan)"
+star=5.77
+difficulties=[1.91,3.22,4.16,4.76,5.68,5.77]
+/>
+
+<Beatmap
+sid=259907
+preview="SawanoHiroyuki[nZk]:mizuki - &Z (TV size-English ver.-) (xxdeathx)"
+star=4.48
+difficulties=[0.71,1.60,1.95,3.11,3.78,4.27,4.48]
+/>
+
+<Beatmap
+sid=1053509
+preview="ViViD - HIKARI (TV Size) (Log Off Now)"
+star=5.95
+difficulties=[2.42,3.43,4.12,4.53,5.11,5.52,5.95]
+alias="光"
+/>
+
+<Beatmap
+sid=152249
+preview="Mikakuning! - Tomadoi Recipe (TV Size) (Fycho)"
+star=4.70
+difficulties=[1.73,2.05,3.30,4.70]
+alias="困惑→食谱 (TV Size)"
+/>
+
+<Beatmap
+sid=223180
+preview="Goose house - Hikaru nara -TV size- (Mei)"
+star=4.18
+difficulties=[1.55,2.36,3.01,3.99,4.18]
+alias="若能绽放光芒"
+/>
+
+<Beatmap
+sid=420458
+preview="Diana Garnet - Spinning World (Anime Ver.) (-Sh1n1-)"
+star=5.22
+difficulties=[1.82,2.48,3.50,4.41,4.88,5.22]
+/>
+
+<Beatmap
+sid=559248
+preview="Tomita Miyu, Onishi Saori, Ohzora Naomi, Hanazawa Kana - Hallelujah*Essaim (Doormat)"
+star=5.93
+difficulties=[2.17,2.63,3.63,3.72,4.37,4.74,4.97,5.30,5.60,5.93]
+alias="ハレルヤ☆エッサイム"
+/>
+
+<Beatmap
+sid=770306
+preview="miwa - chAngE (MaridiuS)"
+star=5.46
+difficulties=[2.02,3.40,4.34,4.75,4.86,5.46]
+/>
+
+<Beatmap
+sid=223871
+preview="Goose house - Hikaru nara -TV size- (Pandiar)"
+star=4.29
+difficulties=[1.81,2.94,4.29]
+alias="若能绽放光芒"
+/>
+
+<Beatmap
+sid=480765
+preview="3 Nen E Gumi Utatan (Nagisa & Kayano & Karuma & Isogai & Maehara) - Bye Bye YESTERDAY (Gero)"
+star=5.52
+difficulties=[2.00,2.57,3.38,3.70,4.36,4.79,5.06,5.27,5.39,5.52]
+alias="拜拜 YESTERDAY"
+/>
+
+<Beatmap
+sid=380545
+preview="Primary - Sweets Weekend (CaffeAmericano)"
+star=5.35
+difficulties=[2.00,2.28,3.60,4.30,5.02,5.35]
+/>
+
+经典连打图
+
+<Beatmap
+sid=43466
+preview="DJ Genericname - Dear You (Rue)"
+star=4.83
+difficulties=[1.90,2.08,3.66,4.83]
+/>
+
+<Beatmap
+sid=50771
+preview="Kozato - 45nen no Yukizakura (LoliSora)"
+star=4.47
+difficulties=[1.69,2.37,4.07,4.47]
+alias="45年的雪樱"
+/>
+
+## ★给准 pp 刷子的建议
+
+刷 pp 虽好，终非长久之计
+
+本人从 500 多 pp 开始认识「pp 图」概念之后猛刷 pp，刷到 5* 的 pp 图的时候会很明显地被各种连打卡住，只能去补救连打才刷的动（力荐「[Kagami的连打推荐](./hiiragi_kagami.md)」）
+
+而且一直刷 pp 会导致 mp 的时候没有什么正常图选（笑）
+
+切记pp 图不能当做练习图，需要串跳切练习图请移步群文件，其他前辈的谱面推荐更有效刷pp之余记得去练acc、练长图、练切纸、练连打和串串，成为均衡发展的刷子
+
+## ★后记
+
+祝大家都能突破瓶颈迎来飞升，早日出群来找我玩喵
+
+☆博麗霊夢天下第一☆
+
+![35744851-7.jpg](/images/recommend/35744851-7.jpg)

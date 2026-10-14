@@ -72,6 +72,13 @@ TODO：正在施工
   - [hutaoyv6](./users/29892932.md)
   - [Styroporrr](./users/32743500.md)
   - [wings_wacr](./users/14970885.md)
+  - [SakuraPuare](./users/13891947.md)
+  - [ZnCookie](./users/18230719.md)
+  - [2ky girl](./users/33823564.md)
+  - [killbusark](./users/13744965.md)
+  - [Yoizuki](./users/25767690.md)
+  - [Touma-w-](./users/9650376.md)
+  - [wdz](./users/35551133.md)
 - 言简意赅
   - [Adversity0721](./users/27552230.md)
   - [dongguadongde](./users/28494479.md)

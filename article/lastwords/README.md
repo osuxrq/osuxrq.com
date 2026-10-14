@@ -79,6 +79,8 @@ TODO：正在施工
   - [Yoizuki](./users/25767690.md)
   - [Touma-w-](./users/9650376.md)
   - [wdz](./users/35551133.md)
+  - [OrangeWybel](./users/32145451.md)
+  - [r3milia](./users/4283631.md)
 - 言简意赅
   - [Adversity0721](./users/27552230.md)
   - [dongguadongde](./users/28494479.md)
@@ -115,6 +117,7 @@ TODO：正在施工
   - [SayaBeMySide](./users/22765044.md)
   - [SeeleBronya](./users/36127474.md)
   - [hobbit1468](./users/33122153.md)
+  - [evil_01](./users/36547413.md)
 - 来源不明
   - [99p](./users/0.md#99p-的出群遗言)
   - [AI](./users/0.md#AI-的遗言)
@@ -122,3 +125,5 @@ TODO：正在施工
   - [Amprevil](./users/0.md#Amprevil-的遗言)
   - [LANGU](./users/0.md#LANGU-的遗言)
   - [喷喷](./users/0.md#喷喷遗言)
+  - [KonoYukid](./users/0.md#konoyukid-的出群遗言)
+  - [Liniesama](./users/0.md#liniesama-的出群遗言)

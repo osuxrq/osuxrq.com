@@ -2,7 +2,7 @@ import {defineUserConfig} from 'vuepress'
 import {defaultTheme} from '@vuepress/theme-default'
 import {viteBundler} from '@vuepress/bundler-vite'
 
-import {existsSync, readdirSync} from 'node:fs';
+import {existsSync, readdirSync, readFileSync} from 'node:fs';
 import * as path from 'node:path';
 import {join} from 'node:path';
 
@@ -92,6 +92,186 @@ function getSortedFiles(dir: string, pattern: RegExp = null, isNumAsc: boolean =
         .map(file => `/${dir}/${file}`);
 }
 
+/**
+ * 仿照 EasyHolder 逻辑：按 type 优先级分组，组内按日期降序排序
+ * @param {string} dir - 扫描的目录路径
+ * @returns {Object[]} 返回按 type 分组后的结构
+ */
+function getSortedFilesByType(dir: string) {
+    const dirPath = join(process.cwd(), dir);
+    if (!existsSync(dirPath)) return [];
+
+    const posts = [];
+    const files = readdirSync(dirPath);
+
+    files.forEach(file => {
+        if (!file.endsWith('.md') || file.toLowerCase() === 'readme.md') return;
+
+        const filePath = join(dirPath, file);
+        const content = readFileSync(filePath, 'utf-8');
+
+        // 简单提取前 50 行的 Frontmatter
+        const fm: Record<string, string> = {};
+        const lines = content.split(/\r?\n/).slice(0, 50);
+        let inFrontmatter = false;
+
+        for (const line of lines) {
+            const trimmed = line.trim();
+            if (trimmed === '---') {
+                if (!inFrontmatter) { inFrontmatter = true; continue; }
+                else { break; }
+            }
+            if (inFrontmatter) {
+                const colonIndex = line.indexOf(':');
+                if (colonIndex !== -1) {
+                    const key = line.slice(0, colonIndex).trim().toLowerCase();
+                    let value = line.slice(colonIndex + 1).trim().replace(/^['"](.*)['"]$/, '$1');
+                    fm[key] = value;
+                }
+            }
+        }
+
+        const slug = file.replace(/\.md$/i, '');
+        const cleanDir = dir.trim().replace(/^\/+|\/+$/g, '');
+
+        // 映射 type 中文名
+        const rawType = (fm.type || '').trim().toLowerCase();
+        let typeName = '常规';
+        if (rawType === 'recommend') typeName = '谱面推荐';
+        else if (rawType === 'suggest') typeName = '技巧建议';
+        else if (rawType === 'simple') typeName = '言简意赅';
+        else if (rawType === 'unknown') typeName = '未知';
+
+        posts.push({
+            link: `/${cleanDir}/${slug}.html`,
+            date: fm.date || '',
+            typeName
+        });
+    });
+
+    // 1. 整体按日期降序排序
+    posts.sort((a, b) => {
+        if (b.date && a.date) {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+        }
+        return 0;
+    });
+
+    // 2. 按 type 分组
+    const map: Record<string, typeof posts> = {};
+    posts.forEach(post => {
+        if (!map[post.typeName]) map[post.typeName] = [];
+        map[post.typeName].push(post);
+    });
+
+    // 3. 自定义 type 优先级排序
+    const typePriority: Record<string, number> = {
+        '谱面推荐': 1,
+        '技巧建议': 2,
+        '常规': 10,
+        '言简意赅': 21,
+        '未知': 22
+    };
+
+    const sortedTypeNames = Object.keys(map).sort((a, b) => {
+        const pA = typePriority[a] !== undefined ? typePriority[a] : 99;
+        const pB = typePriority[b] !== undefined ? typePriority[b] : 99;
+        return pA - pB;
+    });
+
+    return sortedTypeNames.map(typeName => ({
+        text: typeName,
+        children: map[typeName].map(p => p.link)
+    }));
+}
+
+/**
+ * 仿照 EasyWallet 逻辑：按年份分组，年份降序，组内按日期降序排序
+ * @param {string} dir - 扫描的目录路径
+ * @returns {Object[]} 返回按年份分组后的结构
+ */
+function getSortedFilesByYear(dir: string) {
+    const dirPath = join(process.cwd(), dir);
+    if (!existsSync(dirPath)) return [];
+
+    const posts = [];
+    const files = readdirSync(dirPath);
+
+    files.forEach(file => {
+        if (!file.endsWith('.md') || file.toLowerCase() === 'readme.md') return;
+
+        const filePath = join(dirPath, file);
+        const content = readFileSync(filePath, 'utf-8');
+
+        const fm: Record<string, string> = {};
+        const lines = content.split(/\r?\n/).slice(0, 50);
+        let inFrontmatter = false;
+
+        for (const line of lines) {
+            const trimmed = line.trim();
+            if (trimmed === '---') {
+                if (!inFrontmatter) { inFrontmatter = true; continue; }
+                else { break; }
+            }
+            if (inFrontmatter) {
+                const colonIndex = line.indexOf(':');
+                if (colonIndex !== -1) {
+                    const key = line.slice(0, colonIndex).trim().toLowerCase();
+                    fm[key] = line.slice(colonIndex + 1).trim().replace(/^['"](.*)['"]$/, '$1');
+                }
+            }
+        }
+
+        const slug = file.replace(/\.md$/i, '');
+        const cleanDir = dir.trim().replace(/^\/+|\/+$/g, '');
+
+        // 解析年份
+        let year = '未分类';
+        if (fm.date) {
+            const dateObj = new Date(fm.date);
+            if (!isNaN(dateObj.getTime())) {
+                year = String(dateObj.getFullYear());
+            } else {
+                const yearMatch = String(fm.date).match(/\d{4}/);
+                if (yearMatch) year = yearMatch[0];
+            }
+        }
+
+        posts.push({
+            link: `/${cleanDir}/${slug}.html`,
+            date: fm.date || '',
+            year
+        });
+    });
+
+    // 整体按日期从新到老排序
+    posts.sort((a, b) => {
+        if (b.date && a.date) {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+        }
+        return b.year.localeCompare(a.year);
+    });
+
+    // 按年份分组
+    const map: Record<string, typeof posts> = {};
+    posts.forEach(post => {
+        if (!map[post.year]) map[post.year] = [];
+        map[post.year].push(post);
+    });
+
+    // 年份降序排列
+    const sortedYears = Object.keys(map).sort((a, b) => {
+        if (a === '未分类') return 1;
+        if (b === '未分类') return -1;
+        return b.localeCompare(a);
+    });
+
+    return sortedYears.map(year => ({
+        text: `${year} 年`,
+        children: map[year].map(p => p.link)
+    }));
+}
+
 export default defineUserConfig({
     head: [
         ['link', { rel: 'icon', href: '/images/favicon.ico' }], [
@@ -129,7 +309,7 @@ export default defineUserConfig({
             description: '一个为新人而生的群聊团体。',
         }
     },
-    port:5173,
+    port: 5173,
     alias: {
         "@": path.resolve(__dirname, "components"),
     },
@@ -281,13 +461,15 @@ export default defineUserConfig({
                     "/article/recommend/": [
                         {
                             text: "谱面推荐",
-                            children: getSortedFiles('article/recommend'),
+                            link: "README.md",
+                            children: getSortedFilesByYear('article/recommend'),
                         },
                     ],
                     "/article/lastwords/": [
                         {
                             text: "出群遗言",
-                            children: getSortedFiles('article/lastwords/users'),
+                            link: "README.md",
+                            children: getSortedFilesByType('article/lastwords/users'),
                         }
                     ],
                     "/meta/": [

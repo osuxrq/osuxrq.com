@@ -1,5 +1,3 @@
-
-
 <script setup>
 
 import {computed} from "vue";
@@ -15,6 +13,11 @@ const props = defineProps({
   progress: [String, Number],
   performance: [String, Number]
 });
+
+const pp_value = computed(() => {
+  const p = Number.parseFloat(props.performance)
+  return Number.isFinite(p) ? Math.round(p).toString() : props.performance
+})
 
 const acc = computed(() => {
   let pa = parseFloat(props.accuracy)
@@ -83,7 +86,7 @@ const countryFlag = computed (() => {
       </span>
 
       <span class="pp-container">
-        <span class="text-perf">{{ Math.round(props.performance ?? 0) }}</span>
+        <span class="text-perf">{{ pp_value }}</span>
         <span class="text-pp">PP</span>
       </span>
     </a>

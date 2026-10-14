@@ -10,6 +10,12 @@ actions:
   - text: 浏览系列群
     link: /introduction/series.md
     type: secondary
+  - text: 谱面推荐
+    link: /article/recommend/README.md
+    type: secondary
+  - text: 出群遗言
+    link: /article/lastwords/README.md
+    type: secondary
 
 features:
   - title: 友好交流

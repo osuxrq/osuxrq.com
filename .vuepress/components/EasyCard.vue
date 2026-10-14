@@ -16,6 +16,10 @@ const props = defineProps({
     type: String,
     required: true
   },
+  date: {
+    type: String,
+    default: null
+  },
   color: {
     type: String,
     default: null
@@ -26,9 +30,15 @@ const props = defineProps({
   }
 })
 
+const emit = defineEmits(['avatar-click'])
+
 // 头像 URL
 const avatarUrl = computed(() => {
-  return `https://a.ppy.sh/${props.id}`
+  if (props.id > 0) {
+    return `https://a.ppy.sh/${props.id}`
+  } else {
+    return `https://a.ppy.sh/`
+  }
 })
 
 const linkUrl = computed(() => {
@@ -67,6 +77,13 @@ const cardBackground = computed(() => {
   // 返回 20% 透明度的 rgba，并利用 CSS 多重背景与 VuePress 的 --vp-bg 垫底
   return `linear-gradient(rgba(${r}, ${g}, ${b}, 0.3), rgba(${r}, ${g}, ${b}, 0.3)), var(--vp-c-bg)`
 })
+
+// 处理头像点击，阻止事件冒泡和默认跳转
+const handleAvatarClick = (e) => {
+  e.stopPropagation()
+  e.preventDefault()
+  emit('avatar-click', avatarUrl.value)
+}
 </script>
 
 <template>
@@ -75,14 +92,17 @@ const cardBackground = computed(() => {
       class="custom-card"
       :style="{ background: cardBackground }"
   >
-    <!-- 左侧圆形头像 -->
-    <div class="avatar-container">
+    <!-- 左侧圆形头像：通过 @click.stop.prevent 阻止触发卡片链接 -->
+    <div class="avatar-container" @click="handleAvatarClick">
       <img :src="avatarUrl" :alt="title" class="avatar-img" />
     </div>
 
     <!-- 右侧内容区域 -->
     <div class="content-container">
-      <div class="card-name">{{ name }}</div>
+      <div class="header-group">
+        <div class="card-name">{{ name }}</div>
+        <div v-if="date" class="card-date">{{ date }}</div>
+      </div>
       <div class="card-title">{{ title }}</div>
     </div>
   </router-link>
@@ -90,7 +110,7 @@ const cardBackground = computed(() => {
 
 <style scoped>
 .custom-card {
-  width: 300px;
+  width: 340px;
   height: 120px;
   padding: 20px;
   box-sizing: border-box;
@@ -124,7 +144,8 @@ const cardBackground = computed(() => {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
-  z-index: 1;
+  z-index: 2; /* 提高层级，确保点击事件能顺利拦截 */
+  cursor: pointer;
 }
 
 .avatar-img {
@@ -136,7 +157,7 @@ const cardBackground = computed(() => {
 /* 右侧内容区 */
 .content-container {
   margin-left: 100px;
-  width: calc(300px - 40px - 100px);
+  width: calc(340px - 40px - 100px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -146,11 +167,19 @@ const cardBackground = computed(() => {
   z-index: 1;
 }
 
+/* 顶部名称与日期组合容器 */
+.header-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* 顶部名称 */
 .card-name {
   align-self: flex-start;
   text-align: left;
-  font-size: 24px;
+  font-size: 22px; /* 稍微微调字号防止多行挤压 */
   font-weight: 700;
   color: var(--vp-c-text, #1a1a1a);
   line-height: 1.1;
@@ -162,20 +191,28 @@ const cardBackground = computed(() => {
   width: 100%;
 }
 
+/* 日期小字 */
+.card-date {
+  font-size: 12px;
+  color: var(--vp-c-text-subtle, #666);
+  line-height: 1.2;
+  margin-top: 4px;
+  width: 100%;
+  text-align: left;
+}
+
 /* 底部标题 */
 .card-title {
   align-self: flex-start;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--vp-c-text-mute, #555);
   line-height: 1.2;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   width: 100%;
-
-  transform: translateY(6px); /* 往下挪 6px，按需调整 */
 }
 </style>

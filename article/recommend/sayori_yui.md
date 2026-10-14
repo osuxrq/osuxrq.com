@@ -1,3 +1,7 @@
+---
+date: 2019-12-25
+---
+
 # Sayori's Stage v1.1 （1000pp+综合向）
 
 <Player

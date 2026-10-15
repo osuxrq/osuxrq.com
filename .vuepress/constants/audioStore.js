@@ -1,4 +1,4 @@
-import { reactive, readonly } from 'vue'
+import { computed, reactive, readonly } from 'vue'
 
 const getSavedVolume = () => {
     if (typeof window === 'undefined') return 0.4
@@ -13,6 +13,16 @@ const state = reactive({
     volume: getSavedVolume(),
     playbackRate: 1,
 })
+
+/**
+ * 当前音源地址（只读 computed）。
+ *
+ * 性能说明：整站有 2000+ 个 Beatmap / Score 卡片，如果它们都去依赖整个 state
+ * （例如 `state.src`），那么任何一个字段变化（拖动音量、暂停等）都会唤醒全部卡片的
+ * 计算属性与渲染副作用。这个 computed 只在 src 真正变化时才通知订阅者，
+ * 卡片里判断「当前是否在播放」请优先使用它，而不是 state.src。
+ */
+export const currentSrc = computed(() => state.src)
 
 export const useAudioStore = () => {
     const playAudio = (src, title = '未知音频', playbackRate = 1) => {
@@ -45,6 +55,7 @@ export const useAudioStore = () => {
 
     return {
         state: readonly(state),
+        currentSrc,
         playAudio,
         pauseAudio,
         setVolume,

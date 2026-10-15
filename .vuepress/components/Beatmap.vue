@@ -11,6 +11,9 @@ onMounted(() => {
   isMounted.value = true
 })
 
+// 谱面预览串解析正则（模块级共享，只编译一次）
+const PREVIEW_REGEX = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)(?:\s+\[(.*)])?\s*$/;
+
 const props = defineProps({
   bid: [String, Number],
   sid: [String, Number],
@@ -27,6 +30,18 @@ const props = defineProps({
 })
 
 const parsedMods = computed(() => parseMods(props.mods))
+
+// 预先把每个 mod 的颜色/名称解析好：
+// 模板里原来对同一个 mod 调了 3 次 getModInfo()，且每个渲染周期都会重新建对象。
+const parsedModItems = computed(() => parsedMods.value.map((mod) => {
+  const info = getModInfo(mod)
+  return {
+    key: mod,
+    backgroundColor: info.bg,
+    color: info.color,
+    title: `${info.name} (${mod})`,
+  }
+}))
 
 const disabled = computed(() => {
   const d = props.disabled;
@@ -57,9 +72,8 @@ const targetUrl = computed(() => {
 const parsedData = computed(() => {
   const str = props.preview || ""
   // 匹配 A - B (C) [D]
-  // const regex = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)\s+\[(.*)]\s*$/;
-  const regex = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)(?:\s+\[(.*)])?\s*$/;
-  const match = str.match(regex);
+  // 提到模块级，避免每次求值都重新编译正则（整站有 2000+ 个卡片实例）
+  const match = str.match(PREVIEW_REGEX);
 
   let mode
 
@@ -224,12 +238,16 @@ const processedDifficulties = computed(() => {
   return [];
 });
 
-const difficultyColors = computed(() => {
-  return processedDifficulties.value.map(star => getStarColor(star));
+// 颜色与星数一次算好，模板里直接取值，避免同一帧内多次调用 getStarColor
+const difficultyItems = computed(() => {
+  return processedDifficulties.value.map((star) => ({
+    star,
+    color: getStarColor(star),
+  }))
 });
 
 // 试听组件
-const { state, playAudio } = useAudioStore()
+const { state: audioState, currentSrc, playAudio } = useAudioStore()
 
 const currentAudioUrl = computed(() => {
   const sid = props.sid?.toString() ?? '0'
@@ -237,8 +255,9 @@ const currentAudioUrl = computed(() => {
 })
 
 // 判断当前卡片是否正在播放
+// 只用 currentSrc（src 变化时才通知）而不是整个 state，避免音量等变化唤醒全部卡片
 const isCurrentPlaying = computed(() => {
-  return state.src === currentAudioUrl.value && state.isPlaying
+  return currentSrc.value === currentAudioUrl.value && audioState.isPlaying
 })
 
 const playbackRate = computed(() => getPlaybackRate(parsedMods.value))
@@ -272,20 +291,20 @@ const handlePreviewPlay = () => {
       <span class="download-group">
 
         <!-- Mods 显示区域矩形 (置于下载按钮左侧) -->
-        <span v-if="parsedMods.length" class="mods-box" title="启用模组">
+        <span v-if="parsedModItems.length" class="mods-box" title="启用模组">
           <span
-              v-for="(mod, index) in parsedMods"
-              :key="mod"
+              v-for="(item, index) in parsedModItems"
+              :key="item.key"
               class="mod-badge"
               :style="{
-              backgroundColor: getModInfo(mod).bg,
-              color: getModInfo(mod).color,
+              backgroundColor: item.backgroundColor,
+              color: item.color,
               zIndex: index + 1, /* 右侧（Index 大）的在最上层 */
-              right: `${(parsedMods.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
+              right: `${(parsedModItems.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
             }"
-              :title="`${getModInfo(mod).name} (${mod})`"
+              :title="item.title"
           >
-            {{ mod }}
+            {{ item.key }}
           </span>
         </span>
 
@@ -357,11 +376,11 @@ const handlePreviewPlay = () => {
       <span class="text-content-3">
         <span v-if="props.difficulties && props.difficulties.length > 0" class="rect-star">
         <span
-            v-for="(star, idx) in processedDifficulties"
-            :key="star"
+            v-for="(item, idx) in difficultyItems"
+            :key="idx"
             class="star-rect-item"
-            :style="{ backgroundColor: difficultyColors[idx] }"
-            :title="`星数: ${star}`"
+            :style="{ backgroundColor: item.color }"
+            :title="`星数: ${item.star}`"
         ></span>
       </span>
         <span class="part-c" v-if="parsedData.difficulty">
@@ -382,6 +401,7 @@ const handlePreviewPlay = () => {
               :src="fullSrc"
               alt="Preview"
               class="full-image"
+              decoding="async"
               @error="handleModalImgError"
           />
             <div class="close-btn" @click="isModalOpen = false">×</div>
@@ -885,6 +905,7 @@ const handlePreviewPlay = () => {
   cursor: help;
   user-select: none;
   white-space: nowrap;
+  /* 只过渡真正会变化的属性，避免 transition: all 带来的额外样式比对 */
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease, box-shadow 0.2s ease;
 }
 

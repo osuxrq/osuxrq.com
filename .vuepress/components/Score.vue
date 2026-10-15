@@ -10,6 +10,9 @@ onMounted(() => {
   isMounted.value = true
 })
 
+// 谱面预览串解析正则（模块级共享，只编译一次）
+const PREVIEW_REGEX = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)\s+\[(.*)]\s*$/;
+
 const props = defineProps({
   bid: [String, Number],
   sid: [String, Number],
@@ -38,6 +41,18 @@ const disabled = computed(() => {
 
 const parsedMods = computed(() => parseMods(props.mods))
 
+// 预先把每个 mod 的颜色/名称解析好：
+// 模板里原来对同一个 mod 调了 3 次 getModInfo()，且每个渲染周期都会重新建对象。
+const parsedModItems = computed(() => parsedMods.value.map((mod) => {
+  const info = getModInfo(mod)
+  return {
+    key: mod,
+    backgroundColor: info.bg,
+    color: info.color,
+    title: `${info.name} (${mod})`,
+  }
+}))
+
 // =========================================================================
 
 // --- 缩略图源拆分 ---
@@ -60,8 +75,7 @@ const targetUrl = computed(() => {
 
 const parsedData = computed(() => {
   const str = props.preview || ""
-  const regex = /^(.*?)\s+-\s+(.*)\s+\(([^()]*)\)\s+\[(.*)]\s*$/;
-  const match = str.match(regex);
+  const match = str.match(PREVIEW_REGEX);
 
   let mode
 
@@ -128,18 +142,13 @@ const backgroundColor = computed(() => {
   }
 });
 
-const pp_value = computed(() => {
+// PP 数值与单位一次算好（原来拆成两个 computed，各自重复解析一次 performance）
+const ppInfo = computed(() => {
   const p = Number.parseFloat(props.performance)
-  return Number.isFinite(p) ? Math.round(p).toString() : props.performance
-})
-
-const pp = computed(() => {
-  const p = Number.parseFloat(props.performance)
-  if (props.performance != null && Number.isFinite(p)) {
-    return "PP"
-  } else {
-    return ""
+  if (!Number.isFinite(p)) {
+    return { value: props.performance, unit: '' }
   }
+  return { value: Math.round(p).toString(), unit: props.performance != null ? 'PP' : '' }
 })
 
 const isModalOpen = ref(false)
@@ -281,7 +290,7 @@ const textRight = computed(() => {
 })
 
 // 试听组件
-const { state, playAudio } = useAudioStore()
+const { state: audioState, currentSrc, playAudio } = useAudioStore()
 
 const currentAudioUrl = computed(() => {
   const sid = props.sid?.toString() ?? '0'
@@ -289,8 +298,9 @@ const currentAudioUrl = computed(() => {
 })
 
 // 判断当前卡片是否正在播放
+// 只用 currentSrc（src 变化时才通知）而不是整个 state，避免音量等变化唤醒全部卡片
 const isCurrentPlaying = computed(() => {
-  return state.src === currentAudioUrl.value && state.isPlaying
+  return currentSrc.value === currentAudioUrl.value && audioState.isPlaying
 })
 
 
@@ -316,20 +326,20 @@ const handlePreviewPlay = () => {
     <span class="card-canvas">
       <span class="download-group">
         <!-- Mods 显示区域矩形 (置于下载按钮左侧) -->
-        <span v-if="parsedMods.length" class="mods-box" title="启用模组">
+        <span v-if="parsedModItems.length" class="mods-box" title="启用模组">
           <span
-              v-for="(mod, index) in parsedMods"
-              :key="mod"
+              v-for="(item, index) in parsedModItems"
+              :key="item.key"
               class="mod-badge"
               :style="{
-              backgroundColor: getModInfo(mod).bg,
-              color: getModInfo(mod).color,
+              backgroundColor: item.backgroundColor,
+              color: item.color,
               zIndex: index + 1, /* 右侧（Index 大）的在最上层 */
-              right: `${(parsedMods.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
+              right: `${(parsedModItems.length - 1 - index) * 55}%` /* 右对齐计算：最右侧为 0%，越靠左偏移越大 */
             }"
-              :title="`${getModInfo(mod).name} (${mod})`"
+              :title="item.title"
           >
-            {{ mod }}
+            {{ item.key }}
           </span>
         </span>
 
@@ -361,8 +371,8 @@ const handlePreviewPlay = () => {
 
         <span class="symbol-wrapper">
           <span class="baseline-container">
-            <span class="text-large">{{ pp_value }}</span>
-            <span class="text-small">{{ pp }}</span>
+            <span class="text-large">{{ ppInfo.value }}</span>
+            <span class="text-small">{{ ppInfo.unit }}</span>
           </span>
         </span>
       </span>
@@ -432,6 +442,7 @@ const handlePreviewPlay = () => {
                 :src="fullSrc"
                 alt="Preview"
                 class="full-image"
+                decoding="async"
                 @error="handleModalImgError"
             />
             <div class="close-btn" @click="isModalOpen = false">×</div>
@@ -572,6 +583,14 @@ const handlePreviewPlay = () => {
   );
   background-size: 200% 100%;
   animation: move-gradient 4s linear infinite;
+
+  /* 首屏会有成百上千个卡片，背景位移动画（即使卡片在视口外）会持续占用合成线程，
+     因此默认暂停，仅在卡片被悬停时才播放。 */
+  animation-play-state: paused;
+}
+
+.data-card-container:hover .extra-rect {
+  animation-play-state: running;
 }
 
 @keyframes move-gradient {

@@ -202,6 +202,7 @@ sid=568455
 preview="fhana - Outside of Melancholy ~Yuuutsu no Mukougawa~ (Sotarks) [Insane]"
 star=4.62
 max=1027
+unicode="Outside of Melancholy 〜憂鬱の向こう側〜"
 />
 
 <Pool

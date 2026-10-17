@@ -870,6 +870,7 @@ sid=559248
 preview="Tomita Miyu, Onishi Saori, Ohzora Naomi, Hanazawa Kana - Hallelujah*Essaim (Doormat)"
 star=5.93
 difficulties=[2.17,2.63,3.63,3.72,4.37,4.74,4.97,5.30,5.60,5.93]
+unicode="ハレルヤ☆エッサイム"
 />
 
 <Beatmap

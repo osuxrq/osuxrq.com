@@ -1444,6 +1444,7 @@ sid=1174616
 preview="LeaF - Mopemope (hypercyte)"
 star=5.70
 difficulties=[1.97,2.75,3.63,4.71,5.70]
+unicode="もぺもぺ"
 />
 
 <Beatmap

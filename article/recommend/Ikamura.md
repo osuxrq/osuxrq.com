@@ -72,47 +72,47 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
 
 ## 目录
 
-- [第一部分 2-2.99 星]()
+- [第一部分 2-2.99 星](#第一部分-2-2-99-星)
 
-    - [2-2.99 中长图]()
+    - [2-2.99 中长图](#_2-2-99-中长图)
 
-    - [2-2.99 长图]()
+    - [2-2.99 长图](#_2-2-99-长图)
 
-    - [2-2.99 超长图]()
+    - [2-2.99 超长图](#_2-2-99-超长图)
 
-- [第二部分 3-3.99 星]()
+- [第二部分 3-3.99 星](#第二部分-3-3-99-星)
 
-    - [3-3.99 中长图]()
+    - [3-3.99 中长图](#_3-3-99-中长图)
 
-    - [3-3.99 长图]()
+    - [3-3.99 长图](#_3-3-99-长图)
 
-    - [3-3.99 超长图]()
+    - [3-3.99 超长图](#_3-3-99-超长图)
 
-- [第三部分 4-4.99 星]()
+- [第三部分 4-4.99 星](#第三部分-4-4-99-星)
 
-    - [4-4.99 中长图]()
+    - [4-4.99 中长图](#_4-4-99-中长图)
 
-    - [4-4.99 长图]()
+    - [4-4.99 长图](#_4-4-99-长图)
 
-    - [4-4.99 超长图]()
+    - [4-4.99 超长图](#_4-4-99-超长图)
 
-    - [4-4.99 马拉松]()
+    - [4-4.99 马拉松](#_4-4-99-马拉松)
 
-- [第四部分 5-5.69 星]()
+- [第四部分 5-5.69 星](#第四部分-5-5-69-星)
 
-    - [5-5.69 中长图]()
+    - [5-5.69 中长图](#_5-5-69-中长图)
 
-    - [5-5.69 长图]()
+    - [5-5.69 长图](#_5-5-69-长图)
 
-    - [5-5.69 超长图]()
+    - [5-5.69 超长图](#_5-5-69-超长图)
 
-    - [5-5.69 马拉松]()
+    - [5-5.69 马拉松](#_5-5-69-马拉松)
 
-- [附录]
+- [附录](#附录)
 
-    - [没放进正文的一些rank图集]()
+    - [附录I - 没放进正文的一些rank图集](#附录i-没放进正文的一些rank图集)
 
-    - [一些非rank图]()
+    - [附录II - 一些非rank图](#附录ii-一些非rank图)
 
 ## 第一部分 2-2.99 星
 
@@ -270,7 +270,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=611
 />
 
-三分钟走路图，唯一需要注意的是在音乐最后一段高潮开始后会有一处等效110bpm的4连打，如果你第一次听这首歌那么多半会被这猝不及防的连打弄崩。 
+三分钟走路图，唯一需要注意的是在音乐<span style="color: orange;">最后一段高潮开始后会有一处等效110bpm的4连打</span>，如果你第一次听这首歌那么多半会被这猝不及防的连打弄崩。 
 
 11.  ID 1684158  2.95★ AR6 目标：Acc97% 
 
@@ -285,7 +285,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
 
 ~~ななひら可爱捏~~
 
-三分半走路图，难点是考验耐力和读谱，整张图只有快结束的时候才有休息时间，并且谱面里有一些三角形的走路，一定注意别读错数字！
+三分半走路图，难点是考验耐力和读谱，<span style="color: orange;">整张图只有快结束的时候才有休息时间，并且谱面里有一些三角形的走路</span>，一定注意别读错数字！
 
 12.  ID 204194  2.95★ AR7 目标：Acc96.5% 
 
@@ -299,7 +299,9 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
 
 ~~凪ちゃんｗｗｗ~~
 
-这是一张走路里圆圈较多的图，在v1计分里，滑条你只要接上了就是300所以更容易糊准度，那么把滑条换成圆圈呢？难点在于是否有足够的稳定性把每一个圆圈都打准，此外这张图还有一小部分三连打。最后，在快结束的时候会出现一横排圆圈，它们都是单戳，不要连打！
+这是一张走路里圆圈较多的图，在v1计分里，滑条你只要接上了就是300所以更容易糊准度，那么把滑条换成圆圈呢？<span style="color: orange;">难点在于是否有足够的稳定性把每一个圆圈都打准</span>，此外这张图还有一小部分三连打。最后，<span style="color: red;">在快结束的时候会出现一横排圆圈，它们都是单戳，不要连打</span>！
+
+13. ID 1789331  2.96★ AR7 目标：Acc96% 
 
 <Beatmap
   bid=1789331
@@ -310,6 +312,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ポーカーフェイス"
 />
 
+三分半的走路+零散小切图，难点在于这张图的<span style="color: orange;">一些单戳和切都是叠在一起的</span>，你需要通过认真听音乐和仔细观察前后note的缩圈距离来判断究竟是该单戳还是该连打。是一张对耐力、稳定、读谱都有考验的综合图
+
+14. <span style="color: red;">ID 1592245</span>  2.67★ AR7 目标：Acc93% 
+
 <Beatmap
   bid=1592245
   sid=756727
@@ -319,6 +325,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="星空の花束"
 />
 
+~~东方金曲，好听爱听~~
+
+由于这张图是谱面集的主难度，所以配置会更难一些，此时星级就不是很准确了。难点：① <span style="color: orange;">全程无休</span>，是的，3分18秒没有休息时间。② 走路很长，<span style="color: orange;">走路的圆圈很长</span>，多的时候一组能有七八个，稳定性将面临严峻的考验。③ 它有小跳，对定位会有一点压力。
+
+15. <span style="color: red;">ID 1889935</span>  2.67★ AR7.7 目标：Acc95% 
+
 <Beatmap
   bid=1889935
   sid=905481
@@ -326,6 +338,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=2.54
   max=489
 />
+
+~~末日三问~~
+
+末日三问全程无休且接近四分钟的走路图，难点：① 配置之间的间隔跟同星级的其他图相比则比较大，对<span style="color: orange;">定位有一定要求</span>。② 很<span style="color: orange;">考验滑条的稳定性</span>，这张图的滑条普遍长一些，加上彻底结束前就会有下一个配置出现在屏幕上，<span style="color: orange;">很容易导致你前一个滑条还没划完就去接下一个配置提前松手/划断从而爆绿</span>。
+
+16. <span style="color: red;">ID 177871</span>  2.69★ AR7 目标：Acc91% 
 
 <Beatmap
   bid=177871
@@ -336,6 +354,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="エウテルペ"
 />
 
+~~罪恶王冠开篇曲（集在听的，并非op）~~
+
+这张图算是<span style="color: orange;">低星小长综</span>，可以挑战一下。整张图都充斥着二连、三连的切换，还有一些地方会出现三角形、五角星小跳，有些间距略大的走路对定位能力也有着不小的要求。注意合理分配耐力的同时，在切、跳、走路等配置之间切换时要冷静对待，否则你的稳定将直接爆炸！
+
+17. <span style="color: red;">ID 1780091</span>  2.91★ AR7 目标：Acc94% 
+
 <Beatmap
   bid=1780091
   sid=851564
@@ -345,6 +369,16 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="空は高く風は歌う"
 />
 
+~~Fate里个人很喜欢的一首~~
+
+~~虽然整体时长4分20秒，但实际游玩时间刚刚好4分钟，我就把它丢在中长图里了（逃）~~
+
+<span style="color: orange;">需要处处留心的一张图，时不时就有小跳，小切冒出来</span>，而且因为cs5的缘故，配置之间的距离看上去会更远一些，对定位有着不小的要求！
+
+### 2-2.99 长图
+
+1. ID 1484611+HR 2.45(2.34)★ AR7.56(5.4) 目标：Acc97% 
+
 <Beatmap
   bid=1484611
   sid=640305
@@ -352,6 +386,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=2.45
   max=905
 />
+
+~~有人看フリップフラッパーズ吗~~
+
+全曲4分36秒的长度<span style="color: orange;">只有前中、中段有两处较短的休息时间</span>。全程都没有什么难度陡峰，比较平稳。但如果你没怎么玩过这类时长的图的话，那对你的耐力与稳定来说都是不小的挑战。稳住，然后打准！
+
+2. ID 3061438+HR 2.32(2.20)★ AR7(5) 目标：Acc97.5% 
 
 <Beatmap
   bid=3061438
@@ -362,6 +402,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="カザハネ"
 />
 
+~~恭喜你发现宝藏游戏/番 H2O- FOOTPRINTS IN THE SAND~~
+
+也是很平稳的一张图，虽然前中段只有一次休息时间，但中后段足足给了三次，所以实际游玩时间也就三分半，不过因为它的休息时间较多，会导致你的手感会在游玩与休息之间来回切换，如此反复之后你还能保持你原先的稳定吗？
+
+3. ID 4403103  2.82★ AR7 目标：Acc93.5% 
+
 <Beatmap
   bid=4403103
   sid=2098610
@@ -370,6 +416,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=793
   alias="アクアテラリウム"
 />
+
+~~風の去から来自胃痛不止的明天（~~
+
+整张图充斥着二连、三连的切，其中还有很多令人心生厌恶的<span style="color: orange;">滑条尾巴接二连的切</span>，因此我尽可能地降低了目标Acc。你的耐力，稳定，音押都将受到挑战！
+
+4. ID 4983591  2.51★ AR7 目标：Acc95.5% 
 
 <Beatmap
   bid=4983591
@@ -380,6 +432,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="星の奏でる歌 (Duet Ver.)"
 />
 
+走路+时不时出现小跳、小切的组合，加上5分17秒的时长，我想不用我多说了吧，记得享受音乐！
+
+5. ID 996112  2.64★ AR7 目标：Acc96% 
+
 <Beatmap
   bid=996112
   sid=462896
@@ -387,6 +443,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=2.88
   max=1028
 />
+
+~~啊啊啊啊第二季，我等你等的好苦啊！~~
+
+四分半走路+小切，没什么需要特别注意的。
+
+6. ID 1085730  2.71★ AR7 目标：Acc97% 
 
 <Beatmap
   bid=1085730
@@ -397,6 +459,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="だんご大家族"
 />
 
+~~长图怎么能少了我们团子大家族呢（~~
+
+四分半的走路+小跳，中间有休息时间。稳住即可
+
+7. ID 100806  2.85★ AR7 目标：Acc95% 
+
 <Beatmap
   bid=100806
   sid=28937
@@ -404,6 +472,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=2.72
   max=849
 />
+
+~~初音的歌里面我超喜欢的一首（~~
+
+这张图切换的占比很高，加上4分43秒的长度很容易因为稳定性不够而在某一段疯狂爆绿，稳住，加油。
+
+8. ID 801588  2.93★ AR7 目标：Acc96% 
 
 <Beatmap
   bid=801588
@@ -413,6 +487,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1076
 />
 
+~~是，是魔笛magi!~~
+
+很平稳的走路+小切，只是除了开头有一小段休息时间之外就再也没有休息时间了。只要把小切稳住不爆绿你的Acc就会很高！
+
+9. ID 691162  2.97★ AR7 目标：Acc96% 
+
 <Beatmap
   bid=691162
   sid=309113
@@ -420,6 +500,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.02
   max=1201
 />
+
+~~天体的秩序op，快来看番~~
+
+4分49秒，整体平稳，<span style="color: orange;">难点在于滑条尾巴后接小位移切换你能不能稳住</span>。无论是滑条尾巴松手过早、还是切换首个圆圈打击过早你都会疯狂爆绿！
+
+10. ID 816636  2.68★ AR7 目标：Acc97% 
 
 <Beatmap
   bid=816636
@@ -430,6 +516,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="美しきもの"
 />
 
+~~美丽之物……感伤与温馨交织，宛如一场关于珍贵事物的梦，温暖却转瞬即逝。~~
+
+正正好好的6分钟，<span style="color: orange;">直到快结束前都没有休息时间</span>。谱面以走路+小跳为主。准备好接受耐力与稳定的双重考验了吗？
+
+11. ID 2130015  2.84★ AR7.2 目标：Acc96.5% 
+
 <Beatmap
   bid=2130015
   sid=1017732
@@ -438,6 +530,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=759
   alias="天ノ弱 Piano ver."
 />
+
+~~慢下来的天之弱也有一番别样的滋味~~
+
+依旧是对定位有着不小的要求，并且全程都没有休息时间，准备好挑战它了吗
+
+### 2-2.99 超长图
+
+1. ID 963762  2.32★ AR6.8 目标：Acc96% 
 
 <Beatmap
   bid=963762
@@ -448,6 +548,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="恋文"
 />
 
+~~要来玩玩Rewrite吗（笑）~~
+
+整体难度平稳，都很简单，但……你能抗住这张超过6分钟的图吗www
+
+2. ID 1184750  2.77★ AR7.3 目标：Acc96% 
+
 <Beatmap
   bid=1184750
   sid=560213
@@ -455,6 +561,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=2.73
   max=808
 />
+
+~~終の惑星のLove Song这个专辑有很多好听的歌~~
+
+走路、小跳6分11秒全程无休，你准备好了吗。
+
+3. ID 1356101+HR 2.97(2.83)★ AR7(5) 目标：Acc92% 
 
 <Beatmap
   bid=1356101
@@ -465,6 +577,18 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="コードレス☆照れ☆PHONE"
 />
 
+~~农林第一话的插曲~~
+
+是很齐全的综合图！并且全程7分12秒无休！你是否遭得住呢？www当做是这个阶段的boss图好了。
+
+那么，2-3.0星的内容就到此结束了（并没有马拉松图，非常遗憾）
+
+## 第二部分 3-3.99 星
+
+### 3-3.99 中长图
+
+1. ID 2665615  3.02★ AR8 目标：Acc97% 
+
 <Beatmap
   bid=2665615
   sid=1203114
@@ -473,6 +597,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=788
   alias="夕暮れに映して"
 />
+
+良曲发现！
+
+三分钟的走路+二连，还有跟在滑条尾巴后面的单点。虽然简单，但时刻不考验着你的稳定性，想要打准并不容易！
+
+2. ID 768800 / <span style="color: red;">727426</span>  3.10★/<span style="color: red;">3.99★</span> AR7/<span style="color: red;">8.5</span> 目标：Acc96% 
+
+<span style="color: red;">合格：Acc89% 目标：Acc93%</span>
 
 <Beatmap
   bid=768800
@@ -489,6 +621,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.96
   max=914
 />
+
+又是一首经典曲目（笑）
+
+走路+小切图，其中<span style="color: orange;">有很多叠在一起的三连打</span>再加上接近四分钟的长，又到了考验稳定性的时候了。
+
+<span style="color: red;">3.99★</span>作为挑战难度被放到了这里，别看它连4星都没有，他是切串图！除开走路和小跳，还<span style="color: orange;">有很多2连、3连切以及5连小串</span>，重要的是它的bpm只有120……你能稳得住吗？（我现在的acc也才97出头，99都能给我崩完，伤心）看来我的稳定性也不太行（
+
+3. ID 4208884 / <span style="color: orange;">4207810</span>  3.15★/<span style="color: orange;">3.99★</span> AR7.5/8 目标：Acc97% / <span style="color: orange;">Acc95%</span> 
 
 <Beatmap
   bid=4208884
@@ -508,6 +648,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="春を連れて"
 />
 
+~~是纯白交响曲，好耶！~~
+
+三分半走路图，中间会有几个三连打，中后段会有一次休息时间，在这之前稳住即可。
+
+<span style="color: orange;">3.99★</span>作为进阶难度被放到了这里，这是一张<span style="color: orange;">以跳为主</span>的小综合，<span style="color: orange;">难点在于时不时出现的小切</span>，稍不留神就会把你的稳定打崩！
+
+4. ID 827109  3.20★ AR7.8 目标：Acc96% 
+
 <Beatmap
   bid=827109
   sid=364652
@@ -517,6 +665,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="恋はみるくてぃ"
 />
 
+~~三坪房间的侵略者ED，这个蒸好听www~~
+
+走路+小切的组合图，<span style="color: orange;">没有休息时间</span>！<span style="color: orange;">稳定性考验警告</span>！！
+
+这张图想要高准度，就必须把每一组小切都打准！
+
+5. ID 174643  3.23★ AR7 目标：Acc97.5% 
+
 <Beatmap
   bid=174643
   sid=58029
@@ -524,6 +680,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.28
   max=689
 />
+
+~~夺好听的歌啊！居然不是full！！想听full还要跑到7k听，五分钟真享受！！！还有，这首歌其实是神代乐章Fortissimo系列フォルテシモ アコルト：ビーサスフィーア的op，感兴趣就去玩玩吧（~~
+
+时长刚刚进入中长的走路图，<span style="color: orange;">小心零散的小切</span>即可轻松应对
+
+6. ID 1249265  3.24★ AR8 目标：Acc96% 
 
 <Beatmap
   bid=1249265
@@ -534,6 +696,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="春待ちクローバー"
 />
 
+~~我们harumahci也是有自己的full（~~
+
+近乎无休的4分钟小综合，你是否抗得住呢？努力在走路、小跳、切换之间找到平衡吧，这样才能让你的稳定保持高水准
+
+7. ID 194232  3.25★ AR7 目标：Acc92% 
+
 <Beatmap
   bid=194232
   sid=51330
@@ -541,6 +709,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.25
   max=746
 />
+
+~~少年，看过迷惘管家与懦弱的我吗？~~
+
+这是一张<span style="color: orange;">对切换稳定性要求极高的图</span>，虽然休息时间给的非常足，但整张谱含有大量的三连切换，再加上速度略低的AR7，你能稳下去吗？
+
+8. ID 4802394  3.27★ AR7.2 目标：Acc91% 
 
 <Beatmap
   bid=4802394
@@ -551,6 +725,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="スタートリップ"
 />
 
+~~星空列车与白的旅行是好游戏，可以尝试~~
+
+与ID7是同类型的图，但是切更难了一点，依旧是切换稳定性大考验
+
+9. ID 1531843  3.39★ AR7.5 目标：Acc95% 
+
 <Beatmap
   bid=1531843
   sid=721804
@@ -560,6 +740,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="テオ"
 />
 
+~~初音经典金曲~~
+
+走路转圈图，不知道这样描述是否准确。不过因为一直在转圈并且全是滑条，所以很容易爆绿。<span style="color: orange;">考验滑条的稳定性</span>。
+
+10. ID 3822089  3.41★ AR7 目标：Acc95% 
+
 <Beatmap
   bid=3822089
   sid=1857073
@@ -568,6 +754,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=936
 />
 
+~~开始出现拉拉人曲目了（~~
+
+接近4分钟的走路+切换，还要<span style="color: orange;">注意突如其来的5连小串</span>，整体还是颇有难度的，稳住！
+
+11. ID 1630545  3.41★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=1630545
   sid=617203
@@ -575,6 +767,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.51
   max=1160
 />
+
+~~不正经的魔术讲师与禁忌教典OP 强烈建议去看小说（~~
+
+<span style="color: orange;">主切的综合图</span>，只有前中段有一处休息时间。合理分配耐力以确保稳定在线是很重要的。
+
+12. ID 3970938  3.42★ AR8 目标：Acc95% 
 
 <Beatmap
   bid=3970938
@@ -585,6 +783,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="愛の詩 feat. 初音ミク"
 />
 
+~~初音曲目+1~~
+
+依旧是三分半的走路+小切，<span style="color: orange;">难点在于这张图出现了锁手二连切换</span>。指的就是你的一根手指要按住滑条不能松开，然后这根滑条的尾巴立刻就跟着二连切换，而这个二连切换的第二个配置依旧是滑条会继续锁住你的手指，然后后面再继续接这样的二连切换。小心卡指！
+
+13. ID 1734140  3.42★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=1734140
   sid=796450
@@ -593,6 +797,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1088
   alias="す、好きなんかじゃない!"
 />
+
+~~我们邦多利同样不能缺席啊（~~
+
+虽然接近四分钟，不过开头中间结尾各有一处休息时间。<span style="color: orange;">问题依旧在于它是一张主切的图</span>，时不时还会小跳一下，能不能打准全看切的稳定性。
+
+14. ID 3540928  3.44★ AR8 目标：Acc95% 
 
 <Beatmap
   bid=3540928
@@ -603,6 +813,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ひみつのユーフォー"
 />
 
+依旧是主切。毕竟这个难度很少出现跳。但这并不影响这张图考验你的稳定性。
+
+15. ID 1617639  3.44★ AR8 目标：Acc96% 
+
 <Beatmap
   bid=1617639
   sid=765451
@@ -611,6 +825,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=955
   alias="トリカゴ"
 />
+
+~~国家队~~
+
+三分半的走路+小跳，时不时会出现一个三连切，快结束时会有一个5连打。整体并不难，但因为<span style="color: orange;">没有休息时间</span>，所以要注意耐力分配。
+
+16. ID 1272126  3.46★ AR8 目标：Acc94% 
 
 <Beatmap
   bid=1272126
@@ -621,6 +841,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="恋詠桜（Full size）"
 />
 
+~~好听爱听。~~
+
+啥都有的综合图，后半段休息时间充足，实际游玩时间只有三分钟出头。<span style="color: orange;">跟紧音乐节奏是打准这张图的前提</span>。
+
+17. <span style="color: orange;">ID 2641609  3.47★ AR7.5 合格：Acc91% 目标：Acc95%</span> 
+
 <Beatmap
   bid=2641609
   sid=1258444
@@ -628,6 +854,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.55
   max=991
 />
+
+~~龙虎曲日再填一首，好耶~~
+
+<span style="color: orange;">几乎没什么休息时间的切串图</span>，有着大量的2连、3连切换以及5连小串，你能稳得住吗？
+
+18. <span style="color: orange;">ID 3941757  3.48★ AR7.5 合格：Acc88% 目标：Acc93%</span> 
 
 <Beatmap
   bid=3941757
@@ -638,6 +870,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="星座になれたら"
 />
 
+~~是结束乐队，我们有救了！~~
+
+相信我，这张图会把你引以为傲的稳定按在地上摩擦，全是切不说，而且很难抓，尽全力试一试吧！
+
+19. ID 2748903  3.5★ AR8 目标：Acc97% 
+
 <Beatmap
   bid=2748903
   sid=1323207
@@ -646,6 +884,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1100
   alias="哀の隙間"
 />
+
+~~我们pp图也是有full的（~~
+
+很简单 的走路图，硬挑个难点出来那就是<span style="color: orange;">没有休息段</span>吧
+
+~~这图我已经ss了~~
+
+20. ID 3418715  3.5★ AR8 目标：Acc93% 
 
 <Beatmap
   bid=3418715
@@ -656,6 +902,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ホトハシル"
 />
 
+~~魔法律师事务所ED~~
+
+<span style="color: orange;">这是一张切串图</span>，有很多叠在一起的5连小串，算是能培养一下打小串的稳定性。因为只要有一段小串爆了你就会凭空多出好几个绿，所以想要打准并不容易。
+
+21. <span style="color: orange;">ID 3411755  3.51★ AR7.5 合格：Acc90% 目标：Acc94%</span> 
+
 <Beatmap
   bid=3411755
   sid=1668886
@@ -663,6 +915,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.51
   max=951
 />
+
+~~ED这不就来了吗（）~~
+
+比较难打准的<span style="color: orange;">主切综合图</span>，注意进入kiai时间前会有小串。记得要跟随音乐的节奏去打击，不要心急，否则你将疯狂爆绿。
+
+22. ID 4534123  3.55★ AR7.5 目标：Acc95% 
 
 <Beatmap
   bid=4534123
@@ -673,6 +931,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="アイデン貞貞メルトダウン"
 />
 
+~~不当欧尼酱了......真不当，了吗？~~
+
+接近四分钟的走路+切图，想要打准并不容易。<span style="color: orange;">注意开头和结尾有连打</span>。
+
+23. ID 248740  3.57★ AR7 目标：Acc97% 
+
 <Beatmap
   bid=248740
   sid=90562
@@ -680,6 +944,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.85
   max=1247
 />
+
+~~一心一教！~~
+
+意外地是一张四分钟走路+跳的图，所以不是很难。不过要注意<span style="color: orange;">有些配置是叠在一起的</span>，注意读谱！
+
+24. ID 4131864  3.58★ AR8 目标：Acc96% 
 
 <Beatmap
   bid=4131864
@@ -689,6 +959,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=912
 />
 
+~~游戏又又卜毛中角色了么一卜的曲子，歌词是真的很有感觉~~
+
+~~「私の玉座は、屍の山の上に立っているようなものです。ですが、後悔はありません。信じて歩いてきた道ですから。」 ~~
+
+除了开头再没有休息段的四分钟走路+跳的图，整体不难，但对稳定有一定的要求，不然很难打出高Acc。
+
+25. ID 218551  3.58★ AR8 目标：Acc94% 
+
 <Beatmap
   bid=218551
   sid=77928
@@ -697,6 +975,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=780
 />
 
+~~布良梓，你太可爱辣！~~
+
+以<span style="color: orange;">切串为主的综合图</span>，有着充足的休息时间，好好利用！
+
+26. ID 4833838  3.67★ AR8 目标：Acc94% 
+
 <Beatmap
   bid=4833838
   sid=2268678
@@ -704,6 +988,16 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.79
   max=1256
 />
+
+~~你绝对想不到这首歌是真人秀节目《力一卜学园》的op……~~
+
+~~至于bg的可爱美少女跟这档节目更是没有任何关系。人家是日本二手公司らしんばん的看板娘らんらん……~~
+
+![](/images/recommend/Ikamura-1.jpg)
+
+基本四分钟无休的走路+切串。其中的<span style="color: orange;">5连微移小串</span>将是你能不能打准的关键，如果你不会打那将崩的一塌糊涂。
+
+27. ID 2567807  3.68★ AR8 目标：Acc95% 
 
 <Beatmap
   bid=2567807
@@ -714,6 +1008,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="キラキラDays"
 />
 
+~~这不是我们轻音少女吗（~~
+
+走路+切，只有中后段有一处休息时间。滑条比较多，划断注意！
+
+28. ID 4346043  3.74★ AR8 目标：Acc96% and Combo550x 
+
 <Beatmap
   bid=4346043
   sid=2074198
@@ -721,6 +1021,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.80
   max=1298
 />
+
+~~✝升天✝✝升天✝✝升天✝✝升天✝✝升天✝✝升天✝✝升天✝✝升天✝~~
+
+这是一张走路+切的图，同时滑条也比较容易断。试着在稳住准度的同时打出更高的连击！
+
+29. ID 2040366  3.75★ AR8 目标：Acc95.5% 
 
 <Beatmap
   bid=2040366
@@ -731,6 +1037,15 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Be Happy☆"
 />
 
+~~各位，这bg我是真喜欢（~~
+
+![](/images/recommend/Ikamura-2.jpg)
+
+这是一张<span style="color: orange;">走路、切、小跳的综合图</span>，并且全程无休。是时候测试一下自己的稳定性如何了！
+
+
+30. ID 3618242  3.76★ AR8 目标：Acc95.5% 
+
 <Beatmap
   bid=3618242
   sid=1767138
@@ -738,6 +1053,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.89
   max=1086
 />
+
+~~处刑少女的生存之道op，Mili众多歌里个人很喜欢的一首，很有感觉啊！~~
+
+同样是一张<span style="color: orange;">走路、切、小跳的综合图</span>，中后段有一处休息时间，好好把握！
+
+31. ID 3696198  3.82★ AR8 目标：Acc96% 
 
 <Beatmap
   bid=3696198
@@ -748,6 +1069,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="接触"
 />
 
+~~这个乐队里面我很喜欢的一首www~~
+
+全程4分钟无休的走路+切，配合196的bpm，你还跟得上吗？
+
+32. <span style="color: orange;">ID 4935560  3.85★ AR8 目标：Acc96% or Acc95%+FC</span> 
+
+<span style="color: cyan;">头衔：Acc98% or FC</span>
+
 <Beatmap
   bid=4935560
   sid=2210683
@@ -757,6 +1086,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Party in the HOLLOWood feat. ななひら"
 />
 
+~~还得是ななひら（ ~~
+
+你群的3月份头衔图，由走路+切构成，难点是其中<span style="color: orange;">有很多锁手切换</span>，如果处理不当轻则爆绿，重则划断或者当场miss！
+
+33. <span style="color: red;">ID 3071760  3.86★ AR8.4 合格：Acc88% 目标：Acc94%</span> 
+
 <Beatmap
   bid=3071760
   sid=1498251
@@ -764,6 +1099,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.99
   max=1202
 />
+
+~~鲨鱼来啦！~~
+
+这是一张<span style="color: red;">4分钟无休且很难的综合图</span>，如果你打完发现自己的准度不尽人意也不要灰心，因为它就是很难。打这张图的时候注意不要因为爆了几个绿、或者没接上miss了而分了神，<span style="color: red;">尽可能地保持冷静</span>！这样才能保证你的稳定一直在线，尽力去接，剩下的就去享受音乐吧。
+
+34. ID 4751580  <span style="color: orange;">3.86★ AR8 合格：Acc91% 目标：Acc94% and Combo400x</span> 
 
 <Beatmap
   bid=4751580
@@ -774,6 +1115,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="花に雨を、君に歌を"
 />
 
+~~超超超超级好听的一首歌。~~
+
+依旧是走路+切，并且bpm非常高，因此体感上会有不小的压力。同时这张图的滑条比较多，容易划断，所以在目标里额外限定了连击数要求。
+
+35. ID 2595895  3.94★ AR7.5 目标：Acc95% 
+
 <Beatmap
   bid=2595895
   sid=1153393
@@ -782,6 +1129,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=935
   alias="ディスコミュ星人"
 />
+
+Usada Pekora Desupeko~
+
+走路+切还带有小跳刺客的图，不太容易打准的同时，要时刻注意可能会出现的折返小跳，因为只要读错那你就会喜提miss。
+
+36. <span style="color: red;">ID 2855311  3.96★ AR8 合格：Acc86% 目标：Acc93%</span> 
 
 <Beatmap
   bid=2855311
@@ -792,6 +1145,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="w/WWW feat. 星宮とと"
 />
 
+~~你的稳定性摧毁器已上线（~~
+
+如果说<span style="color: red;">ID.33</span>是难控，那么它就是纯纯考验你的稳定底线！3分34秒全程无休并到处充斥着切和串。<span style="color: red;">这张图有超级多的5连小串</span>！如果你肯静下心多练练这张图，那将对你的小串稳定性有巨大提升。
+
+### 3-3.99 长图
+
+1. ID 1945180  3.00★ AR8.4 目标：Acc96% 
+
 <Beatmap
   bid=1945180
   sid=931598
@@ -800,6 +1161,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=827
   alias="虹の彼方に"
 />
+
+~~Bye ユージオ~~
+
+接近5分钟的走路、切、跳<span style="color: orange;">无休</span>小综合。接受审判吧！（中二子、逃）
+
+2. ID 164190 / <span style="color: orange;">164408</span>  3.19★/<span style="color: orange;">3.69★</span> AR7/<span style="color: orange;">8</span> 目标：Acc96% 
+
+<span style="color: orange;">合格：Acc92% 目标：Acc94</span>
 
 <Beatmap
   bid=164190
@@ -817,6 +1186,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=889
 />
 
+玩初雪樱了吗
+
+<span style="color: orange;">综合图</span>，但有5处休息时间，实际游玩时间也就三分钟出头，至于为什么分类到长图里，因为在状态反复切换的情况下依然能保持稳定也是需要训练的。
+
+<span style="color: orange;">3.69★</span>作为进阶难度出现在这里，整体上是3.19★的加强版，尤其强化了切串配置，想要打准并不简单。
+
+3. ID 567200  3.21★ AR7.5 目标：Acc96% 
+
 <Beatmap
   bid=567200
   sid=244684
@@ -824,6 +1201,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.31
   max=1299
 />
+
+伊莉雅美游贴贴
+
+接近5分钟的走路切，中后段有一处休息，整体难度起伏不大。不过<span style="color: orange;">小心走路平地摔</span>（还有就是<span style="color: orange;">认真听音乐</span>，它的叠键很多，无脑目押小心打错节奏！
+
+4. ID 932502  3.21★ / <span style="color: orange;">3.95★</span> AR7/<span style="color: orange;">8.3</span> 目标：Acc97.5% 
+
+<span style="color: orange;">合格：Acc94.5% 目标：Acc97%</span>
 
 <Beatmap
   bid=932502
@@ -834,6 +1219,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="あなたが…いない"
 />
 
+虽然是日在校园，但别想歪了，歌很好听的（
+
+四分半走路图，嗯。没什么特别要注意的，<span style="color: orange;">小心地滑</span>。
+
+<span style="color: orange;">3.95★</span>作为进阶难度出现在这里，与次难的纯走路不同，它是走路和跳55开的跳图，不过因为有些地方要顺应音乐节奏所以会有零散的连打，并没有什么太难抓的配置所以合格Acc并没有设置很低
+
+5. ID 1649603  3.37★ AR7.5 目标：Acc96.5% 
+
 <Beatmap
   bid=1649603
   sid=782115
@@ -842,6 +1235,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1036
 />
 
+~~是游魂耶，番/游戏都有。这首是游戏游魂2的ep~~
+
+4分钟出头，前后各有两处休息时间的<span style="color: orange;">走路小切</span>，比较好打但仍需认真对待。
+
+6. <span style="color: orange;">ID 2692705  3.38★ AR8 合格：Acc89% 目标：Acc93%</span> 
+
 <Beatmap
   bid=2692705
   sid=1251745
@@ -849,6 +1248,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.62
   max=1239
 />
+
+ReO再次登场
+
+这是一张<span style="color: orange;">比较难抓准的切串图</span>，只在中间有一处休息时间。依旧是要慌乱，只要定力强稳得住，就能保住更多的Acc。
+
+题外话：<span style="color: red;">主难是很难的Tech图，请谨慎尝试</span>。
+
+7. ID 2767914  3.39★ AR8 目标：Acc96% 
 
 <Beatmap
   bid=2767914
@@ -859,6 +1266,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="恋する☆ビーム"
 />
 
+~~铃酱可爱啊~~
+
+一张以<span style="color: orange;">走路为主的小综合</span>，走路的同时会穿插一些零散的切串跳。需要额外注意走路的读谱，<span style="color: orange;">有些走路是带折返的</span>！小心脚滑。
+
+8. <span style="color: red;">ID 3791913  3.42★ AR7 合格：Acc86% 目标：Acc91%</span> 
+
 <Beatmap
   bid=3791913
   sid=1836970
@@ -867,6 +1280,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1017
   alias="鳥の詩"
 />
+
+~~国歌来了（~~
+
+这是一张<span style="color: red;">非常考验心性的综合图</span>，我很怕你坚持不住打一半退了。打之前请<span style="color: red;">做好心理准备</span>！！！
+
+9. ID 2306853  3.43★ AR7 目标：Acc95% 
 
 <Beatmap
   bid=2306853
@@ -877,6 +1296,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="桜色プリズム"
 />
 
+~~哎呀这声音真招人喜欢~~
+
+<span style="color: orange;">走切跳小综合</span>，就是AR低了点，要多依靠音押。
+
+10. ID 4390554  3.44★ AR8 目标：Acc96% 
+
 <Beatmap
   bid=4390554
   sid=2094060
@@ -885,6 +1310,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1137
   alias="メリー"
 />
+
+~~THE IDOLM@STER Million Live!肯定也是不会缺席的（~~
+
+走路切图，不过AR很舒适。只有快结束的时候才会有休息时间，注意耐力分配
+
+11. ID 784165  3.45★ AR7.5 目标：Acc95% 
 
 <Beatmap
   bid=784165
@@ -895,6 +1326,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="決别の旅"
 />
 
+~~东方再填一曲~~
+
+东方再填一曲仍然是走路切图，锁手二连、滑条尾巴二连、平地三连切都有。注意不要乱了阵脚。
+
+12. ID 3103243  3.55★ AR8 目标：Acc96% and Combo450x 
+
 <Beatmap
   bid=3103243
   sid=1510106
@@ -903,6 +1340,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1252
 />
 
+~~Ok兄弟们，也是坐上火箭了哈~~
+
+比较简单的主切小综合，但是容易划断。因此附加了combo标准
+
+13. ID 4243034  3.55★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=4243034
   sid=2035107
@@ -910,6 +1353,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.59
   max=1084
 />
+
+~~唉，砂糖。~~
+
+<span style="color: orange;">主切的综合图</span>，注意听音乐和读谱，如果第一次玩这张谱那么它绝对会在你完全意想不到的地方出现小串，然后崩掉。
+
+14. ID 2968971  3.56★ AR8 目标：Acc96.5% 
 
 <Beatmap
   bid=2968971
@@ -920,6 +1369,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="また あした"
 />
 
+~~纯纯的ED欺诈，差评！！！~~
+
+<span style="color: orange;">太好了终于有跳了</span>。这是一张<span style="color: orange;">主跳的图</span>，但是会有零散的切，不要掉以轻心。此外它全程无休，让我看看你的Jump稳定性如何？
+
+15. ID 3906431  3.60★ AR8 目标：Acc94% 
+
 <Beatmap
   bid=3906431
   sid=1895541
@@ -929,6 +1384,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="しあわせ色"
 />
 
+~~雏子的日记……中文念起来蛮怪的~~
+
+全程无休的跳切综合图，想要打准并不容易。加油。
+
+16. ID 4896381  3.63★ AR8 目标：Acc96.5% and Combo500x 
+
 <Beatmap
   bid=4896381
   sid=2289897
@@ -936,6 +1397,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.75
   max=1225
 />
+
+~~星辰恋曲的白色永恒——我们家小雪是经典的白毛红瞳——！！~~
+
+<span style="color: orange;">5分钟主走路的图</span>，因此Acc标准抬高了一些，同时为了考验稳定性，我追加了Combo标准。
+
+17. <span style="color: orange;">ID 2028816  3.64★ AR8 合格：Acc91% 目标：Acc94%</span> 
 
 <Beatmap
   bid=2028816
@@ -945,6 +1412,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1085
 />
 
+~~桐乃……桐乃！黑猫？黑猫！~~
+
+接近5分钟的综合图，只在中间有一处休息时间。想要打准有些难度。
+
+18. ID 182613  3.65★ AR8 目标：Acc96% 
+
 <Beatmap
   bid=182613
   sid=61207
@@ -952,6 +1425,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.70
   max=973
 />
+
+~~初音+2~~
+
+4分半的主跳图，跳切注意！
+
+19. ID 4330245  3.78★ AR8 目标：Acc93.5% and Combo450x 
 
 <Beatmap
   bid=4330245
@@ -962,6 +1441,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="夜奏花"
 />
 
+~~说起来，夏日口袋的番马上就要播出了呢~~
+
+接近<span style="color: orange;">6分钟的主跳图</span>，有跳切。你的耐力与稳定将受到考验。
+
+为了体现稳定性，这里追加了Combo要求
+
+20. ID 4606394  3.81★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=4606394
   sid=1904049
@@ -969,6 +1456,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.81
   max=1000
 />
+
+~~羽川翼，班长！物语！~~
+
+走路、切、跳小综合，没有休息时间！
+
+21. ID 921005  3.94★ AR8.5 目标：Acc94% and Combo350x 
 
 <Beatmap
   bid=921005
@@ -979,6 +1472,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="奏（かなで）"
 />
 
+一周的朋友
+
+一周的朋友主跳的综合图，难点是没有休息时间！容不得半点分心，尽全力去干吧！为了体现稳定性，追加了Combo要求
+
+### 3-3.99 超长图
+
+1. ID 2663672  3.53★ AR8 目标：Acc94% and Combo400x 
+
 <Beatmap
   bid=2663672
   sid=1282452
@@ -988,6 +1489,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ポケットをふくらませて"
 />
 
+依旧是夏日口袋的曲，我很喜欢这首。
+
+这是一张主跳的图，全曲6分32秒只有中间有一处休息时间，一定要好好把握。需要注意的是：<span style="color: orange;">在音乐4分20秒往后，密度会上升一个层次，会出现跳切并且还会出现一个5连的小串，要提前做好心理准备，不然初见会被骤升的密度打乱稳定性</span>。为了体现稳定性，追加了Combo要求
+
+2. ID 2764415  3.69★ AR8 目标：Acc94% and Combo400x 
+
 <Beatmap
   bid=2764415
   sid=1334357
@@ -996,6 +1503,22 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1061
   alias="一番の宝物 ～Yui final ver.～"
 />
+
+~~我们天使的心跳也算是出场了~~
+
+同样是<span style="color: orange;">主跳的图</span>（客户端内为6分1秒，所以放到了超长图）也是只有中间有一处休息时间，跳的位移距离略大了些对定位有一定的要求，还要小心是不是出现的切，稍不留神就会漏掉。
+
+那么，3-4.0星的内容就到此结束了~~（并没有马拉松图，非常遗憾）~~（其实有，但不像是人打的，不要去玩……）
+
+## 第三部分 4-4.99 星
+
+### 4-4.99 中长图
+
+**前排提示**：这个难度段开始一个图集可能会有好几张在这个分段的谱面，基本上我就只挑一个，不再进行过多赘述了。
+
+1. ID 3304164 / <span style="color: red;">3560047</span>  4.00★/<span style="color: red;">4.74★</span> AR8/<span style="color: red;">9</span> 目标：Acc95% 
+
+<span style="color: red;">合格：一 目标：一</span>
 
 <Beatmap
   bid=3304164
@@ -1013,6 +1536,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1456
 />
 
+~~初入4星，就用星姐的歌吧，刚好4星（~~
+
+<span style="color: orange;">走路切图</span>，对稳定的要求比较严苛，非常容易爆绿。只有快结束的时候有一处休息时间，在这之前要坚持住。
+
+<span style="color: red;">4.74★</span>作为挑战难度在这里出现，是<span style="color: red;">Tech图</span>，因此我没有设置合格和目标，如果你想尝试，那就尽可能地打高吧。
+
+2. ID 290329  4.00★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=290329
   sid=108204
@@ -1020,6 +1551,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.94
   max=1309
 />
+
+~~紧随其后的，我们的六花闪亮登场！这个ED真的燃啊~~
+
+这是一张<span style="color: orange;">走路跳图</span>，前后有两处休息时间，比较好打，但要注意读谱。
+
+3. ID 735378  4.03★ AR8 目标：Acc96% and Combo550x 
 
 <Beatmap
   bid=735378
@@ -1029,6 +1566,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1295
 />
 
+~~山茶花金曲~~
+
+这是一张<span style="color: orange;">以走路为主的图</span>，时不时带了点小切。难点是滑条很多，考验你对滑条的掌控程度，因此为了体现稳定性，追加了Combo要求
+
+4. ID 740976  4.04★ AR8.3 目标：Acc96% 
+
 <Beatmap
   bid=740976
   sid=334748
@@ -1037,6 +1580,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=831
   alias="月灯り"
 />
+
+~~这首歌算是把赤瞳的心声说出来了~~
+
+主跳的图，前后有两处休息时间，对定位有一定要求。
+
+5. <span style="color: orange;">ID 2821585</span> / <span style="color: red;">2792683</span>  <span style="color: orange;">4.04★</span>/<span style="color: red;">4.98★</span> <span style="color: orange;">AR8</span>/<span style="color: red;">9</span> 
+
+<span style="color: orange;">合格：Acc91% 目标：Acc95%</span> / <span style="color: red;">合格：一 目标：一</span>
 
 <Beatmap
   bid=2821585
@@ -1056,6 +1607,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="至上主義アドトラック"
 />
 
+切切乐
+
+切切乐切图，想看看自己会不会打切，那你可以来试试它。这张图不仅全是切，而且锁手切占了大部分，爆绿警告！
+
+<span style="color: red;">4.98★</span>作为挑战难度在这里出现，是<span style="color: red;">切串Tech图</span>，祝你好运。
+
+6. ID 2974697  4.05★ AR8.5 目标：Acc96% 
+
 <Beatmap
   bid=2974697
   sid=1222543
@@ -1064,6 +1623,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1092
   alias="ラグトレイン"
 />
+
+~~Inaba！这图难度太多了其他的各位自己试吧（~~
+
+切跳综合图，偶尔会出现5连小串。认真听音乐就能够打准。
+
+7. <span style="color: orange;">ID 2148624  4.07★ AR8 合格：Acc89% 目标：Acc93%</span> 
 
 <Beatmap
   bid=2148624
@@ -1074,6 +1639,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Συζυγία"
 />
 
+~~山茶花+1~~
+
+切图。<span style="color: orange;">这张图对切换稳定的要求非常严苛</span>，疯狂爆绿指日可待（？）
+
+8. ID 662095  4.07★ AR8.2 目标：Acc96% 
+
 <Beatmap
   bid=662095
   sid=278135
@@ -1082,6 +1653,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1103
   alias="カラフル。"
 />
+
+~~猜 猜 谁 没 赢~~
+
+简单综合，休息时间充足，有几个地方会出现串，小心应对即可。
+
+9. ID 2955733  4.09★ AR8.5 目标：Acc96% 
 
 <Beatmap
   bid=2955733
@@ -1092,6 +1669,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="春夏秋冬＊笑顔日和"
 />
 
+<span style="color: orange;">综合图</span>，硬要说的话就是几处小串容易爆。直到快结束才有休息时间，稳住。
+
+10. ID 2090356  4.10★ AR8.4 目标：Acc96% 
+
 <Beatmap
   bid=2090356
   sid=992737
@@ -1099,6 +1680,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.03
   max=1039
 />
+
+~~哎呦这嗓音爱了~~
+
+<span style="color: orange;">综合图</span>，嗯，毕竟都4星了，已经开始什么都有了。中间靠后有一处休息时间，尽量坚持到那里。
+
+11. ID 418109  4.18★ AR8 目标：Acc96.8% 
 
 <Beatmap
   bid=418109
@@ -1109,6 +1696,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="えれくとりっく・えんじぇぅ"
 />
 
+~~众多电子天使rank的其中一个版本~~
+
+这是一张<span style="color: orange;">考验读谱的主走跳的综合图</span>，第二段高潮结束后会有一大段连打一定要注意。
+
+12. ID 1324653  4.18★ AR8.8 目标：Acc96.8% 
+
 <Beatmap
   bid=1324653
   sid=606998
@@ -1116,6 +1709,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.04
   max=768
 />
+
+比较简单的<span style="color: orange;">跳图</span>，但是走路段很容易爆绿，还是很考验稳定性的。
+
+13. <span style="color: orange;">ID 3830641</span> / <span style="color: orange;">3687078</span>  <span style="color: orange;">4.24★</span>/<span style="color: orange;">4.27★</span> <span style="color: orange;">AR8.8</span>/<span style="color: orange;">8</span> 
+
+<span style="color: orange;">合格：Acc92% 目标：Acc95%</span>
 
 <Beatmap
   bid=3830641
@@ -1135,6 +1734,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="愛言葉Ⅳ"
 />
 
+~~两个难度居然如此接近（~~
+
+两张都是主切串的综合图
+
+<span style="color: orange;">4.24★</span>切多一些 <span style="color: orange;">4.27★</span>串多一些 想打准都不太容易
+
+14. <span style="color: orange;">ID 495590  4.27★ AR8.3 合格：Acc91% 目标：Acc94%</span> 
+
 <Beatmap
   bid=495590
   sid=210706
@@ -1144,6 +1751,26 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ウラオモテ・フォーチュン"
 />
 
+~~月刊少女出现了。~~
+
+<span style="color: orange;">综合+手控图</span>。这张图什么配置都有，其中不乏有长串。<span style="color: orange;">在进行到快要3分钟时会出现一条旋转式18连串</span>！它是这张图最难的地方。但哪怕是除开这里，其他地方仍然需要你全程保持较高的稳定性。<span style="color: red;">一定要冷静对待，这样才能把稳定练好</span>。上个成绩图给各位打一针强心剂
+
+<Score
+  bid=495590
+  sid=210706
+  preview="Sakura Chiyo (CV:Ozawa Ari) - URAOMOTE FORTUNE (P A N) [Insane]"
+  star=4.21
+  max=1036
+  mode="o"
+  accuracy=98.34
+  combo=821
+  unicode="ウラオモテ・フォーチュン"
+  rank="s"
+  performance=91
+/>
+
+15. <span style="color: lightgreen;">ID 3351002  4.16★ AR8.4</span> 目标：Acc97% and Combo450x Or Acc96% and Get S rank 
+
 <Beatmap
   bid=3351002
   sid=1641849
@@ -1151,6 +1778,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.18
   max=762
 />
+
+有点过于简单的走路+跳。放在这里就当奖励关了www
+
+因为很简单所以通过标准也跟着提高了www
+
+16. ID 232737  4.18★ AR8 目标：Acc97% 
 
 <Beatmap
   bid=232737
@@ -1161,6 +1794,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Black † White"
 />
 
+~~老板，来份问题儿童都来自异世界的厕纸~~
+
+比较少见的Hard4星图，走跳切综合，整体比较简单。
+
+17. ID 2379520  4.36★ AR9 目标：Acc97% 
+
 <Beatmap
   bid=2379520
   sid=1042163
@@ -1170,6 +1809,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="泡沫の灯"
 />
 
+此图来自[- Mahiru Shina- ]的投稿
+
+三分半全程无休的pp跳图，全看你的稳定性如何了。
+
+18. ID 79798  4.37★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=79798
   sid=20655
@@ -1178,6 +1823,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=955
 />
 
+~~侦探歌剧少女福尔摩斯 有点古老了......~~
+
+<span style="color: orange;">走跳切综合</span>，只有几个串，但这都没什么。<span style="color: orange;">这张图的难点在于读谱</span>！对的你没听错，因为这张图也比较古老了，所以有很多叠在一起的<span style="color: orange;">走路 / 折返的跳 / 折返的走路</span> 这些都对你的读谱力有着不小的要求。
+
+19. ID 1614513  4.40★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1614513
   sid=754451
@@ -1185,6 +1836,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.55
   max=1238
 />
+
+~~乐队经典曲目来了~~
+
+<span style="color: orange;">走跳切综合</span>，没什么需要特别注意的，中后段有一处休息时间快结束的时候也有休息时间。
+
+20. <span style="color: orange;">ID 535973  4.41★ AR8 合格: 90Acc% 目标: Acc93%</span> 
 
 <Beatmap
   bid=535973
@@ -1195,6 +1852,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="好き！雪！本気マジック"
 />
 
+~~初音+3 又遇到了一张主次难是差分的~~
+
+这是一张<span style="color: orange;">很难抓准的综合图</span>，尽全力打高吧！
+
+题外话：如果这张次难差分令你感到游玩困难，那强烈建议不要尝试主难度。
+
+21. ID 519080  4.47★ AR8 目标: Acc95% 
+
 <Beatmap
   bid=519080
   sid=221954
@@ -1203,6 +1868,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=573
   alias="橙ゲノム"
 />
+
+这是一张<span style="color: orange;">跳切图</span>，同时对读谱力也有一定要求。<span style="color: orange;">它的跳切是带位移的，还有一些是三连切后面跳着接了一个三连切</span>。在处理这些配置时你的稳定将面临严峻的考验。会打就很舒服，不会打就是糟透了。
+
+22. ID 4548421  4.47★ AR8.5 目标: Acc95% 
 
 <Beatmap
   bid=4548421
@@ -1213,6 +1882,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="零れずの願いゴト"
 />
 
+~~这是第几个加入的东方曲来着……（~~
+
+<span style="color: orange;">综合图</span>，同时串的数量也不少。
+
+23. ID 4897517  4.50★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=4897517
   sid=2292806
@@ -1221,6 +1896,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=989
   alias="ダイヤモンドの純度"
 />
+
+~~钻石的纯度……我还是喜欢团子 solo 的慢速版，更有那种苦涩的感觉。~~
+
+<span style="color: orange;">综合图，只有快结束的时候才有一点休息时间</span>。在这之前能不能稳住就要看你修炼的如何了。
+
+24. ID 260688  4.53★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=260688
@@ -1231,6 +1912,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ふぁーすと♡ラブ"
 />
 
+~~一开口就知道是茶太（~~
+
+<span style="color: orange;">综合图</span>，只有快到中间的时候有一处休息时间，之后便全程无休，记得分配好体力。<span style="color: orange;">开头就有串</span>（开头杀注意）<span style="color: orange;">结尾也有串</span>。
+
+25. ID 2791537  4.54★ AR9 目标：Acc96.5% 
+
 <Beatmap
   bid=2791537
   sid=1348040
@@ -1239,6 +1926,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1166
   alias="コイイロセカイ"
 />
+
+~~Duca也出场了~~
+
+跳图，带点切。跳打稳了Acc就不会太低，中后段有一处休息时间。
+
+26. ID 4190110  4.60★ AR8.5 目标：Acc93.5% 
 
 <Beatmap
   bid=4190110
@@ -1249,6 +1942,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ヒロインは平均以下。"
 />
 
+~~可爱阿夸~~
+
+<span style="color: orange;">比较硬的一张综合图</span>。bpm高了点不过全曲有3处休息时间可以恢复耐力，所以请尽可能顶住bpm的压力。
+
+27. ID 3969862  4.60★ AR9 目标：Acc93% 
+
 <Beatmap
   bid=3969862
   sid=1922323
@@ -1257,6 +1956,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1141
   alias="ギターと孤独と蒼い惑星"
 />
+
+~~Beechi~~
+
+这歌应该不用我多说各位就猜得到里头写的啥。Fight！
+
+28. ID 1812658  4.66★ AR9 目标：Acc97% 
 
 <Beatmap
   bid=1812658
@@ -1267,6 +1972,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="平面鏡"
 />
 
+~~又到了奖励时间？~~
+
+比较简单的<span style="color: orange;">走跳切</span>，用它好好搞劳一下自己。
+
+29. ID 4570744  4.67★ AR8.5 目标：Acc96.5% 
+
 <Beatmap
   bid=4570744
   sid=2166472
@@ -1275,6 +1986,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1104
   alias="恋ひ恋ふ縁"
 />
+
+哎呀，柚子厨来了（）
+
+<span style="color: orange;">比较简单的综合图</span>，硬说难在哪那就是没休息时间……
+
+30. ID 2491072  4.69★ AR9 目标：Acc96% 
 
 <Beatmap
   bid=2491072
@@ -1285,6 +2002,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="好きなので。"
 />
 
+~艾拉......~
+
+<span style="color: orange;">跳图</span>，但是会有零碎的切不要掉以轻心。另外，除开开头的休息时间，这张图无休。
+
+31. <span style="color: orange;">ID 3333111  4.71★ AR9 合格：93.5 目标：Acc96%</span> 
+
 <Beatmap
   bid=3333111
   sid=1630037
@@ -1294,6 +2017,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="三妖精SAY YA!!!"
 />
 
+~~Awsl~~
+
+<span style="color: orange;">主跳的综合图</span>。这张图属于可爱卖萌的同时猛猛抽你大逼斗，颇有难度。
+
+32. ID 1882462  4.71★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1882462
   sid=893614
@@ -1302,6 +2031,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1144
 />
 
+~~拉拉歌真好听吧（这背好像有好几个fullrank来着）~~
+
+<span style="color: orange;">主跳综合图</span>，注意别被突如其来的切、串一脚端飞。中后段有一处休息时间，整体并不是很难。
+
+33. ID 2106385  4.75★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=2106385
   sid=1006473
@@ -1309,6 +2044,13 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.96
   max=1377
 />
+
+~~又是轻音，豪！~~
+
+
+<span style="color: orange;">主跳综合图</span>，但基本没有休息时间。得凭实力才能稳得住。
+
+34. ID 4884391  4.78★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=4884391
@@ -1319,6 +2061,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="踊ろうぜ"
 />
 
+~~我要开始放夜鹿了（~~
+
+无休综合。
+
+35. ID 954703  4.78★ AR9 目标：Acc93.5% 
+
 <Beatmap
   bid=954703
   sid=257165
@@ -1326,6 +2074,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.77
   max=1242
 />
+
+~~此事在连打推荐中亦有记载（~~
+
+非常吃切串稳定的图。
+
+36. ID 976696  4.81★ AR9 目标：Acc95.5% 
 
 <Beatmap
   bid=976696
@@ -1336,6 +2090,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ずるいよMagnetic today"
 />
 
+贴贴贴贴贴贴
+
+走跳切综合，有两处休息时间，好好把握。
+
+37. ID 2596008  4.81★ AR9.1 目标：Acc96.5% 
+
 <Beatmap
   bid=2596008
   sid=1246152
@@ -1345,6 +2105,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="泥の分際で私だけの大切を奪おうだなんて"
 />
 
+~~Tuyu 来了；~~
+
+我也没想到这居然是张<span style="color: orange;">主跳的图</span>，以前以为铁定是 tech。
+
+38. ID 903567  4.82★ AR9 目标：Acc97% 
+
 <Beatmap
   bid=903567
   sid=391953
@@ -1352,6 +2118,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.00
   max=1180
 />
+
+~~PP 免费送？~~
+
+简单跳图。
+
+39. <span style="color: orange;">ID 2871800  4.82★ AR9 合格：Acc91% 目标：Acc94%</span> 
 
 <Beatmap
   bid=2871800
@@ -1362,6 +2134,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="悠久のカタルシス ～綾波 ver.～"
 />
 
+~~密子（- -） 但你别说、真好听~~
+
+<span style="color: orange;">切串图</span>。中间和后面有两处休息时间，稳住。
+
+40. ID 1074409  4.88★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1074409
   sid=389192
@@ -1370,6 +2148,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1181
 />
 
+~~中二病还在追我~~
+
+<span style="color: orange;">简单综合图</span>，努力一下，您的pp立刻到账（
+
+41. ID 1691692  4.89★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=1691692
   sid=775846
@@ -1377,6 +2161,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.00
   max=1322
 />
+
+很爽的切串图。只要对上了电波你就会和我一样认为很爽了（
+
+42. <span style="color: orange;">ID 114716  4.89★ AR9 合格：Acc91% 目标：Acc94%</span> 
 
 <Beatmap
   bid=114716
@@ -1387,6 +2175,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="物凄い狂っとるフランちゃんが物凄いうた"
 />
 
+~~我是 nanahira 粉啊！~~
+
+<span style="color: orange;">主切串的综合图。会有长串出现</span>！还有这自带的转盘皮肤真可爱（感兴趣可以edit看一下www）
+
+43. ID 3922366  4.91★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=3922366
   sid=1864549
@@ -1395,6 +2189,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1429
   alias="ユニバース"
 />
+
+豪庭
+
+跳图，<span style="color: orange;">注意时不时杀出来的小切小串</span>，比较破坏稳定。
+
+44. ID 2827293  4.91★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=2827293
@@ -1405,6 +2205,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="思想犯"
 />
 
+~~夜鹿+1~~
+
+综合图，练吧。然后喜提pp（
+
+45. ID 3132139  4.93★ AR9 目标：Acc93.5% 
+
 <Beatmap
   bid=3132139
   sid=1518924
@@ -1413,6 +2219,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1328
   alias="駆けろ"
 />
+
+星姐又来了
+
+切串图！中间有休息段。
+
+46. <span style="color: orange;">ID 378469  4.94★ AR9 合格：Acc91% 目标：Acc94%</span> 
 
 <Beatmap
   bid=378469
@@ -1423,6 +2235,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="揺れる恋は波の如く"
 />
 
+~~舰c啊，我逝去的青春！~~
+
+切串图，串的长度并不短，一定要稳住。
+
+47. ID 2427895  4.96★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=2427895
   sid=1163834
@@ -1431,6 +2249,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1080
   alias="夜紛い"
 />
+
+~~夜鹿✌夜鹿✌夜鹿✌夜鹿✌~~
+
+只有前中段有休息时间的综合。
+
+48. ID 3060288  4.96★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=3060288
@@ -1441,6 +2265,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="又三郎"
 />
 
+~~嗨呦呦，这夜鹿，可真是美味呀。~~
+
+综合，打就完了。爽！
+
+49. ID 1083055  4.96★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1083055
   sid=478405
@@ -1450,6 +2280,16 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="スノウドライヴ(01.23)"
 />
 
+~~哎呀我老喜欢听这首了~~
+
+<span style="color: orange;">走路+跳</span>，只有快结束的时候才有休息时间。配置不算难，但是特别容易划断。
+
+其实还有一些我没说的，我看情况会放在最后的附录里。
+
+### 4-4.99 长图
+
+1. ID 3948637  4.00★ AR8 目标：Acc97% 
+
 <Beatmap
   bid=3948637
   sid=1914040
@@ -1457,6 +2297,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=3.94
   max=1365
 />
+
+~~又是刚刚好4星（~~
+
+<span style="color: orange;">密度很平稳的简单跳图</span>，你问我它难在哪？我觉得难在没有休息时间。接近6分钟的无休。还有就是，<span style="color: orange;">谨慎对待藏在滑条尾巴下面的圆圈</span>，非常容易打快然后爆绿
+
+2. ID 2795985  4.02★ AR8.4 目标：Acc97% 
 
 <Beatmap
   bid=2795985
@@ -1467,6 +2313,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="蒼のワルツ"
 />
 
+~~乔西的虎与鱼~~
+
+走路+跳，滑条划断注意！
+
+3. ID 3325041  4.03★ AR8 目标：Acc97% 
+
 <Beatmap
   bid=3325041
   sid=1611719
@@ -1475,6 +2327,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1236
   alias="うまぴょい伝説"
 />
+
+~~Kimino- aima ga~ 实际游玩其实不算长图，不过整体时长确实是就放在这里了~~
+
+仍然是走路+跳，时不时有小切。稳住就行。
+
+4. <span style="color: red;">ID 4660167  4.03★ AR8 合格：Acc87% 目标：Acc92%</span> 
 
 <Beatmap
   bid=4660167
@@ -1485,6 +2343,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="大地に咲く旋律"
 />
 
+~~神曲~~
+
+<span style="color: red;">请有练习手控的需求再练这张图。</span>
+
+这是一张非常难控的120切串综合。
+
+5. <span style="color: orange;">ID 4710620  4.03★ AR8.5 合格：Acc89% 目标：Acc93%</span> 
+
 <Beatmap
   bid=4710620
   sid=2221758
@@ -1492,6 +2358,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.11
   max=1307
 />
+
+~~东方好，手控坏。~~
+
+这是一张<span style="color: orange;">主切的手控图</span>，同样建议<span style="color: orange;">如果没有手控练习的需求请跳过这张图</span>。
+
+6. <span style="color: red;">ID 4474193  4.06★ AR8 合格：Acc85% 目标：Acc90%</span> 
 
 <Beatmap
   bid=4474193
@@ -1501,6 +2373,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1298
   alias="燦然と輝く悲しき明日と…"
 />
+
+~~我要生气了，为什么神曲是手控！~~
+
+<span style="color: red;">请有练习手控的需求再练这张图</span>。
+
+这是一张特别难控的116切串综合，比上面的120还要难！！！
+
+7. ID 1920536 / 1954030  4.08★/4.50★ AR8/8.8  目标：Acc97% / Acc96% 
 
 <Beatmap
   bid=1920536
@@ -1520,6 +2400,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="きみの名前"
 />
 
+~~番怎么样先不说，歌是真有感觉。~~
+
+两张同曲的单图，都是主跳的综合。难道说可以一次刷2张？（哇哦）
+
+8. <span style="color: orange;">ID 526305  4.12★ AR8.3 合格：Acc89% 目标：Acc93%</span> 
+
 <Beatmap
   bid=526305
   sid=225575
@@ -1528,6 +2414,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1504
   alias="星屑のインターリュード"
 />
+
+天体的秩序又来了 同位的单图也是有的，只不过额……都很难。
+
+又是一张难抓的<span style="color: orange;">主切综合</span>……
+
+9. ID 438061  4.13★ AR8 目标：Acc94.5% 
 
 <Beatmap
   bid=438061
@@ -1538,6 +2430,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="lull ～そして僕らは～"
 />
 
+~~胃痛不止的明天又来了~~
+
+这张综合好抓一点（我最近刚刷完），注意它有串。
+
+10. ID 1800748  4.14★ AR8 目标：Acc93.5% 
+
 <Beatmap
   bid=1800748
   sid=860649
@@ -1546,6 +2444,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1348
   alias="星空のメモリア"
 />
+
+~~游戏名就是星空的记忆，可以尝试一下。~~
+
+一张<span style="color: orange;">考验你5连小串稳定性</span>的图。打得稳就很准，打不稳就爆炸。而且它没有休息段。
+
+11. ID 1812394  4.15★ AR8 目标：Acc94% 
 
 <Beatmap
   bid=1812394
@@ -1556,6 +2460,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="カラフル (tamame's apostate remix)"
 />
 
+~~圆焰贴~~
+
+这张 remix <span style="color: orange;">考验你三连小切的稳定性</span>。注意，5 分 21 秒全程无休。
+
+12. ID 1067240  4.19★ AR8.6 目标：Acc93.5% 
+
 <Beatmap
   bid=1067240
   sid=501498
@@ -1564,6 +2474,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1197
   alias="ひだまりデイズ"
 />
+
+~~好险，差点把小埋打成小圆了……~~
+
+<span style="color: orange;">综合带手控的图</span>。多犹豫1秒就会爆炸。
+
+13. ID 4439615  4.22★ AR8.5 目标：Acc94% 
 
 <Beatmap
   bid=4439615
@@ -1574,6 +2490,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ごめんね、いいコじゃいられない。"
 />
 
+~~斩服少女啊！还有看的吗？~~
+
+综合图，容易爆绿。
+
+14. ID 2911393  4.23★ AR8 目标：Acc96% 
+
 <Beatmap
   bid=2911393
   sid=1412334
@@ -1582,6 +2504,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1212
   alias="オレンジ"
 />
+
+龙虎ED啊，循环多少遍都觉得好听。
+
+<span style="color: orange;">主跳综合，没有休息段</span>，小心爆绿。<span style="color: orange;">第一段kiai马上结束的时候会有叠在一起的一组串</span>。
+
+15. ID 2720745  4.24★ AR8.3 目标：Acc96% 
 
 <Beatmap
   bid=2720745
@@ -1592,6 +2520,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="銀色、遥か"
 />
 
+跳综合，带点切和零散的串
+
+16. ID 706798  4.30★ AR8.5 目标：Acc96% 
+
 <Beatmap
   bid=706798
   sid=317236
@@ -1599,6 +2531,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.42
   max=1362
 />
+
+~~艾拉又来了。这首歌有好多full版本，这张最初rank的手感最好（个人认为）一端内检索是在长图区间内的所以放到长图里（~~
+
+无休综合图，好打。有串小心。
+
+17. ID 3705442  4.30★ AR8.4 目标：Acc92.5% 
 
 <Beatmap
   bid=3705442
@@ -1609,6 +2547,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="朝焼けのスターマイン"
 />
 
+~~再来个艾拉www~~
+
+<span style="color: orange;">主切综合图</span>，比较难抓
+
+18. ID 1095944  4.35★ AR8.5 目标：Acc96% 
+
 <Beatmap
   bid=1095944
   sid=455011
@@ -1616,6 +2560,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.37
   max=1351
 />
+
+~~高校舰队好像蛮冷门的（ 燃曲好听~~
+
+<span style="color: orange;">主跳综合图</span>，此外对读谱有一定要求。
+
+19. <span style="color: orange;">ID 861518  4.36★ 合格：Acc89% 目标：Acc93%</span> 
 
 <Beatmap
   bid=861518
@@ -1626,6 +2576,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="こわれかけのオルゴール"
 />
 
+快要坏掉的八音盒。
+
+手控综合图，<span style="color: orange;">如果没有手控练习的需求请跳过这张图</span>。
+
+20. ID 2569702  4.36★ AR8.7 目标：Acc93% 
+
 <Beatmap
   bid=2569702
   sid=1236164
@@ -1633,6 +2589,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.42
   max=1212
 />
+
+~~好听就完了哦~~
+
+综合。难抓。就前中段有一处休息时间，祝你好运。
+
+21. ID 909503  4.37★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=909503
@@ -1643,6 +2605,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="パケットヒーロー"
 />
 
+走路跳，比较简单。
+
+22. ID 3706111  4.37★ AR9 目标：Acc94% 
+
 <Beatmap
   bid=3706111
   sid=1807138
@@ -1652,6 +2618,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="花の塔"
 />
 
+~~......R.I.P~~
+
+<span style="color: orange;">主切综合图</span>，一堆切。稳定性大考验。
+
+23. ID 3763691  4.43★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=3763691
   sid=1790424
@@ -1659,6 +2631,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.43
   max=1190
 />
+
+还是班长。
+
+主跳的综合，中间有休息段。
+
+24. ID 2203621  4.44★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=2203621
@@ -1668,6 +2646,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1387
   alias="勇気はどこに？君の胸に！"
 />
+
+~~水团这个我是真喜欢啊，听完歌词后感觉充满了力量。~~
+
+<span style="color: orange;">综合图</span>，前后各有一处休息时间，够用了。
+
+25. ID 875660 / 882397  4.46★/4.62★ AR8.5/8.8 目标：Acc96% 
 
 <Beatmap
   bid=875660
@@ -1687,6 +2671,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="今、歩き出す君へ。"
 />
 
+~~现在就想告诉哥哥，我是妹妹！画风比较戳我~~
+
+主次难度都是简单的跳图，稳住即可。
+
+26. ID 2139012  4.47★ AR8.5 目标：Acc96% 
+
 <Beatmap
   bid=2139012
   sid=1022394
@@ -1695,6 +2685,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1104
   alias="君に逢えたから"
 />
+
+~~真红，谈嘿嘿，真红，谈嘿嘿~~
+
+<span style="color: orange;">主跳综合</span>，前半段纯送，后半段开始出现密度。
+
+27. ID 2173549  4.48★ AR8 目标：Acc93.5% 
 
 <Beatmap
   bid=2173549
@@ -1705,6 +2701,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="竈門炭治郎のうた"
 />
 
+走路+跳，因为CS6的缘故所以<span style="color: orange;">对定位要求很高</span>。可以来挑战一下自己的定位到底准不准。
+
+28. ID 1124841  4.49★ AR9 目标：Acc94.5% 
+
 <Beatmap
   bid=1124841
   sid=448919
@@ -1713,6 +2713,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=2040
 />
 
+~~Xi老头早期神专之翡翠鸡~~
+
+切串图，没有休息段，颇有难度。
+
+29. <span style="color: red;">ID 4623824  4.49★ AR8.7 合格：Acc89% 目标：——</span>
+
 <Beatmap
   bid=4623824
   sid=2122252
@@ -1720,6 +2726,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.62
   max=1244
 />
+
+~~为啥里番出神曲~~
+
+<span style="color: red;">采音比较Tech</span>，想挑战的可以试试。
+
+30. <span style="color: red;">ID 2525582  4.54★ AR8 合格：Acc88% 目标：——</span>
 
 <Beatmap
   bid=2525582
@@ -1730,6 +2742,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="終わりの世界から"
 />
 
+~~終の惑星のLoveSong专辑第一首~~
+
+很难的手控切串图，<span style="color: red;">不练手控请跳过</span>。
+
+31. ID 4112689  4.54★ AR8 目标：Acc94% 
+
 <Beatmap
   bid=4112689
   sid=1980612
@@ -1738,6 +2756,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1201
   alias="アレセイア"
 />
+
+~~猜猜谁又来了~~
+
+颇有难度的综合稳定图，因为是AR8所以疯狂爆绿止不住（？）
+
+32. ID 320981  4.55★ AR8 目标：Acc95% 
 
 <Beatmap
   bid=320981
@@ -1748,6 +2772,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="バニラソルト"
 />
 
+~~哎呀又是龙虎~~
+
+主跳综合图，想打准也不太容易。
+
+33. ID 1387259  4.63★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1387259
   sid=654473
@@ -1756,6 +2786,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1206
   alias="打上花火"
 />
+
+简单跳图，奖励关（？）
+
+34. ID 3498604  4.64★ AR9 目标：Acc96% 
 
 <Beatmap
   bid=3498604
@@ -1766,6 +2800,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="GHOST × GRADUATION"
 />
 
+快去玩初雪樱！（
+
+<span style="color: orange;">跳切图</span>，不是很难。还有<span style="color: orange;">不要打次难，是tech</span>。
+
+35. ID 4750101  4.64★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=4750101
   sid=2214156
@@ -1774,6 +2814,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1211
   alias="#あくあ色ぱれっと"
 />
+
+~~阿夸可爱阿夸可爱阿夸可爱~~
+
+<span style="color: orange;">主跳综合</span>，好听好玩。中间略梗，不过无伤大雅。
+
+36. ID 4268292  4.66★ AR9 目标：Acc96% 
 
 <Beatmap
   bid=4268292
@@ -1784,6 +2830,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="八月の夜"
 />
 
+此图来自[- MahiruShina- ]的投稿
+
+<span style="color: orange;">比较好打的综合图</span>，切串注意接稳一点。全程无休。
+
+37. ID 974653  4.68★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=974653
   sid=433114
@@ -1793,6 +2845,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="エブリデイワールド"
 />
 
+~~也是百听不厌的一首了~~
+
+擦线进入长图的一张<span style="color: orange;">综合</span>，注意有跳切，还有几个串。
+
+38. <span style="color: lightgreen;">ID 712895  4.72★</span> AR9 目标：Acc97.5% 
+
 <Beatmap
   bid=712895
   sid=284931
@@ -1801,6 +2859,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1166
 />
 
+超级水的跳图，算是奖励关了。
+
+39. ID 4044344  4.73★ AR9 目标：Acc96.5% 
+
 <Beatmap
   bid=4044344
   sid=1953010
@@ -1808,6 +2870,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.84
   max=1611
 />
+
+主跳的图，伴有一些跳切，不是很难。
+
+40. ID 4688564  4.76★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=4688564
@@ -1818,6 +2884,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="芽ぐみの雨"
 />
 
+春物+++
+
+综合图，没有休息段。
+
+41. ID 3535868  4.76★ AR9 目标：Acc94% 
+
 <Beatmap
   bid=3535868
   sid=1597526
@@ -1825,6 +2897,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.84
   max=1642
 />
+
+~~还是星姐（~~
+
+<span style="color: orange;">综合，串也不少</span>！过了中间就没有休息时间了。
+
+42. ID 4944769  4.80★ AR9 目标：Acc94.5% 
 
 <Beatmap
   bid=4944769
@@ -1835,6 +2913,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="七色シンフォニー"
 />
 
+~~四月来了~~
+
+<span style="color: orange;">主跳综合</span>，跳切+零散的小串。快结束的时候有一处休息时间可以调整状态。
+
+43. ID 1164084  4.80★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=1164084
   sid=549739
@@ -1844,6 +2928,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="いつもこの場所で"
 />
 
+~~石头门也干了（~~
+
+<span style="color: orange;">跳图</span>，但是<span style="color: orange;">全程无休</span>，能不能稳住是关键。
+
+44. <span style="color: red;">ID 1678965  4.54★ AR9 合格：Acc88% 目标：——</span>
+
 <Beatmap
   bid=1678965
   sid=799196
@@ -1851,6 +2941,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.83
   max=1294
 />
+
+~~这是第几个拉拉了（？）~~
+
+综合手控图，<span style="color: red;">不练手控请跳过</span>。
+
+45. ID 1894827  4.83★ AR8.5 目标：Acc95% 
 
 <Beatmap
   bid=1894827
@@ -1860,6 +2956,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1304
 />
 
+~~小延珠可爱ww~~
+
+<span style="color: orange;">综合图</span>，串还不短，要稳住。
+
+46. ID 965494  4.84★ AR8.8 目标：Acc95% 
+
 <Beatmap
   bid=965494
   sid=399151
@@ -1868,6 +2970,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1352
 />
 
+~~山茶花金曲+~~
+
+<span style="color: orange;">切串图</span>，串都不短，考验连打稳定的时候来了。
+
+47. ID 512707  4.86★ AR9 目标：Acc96% 
+
 <Beatmap
   bid=512707
   sid=218766
@@ -1875,6 +2983,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.03
   max=1794
 />
+
+~~罪恶王冠限时返场~~
+
+好听好玩的<span style="color: orange;">综合</span>。中后段有一处休息时间。
+
+48. ID 3191991  4.86★ AR9 目标：Acc95.5% 
 
 <Beatmap
   bid=3191991
@@ -1885,6 +2999,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ホントだよ"
 />
 
+~~教师危机——这声音这歌词谁不喜欢啊（）~~
+
+<span style="color: orange;">综合</span>，最后的最后需要注意读图。<span style="color: orange;">1-2-3其中12是叠在一起的3才是跳，不要想当然打成123折返跳</span>。不然你就暴毙白打了。
+
+49. ID 3078744  4.86★ AR9 目标：Acc94% 
+
 <Beatmap
   bid=3078744
   sid=1502725
@@ -1893,6 +3013,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1658
   alias="あの頃〜ジンジンバオヂュオニー〜"
 />
+
+~~《那些年》日语版~~
+
+<span style="color: orange;">略难一点的综合</span>，因此放宽了一点标准。
+
+50. ID 1577683  4.92★ AR9 目标：Acc95% 
 
 <Beatmap
   bid=1577683
@@ -1903,6 +3029,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="花の唄"
 />
 
+~~唉，樱线。~~
+
+<span style="color: orange;">跳图</span>。接近6分钟的图，有两处非常短的休息时间，好好把握。
+
+51. ID 574943  4.93★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=574943
   sid=250187
@@ -1911,6 +3043,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1540
   alias="だってだって噫無情"
 />
+
+~~拉拉再+1~~
+
+~~卧槽怎么51套图了，图有点多，私密马赛。~~
+
+快结束才有休息时间的综合图，直接上吧！
+
+52. ID 258252  4.93★ AR9 目标：Acc97% 
 
 <Beatmap
   bid=258252
@@ -1921,6 +3061,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="感情ケミストリー (Drum 'n' Bass Remix)"
 />
 
+~~东方+？~~
+
+这是非常水的一张综合，相信我。注意一下那几个串就好了。
+
+### 4-4.99 超长图
+
+1. ID 4838174  4.07★ AR8 目标：Acc96% and Combo800x 
+
 <Beatmap
   bid=4838174
   sid=2270474
@@ -1929,6 +3077,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=2234
 />
 
+很水的图，只是说<span style="color: orange;">很容易断</span>。因此附加了Combo标准。~~（放心，我就是FC这图拿的2000cb成就……）~~
+
+2. <span style="color: red;">ID 263791  4.25★ AR8 合格：Acc89% 目标：Acc93%</span> 
+
 <Beatmap
   bid=263791
   sid=99076
@@ -1936,6 +3088,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.26
   max=1745
 />
+
+~~拜托了☆老师……这泡面也有好歌啊~~
+
+练手控的有福了，6分钟综合手控图，<span style="color: red;">不练手控的请跳过</span>。
+
+3. <span style="color: orange;">ID 1095534  4.07★ AR8</span> 目标：Acc96% and Combo600x 
 
 <Beatmap
   bid=1095534
@@ -1946,6 +3104,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="なんでもないや"
 />
 
+~~超级水图出现了？！~~
+
+这跳图真的太水了，因此附加Combo标准。
+
+4. ID 4887895  4.41★ AR8 目标：Acc95% 
+
 <Beatmap
   bid=4887895
   sid=2290189
@@ -1954,6 +3118,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1439
   alias="はじまりの空"
 />
+
+~~来自专辑：群青インフィニティ~~
+
+跳图，认真对待即可。
+
+5. <span style="color: orange;">ID 386771  4.48★ AR8 合格：Acc92 目标：Acc95%</span> 
 
 <Beatmap
   bid=386771
@@ -1964,6 +3134,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="とある科学の超電磁砲 Compilation"
 />
 
+老<span style="color: orange;">手控</span>了，<span style="color: orange;">不练别玩</span>（
+
+6. <span style="color: orange;">ID 2177668  4.48★ AR8.8 合格：Acc92 目标：Acc95%</span> 
+
 <Beatmap
   bid=2177668
   sid=1041976
@@ -1973,6 +3147,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="僕らのあしあと"
 />
 
+~~黑岩里超喜欢的一首~~
+
+因为曲子节奏的缘故导致写的比较难，我很怕你打一半打不下去了（全程无休）
+
+7. ID 376291  4.60★ AR9 目标：Acc95% 
+
 <Beatmap
   bid=376291
   sid=153020
@@ -1980,6 +3160,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.51
   max=2143
 />
+
+~~Little Busters!~~
+
+整体不难，但是你耐不住它整体接近7分钟啊，中后段有一处休息时间好好把握吧。
+
+8. ID 1661649  4.75★ AR9 合格: —— 目标: —— 
 
 <Beatmap
   bid=1661649
@@ -1990,6 +3176,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="からかい上手の高木さん Compilation"
 />
 
+~~高木合集~~
+
+综合, 这首尽可能打准就行, 没有考核标准()
+
+### 4-4.99 马拉松
+
+1. ID 242822  4.06★ AR8 目标：Acc94.5% 
+
 <Beatmap
   bid=242822
   sid=89289
@@ -1997,6 +3191,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.24
   max=1667
 />
+
+~~这个夜核合集挺简单的（我初见直接就S）~~
+
+<span style="color: orange;">9分钟的时长</span>对耐力和稳定都是极大的考验，最重要的是这玩意打完你<span style="color: orange;">吃不到pp</span>（可能你看到我这么说直接就不打了 hh）
+
+2. <span style="color: orange;">ID 1515129  4.35★ AR8 合格：Acc90% 目标：Acc94%</span> 
 
 <Beatmap
   bid=1515129
@@ -2006,6 +3206,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=2960
 />
 
+~~川田麻美合集 好听爱听（就是剪的有点……）~~
+
+<span style="color: orange;">不练手控的快跑，12分钟综合手控来啦</span>！！！
+
+3. ID 1662269  4.41★ AR8.5 目标：Acc95% 
+
 <Beatmap
   bid=1662269
   sid=792487
@@ -2013,6 +3219,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.48
   max=1718
 />
+
+~~柳凪合集~~
+
+这张<span style="color: orange;">综合</span>挺简单，中后段的密度会高起来要注意。同样的，这图没多少 pp（
+
+4. ID 307618  4.49★ AR8 目标：Acc95% 
 
 <Beatmap
   bid=307618
@@ -2022,6 +3234,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=2758
 />
 
+~~东方合集~~
+
+<span style="color: orange;">水图</span>，虽然 pp 也没多少。快结束的时候会有几个串图，冷静应对。
+
+5. <span style="color: red;">ID 403469  4.71★ AR8.5 合格：—— 目标：——</span>
+
 <Beatmap
   bid=403469
   sid=165904
@@ -2030,6 +3248,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1036
 />
 
+<span style="color: red;">不练手控速速跳过</span>！你根本不懂 9 分钟全是切串是一种什么样的感受。
+
+6. ID 306049  4.81★ AR9 目标：
+
 <Beatmap
   bid=306049
   sid=119152
@@ -2037,6 +3259,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.95
   max=2097
 />
+
+~~夏娜合集~~
+
+综合图，但是实在不好设置一个标准，感兴趣可以尝试。
+
+7. ID 247037  4.81★ AR8 目标：
 
 <Beatmap
   bid=247037
@@ -2047,6 +3275,26 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="組曲「らき☆すた動画」"
 />
 
+幸运星组曲 （我刚刚过这个）
+
+这图居然是以走路为主的，但是突如其来的切串跳可能会打的你猝不及防，因为它一共有15分钟！
+
+<Score
+  bid=247037
+  sid=91214
+  preview="Lucky Star no Minna - Kumikyoku 'Lucky Star Douga' (Andrea) [Marathon]"
+  star=4.95
+  max=4256
+  mode="o"
+  accuracy=97.94
+  combo=1676
+  unicode="組曲「らき☆すた動画」"
+  rank="a"
+  performance=84
+/>
+
+8. <span style="color: red;">ID 3533093  4.85★ AR8 目标：——</span>
+
 <Beatmap
   bid=3533093
   sid=1728804
@@ -2054,6 +3302,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.14
   max=3549
 />
+
+~~Identity 1-5 合集~~
+
+<span style="color: red;">不练手控速速跳过</span>！全是切串，这图我初见死在了第四首，一大堆140连续大串终究是没抗过去直接暴毙了。
+
+9. ID 1754205  4.94★ AR9 目标：94Acc% 
 
 <Beatmap
   bid=1754205
@@ -2064,6 +3318,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="紅楼 ～ Eastern Dream"
 />
 
+~~此事在群文件 PP 长图推荐中亦有记载~~
+
+前半部分和后半部分各有一些零散的休息时间，好好把握，这图 10 分钟。这图 Nomod 能吃 200 多 pp 加油。
+
+10. <span style="color: red;">ID 4147967  4.98★ AR8 合格：—— 目标：——</span>
+
 <Beatmap
   bid=4147967
   sid=1945081
@@ -2071,6 +3331,18 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.26
   max=6982
 />
+
+东方妖妖梦曲目合集，因为妖妖梦这作除了EX还有额外的PH，因此额外的长，<span style="color: red;">这张图居然有22分钟</span>！
+
+<span style="color: red;">不练手控速速跳过</span>！全是切串。顺带一提（我Acc- 92.15%）
+
+## 第四部分 5-5.69 星
+
+### 5-5.69 中长图
+
+**前排提示**：5星基本就没有<span style="color: orange;">评语</span>和<span style="color: orange;">目标</span>了，我的鼠标底力不太容许能打太准，除非是某种类型的配置过多我可能会提一嘴。<span style="color: orange;">五星的综合都不会太简单</span>
+
+1. ID 2649062  5.00★ AR9 
 
 <Beatmap
   bid=2649062
@@ -2081,6 +3353,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="あの夢をなぞって"
 />
 
+~~夜鹿都来了夜游肯定也得来啊。~~
+
+2. ID 4413425  5.01★ AR9 
+
 <Beatmap
   bid=4413425
   sid=2103460
@@ -2088,6 +3364,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.06
   max=1015
 />
+
+切不太好处理。
+
+3. ID 4563774  5.01★ AR9 
 
 <Beatmap
   bid=4563774
@@ -2098,6 +3378,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="晴る"
 />
 
+~~夜鹿返厂（~~
+
+4. ID 3452162  5.02★ AR9 
+
 <Beatmap
   bid=3452162
   sid=1688656
@@ -2107,6 +3391,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Re:初恋の絵本 feat. 合田美桜（CV:豊崎愛生）"
 />
 
+~~无论何时我们的恋情都是10厘米~~
+
+5. ID 4428538  5.02★ AR9 
+
 <Beatmap
   bid=4428538
   sid=2109811
@@ -2114,6 +3402,8 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.18
   max=1352
 />
+
+6. ID 1416924  5.03★ AR9 
 
 <Beatmap
   bid=1416924
@@ -2123,6 +3413,8 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1285
 />
 
+7. ID 3944076  5.03★ AR9 
+
 <Beatmap
   bid=3944076
   sid=1846720
@@ -2130,6 +3422,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.17
   max=1197
 />
+
+PP跳图
+
+8. ID 4788696  5.04★ AR9 
 
 <Beatmap
   bid=4788696
@@ -2140,6 +3436,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="天使にふれたよ！(Asterisk DnB Remix)"
 />
 
+小心别被突如其来的串暗杀就行
+
+9. ID 947166  5.05★ AR9 
+
 <Beatmap
   bid=947166
   sid=440169
@@ -2148,6 +3448,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1255
   alias="光るなら"
 />
+
+~~四谎的歌都很好听~~
+
+10. ID 4666797  5.05★ AR9 
 
 <Beatmap
   bid=4666797
@@ -2158,6 +3462,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="爆ぜて咲く"
 />
 
+~~GBC 虽退但到~~
+
+这图吃爆发，bpm200
+
+11. ID 2780424  5.06★ AR9.2 
+
 <Beatmap
   bid=2780424
   sid=1181454
@@ -2166,6 +3476,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1322
   alias="ハレルヤ☆エッサイム"
 />
+
+~~经典珈百璃。~~
+
+12. ID 632127  5.07★ AR9 
 
 <Beatmap
   bid=632127
@@ -2176,6 +3490,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="Ωκεανος"
 />
 
+切串挺多
+
+13. ID 2258652  5.08★ AR9 
+
 <Beatmap
   bid=2258652
   sid=1079554
@@ -2185,6 +3503,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ダダダダ天使"
 />
 
+~~废柴天使，原唱nana和阿夸的翻唱我都喜欢哇~~
+
+14. ID 4112072  5.08★ AR9 
+
 <Beatmap
   bid=4112072
   sid=1975461
@@ -2192,6 +3514,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.34
   max=1467
 />
+
+~~影宅~~
+
+15. ID 3364593  5.08★ AR9 
 
 <Beatmap
   bid=3364593
@@ -2202,6 +3528,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="すーぱー☆あふぇくしょん"
 />
 
+~~幻想嘉年华~~
+
+16. ID 2276188  5.09★ AR9 
+
 <Beatmap
   bid=2276188
   sid=1088005
@@ -2210,6 +3540,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1166
   alias="失敗作少女"
 />
+
+~~好听爱听~~
+
+17. ID 1693862  5.09★ AR9 
 
 <Beatmap
   bid=1693862
@@ -2220,6 +3554,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ヒトリゴト"
 />
 
+~~您的pp已到账~~
+
+18. ID 4769593  5.10★ AR9 
+
 <Beatmap
   bid=4769593
   sid=97925
@@ -2228,6 +3566,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1294
   alias="私、主役の赤座あかりです (Happy Euri Mix)"
 />
+
+~~Akari Akari Akari~~
+
+19. ID 3119022  5.10★ AR9 
 
 <Beatmap
   bid=3119022
@@ -2238,6 +3580,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="コイセヨオトメ"
 />
 
+小水~
+
+20. ID 1746618  5.11★ AR9 
+
 <Beatmap
   bid=1746618
   sid=778657
@@ -2246,6 +3592,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1291
   alias="初嵐 -日本語版-"
 />
+
+~~豪庭~~
+
+21. ID 4168199  5.12★ AR8.8 
 
 <Beatmap
   bid=4168199
@@ -2256,6 +3606,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="光の中へ"
 />
 
+~~是那个女人 她来了！~~
+
+22. ID 4846849  5.13★ AR9 
+
 <Beatmap
   bid=4846849
   sid=2251109
@@ -2264,6 +3618,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=981
   alias="らしくない恋"
 />
+
+八卦恋爱
+
+23. ID 4766300  5.13★ AR9 
 
 <Beatmap
   bid=4766300
@@ -2274,6 +3632,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ピコっと！パピっと！！ガルパ☆ピコ！！！"
 />
 
+邦多利+1
+
+24. ID 198171  5.13★ AR9 
+
 <Beatmap
   bid=198171
   sid=68500
@@ -2281,6 +3643,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.23
   max=1279
 />
+
+是刀剑、爷青回（小心串）
+
+25. ID 998447  5.13★ AR9 
 
 <Beatmap
   bid=998447
@@ -2291,6 +3657,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="夢色パレード"
 />
 
+黄金拼图
+
+26. <span style="color: orange;">ID 2817423  5.15★ AR9</span> 
+
 <Beatmap
   bid=2817423
   sid=1361614
@@ -2299,6 +3669,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1617
   alias="ヒトガタRock"
 />
+
+Rock 版也很爽啊（个人觉得有些难度所以标橙）
+
+27. ID 1485742  5.18★ AR9 
 
 <Beatmap
   bid=1485742
@@ -2309,6 +3683,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ほっしーの!"
 />
 
+~~没看过 new game 可以试试，好看的~~
+
+28. ID 955864  5.19★ AR9 
+
 <Beatmap
   bid=955864
   sid=444962
@@ -2317,6 +3695,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1005
   alias="M♭"
 />
+
+~~有请 Winner 之一登场~~
+
+29. ID 1919045  5.20★ AR9.1 
 
 <Beatmap
   bid=1919045
@@ -2327,6 +3709,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="glowing world ～輝きの、セカイへ～"
 />
 
+~~又来一首~~
+
+30. ID 2145283  5.20★ AR9.2 
+
 <Beatmap
   bid=2145283
   sid=1025776
@@ -2334,6 +3720,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.22
   max=1238
 />
+
+~~蒲公英~~
+
+31. ID 366142  5.22★ AR9 
 
 <Beatmap
   bid=366142
@@ -2344,6 +3734,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="オメガリズム"
 />
 
+~~小心串~~
+
+32. ID 2754191  5.24★ AR9 
+
 <Beatmap
   bid=2754191
   sid=1312335
@@ -2352,6 +3746,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1320
   alias="告白バンジージャンプ"
 />
+
+~~您好，借个女友~~
+
+33. ID 2792200  5.24★ AR8.7 
 
 <Beatmap
   bid=2792200
@@ -2362,6 +3760,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ルーザーガール"
 />
 
+~~loser~~
+
+34. ID 2808771  5.25★ AR9 
+
 <Beatmap
   bid=2808771
   sid=1346547
@@ -2370,6 +3772,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1449
   alias="ぺこらんだむぶれいん！"
 />
+
+~~Peko~~
+
+35. ID 2079130  5.25★ AR9.2 
 
 <Beatmap
   bid=2079130
@@ -2380,6 +3786,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="緋色の空"
 />
 
+~~我直接唱打（~~
+
+36. ID 2302135  5.28★ AR9.2 
+
 <Beatmap
   bid=2302135
   sid=1101976
@@ -2388,6 +3798,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1079
 />
 
+~~PP跳~~
+
+37. ID 465496  5.29★ AR9 
+
 <Beatmap
   bid=465496
   sid=196241
@@ -2395,6 +3809,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.35
   max=1446
 />
+
+~~无限斯特拉托斯2~~
+
+38. ID 2920652  5.31★ AR9.2 
 
 <Beatmap
   bid=2920652
@@ -2405,6 +3823,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="だから僕は音楽を辞めた"
 />
 
+夜鹿又来喽
+
+39. ID 2465137  5.32★ AR9 
+
 <Beatmap
   bid=2465137
   sid=1175182
@@ -2412,6 +3834,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.54
   max=1656
 />
+
+来玩花咲ワークスプリング 
+
+40. ID 345099  5.37★ AR9 
 
 <Beatmap
   bid=345099
@@ -2422,6 +3848,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="エアーマンが倒せない (SOUND HOLIC Ver.)"
 />
 
+走跳切串比例挺平均。
+
+41. ID 3360033  5.38★ AR9.2 
+
 <Beatmap
   bid=3360033
   sid=1646129
@@ -2430,6 +3860,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1429
   alias="ヒスイ"
 />
+
+跳图
+
+42. ID 2992124  5.38★ AR9 
 
 <Beatmap
   bid=2992124
@@ -2440,6 +3874,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ごーしゅー!"
 />
 
+小心串
+
+43. ID 827802  5.40★ AR9 
+
 <Beatmap
   bid=827802
   sid=297969
@@ -2449,6 +3887,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="キャラメルへヴン"
 />
 
+~~不简单~~
+
+44. ID 4835113  5.40★ AR9.2 
+
 <Beatmap
   bid=4835113
   sid=2270134
@@ -2456,6 +3898,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.28
   max=1015
 />
+
+~~柚子厨又来了（~~ 跳图。
+
+45. ID 2859961  5.40★ AR9 
 
 <Beatmap
   bid=2859961
@@ -2466,6 +3912,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="キラキラDays"
 />
 
+轻音+1
+
+46. ID 889634  5.43★ AR9.2 
+
 <Beatmap
   bid=889634
   sid=409898
@@ -2473,6 +3923,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.45
   max=1238
 />
+
+你的pp跳图已到账
+
+47. ID 3176937  5.44★ AR9 
 
 <Beatmap
   bid=3176937
@@ -2482,6 +3936,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1307
 />
 
+ぬるぺた 有番也有改的游戏www
+
+48. ID 3922958  5.46★ AR9.2 
+
 <Beatmap
   bid=3922958
   sid=1902790
@@ -2489,6 +3947,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.66
   max=1079
 />
+
+~~巧巧巧巧巧克力，全心全意亲手制作，注入其中的是我仅你一份的纯爱~~ （翻译过来好怪啊，很不押韵）
+
+49. ID 4895517  5.46★ AR9 
 
 <Beatmap
   bid=4895517
@@ -2499,6 +3961,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="踊ろうぜ"
 />
 
+看看谁来了（
+
+50. ID 4041918  5.46★ AR9 
+
 <Beatmap
   bid=4041918
   sid=1951957
@@ -2508,6 +3974,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ハナノイロ"
 />
 
+你知道花开伊吕波吗
+
+51. ID 3002764  5.47★ AR9 
+
 <Beatmap
   bid=3002764
   sid=1458599
@@ -2515,6 +3985,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.49
   max=1036
 />
+
+~~又一pp跳图~~
+
+52. ID 4371760  5.48★ AR9.1 
 
 <Beatmap
   bid=4371760
@@ -2525,6 +3999,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="エソア"
 />
 
+~~魔王学院的不适格者 算是比较舒服的一个厕纸（~~
+
+53. ID 4165391  5.53★ AR9.3 
+
 <Beatmap
   bid=4165391
   sid=2003020
@@ -2532,6 +4010,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.61
   max=1237
 />
+
+拉拉+++
+
+54. ID 1097608  5.55★ AR9.3 
 
 <Beatmap
   bid=1097608
@@ -2542,6 +4024,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="恋せよ乙女！"
 />
 
+~~柚子厨......~~ 主跳的图，快去给我刷！！
+
+55. ID 2939433  5.56★ AR9.3 
+
 <Beatmap
   bid=2939433
   sid=1415985
@@ -2551,6 +4037,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="君のせい"
 />
 
+樱岛麻衣来了！
+
+56. ID 4820214  5.59★ AR9.2 
+
 <Beatmap
   bid=4820214
   sid=2262416
@@ -2558,6 +4048,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.71
   max=1730
 />
+
+~~Nanahira www~~ 连续串图 跳的要求也不低
+
+57. ID 2294159  5.59★ AR9.1 
 
 <Beatmap
   bid=2294159
@@ -2568,6 +4062,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="少女たちの終わらない夜"
 />
 
+~~跳图~~
+
+58. ID 4784534  5.60★ AR9.2 
+
 <Beatmap
   bid=4784534
   sid=2176316
@@ -2576,6 +4074,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1272
   alias="ケアレス"
 />
+
+~~外传第二季没看过的，建议不要看……~~
+
+59. ID 3630306  5.60★ AR9.3 
 
 <Beatmap
   bid=3630306
@@ -2586,6 +4088,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="いつかオトナになれるといいね。"
 />
 
+Tuyu+1 
+
+60. ID 1760024  5.61★ AR9 
+
 <Beatmap
   bid=1760024
   sid=822032
@@ -2594,6 +4100,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1159
   alias="DEEP BLUE TOWNへおいでよ"
 />
+
+~~深 蓝 城~~
+
+61. ID 3946774  5.63★ AR9.3 
 
 <Beatmap
   bid=3946774
@@ -2604,6 +4114,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="忘れてやらない"
 />
 
+~~结束乐队+1~~
+
+62. ID 4875884  5.64★ AR9.2 
+
 <Beatmap
   bid=4875884
   sid=2276889
@@ -2612,6 +4126,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1274
   alias="あっちゅ～ま青春！"
 />
+
+### 5-5.69 长图
+
+1. ID 4781993  5.00★ AR9 
 
 <Beatmap
   bid=4781993
@@ -2622,6 +4140,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="月燈籠"
 />
 
+~~Nana!Nana!Nana!~~
+
+2. ID 4156981  5.01★ AR9 
+
 <Beatmap
   bid=4156981
   sid=1947773
@@ -2629,6 +4151,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.04
   max=1474
 />
+
+~~公主连接+1~~
+
+3. ID 2667608  5.01★ AR9 
 
 <Beatmap
   bid=2667608
@@ -2639,6 +4165,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="発見者はワタシ"
 />
 
+~~从零开始的魔法书~~
+
+4. ID 1208245  5.02★ AR9 
+
 <Beatmap
   bid=1208245
   sid=569986
@@ -2646,6 +4176,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.10
   max=1753
 />
+
+~~哎呀这不伤恋吗~~
+
+5. ID 4246549  5.02★ AR8.5 
 
 <Beatmap
   bid=4246549
@@ -2656,6 +4190,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="残念系隣人部★★☆"
 />
 
+~~我的朋友很少~~
+
+6. ID 1589038  5.03★ AR9 
+
 <Beatmap
   bid=1589038
   sid=754826
@@ -2663,6 +4201,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.01
   max=1158
 />
+
+~~纯白交响曲~~
+
+7. ID 4395568  5.04★ AR9 
 
 <Beatmap
   bid=4395568
@@ -2673,6 +4215,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="⨍iиorzᾶ"
 />
 
+~~我懂得欣赏（~~
+
+8. <span style="color: orange;">ID 3982076  5.08★ AR9</span> 
+
 <Beatmap
   bid=3982076
   sid=1917319
@@ -2681,6 +4227,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1553
   alias="カラカラ"
 />
+
+那个女人
+
+9. ID 4930209  5.10★ <span style="color: orange;">AR8</span> 
 
 <Beatmap
   bid=4930209
@@ -2691,6 +4241,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="コネクト"
 />
 
+圆神降临
+
+10. ID 2470983  5.14★ AR9 
+
 <Beatmap
   bid=2470983
   sid=1108416
@@ -2698,6 +4252,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.22
   max=1496
 />
+
+~~拉拉 拉拉 拉拉~~
+
+11. ID 733678  5.15★ AR9 
 
 <Beatmap
   bid=733678
@@ -2708,6 +4266,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="源流懐古"
 />
 
+~~还有其他版本，也是pp图（~~
+
+12. ID 1725345  5.15★ AR9 
+
 <Beatmap
   bid=1725345
   sid=823259
@@ -2717,6 +4279,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="アンハッピーエンドワールド"
 />
 
+~~学园孤岛，这歌超好听~~
+
+13. ID 4366321  5.16★ AR9 
+
 <Beatmap
   bid=4366321
   sid=2003887
@@ -2725,6 +4291,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1207
 />
 
+~~无鸡之谈来了（）~~ 小心串
+
+14. ID 374574  5.17★ AR9 
+
 <Beatmap
   bid=374574
   sid=152112
@@ -2732,6 +4302,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.17
   max=1426
 />
+
+拉拉持续加分中
+
+15. ID 4920731  5.20★ AR9 
 
 <Beatmap
   bid=4920731
@@ -2742,6 +4316,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="愛よりたしかなものなんてない"
 />
 
+~~很有感觉 但是不简单~~
+
+16. ID 837876  5.22★ AR9 
+
 <Beatmap
   bid=837876
   sid=383242
@@ -2751,6 +4329,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ワンダーステラ"
 />
 
+~~带伊莉雅玩就是好~~
+
+17. ID 4520417  5.23★ AR9 
+
 <Beatmap
   bid=4520417
   sid=1554804
@@ -2758,6 +4340,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.32
   max=1543
 />
+
+~~约战限时返场 跳图~~
+
+18. ID 4871983  5.23★ AR9 
 
 <Beatmap
   bid=4871983
@@ -2768,6 +4354,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="季節を抱きしめて ～blooming white love～"
 />
 
+中后段有密度陡峰，坚持住
+
+19. ID 4840423  5.23★ AR8.4 
+
 <Beatmap
   bid=4840423
   sid=2271183
@@ -2775,6 +4365,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.15
   max=1255
 />
+
+跳切
+
+20. ID 378617  5.24★ AR9 
 
 <Beatmap
   bid=378617
@@ -2785,6 +4379,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="とまどい→レシピ"
 />
 
+~~未确认进行时 小姑子可爱捏ww~~
+
+21. ID <span style="color: orange;">3544529  5.24★ AR9</span> 
+
 <Beatmap
   bid=3544529
   sid=1726464
@@ -2793,6 +4391,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1560
   alias="The♡World’s♡End"
 />
+
+~~青春纪行~~
+
+22. ID 220792  5.24★ AR9 
 
 <Beatmap
   bid=220792
@@ -2803,6 +4405,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="僕らは今のなかで"
 />
 
+~~拉拉分数要爆表了（这曲还有其他rank 就不放了）~~
+
+23. ID 3485073  5.30★ <span style="color: orange;">AR8.5</span> 
+
 <Beatmap
   bid=3485073
   sid=1677520
@@ -2812,6 +4418,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="新作のしあわせはこちら！"
 />
 
+~~Chino Desu~~
+
+24. ID 205958  5.36★ AR9 
+
 <Beatmap
   bid=205958
   sid=71990
@@ -2819,6 +4429,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.35
   max=1327
 />
+
+老熟人了（
+
+25. ID 1694160  5.42★ AR9.4 
 
 <Beatmap
   bid=1694160
@@ -2829,6 +4443,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="モがたいリめでもゆめみサマー！"
 />
 
+中二病还在追我，夏大人，神曲，豪庭！
+
+26. <span style="color: orange;">ID 4266638  5.42★ AR9</span> 
+
 <Beatmap
   bid=4266638
   sid=2044239
@@ -2838,6 +4456,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="コイセカイ"
 />
 
+~~白圣女与黑牧师~~ 难
+
+27. <span style="color: orange;">ID 361263  5.44★ AR9</span> 
+
 <Beatmap
   bid=361263
   sid=145685
@@ -2845,6 +4467,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.52
   max=1796
 />
+
+笨蛋裘克拉
+
+28. ID 1533551  5.47★ AR9.2 
 
 <Beatmap
   bid=1533551
@@ -2855,6 +4481,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="オラシオン"
 />
 
+~~Shiro Chan~~
+
+29. ID 1081936  5.53★ AR9 
+
 <Beatmap
   bid=1081936
   sid=493830
@@ -2862,6 +4492,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.68
   max=1848
 />
+
+~~祈妹（5分半无休警告）~~
+
+30. <span style="color: orange;">ID 4454143  5.53★ AR9</span> 
 
 <Beatmap
   bid=4454143
@@ -2871,6 +4505,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1642
 />
 
+~~3.71 | 4.77 的难度都挺简单（）~~
+
+31. ID 3986755  5.55★ AR9.1 
+
 <Beatmap
   bid=3986755
   sid=1928253
@@ -2878,6 +4516,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.61
   max=1528
 />
+
+~~小水+1~~
+
+32. ID 2961262  5.62★ AR9.2 
 
 <Beatmap
   bid=2961262
@@ -2888,6 +4530,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="おもいでしりとり"
 />
 
+借一个不够啊，再借一个
+
+【如果你想挑战】
+
+33. <span style="color: red;">ID 4073277  5.03★ AR9</span>
+
 <Beatmap
   bid=4073277
   sid=1850986
@@ -2895,6 +4543,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.41
   max=2217
 />
+
+~~爽曲 海王~~
+
+34. <span style="color: red;">ID 989017  5.09★ AR9</span> 
 
 <Beatmap
   bid=989017
@@ -2904,6 +4556,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1576
 />
 
+~~感觉就像被雷姆拉姆揍了一样（~~
+
+35. <span style="color: red;">ID 4733826  5.13★ AR9</span> 
+
 <Beatmap
   bid=4733826
   sid=1020387
@@ -2911,6 +4567,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.34
   max=1737
 />
+
+~~黑光~~
+
+36. <span style="color: red;">ID 4152865  5.27★ AR9</span> 
 
 <Beatmap
   bid=4152865
@@ -2920,6 +4580,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=2303
 />
 
+~~山茶花+++ 有没有发现谱师都是同一个人（~~
+
+37. <span style="color: red;">ID 2898393  5.27★ AR9.3</span> 
+
 <Beatmap
   bid=2898393
   sid=1405453
@@ -2927,6 +4591,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.62
   max=1580
 />
+
+~~怎么这也有柚子厨啊，恼……~~
+
+38. <span style="color: red;">ID 2916949  5.33★ AR9.2</span> 
 
 <Beatmap
   bid=2916949
@@ -2937,6 +4605,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="true DJ MAG top ranker's song 前編 (かたぎり Remix)"
 />
 
+~~这位更是DDDD~~
+
+39. <span style="color: red;">ID 4734310  5.36★ AR9</span> 
+
 <Beatmap
   bid=4734310
   sid=2230787
@@ -2944,6 +4616,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.57
   max=2610
 />
+
+~~该来的终究会来~~
+
+40. <span style="color: red;">ID 4343468  5.36★ AR9.2</span> 
 
 <Beatmap
   bid=4343468
@@ -2954,6 +4630,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="粛聖!! ロリ神レクイエム☆"
 />
 
+~~请尽情地鞭打我，时雨羽衣小姐（（（（（~~
+
+41. <span style="color: red;">ID 1355859  5.43★ AR9.3</span> 
+
 <Beatmap
   bid=1355859
   sid=613347
@@ -2961,6 +4641,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.88
   max=1977
 />
+
+装逼让你飞起来（
+
+42. <span style="color: red;">ID 4115513  5.36★ AR7</span> 
 
 <Beatmap
   bid=4115513
@@ -2971,6 +4655,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="最も澄みわたる空と海"
 />
 
+<span style="color: red;">不想折磨自己建议这辈子都别点开这张图（</span>
+
+### 5-5.69 超长图
+
+1. ID 1030059  5.21★ AR9 
+
 <Beatmap
   bid=1030059
   sid=437113
@@ -2978,6 +4668,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.24
   max=1782
 />
+
+拉拉人还在发力（ 跳图。
+
+2. ID 936406  5.23★ AR9.2 
 
 <Beatmap
   bid=936406
@@ -2988,6 +4682,16 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="おかえりなさい (tomatomerde Remix)"
 />
 
+端内正正好好6分钟 主要由跳切/小串构成
+
+没了（……
+
+可能是我的游玩区间还没到这里所以比较少
+
+### 5-5.69 马拉松
+
+1. <span style="color: orange;">ID 4254224  5.00★ AR9</span>
+
 <Beatmap
   bid=4254224
   sid=2039491
@@ -2995,6 +4699,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.33
   max=2816
 />
+
+<span style="color: orange;">吃手控的综合</span>，整体bpm在134- 140之间
+
+2. ID 2618611  5.15★ AR9 
 
 <Beatmap
   bid=2618611
@@ -3004,6 +4712,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=4432
 />
 
+<span style="color: orange;">16分钟，快结束的时候会出现密度陡峰</span>，一定要坚持住
+
+3. ID 4720023  5.15★ AR9 
+
 <Beatmap
   bid=4720023
   sid=2214048
@@ -3011,6 +4723,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.24
   max=2898
 />
+
+8分半的小水合集，是你最有可能吃到的一个？
+
+4. ID 1928680  5.21★ AR9 
 
 <Beatmap
   bid=1928680
@@ -3020,6 +4736,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=3680
 />
 
+14分钟H△G合集，别被前半段低密度骗了，<span style="color: orange;">密度全在后面呢</span>
+
+5. <span style="color: orange;">ID 774903  5.62★ AR9</span> 
+
 <Beatmap
   bid=774903
   sid=351606
@@ -3027,6 +4747,14 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.84
   max=4322
 />
+
+15分钟拉拉合集，一共20首歌，bpm由开始的90到结束的220逐渐升高，并不好打。
+
+【如果你想挑战】
+
+6. <span style="color: red;">ID 3844593  5.02★ AR8</span>
+
+
 
 <Beatmap
   bid=3844593
@@ -3036,6 +4764,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=3751
 />
 
+~~东方风神录合集~~，<span style="color: red;">12分钟极致的手控</span>。
+
+7. <span style="color: red;">ID 1321645  5.10★ AR9.2</span> 
+
 <Beatmap
   bid=1321645
   sid=627159
@@ -3043,6 +4775,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.07
   max=1891
 />
+
+~~当你认为这张图舒缓好打的时候你就输了。曲师可是削除啊！~~<span style="color: red;">Tech图</span>
+
+8. <span style="color: red;">ID 2089071  5.11★ AR9</span> 
 
 <Beatmap
   bid=2089071
@@ -3053,6 +4789,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="うみねこのなく頃に Compilation"
 />
 
+万恶之源海猫来了，这位更是30分钟手控
+
+9. <span style="color: red;">ID 3909170  5.29★ AR9</span> 
+
 <Beatmap
   bid=3909170
   sid=1225907
@@ -3061,346 +4801,330 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=4281
 />
 
-<Beatmap
-  bid=2197830
-  sid=767560
-  preview="KONOSUBA -  (Holland Novak) [Explosion!]"
-  star=4.11
-  max=197
-  alias="Megumin"
-/>
+BPM高一点的手控。
+
+---
+
+到这里就正式结束了，真亏你能全部看完，佩服佩服（
+
+祝你拿图愉快。
+
+## 附录
+
+### 附录I - 没放进正文的一些rank图集
+
+这里有一些没写进上面的图集，仅提供图集ID，没有时间排序
 
 <Beatmap
-  bid=1479545
-  sid=667433
-  preview="sasakure.UK x DECO*27 - 39 (Finshie) [Mathew's Hard]"
-  star=3.45
-  max=835
-/>
-
-<Beatmap
-  bid=534116
-  sid=223213
-  preview="Fear And Loathing In Las Vegas - Let Me Hear (TV Size) (-[BURGERKILL]-) [KawaEE's 7K SC]"
-  star=5.54
-  max=2015
-  mode="m"
-/>
-
-<Beatmap
-  bid=2009498
-  sid=959785
-  preview="Ireland Boys Productions - YEET! (Dorkydawg) [Easy]"
-  star=0.21
-  max=3
-/>
-
-<Beatmap
-  bid=4399575
-  sid=2097644
-  preview="YUI - again (Malphs) [Promise]"
-  star=6.30
-  max=1781
-/>
-
-<Beatmap
-  bid=2251905
-  sid=1075926
-  preview="That Poppy - Altar (Speed Up Ver.) (Yellowtuber) [160 BPM]"
-  star=5.14
-  max=1069
-/>
-
-<Beatmap
-  bid=2836433
-  sid=1371996
-  preview="umu. - Ai no Sukima (Half) [Howling]"
-  star=6.29
-  max=1137
-  alias="哀の隙間"
-/>
-
-<Beatmap
-  bid=351280
-  sid=140705
-  preview="jun with TAHIRIH - HAPPYANGEL -IIDX sky+- (hidexhidexhide) [[7K] Insane]"
-  star=3.05
-  max=1336
-  alias="HAPPY☆ANGEL -ⅡDX sky+α-"
-  mode="m"
-/>
-
-<Beatmap
-  bid=1936331
-  sid=922189
-  preview="Leaf - Calamity Fortune (Sagitta) [Insane]"
-  star=4.86
-  max=294
-/>
-
-<Beatmap
-  bid=4160050
-  sid=2000770
-  preview="Kicco - Amazing sky (Log Off Now) [Let's go together]"
-  star=4.83
-  max=1255
-/>
-
-<Beatmap
-  bid=1176385
-  sid=555865
-  preview="Various Artist - Pike's SM pack vol.2 (pikechu) [[4K] Touhou 5th Stage Relay Toho Medley 8th track Lv.15]"
-  star=5.71
-  max=13642
-  mode="m"
-/>
-
-<Beatmap
-  bid=4212652
-  sid=2022615
-  preview="Mili - Ame to Taieki to Nioi (Annabel) [Impurity]"
-  star=3.77
-  max=1015
-  alias="雨と体液と匂い"
-/>
-
-<Beatmap
-  bid=1048140
-  sid=491928
-  preview="Dasu - NAKAKAPAGPABAGABAG (Toshiyuki Doma) [[4K] Easy]"
-  star=1.20
-  max=520
-  mode="m"
-/>
-
-<Beatmap
-  bid=111169
-  sid=34099
-  preview=" - konekono yatasi (kaname madoka_) [Hard]"
-  star=2.46
-  max=89
-/>
-
-<Beatmap
-  bid=4758869
-  sid=2239344
-  preview="Airi Miyakawa - Ao Raid (Sotarks) [Extra]"
-  star=6.00
-  max=972
-  alias="アオレイド"
-/>
-
-<Beatmap
-  bid=1599364
-  sid=760460
-  preview="Queen Bee - HALF-anime size edit- (HabiHolic) [Insane]"
-  star=3.84
-  max=348
-/>
-
-<Beatmap
-  bid=611367
-  sid=268513
-  preview="GRANRODEO - Punky Funky Love (KookieNien) [[4K] Normal]"
-  star=1.75
-  max=584
-  mode="m"
-/>
-
-<Beatmap
-  bid=1108809
-  sid=522078
-  preview="USAO - Night sky (EZNF) [EZNF's skyfall]"
+  sid=2197830
+  preview="Slax - Loli Bomb (Cut Ver.) (smolship)"
   star=6.59
-  max=927
+  difficulties=[2.53,3.00,3.87,5.18,5.72,6.59]
 />
 
 <Beatmap
-  bid=3014744
-  sid=1468194
-  preview="TUYU - Asagao no Chiru Koro ni (Finshie) [When the Morning Glory Falls]"
-  star=4.90
-  max=735
-  alias="アサガオの散る頃に"
+  sid=667433
+  preview="sasakure.UK x DECO*27 - 39 (Finshie)"
+  star=5.33
+  difficulties=[1.80,2.41,3.45,4.54,5.33]
 />
 
 <Beatmap
-  bid=1858571
-  sid=497307
-  preview="Happy Clover - Ashita de Ii kara (CoLouRed GlaZeE) [Happi]"
-  star=4.07
-  max=1315
-  alias="明日でいいから"
+  sid=534116
+  preview="REOL - 404 not found (SnowNiNo_)"
+  star=5.62
+  difficulties=[1.82,3.02,3.94,4.89,5.62]
 />
 
 <Beatmap
-  bid=679779
-  sid=292077
-  preview="Reol - Asymmetry (Gaia) [captin's Extra]"
-  star=6.44
-  max=1776
-  alias="アシンメトリー"
+  sid=2009498
+  preview="YOASOBI - Adventure (Aurorance)"
+  star=5.14
+  difficulties=[1.90,3.23,4.78,5.14]
+  unicode="アドベンチャー"
 />
 
 <Beatmap
-  bid=2984502
-  sid=1451433
-  preview="LiSA - AxxxiS (SpokenAway) [AxxxiS breaker!]"
+  sid=2097644
+  preview="YUI - again (Malphs)"
+  star=6.30
+  difficulties=[3.59,4.68,6.03,6.30]
+/>
+
+<Beatmap
+  sid=2251905
+  preview="KOTOKO - a-gain (Gorou)"
+  star=3.82
+  difficulties=[1.85,2.26,3.82]
+/>
+
+<Beatmap
+  sid=1371996
+  preview="umu. - Ai no Sukima (Half)"
+  star=6.29
+  difficulties=[2.55,3.87,4.71,5.17,6.29]
+  unicode="哀の隙間"
+/>
+
+<Beatmap
+  sid=351280
+  preview="HoneyWorks - Akatsuki Zukuyo ([C u r i])"
+  star=6.01
+  difficulties=[1.91,2.53,3.25,3.75,5.05,5.86,6.01]
+/>
+
+<Beatmap
+  sid=1936331
+  preview="Yorushika - Algernon (alevi)"
+  star=4.21
+  difficulties=[3.08,4.21]
+  unicode="アルジャーノン"
+/>
+
+<Beatmap
+  sid=2000770
+  preview="Kicco - Amazing sky (Log Off Now)"
+  star=4.83
+  difficulties=[3.60,4.83]
+/>
+
+<Beatmap
+  sid=1176385
+  preview="Yorushika - Ame Haruru (Chiru-kun)"
+  star=4.44
+  difficulties=[3.16,4.44]
+  unicode="雨晴るる"
+/>
+
+<Beatmap
+  sid=2022615
+  preview="Mili - Ame to Taieki to Nioi (Annabel)"
+  star=3.77
+  difficulties=[3.77]
+  unicode="雨と体液と匂い"
+/>
+
+<Beatmap
+  sid=1048140
+  preview="Yorushika - Amy (Ryuusei Aika)"
+  star=4.18
+  difficulties=[1.97,3.25,3.66,4.03,4.18]
+  unicode="エイミー"
+/>
+
+<Beatmap
+  sid=111169
+  preview="fripSide - an evening calm kai Re:product RMX (kiddly)"
+  star=4.41
+  difficulties=[3.38,4.41]
+/>
+
+<Beatmap
+  sid=2239344
+  preview="Airi Miyakawa - Ao Raid (Sotarks)"
+  star=6.00
+  difficulties=[2.76,4.10,5.06,6.00]
+  unicode="アオレイド"
+/>
+
+<Beatmap
+  sid=1599364
+  preview="Seiryu - AO-Infinity (Astronic)"
+  star=7.06
+  difficulties=[2.74,3.87,5.05,6.14,6.87,7.06]
+  unicode="AO-∞"
+/>
+
+<Beatmap
+  sid=611367
+  preview="Aqours - Aozora Jumping Heart (Sakurauchi Riko)"
+  star=7.23
+  difficulties=[2.09,2.87,3.72,5.02,5.98,6.47,7.23]
+  unicode="青空Jumping Heart"
+/>
+
+<Beatmap
+  sid=1108809
+  preview="Yorushika - Aruku (Faito)"
   star=6.67
-  max=1599
+  difficulties=[2.53,3.70,5.02,5.91,6.67]
+  unicode="歩く"
 />
 
 <Beatmap
-  bid=2820118
+  sid=1468194
+  preview="TUYU - Asagao no Chiru Koro ni (Finshie)"
+  star=4.90
+  difficulties=[2.25,2.82,3.95,4.90]
+  unicode="アサガオの散る頃に"
+/>
+
+<Beatmap
+  sid=497307
+  preview="Happy Clover - Ashita de Ii kara (CoLouRed GlaZeE)"
+  star=4.07
+  difficulties=[4.07]
+  unicode="明日でいいから"
+/>
+
+<Beatmap
+  sid=292077
+  preview="Reol - Asymmetry (Gaia)"
+  star=6.44
+  difficulties=[1.83,2.44,3.75,4.96,5.85,6.11,6.44]
+  unicode="アシンメトリー"
+/>
+
+<Beatmap
+  sid=1451433
+  preview="LiSA - AxxxiS (SpokenAway)"
+  star=6.67
+  difficulties=[2.50,3.97,4.95,6.09,6.67]
+/>
+
+<Beatmap
   sid=1363146
-  preview="Galileo Galilei - Banana Fish no Hamabe to Kuroi Niji with Aimer (Kowari) [Insane]"
+  preview="Galileo Galilei - Banana Fish no Hamabe to Kuroi Niji with Aimer (Kowari)"
   star=4.42
-  max=1202
-  alias="バナナフィッシュの浜辺と黒い虹 with Aimer"
+  difficulties=[2.34,3.36,4.42]
+  unicode="バナナフィッシュの浜辺と黒い虹 with Aimer"
 />
 
 <Beatmap
-  bid=1910670
-  sid=914830
-  preview="The Living Tombstone - Nippontradamus (_Asthenos) [jump practice]"
-  star=7.81
-  max=261
+  sid=1910670
+  preview="Mili - Colorful (- Ex -)"
+  star=5.43
+  difficulties=[2.74,3.89,4.68,5.43]
+  unicode="カラフル"
 />
 
 <Beatmap
-  bid=1843515
-  sid=881729
-  preview="DragonForce - Cry Thunder (aritakun) [lightning strikes twice]"
-  star=6.45
-  max=666
+  sid=1843515
+  preview="Nijigasaki High School Idol Club - Colorful Dreams! Colorful Smiles! (Ninjaking311)"
+  star=6.42
+  difficulties=[5.00,5.81,6.42]
 />
 
 <Beatmap
-  bid=2277365
   sid=1089237
-  preview="Halozy feat. Minase Mashiro - Don't let you down (Nozhomi) [You can do it]"
+  preview="Halozy feat. Minase Mashiro - Don't let you down (Nozhomi)"
   star=4.98
-  max=1590
+  difficulties=[4.98]
 />
 
 <Beatmap
-  bid=2265991
-  sid=1083419
-  preview="MYTH & ROID - TRAGEDY:ETERNITY (Antuoniz) [Eternity slumber]"
-  star=5.63
-  max=1252
+  sid=2265991
+  preview="eufonius - Eien no Hikari ~Song of love to a blue sky~ (KoldNoodl)"
+  star=4.83
+  difficulties=[4.83]
 />
 
 <Beatmap
-  bid=4601970
   sid=2178908
-  preview="HOYO-MiX feat. Robin (VO: Chevy) - Hope Is the Thing With Feathers (Andrea) [Believe in Yourself]"
+  preview="HOYO-MiX feat. Robin (VO: Chevy) - Hope Is the Thing With Feathers (Andrea)"
   star=4.25
-  max=843
+  difficulties=[2.08,3.14,3.99,4.25]
 />
 
 <Beatmap
-  bid=4794395
   sid=815309
-  preview="Sanshuu Chuugaku Yuushabu - Hoshi to Hana (lewski) [Sange]"
+  preview="Sanshuu Chuugaku Yuushabu - Hoshi to Hana (lewski)"
   star=5.46
-  max=1307
-  alias="ホシトハナ"
+  difficulties=[4.68,5.46]
 />
 
 <Beatmap
-  bid=2088521
-  sid=998531
-  preview="Latina (CV: Takao Kanon) - I'm with you (TV Size) (Ujimatsu Chiya) [Extra]"
-  star=5.35
-  max=498
+  sid=2088521
+  preview="ABSOLUTE CASTAWAY - Musubime (Lasse)"
+  star=5.33
+  difficulties=[1.93,2.30,3.44,4.59,5.33]
+  unicode="結び目"
 />
 
 <Beatmap
-  bid=486131
   sid=206079
-  preview="ChouCho - My dear friend (Delis) [Insane]"
+  preview="ChouCho - My dear friend (Delis)"
   star=4.42
-  max=934
+  difficulties=[1.80,3.44,4.42]
 />
 
 <Beatmap
-  bid=4951335
   sid=2313743
-  preview="DJ Genki feat. NU-KO - My New World (Nattu) [Rebirth]"
+  preview="DJ Genki feat. NU-KO - My New World (Nattu)"
   star=6.39
-  max=2173
+  difficulties=[5.02,6.39]
 />
 
 <Beatmap
-  bid=240107
   sid=57762
-  preview="u's - Natsuiro Egao de 1, 2, Jump! (blissfulyoshi) [Jump!]"
+  preview="u's - Natsuiro Egao de 1, 2, Jump! (blissfulyoshi)"
   star=5.02
-  max=1098
-  alias="夏色えがおで1,2,Jump!"
+  difficulties=[2.23,4.22,5.02]
+  unicode="夏色えがおで1,2,Jump!"
 />
 
 <Beatmap
-  bid=3375282
   sid=1653569
-  preview="Isayama Mio - Place of Period (lewski) [Faith]"
+  preview="Isayama Mio - Place of Period (lewski)"
   star=4.80
-  max=968
-  alias="プレイス・オブ・ピリオド"
+  difficulties=[3.74,4.80]
+  unicode="プレイス・オブ・ピリオド"
 />
 
 <Beatmap
-  bid=295225
-  sid=86040
-  preview="Ryu* - China Express (Extended Mix) (Kanda Kaname) [onodai145]"
-  star=5.31
-  max=1044
-  alias="中華急行 (Extended Mix)"
+  sid=295225
+  preview="Reol - Plus Danshi ver Reol (jonathanlfj)"
+  star=6.00
+  difficulties=[2.05,3.12,4.02,4.97,6.00]
+  unicode="+♂ ver れをる"
 />
 
 <Beatmap
-  bid=2204234
   sid=1054931
-  preview="PassCode - Ray (Akitoshi) [Extreme]"
+  preview="PassCode - Ray (Akitoshi)"
   star=6.36
-  max=1486
+  difficulties=[1.94,2.67,3.78,4.85,5.74,6.36]
 />
 
 <Beatmap
-  bid=1835931
   sid=877821
-  preview="Maisaki Nami - Rokka no Uta Nihongo ver. (lit120) [Snow in Love]"
+  preview="Maisaki Nami - Rokka no Uta Nihongo ver. (lit120)"
   star=3.98
-  max=1295
-  alias="六花のうた 日本語 ver."
+  difficulties=[3.98]
+  unicode="六花のうた 日本語 ver."
 />
 
 <Beatmap
-  bid=3839994
   sid=1638844
-  preview="U2 - Saigetsu (Koko & Satsuki ga Tenkomori's Sagyou Bougai Remix) (Bloxi) [BoshyMan's WE ARE THE JAPANESE GOBLIN!]"
+  preview="U2 - Saigetsu (Koko & Satsuki ga Tenkomori's Sagyou Bougai Remix) (Bloxi)"
   star=7.49
-  max=1538
-  alias="砕月 (ココ & さつき が てんこもり's 作業妨害Remix)"
+  difficulties=[2.21,2.45,3.77,4.83,6.04,6.10,6.36,6.90,7.49]
+  unicode="砕月 (ココ & さつき が てんこもり's 作業妨害Remix)"
 />
 
 <Beatmap
-  bid=4096284
   sid=1973808
-  preview="Neko Hacker - Setsuna no Chikai (feat. Yuzaki Tsukasa (CV: Kito Akari)) (cutefro) [A Future With You]"
+  preview="Neko Hacker - Setsuna no Chikai (feat. Yuzaki Tsukasa (CV: Kito Akari)) (cutefro)"
   star=6.62
-  max=1593
-  alias="刹那の誓い（feat. 由崎司 (CV: 鬼頭明里)）"
+  difficulties=[4.04,4.88,5.72,6.62]
+  unicode="刹那の誓い（feat. 由崎司 (CV: 鬼頭明里)）"
 />
 
 <Beatmap
-  bid=1088005
-  sid=489091
-  preview="camellia - Routing (Syncro) [Cozy]"
-  star=8.16
-  max=1094
+  sid=1088005
+  preview="Kairiki bear feat. Hatsune Miku - Shippaisaku Shoujo (RLC)"
+  star=6.61
+  difficulties=[2.55,4.09,5.28,6.17,6.61]
+  unicode="失敗作少女"
 />
+
+### 附录II - 一些非rank图
+
+虽然不是rank但是游玩之后个人觉得不错的图
+
+[只展示我觉得不错或者我玩过的难度，<span style="color: orange;">其他难度慎重</span>]
+
+1. ID 4239241  3.75★ AR8 
 
 <Beatmap
   bid=4239241
@@ -3411,6 +5135,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="インターネットサバイバー"
 />
 
+~~可爱~~
+
+2. ID 4507087  4.02★ AR8.5 
+
 <Beatmap
   bid=4507087
   sid=2139670
@@ -3419,6 +5147,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=904
   alias="I LOVE MEでいられるように"
 />
+
+~~双人组合可爱。~~ 玩起来手感巨好的一张图，可惜了
+
+3. ID 2346022  4.07★ AR8 
 
 <Beatmap
   bid=2346022
@@ -3429,6 +5161,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="ネ！コ！"
 />
 
+~~好听好玩 推波游戏 ノラと皇女と野良猫ハート~~
+
+4. ID 1020413  4.37★ AR8.2 
+
 <Beatmap
   bid=1020413
   sid=463613
@@ -3436,6 +5172,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=4.36
   max=1419
 />
+
+~~还在拉拉 还在拉拉~~
+
+5. ID 3687448  4.49★ AR9 
 
 <Beatmap
   bid=3687448
@@ -3446,6 +5186,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="From Zero feat. 利香"
 />
 
+甜死我了
+
+6. ID 580611  4.52★ AR9 
+
 <Beatmap
   bid=580611
   sid=252825
@@ -3454,6 +5198,10 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=1036
   alias="エレメンタリオで会いましょう！"
 />
+
+~~甘城光辉游乐园~~
+
+7. ID 1181914  4.57★ AR9 
 
 <Beatmap
   bid=1181914
@@ -3464,6 +5212,12 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="サラマンドラの踊り子"
 />
 
+Yurasuki
+
+### Loved
+
+1. ID 1439682  3.89★ AR9 
+
 <Beatmap
   bid=1439682
   sid=651399
@@ -3473,6 +5227,8 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   alias="エイリアンエイリアン (Nhato Remix)"
 />
 
+2. ID 852138  4.64★ AR9 
+
 <Beatmap
   bid=852138
   sid=358119
@@ -3481,6 +5237,8 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   max=848
 />
 
+3. ID 1431981  5.32★ AR9 
+
 <Beatmap
   bid=1431981
   sid=675779
@@ -3488,3 +5246,9 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   star=5.52
   max=1494
 />
+
+少得可怜，以后多挖点……
+
+---
+
+真没了

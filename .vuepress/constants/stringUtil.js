@@ -1,14 +1,62 @@
 import rawData from '../../assets/aliasDB.json';
 import stringSimilarity from "string-similarity-js";
 
-// 1. 匹配 feat. / ft. / featuring 及其之后的所有内容
-const featPattern = /\s*(?:[(\\[-]\s*)?(?:feat\.?|ft\.?|featuring|covered?\s+by|cover)\b.*$/i;
+// 核心逻辑：(?<![a-zA-Z]) 确保前面不能是英文字母
+const featPattern = /(?<![a-zA-Z])\b(?:[(\\[-]\s*)?(?:feat\.?|ft\.?|featuring|covered?\s+by|cover)\b.*$/i;
 
-// 2a. 末尾带括号的版本标记（括号必须成对）
-const versionParenPattern = /\s*[\[(](?:TV\s*Size|Short\s*(?:Ver\.?|Version|Size)?|Game\s*(?:Ver\.?|Version|Size)?|Movie\s*(?:Ver\.?|Version|Cut)?|Cut\s*Ver\.?|Extended\s*(?:Edit|Version|Mix)?|Spee?d\s*Up(?:\s*&\s*Cut)?\s*Ver\.?|Nightcore(?:\s*&\s*Cut)?\s*Mix|Live\s*(?:Ver\.?|Version)?|Karaoke\s*(?:Ver\.?|Version)?|[^)]*?\b(?:Ver|Version|Size|Edit|Mix|Cut|Remix|Bootleg|Mashup)\b\.?[^)]*)[\])]\s*$/i;
+// 2a. 末尾带括号的版本标记（必须成对匹配 () 或 []）
+const versionParenPattern = new RegExp(
+    "\\s*(?:" +
+    "\\(" + // 匹配左圆括号 (
+    "(?:" +
+    "TV\\s*Size|" +
+    "Short\\s*(?:Ver\\.?|Version|Size)?|" +
+    "Game\\s*(?:Ver\\.?|Version|Size)?|" +
+    "Movie\\s*(?:Ver\\.?|Version|Cut)?|" +
+    "Cut\\s*Ver\\.?|" +
+    "Extended\\s*(?:Edit|Version|Mix)?|" +
+    "Spee?d\\s*Up(?:\\s*&\\s*Cut)?\\s*Ver\\.?|" +
+    "Nightcore(?:\\s*&\\s*Cut)?\\s*Mix|" +
+    "Live\\s*(?:Ver\\.?|Version)?|" +
+    "Karaoke\\s*(?:Ver\\.?|Version)?|" +
+    "[^)]*?\\b(?:Ver|Version|Size|Edit|Mix|Cut|Remix|Bootleg|Mashup)\\b\\.?[^)]*" +
+    ")" +
+    "\\)" + // 匹配右圆括号 )
+    "|" +
+    "\\[" + // 匹配左方括号 [
+    "(?:" +
+    "TV\\s*Size|" +
+    "Short\\s*(?:Ver\\.?|Version|Size)?|" +
+    "Game\\s*(?:Ver\\.?|Version|Size)?|" +
+    "Movie\\s*(?:Ver\\.?|Version|Cut)?|" +
+    "Cut\\s*Ver\\.?|" +
+    "Extended\\s*(?:Edit|Version|Mix)?|" +
+    "Spee?d\\s*Up(?:\\s*&\\s*Cut)?\\s*Ver\\.?|" +
+    "Nightcore(?:\\s*&\\s*Cut)?\\s*Mix|" +
+    "Live\\s*(?:Ver\\.?|Version)?|" +
+    "Karaoke\\s*(?:Ver\\.?|Version)?|" +
+    "[^\\]]*?\\b(?:Ver|Version|Size|Edit|Mix|Cut|Remix|Bootleg|Mashup)\\b\\.?[^\\]]*" +
+    ")" +
+    "\\]" + // 匹配右方括号 ]
+    ")\\s*$",
+    "i" // 对应 Kotlin 的 RegexOption.IGNORE_CASE
+);
 
-// 2b. 末尾不带括号的裸版本标记（只匹配明确列出的词）
-const versionBarePattern = /\s+(?:TV\s*Size|Short\s*(?:Ver\.?|Version)|Game\s*(?:Ver\.?|Version)|Movie\s*(?:Ver\.?|Version|Cut)|Extended\s*(?:Edit|Version|Mix)|Spee?d\s*Up(?:\s*&\s*Cut)?\s*Ver\.?|Nightcore(?:\s*&\s*Cut)?\s*Mix|Live\s*(?:Ver\.?|Version)|Karaoke\s*(?:Ver\.?|Version))\s*$/i;
+// 2b. 末尾不带括号的裸版本标记
+const versionBarePattern = new RegExp(
+    "\\s+(?:" +
+    "TV\\s*Size|" +
+    "Short\\s*(?:Ver\\.?|Version)|" +
+    "Game\\s*(?:Ver\\.?|Version)|" +
+    "Movie\\s*(?:Ver\\.?|Version|Cut)|" +
+    "Extended\\s*(?:Edit|Version|Mix)|" +
+    "Spee?d\\s*Up(?:\\s*&\\s*Cut)?\\s*Ver\\.?|" +
+    "Nightcore(?:\\s*&\\s*Cut)?\\s*Mix|" +
+    "Live\\s*(?:Ver\\.?|Version)|" +
+    "Karaoke\\s*(?:Ver\\.?|Version)" +
+    ")\\s*$",
+    "i"
+);
 
 // 辅助常量
 const REGEX_SPACE_MORE = /\s+/g;

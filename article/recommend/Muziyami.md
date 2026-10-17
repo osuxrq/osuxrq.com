@@ -305,6 +305,7 @@ sid=745623
 preview="BabyBus - Wo Hui Zi Ji Shang Ce Suo (Regraz)"
 star=2.39
 difficulties=[1.49,2.39]
+unicode="我会自己上厕所"
 />
 
 <Beatmap
@@ -319,6 +320,7 @@ sid=994409
 preview="Kelly Yu - Ti Mian (gary00737)"
 star=2.53
 difficulties=[1.79,2.53]
+unicode="体面"
 />
 
 <Beatmap
@@ -326,6 +328,7 @@ sid=303823
 preview="Gui Xu - Ke Xi (cmn_891127)"
 star=2.64
 difficulties=[1.48,2.64]
+unicode="可惜"
 />
 
 <Beatmap
@@ -368,6 +371,7 @@ sid=186048
 preview="CHOPSTICKS BRO. - Xiao Ping Guo (-N a n a k o-)"
 star=3.35
 difficulties=[1.63,1.99,3.35]
+unicode="小苹果"
 />
 
 <Beatmap
@@ -396,6 +400,7 @@ sid=238992
 preview="CCTV - Believe in the power of the brand (cmn_891127)"
 star=3.45
 difficulties=[1.61,2.26,3.45]
+unicode="相信品牌的力量"
 />
 
 <Beatmap
@@ -550,6 +555,7 @@ sid=215381
 preview="V.K - Wings of Piano (FlobuFlobs)"
 star=4.37
 difficulties=[2.01,2.97,4.37]
+unicode="琴之翼"
 />
 
 <Beatmap
@@ -620,6 +626,7 @@ sid=215069
 preview="TOTTO - Onigami (Kloyd)"
 star=4.93
 difficulties=[1.60,2.23,3.60,4.93]
+unicode="鬼天"
 />
 
 <Beatmap
@@ -634,6 +641,7 @@ sid=1090501
 preview="Zu Hai - Hao Yun Lai (kanor)"
 star=4.97
 difficulties=[1.87,3.25,4.97]
+unicode="好运来"
 />
 
 <Beatmap
@@ -655,6 +663,7 @@ sid=425219
 preview="Lan Zi - Yi Bai Kuai Dou Bu Gei Wo (Pata-Mon)"
 star=5.27
 difficulties=[1.69,2.15,2.39,3.28,3.96,4.71,5.27]
+unicode="一百块都不给我"
 />
 
 <Beatmap
@@ -750,6 +759,7 @@ sid=839245
 preview="F4 - Liu Xing Yu (Rivals_7)"
 star=2.41
 difficulties=[1.16,1.72,2.41]
+unicode="流星雨"
 mode="m"
 />
 
@@ -786,6 +796,7 @@ sid=79832
 preview="Gigi Leung - Chicken Chic (Weiren)"
 star=3.11
 difficulties=[1.82,3.10,3.11]
+unicode="胆小鬼"
 />
 
 <Beatmap
@@ -958,6 +969,7 @@ sid=186318
 preview="Warak - REANIMATE (iyasine)"
 star=6.11
 difficulties=[1.77,2.37,3.58,4.53,5.36,5.67,5.74,6.11]
+unicode="暗夜苏醒"
 />
 
 <Beatmap
@@ -1241,6 +1253,7 @@ sid=645502
 preview="A-Lin - Gei Wo Yi Ge Li You Wang Ji (Regraz)"
 star=1.17
 difficulties=[0.95,1.17]
+unicode="给我一个理由忘记"
 />
 
 <Beatmap
@@ -1248,6 +1261,7 @@ sid=793539
 preview="Song Zuying - Xiao Bei Lou (Regraz)"
 star=2.26
 difficulties=[1.61,2.26]
+unicode="小背篓"
 />
 
 <Beatmap
@@ -1269,6 +1283,7 @@ sid=251913
 preview="Jay Chou - Qing Hua Ci (liangv587)"
 star=2.88
 difficulties=[2.17,2.88]
+unicode="青花瓷"
 />
 
 <Beatmap
@@ -1283,6 +1298,7 @@ sid=389179
 preview="Jay Chou - Fa Ru Xue (KaedekaShizuru)"
 star=3.05
 difficulties=[1.66,2.42,3.05]
+unicode="发如雪"
 />
 
 <Beatmap
@@ -1290,6 +1306,7 @@ sid=789103
 preview="Xiao Pan Pan & Xiao Feng Feng - Xue Mao Jiao (Asaiga)"
 star=3.25
 difficulties=[1.72,1.92,2.76,3.25]
+unicode="学猫叫"
 />
 
 <Beatmap
@@ -1311,6 +1328,7 @@ sid=143734
 preview="Linda Yang - Wo Niu Yu Huang Li Niao (yf_bmp)"
 star=3.69
 difficulties=[1.33,1.93,3.01,3.69]
+unicode="蜗牛与黄鹂鸟"
 />
 
 <Beatmap
@@ -1360,6 +1378,7 @@ sid=773973
 preview="S.I.N.G - Ji Ming Yue (Sandrew)"
 star=4.44
 difficulties=[1.95,3.05,3.94,4.44]
+unicode="寄明月"
 />
 
 <Beatmap
@@ -1473,6 +1492,7 @@ sid=1369139
 preview="Yu-Peng Chen @HOYO-MiX - Rex Incognito (Crissa)"
 star=5.83
 difficulties=[1.83,2.42,3.47,4.63,5.03,5.83]
+unicode="尘世闲游"
 />
 
 <Beatmap
@@ -1522,6 +1542,7 @@ sid=1002819
 preview="Roselia - MIIRO (-Mikan)"
 star=6.56
 difficulties=[1.79,2.09,2.58,3.67,4.58,4.98,5.30,5.82,5.97,6.08,6.56,1.33,2.13,3.10,4.29,4.97,1.82,2.19,3.43,4.64,5.64,2.28,3.32,4.04]
+unicode="海色"
 />
 
 <Beatmap
@@ -1557,6 +1578,7 @@ sid=85488
 preview="Azis - Hop (Stefan)"
 star=4.02
 difficulties=[1.25,1.90,3.36,4.02]
+unicode="Хоп"
 mode="t"
 />
 
@@ -1597,6 +1619,7 @@ sid=1135268
 preview="Ling Yuan yousa - Gou Zhi Qi Shi (Madoka2574)"
 star=2.68
 difficulties=[1.36,2.00,2.68]
+unicode="勾指起誓"
 mode="m"
 />
 

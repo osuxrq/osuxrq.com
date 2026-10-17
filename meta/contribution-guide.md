@@ -166,7 +166,6 @@ star=4.90
 max=1597
 disabled=true
 color="#92e"
-alias="影之军团"
 />
 
 ```vue

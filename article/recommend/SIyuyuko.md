@@ -73,7 +73,6 @@ sid=596704
 preview="ClariS - Hitorigoto -TV MIX- (Doormat) [Soliloquy]"
 star=4.95
 max=476
-alias="独白"
 />
 
 作为主难，长度合适，OD8.5 略高，排列有小跳有大跳但acc不会很难看。
@@ -86,7 +85,6 @@ sid=842412
 preview="Will Stetson - Harumachi Clover (Swing Arrangement) [Dictate Edit] (Sotarks) [Oh no!]"
 star=5.13
 max=151
-alias="等待春天的三叶草"
 />
 
 不仅长度短，OD9，加上排列对角 1-2 大跳。acc 很容易崩，而且会让很多小伙伴一直 retry，时间长下去会养成糊 combo、低 acc的毛病。
@@ -147,7 +145,6 @@ sid=817667
 preview="Luschka - Kami no Kotoba (byfar) [Insane]"
 star=4.47
 max=1274
-alias="神之语言"
 />
 
 <Beatmap
@@ -164,7 +161,6 @@ sid=1053509
 preview="ViViD - HIKARI (TV Size) (Log Off Now) [browiec's Insane]"
 star=4.53
 max=513
-alias="光"
 />
 
 <Beatmap
@@ -181,7 +177,6 @@ sid=1206296
 preview="MIMI - Mizuoto to Curtain (Nozhomi) [Insane]"
 star=4.76
 max=890
-alias="水音与窗帘"
 />
 
 <Beatmap
@@ -190,7 +185,6 @@ sid=196813
 preview="DJ Genericname - Dango Dango Daikazoku (Drum and Bass Remix) (Moo-Chan) [Insane]"
 star=4.96
 max=626
-alias="团子大家族"
 />
 
 <Beatmap
@@ -218,7 +212,6 @@ sid=441167
 preview="LiSA - Kimi ni Pierrot (Sotarks) [Kalicuri's Insane]"
 star=4.48
 max=1242
-alias="给你的小丑"
 />
 
 <Beatmap
@@ -227,7 +220,6 @@ sid=942284
 preview="ShinRa-Bansho - Dramatic Hizakurige (-Mikan) [Lemaire's Insane]"
 star=4.54
 max=1122
-alias="戏剧性徒步旅行"
 />
 
 <Beatmap
@@ -236,7 +228,6 @@ sid=282375
 preview="yuikonnu - Ai no Scenario (Guy) [Insane]"
 star=4.71
 max=1400
-alias="爱的剧本"
 />
 
 <Beatmap
@@ -245,7 +236,6 @@ sid=879429
 preview="Eve - Outsider (AirinCat) [Insane]"
 star=4.71
 max=1045
-alias="局外人"
 />
 
 <Beatmap
@@ -270,7 +260,6 @@ sid=107747
 preview="iojjj - Deus Ex Machina (Okoratu) [INSANE]"
 star=4.74
 max=1183
-alias="机械降神"
 />
 
 <Beatmap
@@ -279,7 +268,6 @@ sid=1123753
 preview="MIMI - Lapis Lazuli (Mak Kau Hijau) [Insane]"
 star=4.89
 max=1246
-alias="青金石"
 />
 
 <Beatmap
@@ -288,7 +276,6 @@ sid=1352739
 preview="Hijirime Laeria - stlaeria (Hinsvar) [Insane]"
 star=4.82
 max=997
-alias="鹤望兰"
 />
 
 <Beatmap
@@ -297,7 +284,6 @@ sid=92509
 preview="senya - Kanjou Chemistry (Drum 'n' Bass Remix) (Satellite) [Satellite]"
 star=4.97
 max=1415
-alias="感情化学"
 />
 
 <Beatmap

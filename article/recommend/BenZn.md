@@ -34,7 +34,6 @@ sid=586306
 preview="Veritas Unae - ~DISK 1~ (100bit) [Hard]"
 star=2.66
 max=75
-alias="•~DISK 1~•"
 />
 
 <Beatmap
@@ -43,7 +42,6 @@ sid=861685
 preview="R3 Music Box - Harumachi Clover (Nao Tomori) [Insane]"
 star=3.03
 max=106
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -52,7 +50,6 @@ sid=816264
 preview="55x55 - MY REZHEM KINOLENTY (feat. Cut The Crap) (Shmiklak) [CUT THE INSANE]"
 star=3.65
 max=158
-alias="我们裁切着胶片"
 />
 
 <Beatmap
@@ -61,7 +58,6 @@ sid=2510616
 preview="TIA feat. Le Thien Hieu - Ai Dua Em Ve (Cukak Remix) (Agnes Tachyon Low Cortisol Edit) (Cut Ver.) (Bloxi) [High Cortisol]"
 star=3.68
 max=119
-alias="皮质醇的小曲"
 />
 
 <Beatmap
@@ -70,7 +66,6 @@ sid=2511935
 preview="Omoinotake - Ubugoe (TV Size) (Isagi Yoichi) [Insane]"
 star=4.32
 max=289
-alias="产声"
 />
 
 <Beatmap
@@ -79,7 +74,6 @@ sid=652412
 preview="Hanasaka Yui(CV: M.A.O) - Harumachi Clover (ezek) [Fiery's Extra]"
 star=4.54
 max=148
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -88,7 +82,6 @@ sid=600702
 preview="Hanasaka Yui(CV: M.A.O) - Harumachi Clover (Djulus) [Tarrasky's True Love]"
 star=4.54
 max=147
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -171,7 +164,6 @@ sid=859783
 preview="Will Stetson - Harumachi Clover (Swing Arrangement) (Will Stetson) [Mohab's Insane]"
 star=4.17
 max=148
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -196,7 +188,6 @@ sid=2494533
 preview="MARETU - Tool (SotoWH) [Here Comes The Pain!!!!!]"
 star=5.13
 max=162
-alias="工具"
 />
 
 <Beatmap
@@ -269,7 +260,6 @@ sid=968171
 preview="MIMI feat. Hatsune Miku - Mizuoto to Curtain (Log Off Now) [Insane]"
 star=4.37
 max=251
-alias="水音与窗帘"
 />
 
 <Beatmap
@@ -344,7 +334,6 @@ sid=894883
 preview="Aiurabu - Kani*Do-Luck! (TV Size) (Azunyan-) [Insane!]"
 star=4.49
 max=380
-alias="螃蟹☆Do-Luck!"
 />
 
 <Beatmap
@@ -353,7 +342,6 @@ sid=2310271
 preview="Aiurabu (CV: Nakajima Yui, Iida Yuuko, Tamura Nao) - Kani*Do-Luck! (TV Size) (KeyWee) [Laurier's Insane Crab]"
 star=4.67
 max=375
-alias="螃蟹☆Do-Luck!"
 />
 
 <Beatmap
@@ -386,7 +374,6 @@ sid=2252051
 preview="beethow - klik klak brazil strelyayet (f e e l) [LIGHT INSANE]"
 star=4.23
 max=246
-alias="клик клак brazil стреляет"
 />
 
 <Beatmap
@@ -473,7 +460,6 @@ sid=106001
 preview="Hanazawa Kana - Yuki ni Saku Hana (TV Size) (Damnae) [Hard]"
 star=3.44
 max=355
-alias="盛开在雪中的花"
 />
 
 <Beatmap
@@ -498,7 +484,6 @@ sid=705434
 preview="riya (eufonius) / Ceui - Chroma (Game Ver.) (Firis Mistlud) [Gust's Atelier Lydie & Suelle]"
 star=4.49
 max=373
-alias="炫彩"
 />
 
 <Beatmap
@@ -507,7 +492,6 @@ sid=1123162
 preview="Sayuri - Sore wa Chiisana Hikari no Youna (TV Size) (Kuki1537) [Revival]"
 star=4.20
 max=371
-alias="犹如微弱的光芒"
 />
 
 <Beatmap
@@ -524,7 +508,6 @@ sid=2393021
 preview="ano - Happy Lucky Chappy (TV Size) (0ppInOsu) [Loop4]"
 star=4.08
 max=287
-alias="快乐幸运恰皮"
 />
 
 <Beatmap
@@ -589,7 +572,6 @@ sid=1324491
 preview="Nakanoke no Itsutsugo - Gotoubun no Katachi (TV Size) (Gaia) [eINess' Ichika]"
 star=4.82
 max=440
-alias="五等分的形式 / 花嫁"
 />
 
 ### 160 ~ 200 BPM
@@ -600,7 +582,6 @@ sid=2307369
 preview="Hitachi Mako (CV: Kotorii Yuuka) - Mako no Nichijou (Short Ver.) (Tokiwa Kano) [Kumocha's Insane]"
 star=4.60
 max=481
-alias="茉子的日常"
 />
 
 <Beatmap
@@ -609,7 +590,6 @@ sid=853519
 preview="Amatsuki - DORAEMON (Nevo) [Insane]"
 star=4.61
 max=450
-alias="哆啦 A 梦"
 />
 
 <Beatmap
@@ -626,7 +606,6 @@ sid=596704
 preview="ClariS - Hitorigoto -TV MIX- (Doormat) [Little's Insane]"
 star=4.48
 max=440
-alias="独白"
 />
 
 <Beatmap
@@ -643,7 +622,6 @@ sid=2548608
 preview="Annabel - Signal Graph (TV Size) (Harumiii) [Insane]"
 star=4.40
 max=486
-alias="信号图"
 />
 
 <Beatmap
@@ -684,7 +662,6 @@ sid=1328989
 preview="YOASOBI - Kaibutsu (TV Size) ([-Evil-]) [PikA's Insane ft. Kuro]"
 star=4.26
 max=447
-alias="怪物"
 />
 
 <Beatmap
@@ -693,7 +670,6 @@ sid=2168363
 preview="Pmarusama. - Zenryoku Joshi Kakumei! (TV Size) (Hina Sorasaki) [Secret Insane]"
 star=4.72
 max=450
-alias="全力女子革命！"
 />
 
 <Beatmap
@@ -726,7 +702,6 @@ sid=670558
 preview="YURiCa/Hanatan - Cat Food (Garden) [Insane]"
 star=4.04
 max=425
-alias="猫粮"
 />
 
 <Beatmap
@@ -767,7 +742,6 @@ sid=1068768
 preview="yuikonnu - Yume Chizu (browiec) [A r M i N's Extra]"
 star=5.62
 max=521
-alias="梦地图"
 />
 
 <Beatmap
@@ -784,7 +758,6 @@ sid=2250300
 preview="HoneyWorks - Miraizu feat. Aida Miou (CV: Toyosaki Aki) (Cut Ver.) (Sotarks) [RoniX's Insane]"
 star=4.75
 max=439
-alias="未来图"
 />
 
 <Beatmap
@@ -793,7 +766,6 @@ sid=686601
 preview="SPYAIR - Sakura Mitsutsuki (Nevo) [byd's Hard]"
 star=3.84
 max=352
-alias="樱满月"
 />
 
 <Beatmap
@@ -810,7 +782,6 @@ sid=1178935
 preview="Nogizaka46 - Yubi Bouenkyou (TV Size) (fieryrage) [Hooni's Insane]"
 star=4.34
 max=438
-alias="指望远镜"
 />
 
 <Beatmap
@@ -827,7 +798,6 @@ sid=1317972
 preview="Serizawa Yu - Devi-kyuu (TV Size) (- Ex -) [Kuroame's Insane]"
 star=4.49
 max=501
-alias="恶魔 Q"
 />
 
 <Beatmap
@@ -836,7 +806,6 @@ sid=1347474
 preview="Serizawa Yu - Devi-kyuu (TV Size) (Kuki1537) [Insane]"
 star=4.54
 max=518
-alias="恶魔 Q"
 />
 
 <Beatmap
@@ -845,7 +814,6 @@ sid=480765
 preview="3 Nen E Gumi Utatan (Nagisa & Kayano & Karuma & Isogai & Maehara) - Bye Bye YESTERDAY (Gero) [Expert]"
 star=5.06
 max=555
-alias="拜拜 YESTERDAY"
 />
 
 <Beatmap
@@ -862,7 +830,6 @@ sid=323773
 preview="Ayumi. - Hanagoyomi short version (Lavender) [Kencho's Insane]"
 star=5.04
 max=530
-alias="华历"
 />
 
 <Beatmap
@@ -879,7 +846,6 @@ sid=962088
 preview="MIMI feat. Hatsune Miku - Marshmary (Log Off Now) [Horizon]"
 star=5.11
 max=433
-alias="棉花糖"
 />
 
 <Beatmap
@@ -904,7 +870,6 @@ sid=1664358
 preview="Chihara Minori - Kyoukai no Kanata (TV Size) (Sotarks) [r1ngochan's INsAanE!!]"
 star=4.96
 max=470
-alias="境界的彼方"
 />
 
 <Beatmap
@@ -921,7 +886,6 @@ sid=999126
 preview="Mrs. GREEN APPLE - Inferno (TV Size) (Reform) [Ipas' Insane]"
 star=4.86
 max=578
-alias="地狱"
 />
 
 <Beatmap
@@ -946,7 +910,6 @@ sid=1608572
 preview="Ando Hirokazu - Gourmet Race (gary00737) [GodKei's Insane]"
 star=4.47
 max=388
-alias="噗噗噗之国舞台"
 />
 
 <Beatmap
@@ -955,7 +918,6 @@ sid=637445
 preview="LiSA - Datte Atashi no Hero. -TV ver.- (Monstrata) [Akitoshi's Insane]"
 star=5.06
 max=489
-alias="因为你是我的英雄。"
 />
 
 <Beatmap
@@ -996,7 +958,6 @@ sid=820096
 preview="Sayuri - Heikousen (TV Size) (Kyuukai) [Insane]"
 star=4.53
 max=413
-alias="平行线"
 />
 
 <Beatmap
@@ -1013,7 +974,6 @@ sid=2464474
 preview="Kano - Cherry Pop (Cut Ver.) (Sotarks) [Kumocha's Expert]"
 star=5.06
 max=418
-alias="樱桃 Pop"
 />
 
 <Beatmap
@@ -1038,7 +998,6 @@ sid=1017271
 preview="Nashimoto Ui - AaAaAaAAaAaAAa (Sotarks) [SMOKELIND's InSaNE]"
 star=4.36
 max=598
-alias="啊啊啊啊啊啊啊啊啊啊啊"
 />
 
 <Beatmap
@@ -1047,7 +1006,6 @@ sid=2178943
 preview="kessoku band - Guitar to Kodoku to Aoi Hoshi (TV Size) (Hayakou) [Auriga's Expert]"
 star=5.27
 max=526
-alias="吉他与孤独与蓝色星球"
 />
 
 <Beatmap
@@ -1056,7 +1014,6 @@ sid=1255746
 preview="Tarkan - Simarik (Sotarks) [Deli]"
 star=4.36
 max=348
-alias="Şımarık"
 />
 
 ### 200 ~ 240 BPM
@@ -1107,7 +1064,6 @@ sid=2478619
 preview="HO-KAGO TEA TIME - Kira Kira Days (Cut Ver.) (gwb) [Amadoxal's Insane!!]"
 star=4.68
 max=531
-alias="闪耀 Days (Cut Ver.)"
 />
 
 <Beatmap
@@ -1116,7 +1072,6 @@ sid=444335
 preview="HO-KAGO TEA TIME - Kira Kira Days (Kagetsu) [pkhg's Insane!!]"
 star=4.08
 max=511
-alias="闪耀 Days"
 />
 
 <Beatmap
@@ -1125,7 +1080,6 @@ sid=1034008
 preview="DIVELA feat. Hatsune Miku - Beat Syncer (Log Off Now) [Insane]"
 star=4.58
 max=553
-alias="节奏同步者"
 />
 
 <Beatmap
@@ -1134,7 +1088,6 @@ sid=758344
 preview="Colors*Slash - Colors Power ni Omakasero! (Sotarks) [Expert]"
 star=5.10
 max=594
-alias="交给三颗星的力量吧！"
 />
 
 <Beatmap
@@ -1151,7 +1104,6 @@ sid=952409
 preview="MIMI feat. Hatsune Miku - Ai no Sukima (Log Off Now) [Insane]"
 star=4.47
 max=341
-alias="哀伤的隙间"
 />
 
 <Beatmap
@@ -1176,7 +1128,6 @@ sid=2173752
 preview="Young Kee - Muteki (TV Size) (AirinCat) [Insane]"
 star=4.56
 max=410
-alias="无敌"
 />
 
 <Beatmap
@@ -1185,7 +1136,6 @@ sid=1171789
 preview="SPYAIR - Imagination (TV Size) (browiec) [Insane]"
 star=4.45
 max=477
-alias="想象"
 />
 
 <Beatmap
@@ -1202,7 +1152,6 @@ sid=1155295
 preview="TrySail - Utsuroi (Short Ver.) (Log Off Now) [mnyui's Extra]"
 star=5.19
 max=554
-alias="岁月变迁"
 />
 
 <Beatmap
@@ -1211,7 +1160,6 @@ sid=1053509
 preview="ViViD - HIKARI (TV Size) (Log Off Now) [Extra]"
 star=5.11
 max=540
-alias="光"
 />
 
 <Beatmap
@@ -1228,7 +1176,6 @@ sid=1497304
 preview="i.o - Aoiro Step (Short Ver.) (Kuki1537) [PikA's Insane]"
 star=4.65
 max=516
-alias="青色步伐"
 />
 
 <Beatmap
@@ -1237,7 +1184,6 @@ sid=2312504
 preview="youman feat. GUMI - Worst Regret (Sped Up & Cut Ver.) (jubilea) [Reenix' Light Insane]"
 star=4.58
 max=521
-alias="最深的遗憾"
 />
 
 <Beatmap
@@ -1246,7 +1192,6 @@ sid=2402889
 preview="youman feat. GUMI - Worst Regret (Sped Up & Cut Ver.) (Omekyu) [xsie's Insane]"
 star=4.38
 max=440
-alias="最深的遗憾"
 />
 
 <Beatmap
@@ -1263,7 +1208,6 @@ sid=1044953
 preview="i.o - Aoiro Step (Cut Ver.) (Bazz B) [Karen's Another]"
 star=5.58
 max=629
-alias="青色步伐"
 />
 
 <Beatmap
@@ -1288,7 +1232,6 @@ sid=368187
 preview="CustomiZ - Kai TV Size (F D Flourite) [Hyper]"
 star=4.11
 max=554
-alias="解 TV Size"
 />
 
 <Beatmap
@@ -1305,7 +1248,6 @@ sid=2276946
 preview="Yousei Teikoku - Kuusou Mesorogiwi (TV Size) (Kuki1537) [Amats' Insane]"
 star=4.86
 max=525
-alias="空想神话"
 />
 
 <Beatmap
@@ -1322,7 +1264,6 @@ sid=2204592
 preview="hitorie - Montage Girl (Cut Ver.) (Parad0xa) [sanairrt's Insane]"
 star=4.94
 max=610
-alias="蒙太奇女孩"
 />
 
 <Beatmap
@@ -1349,7 +1290,6 @@ sid=2474192
 preview="Aitsuki Nakuru - Presenter* (Cut Ver.) (Mita) [Laurier's Insane]"
 star=4.69
 max=534
-alias="礼物送达者☆ "
 />
 
 <Beatmap
@@ -1410,7 +1350,6 @@ sid=118459
 preview="Hai Nan - Ai La La (moonlightleaf) [Insane]"
 star=3.91
 max=697
-alias="爱啦啦"
 />
 
 <Beatmap
@@ -1427,7 +1366,6 @@ sid=2429891
 preview="Hazuki - Hey. (Game Ver.) (shiritani) [Hard]"
 star=3.16
 max=615
-alias="呐。"
 />
 
 <Beatmap
@@ -1444,7 +1382,6 @@ sid=1502812
 preview="LIDA x FRIK PATI - Emo Hardcore (Nuvolina) [384's Insane]"
 star=4.44
 max=515
-alias="情绪硬核"
 />
 
 ## 160 ~ 200 BPM
@@ -1479,7 +1416,6 @@ sid=2134722
 preview="CIEL - Kuuchuu Sanpo (Aratoji) [Kuru's Hard]"
 star=3.40
 max=775
-alias="空中散步"
 />
 
 <Beatmap
@@ -1544,7 +1480,6 @@ sid=441155
 preview="Chino(CV.Minase Inori) - Shinsaku no Shiawase wa Kochira! (Shioi) [Son's Insane]"
 star=4.61
 max=632
-alias="新品的幸福就在这里！"
 />
 
 <Beatmap
@@ -1585,7 +1520,6 @@ sid=1738510
 preview="Ling Yuan yousa, Xiu Mu Su, Hun Miao Miao - Hua Yue Cheng Shuang (UjiMatcha) [Lunar Dance]"
 star=4.66
 max=949
-alias="花月成双"
 />
 
 <Beatmap
@@ -1594,7 +1528,6 @@ sid=39275
 preview="paraoka - Manima ni (Short Ver.) (Mixagji) [Insane]"
 star=4.82
 max=832
-alias="随波逐流"
 />
 
 <Beatmap
@@ -1603,7 +1536,6 @@ sid=219728
 preview="Orangestar - Asu no Yozora Shoukaihan (Gelbana) [Insane]"
 star=4.68
 max=845
-alias="明日夜空哨戒班"
 />
 
 <Beatmap
@@ -1612,7 +1544,6 @@ sid=384772
 preview="Yuaru - Asu no Yozora Shoukaihan (Akitoshi) [Insane]"
 star=5.06
 max=1133
-alias="明日夜空哨戒班"
 />
 
 <Beatmap
@@ -1621,7 +1552,6 @@ sid=2012683
 preview="yanaginagi - Usotsuki (chaser01) [Fsjallink's Lie]"
 star=5.02
 max=822
-alias="嘘月"
 />
 
 <Beatmap
@@ -1630,7 +1560,6 @@ sid=2323490
 preview="DI:Verse - Fusion (AirinCat) [Insane]"
 star=4.72
 max=869
-alias="融合"
 />
 
 <Beatmap
@@ -1639,7 +1568,6 @@ sid=773330
 preview="Nanamori-chu * Goraku-bu - Happy Time wa Owaranai (eiri-) [Shiinoha's Insane]"
 star=4.87
 max=708
-alias="快乐时光永不结束"
 />
 
 <Beatmap
@@ -1648,7 +1576,6 @@ sid=2243043
 preview="jon-YAKITORY feat. Hatsune Miku - Konton Boogie (Beige) [Insane]"
 star=4.82
 max=836
-alias="混沌 Boogie"
 />
 
 <Beatmap
@@ -1657,7 +1584,6 @@ sid=1418780
 preview="Ren feat. Hatsune Miku - Tougetsu, Rinzen ni Kisu. (Log Off Now) [Insane]"
 star=4.51
 max=847
-alias="冬月，归于凛然。"
 />
 
 <Beatmap
@@ -1682,7 +1608,6 @@ sid=931452
 preview="HAG - Colorful (Sotarks) [MiracleE's Expert]"
 star=5.03
 max=761
-alias="色彩缤纷"
 />
 
 <Beatmap
@@ -1701,7 +1626,6 @@ sid=2180849
 preview="ANGUISH, EXILED & elfass - Gulyayu (Tachibana_) [Kujinn's Insane]"
 star=5.07
 max=679
-alias="漫步"
 />
 
 <Beatmap
@@ -1718,7 +1642,6 @@ sid=2316335
 preview="Asagi Shiki - Haizakurairo (Gibune) [fllecc's Insane]"
 star=5.08
 max=956
-alias="灰樱色"
 />
 
 <Beatmap
@@ -1735,7 +1658,6 @@ sid=2278555
 preview="Shirakami Fubuki with Kurokami Fubuki - Override (-Yuzuriha) [Collab Hard]"
 star=3.82
 max=724
-alias="覆写"
 />
 
 <Beatmap
@@ -1776,7 +1698,6 @@ sid=387700
 preview="toby fox - MEGALOVANIA (Kyshiro) [Hard]"
 star=3.97
 max=676
-alias="狂妄之人"
 />
 
 ### 240 ~ 300 BPM
@@ -1795,7 +1716,6 @@ sid=2184780
 preview="kessoku band - Guitar to Kodoku to Aoi Hoshi (Hayakou Bootleg) (Hayakou) [Ome & Haya's Insane]"
 star=5.01
 max=1075
-alias="吉他与孤独与蓝色星球"
 />
 
 ## 时长 <= 5分钟
@@ -1808,7 +1728,6 @@ sid=1589584
 preview="ChiliChill feat. Duo Duo poi, Yan Ning ccccc - To You on The Other Side (lit120) [Insane]"
 star=3.92
 max=868
-alias="门的另一端"
 />
 
 <Beatmap
@@ -1817,7 +1736,6 @@ sid=1376952
 preview="Sasaki Shiori - Harenohi Step (Kuse) [Sunlit]"
 star=4.13
 max=913
-alias="晴日舞步"
 />
 
 ### 160 ~ 200 BPM
@@ -1844,7 +1762,6 @@ sid=1130014
 preview="Yorushika - Bakudanma (Meg) [vick's Insane]"
 star=4.82
 max=1108
-alias="爆弹魔"
 />
 
 <Beatmap
@@ -1853,7 +1770,6 @@ sid=2320572
 preview="TUMENECO feat. yukina & Mii - Itsuka Kimi to Mukaeru Yoake (dahkjdas) [Laurier's Insane]"
 star=4.76
 max=1311
-alias="终有一天与你一同迎来的黎明"
 />
 
 <Beatmap
@@ -1894,7 +1810,6 @@ sid=569503
 preview="96neko - Uso no Hibana (Yasaija 714) [Collab Insane]"
 star=5.20
 max=1313
-alias="谎言的火花"
 />
 
 <Beatmap
@@ -1903,7 +1818,6 @@ sid=2108343
 preview="Kano - Keppekishou (Kanui) [Hard]"
 star=4.03
 max=1053
-alias="洁癖症"
 />
 
 <Beatmap
@@ -1920,7 +1834,6 @@ sid=1880007
 preview="kessoku band - Guitar to Kodoku to Aoi Hoshi (ponbot) [Ame's Insane]"
 star=5.22
 max=1195
-alias="吉他与孤独与蓝色星球"
 />
 
 <Beatmap
@@ -1929,7 +1842,6 @@ sid=1131265
 preview="TUYU - Kuraberarekko (jonathanlfj) [Subjectively Insane]"
 star=4.97
 max=1185
-alias="被比较的孩子"
 />
 
 <Beatmap
@@ -1938,7 +1850,6 @@ sid=1113893
 preview="yuikonnu - caramel heaven (Nevo) [Arc's Insane]"
 star=5.06
 max=1365
-alias="焦糖天堂"
 />
 
 <Beatmap
@@ -1947,7 +1858,6 @@ sid=1056140
 preview="Akatsuki Records - Trance Dance Anarchy (papapa213) [Misure's Insane]"
 star=4.52
 max=1145
-alias="迷幻舞曲无秩序"
 />
 
 <Beatmap
@@ -1966,7 +1876,6 @@ sid=867074
 preview="Reol - Heimenkyou (Frey) [Insane]"
 star=4.82
 max=961
-alias="平面镜"
 />
 
 <Beatmap
@@ -1975,7 +1884,6 @@ sid=1371996
 preview="umu. - Ai no Sukima (Half) [Expert]"
 star=5.17
 max=1109
-alias="哀伤的隙间"
 />
 
 <Beatmap
@@ -1992,7 +1900,6 @@ sid=1082702
 preview="Hanatan - Ghost Rule (BadGames) [Heto's Insane]"
 star=5.06
 max=1017
-alias="幽灵法则"
 />
 
 <Beatmap
@@ -2001,7 +1908,6 @@ sid=219380
 preview="Konuko - Toumei Elegy (Awaken) [Hard]"
 star=3.98
 max=765
-alias="透明哀歌"
 />
 
 <Beatmap
@@ -2018,7 +1924,6 @@ sid=416153
 preview="Remo Prototype[CV: Hanamori Yumiri] - Sendan Life (Lami) [Kanau's Hard]"
 star=4.08
 max=1075
-alias="先端人生"
 />
 
 <Beatmap
@@ -2035,7 +1940,6 @@ sid=2311267
 preview="Mrs. GREEN APPLE - Ao to Natsu (katagiri Bootleg) (Sped Up Ver.) (- Nilou -) [sayu's Insane]"
 star=4.92
 max=1222
-alias="青与夏"
 />
 
 ### 240 ~ 300 BPM
@@ -2046,7 +1950,6 @@ sid=390619
 preview="Primary - Inai Sekai (Shad0w1and) [Misure's Insane]"
 star=5.39
 max=1129
-alias="不存在的世界"
 />
 
 <Beatmap

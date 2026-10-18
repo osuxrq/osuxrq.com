@@ -5,6 +5,7 @@ import LazyImage from "./LazyImage.vue";
 import {useAudioStore} from "../constants/audioStore.js";
 import {getStarColor} from "../constants/star.js";
 import {getModInfo, getPlaybackRate, parseMods} from "../constants/mod.js";
+import {aliasQuery} from "../constants/stringUtil.js"
 
 const isMounted = ref(false)
 onMounted(() => {
@@ -25,6 +26,7 @@ const props = defineProps({
   disabled: { type: [Boolean, String], default: false },
   color: { type: String, default: null },
   alias: { type: String, default: null },
+  unicode: { type: String, default: null },
   other: { type: [String, Number], default: null },
   mods: { type: [Array, String], default: () => [] },
 })
@@ -106,6 +108,8 @@ const parsedData = computed(() => {
     };
   }
 })
+
+const alias = computed(() => props.alias ?? aliasQuery.search(parsedData.value.title) ?? props.unicode)
 
 const statusColor = computed(() => getStarColor(props.star));
 
@@ -266,10 +270,10 @@ const playbackRate = computed(() => getPlaybackRate(parsedMods.value))
 const handlePreviewPlay = () => {
   if (!currentAudioUrl.value) return
 
-  const alias = props.alias ? ` (${props.alias || ''})` : ''
+  const aliasText = alias ? ` (${alias || ''})` : ''
 
   const audioTitle = parsedData.value.title
-      ? `${parsedData.value.artist || ''} - ${parsedData.value.title}${alias}`
+      ? `${parsedData.value.artist || ''} - ${parsedData.value.title}${aliasText}`
       : `Beatmap ${props.sid}`
 
   playAudio(currentAudioUrl.value, audioTitle, playbackRate.value)
@@ -368,7 +372,7 @@ const handlePreviewPlay = () => {
 
       <span class="text-content">
         <span class="part-a">{{ parsedData.title }}</span>
-        <span v-if="props.alias" class="alias-badge">{{ props.alias }}</span>
+        <span v-if="alias" class="alias-badge">{{ alias }}</span>
       </span>
       <span class="text-content-2">
         <span class="part-b" v-if="parsedData.artist && parsedData.creator">{{parsedData.artist + ' // ' + parsedData.creator}}</span>

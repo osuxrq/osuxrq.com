@@ -127,7 +127,6 @@ sid=600702
 preview="Hanasaka Yui(CV: M.A.O) - Harumachi Clover (Djulus)"
 star=4.54
 difficulties=[1.36,1.98,2.39,2.85,4.09,4.54]
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -135,7 +134,6 @@ sid=859783
 preview="Will Stetson - Harumachi Clover (Swing Arrangement) (Will Stetson)"
 star=5.26
 difficulties=[1.95,3.19,4.16,4.17,4.24,4.24,4.34,4.83,4.84,4.86,5.08,5.15,5.23,5.26]
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -143,7 +141,6 @@ sid=861685
 preview="R3 Music Box - Harumachi Clover (Nao Tomori)"
 star=3.03
 difficulties=[1.99,2.43,3.03]
-alias="等待春天的三叶草"
 />
 
 <Beatmap
@@ -151,7 +148,6 @@ sid=842412
 preview="Will Stetson - Harumachi Clover (Swing Arrangement) [Dictate Edit] (Sotarks)"
 star=5.13
 difficulties=[2.23,3.27,3.82,3.88,4.27,4.27,4.55,5.13,2.66,3.32]
-alias="等待春天的三叶草"
 />
 
 #### Granat 五则
@@ -202,7 +198,6 @@ sid=952409
 preview="MIMI feat. Hatsune Miku - Ai no Sukima (Log Off Now)"
 star=5.31
 difficulties=[2.12,3.51,3.95,4.47,4.99,5.31]
-alias="哀伤的隙间"
 />
 
 <Beatmap
@@ -210,7 +205,6 @@ sid=962088
 preview="MIMI feat. Hatsune Miku - Marshmary (Log Off Now)"
 star=5.11
 difficulties=[2.34,3.46,4.41,5.11]
-alias="棉花糖"
 />
 
 <Beatmap
@@ -218,7 +212,6 @@ sid=968171
 preview="MIMI feat. Hatsune Miku - Mizuoto to Curtain (Log Off Now)"
 star=5.49
 difficulties=[2.41,3.29,3.91,4.37,4.96,5.49]
-alias="水音与窗帘"
 />
 
 <Beatmap
@@ -226,7 +219,6 @@ sid=1919786
 preview="MIMI vs. Leah Kate - 10 Things I Hate About Ai no Sukima (Log Off Now)"
 star=6.69
 difficulties=[2.05,2.64,3.27,3.72,4.48,4.93,5.31,5.74,6.16,6.35,6.69]
-alias="我讨厌哀伤的隙间的 10 点"
 />
 
 #### Cold Green Eyes 三则
@@ -238,7 +230,6 @@ sid=371128
 preview="Station Earth - Cold Green Eyes ft. Roos Denayer (Bearizm)"
 star=4.89
 difficulties=[1.88,2.25,3.03,4.19,4.89]
-alias="冷绿眼"
 />
 
 <Beatmap
@@ -246,7 +237,6 @@ sid=716719
 preview="Station Earth - Cold Green Eyes ft. Roos Denayer (Mismagius)"
 star=5.34
 difficulties=[1.55,2.22,3.03,3.32,4.42,5.34]
-alias="冷绿眼"
 />
 
 <Beatmap
@@ -254,7 +244,6 @@ sid=1101976
 preview="Station Earth - Cold Green Eyes feat. Roos Denayer (Sotarks)"
 star=5.32
 difficulties=[3.30,4.26,4.63,5.32]
-alias="冷绿眼"
 />
 
 #### MY REZHEM KINOLENTY
@@ -266,7 +255,6 @@ sid=816264
 preview="55x55 - MY REZHEM KINOLENTY (feat. Cut The Crap) (Shmiklak)"
 star=3.65
 difficulties=[1.35,2.03,2.95,3.65]
-alias="我们裁切着胶片"
 />
 
 #### 其他
@@ -276,7 +264,6 @@ sid=503141
 preview="Gom (HoneyWorks) - Zen Zen Zense (MugiwaraSekai)"
 star=4.74
 difficulties=[1.71,2.36,3.37,4.19,4.74]
-alias="前前前世"
 />
 
 30s 刷不了吃亏刷不了上当，Monstrata 还写了个一分多钟的，也可以刷
@@ -286,7 +273,6 @@ sid=513590
 preview="RADWIMPS - Zen Zen Zense (movie ver.) (Monstrata)"
 star=5.32
 difficulties=[1.81,2.44,3.52,4.46,4.99,5.02,5.13,5.28,5.32]
-alias="前前前世"
 />
 
 爽刷，1kpp 段刷 nm，2kpp 段刷 DT
@@ -296,7 +282,6 @@ sid=542081
 preview="Elmo and Cookie Monster - Cookie-Butter-Choco-Cookie (Monstrata)"
 star=5.06
 difficulties=[1.42,1.88,2.76,2.89,3.48,3.51,3.54,3.62,3.65,3.96,4.00,4.19,4.23,4.46,4.48,5.06,2.28,2.81,3.27]
-alias="曲奇・黄油・巧可・曲奇"
 />
 
 也是什么分段都能刷的歌
@@ -306,7 +291,6 @@ sid=705423
 preview="Unknown Artist - Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta (Chromoxx)"
 star=3.71
 difficulties=[1.21,1.49,2.27,2.80,3.55,3.58,3.71,0.99,1.43,1.85,2.40]
-alias="迷你 Ministop 小憩之歌【星期四】学生之歌"
 />
 
 经典
@@ -325,7 +309,6 @@ sid=325112
 preview="Roses Epicurean - Yoru no Kodomo tachi (CodeS)"
 star=3.80
 difficulties=[1.33,2.11,2.90,3.20,3.80]
-alias="夜之子"
 />
 
 每个难度都可以吃
@@ -335,7 +318,6 @@ sid=596704
 preview="ClariS - Hitorigoto -TV MIX- (Doormat)"
 star=4.95
 difficulties=[1.78,1.91,2.25,2.32,3.43,3.62,4.26,4.48,4.55,4.59,4.79,4.95]
-alias="独白"
 />
 
 有一点难度的跳
@@ -345,7 +327,6 @@ sid=938926
 preview="Tashiro Tomokazu - Koi no Hime Hime Pettanko (Karaoke) (DakiniBrave)"
 star=5.61
 difficulties=[2.26,3.42,4.26,4.82,5.03,5.22,5.61]
-alias="爱的公主公主平胸妹 (卡拉 OK)"
 />
 
 没事抽两把，说不定出 bp 了呢
@@ -389,7 +370,6 @@ sid=873811
 preview="dj TAKA - quaver (Sotarks)"
 star=6.51
 difficulties=[1.28,1.81,2.35,2.74,3.56,4.23,4.31,4.67,4.73,5.21,5.30,5.37,5.51,5.66,5.79,5.80,5.99,6.03,6.06,6.13,6.15,6.44,6.51,3.05,4.10]
-alias="quaver ♪"
 />
 
 你群唯一赦免图↓
@@ -408,7 +388,6 @@ sid=444335
 preview="HO-KAGO TEA TIME - Kira Kira Days (Kagetsu)"
 star=5.60
 difficulties=[1.68,2.52,3.68,4.08,4.72,5.28,5.60]
-alias="闪耀 Days"
 />
 
 <Beatmap
@@ -416,7 +395,6 @@ sid=1384619
 preview="HO-KAGO TEA TIME - Kira Kira Days (Cut Ver.) (Sotarks)"
 star=5.86
 difficulties=[2.50,3.66,4.59,5.08,5.86]
-alias="闪耀 Days"
 />
 
 NSFW 警告
@@ -481,7 +459,6 @@ sid=107009
 preview="Shouta Kageyama - Relic Song (Leader)"
 star=3.45
 difficulties=[1.43,1.81,2.50,3.21,3.45,1.23,1.65,1.21,1.97,2.94,1.31,2.15]
-alias="遗迹之歌"
 />
 
 <Beatmap
@@ -496,7 +473,6 @@ sid=459149
 preview="Ayase Rie - Yuima-ru*World TVver. (Fycho)"
 star=5.93
 difficulties=[1.54,2.10,3.20,4.28,4.94,5.93]
-alias="互助世界"
 />
 
 <Beatmap
@@ -504,7 +480,6 @@ sid=726747
 preview="Ayase Rie feat. Hata-tan - Yuima-ru*World TVver. (Hey lululu)"
 star=5.66
 difficulties=[1.65,2.21,3.49,4.46,5.40,5.66]
-alias="互助世界"
 />
 
 <Beatmap
@@ -526,7 +501,6 @@ sid=331190
 preview="Asterisk - Ren-chon no Drum 'n' Bass (Deppyforce)"
 star=5.54
 difficulties=[1.54,2.15,3.56,4.65,5.54]
-alias="莲酱的鼓打贝斯"
 />
 
 <Beatmap
@@ -541,7 +515,6 @@ sid=485903
 preview="DZIDZIO - Yalta (wajinshu)"
 star=3.98
 difficulties=[1.58,2.28,3.06,3.98]
-alias="Ялта"
 />
 
 <Beatmap
@@ -584,7 +557,6 @@ sid=874602
 preview="R3 Music Box - Zankoku na Tenshi no These (CptSqBany)"
 star=2.60
 difficulties=[1.01,1.34,2.17,2.60]
-alias="残酷天使的行动纲领"
 />
 
 <Beatmap
@@ -633,7 +605,6 @@ sid=175968
 preview="Trident - Blue Field (CelsiusLK)"
 star=3.71
 difficulties=[1.61,2.11,3.19,3.71]
-alias="蓝场"
 />
 
 <Beatmap
@@ -683,7 +654,6 @@ sid=1123162
 preview="Sayuri - Sore wa Chiisana Hikari no Youna (TV Size) (Kuki1537)"
 star=4.20
 difficulties=[2.06,2.98,3.56,4.03,4.20]
-alias="犹如微弱的光芒"
 />
 
 <Beatmap
@@ -705,7 +675,6 @@ sid=608723
 preview="RADWIMPS - Katawaredoki (Monstrata)"
 star=3.36
 difficulties=[1.64,2.53,3.36]
-alias="黄昏之时"
 />
 
 DT 后 ar9.8 警告
@@ -715,7 +684,6 @@ sid=818349
 preview="Tanizawa Tomofumi - Sawakaze (TV Size) (Nyantiaz)"
 star=3.82
 difficulties=[1.88,2.82,3.82]
-alias="爽风"
 />
 
 ### ★其他 pp 图（TV size 合集）
@@ -739,7 +707,6 @@ sid=1328989
 preview="YOASOBI - Kaibutsu (TV Size) ([-Evil-])"
 star=4.96
 difficulties=[1.90,2.30,3.48,4.26,4.53,4.68,4.96]
-alias="怪物"
 />
 
 <Beatmap
@@ -754,7 +721,6 @@ sid=497942
 preview="mimimemeMIMI - Harebare Fanfare (Luna-)"
 star=5.04
 difficulties=[1.64,2.17,3.29,4.19,5.04]
-alias="晴朗号角"
 />
 
 <Beatmap
@@ -769,7 +735,6 @@ sid=446418
 preview="ULTRA TOWER - Kibou no Uta (TV Size) (Nevo)"
 star=4.53
 difficulties=[2.14,3.09,4.03,4.53]
-alias="希望之歌"
 />
 
 <Beatmap
@@ -793,7 +758,6 @@ sid=1034008
 preview="DIVELA feat. Hatsune Miku - Beat Syncer (Log Off Now)"
 star=5.72
 difficulties=[2.47,3.44,4.58,5.27,5.72]
-alias="节奏同步者"
 />
 
 <Beatmap
@@ -815,7 +779,6 @@ sid=1418780
 preview="Ren feat. Hatsune Miku - Tougetsu, Rinzen ni Kisu. (Log Off Now)"
 star=5.38
 difficulties=[2.54,3.60,4.51,5.38]
-alias="冬月，归于凛然。"
 />
 
 <Beatmap
@@ -879,7 +842,6 @@ sid=1053509
 preview="ViViD - HIKARI (TV Size) (Log Off Now)"
 star=5.95
 difficulties=[2.42,3.43,4.12,4.53,5.11,5.52,5.95]
-alias="光"
 />
 
 <Beatmap
@@ -887,7 +849,6 @@ sid=152249
 preview="Mikakuning! - Tomadoi Recipe (TV Size) (Fycho)"
 star=4.70
 difficulties=[1.73,2.05,3.30,4.70]
-alias="困惑→食谱 (TV Size)"
 />
 
 <Beatmap
@@ -895,7 +856,6 @@ sid=223180
 preview="Goose house - Hikaru nara -TV size- (Mei)"
 star=4.18
 difficulties=[1.55,2.36,3.01,3.99,4.18]
-alias="若能绽放光芒"
 />
 
 <Beatmap
@@ -910,7 +870,7 @@ sid=559248
 preview="Tomita Miyu, Onishi Saori, Ohzora Naomi, Hanazawa Kana - Hallelujah*Essaim (Doormat)"
 star=5.93
 difficulties=[2.17,2.63,3.63,3.72,4.37,4.74,4.97,5.30,5.60,5.93]
-alias="ハレルヤ☆エッサイム"
+unicode="ハレルヤ☆エッサイム"
 />
 
 <Beatmap
@@ -925,7 +885,6 @@ sid=223871
 preview="Goose house - Hikaru nara -TV size- (Pandiar)"
 star=4.29
 difficulties=[1.81,2.94,4.29]
-alias="若能绽放光芒"
 />
 
 <Beatmap
@@ -933,7 +892,6 @@ sid=480765
 preview="3 Nen E Gumi Utatan (Nagisa & Kayano & Karuma & Isogai & Maehara) - Bye Bye YESTERDAY (Gero)"
 star=5.52
 difficulties=[2.00,2.57,3.38,3.70,4.36,4.79,5.06,5.27,5.39,5.52]
-alias="拜拜 YESTERDAY"
 />
 
 <Beatmap
@@ -957,7 +915,6 @@ sid=50771
 preview="Kozato - 45nen no Yukizakura (LoliSora)"
 star=4.47
 difficulties=[1.69,2.37,4.07,4.47]
-alias="45年的雪樱"
 />
 
 ## ★给准 pp 刷子的建议

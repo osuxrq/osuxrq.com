@@ -31,7 +31,6 @@ sid=690222
 preview="Dan Salvato - Sayo-nara (Deppyforce)"
 star=1.21
 difficulties=[0.76,0.96,1.21]
-alias="再见"
 />
 
 <Beatmap
@@ -39,7 +38,6 @@ sid=405051
 preview="Halozy - Genryuu Kaiko (Weber)"
 star=1.66
 difficulties=[1.16,1.21,1.66,0.81]
-alias="源流怀古"
 />
 
 <Beatmap
@@ -47,7 +45,6 @@ sid=633500
 preview="YUEZHENG LONGYA - King of Comedy (Regraz)"
 star=1.78
 difficulties=[1.21,1.78]
-alias="喜剧之王"
 />
 
 <Beatmap
@@ -69,7 +66,6 @@ sid=117143
 preview="Top Combine - Mian Hua Tang (CET 6)"
 star=2.62
 difficulties=[1.66,2.62]
-alias="棉花糖"
 />
 
 <Beatmap
@@ -77,7 +73,6 @@ sid=432289
 preview="Joe Hisaishi - Itsumo Nando demo (Battle)"
 star=2.64
 difficulties=[1.50,1.87,2.64]
-alias="永远同在"
 />
 
 <Beatmap
@@ -85,7 +80,6 @@ sid=1276554
 preview="Koiwai Kotori, Murakawa Rie, Sakura Ayane, Asumi Kana - Okaeri (TV Size) (Kazuma)"
 star=2.68
 difficulties=[1.68,2.05,2.68]
-alias="欢迎回来"
 />
 
 <Beatmap
@@ -93,7 +87,6 @@ sid=1181096
 preview="Xiao Feng Feng - Jiu Bang (Mafumafu)"
 star=2.76
 difficulties=[1.88,2.76]
-alias="酒梦"
 />
 
 <Beatmap
@@ -101,7 +94,6 @@ sid=397976
 preview="Michael Wong - Yue Ding (Xinely)"
 star=2.76
 difficulties=[1.48,1.93,2.76]
-alias="约定"
 />
 
 <Beatmap
@@ -116,7 +108,6 @@ sid=107009
 preview="Shouta Kageyama - Relic Song (Leader)"
 star=3.45
 difficulties=[1.43,1.81,2.50,3.21,3.45,1.23,1.65,1.21,1.97,2.94,1.31,2.15]
-alias="遗迹之歌"
 />
 
 <Beatmap
@@ -124,7 +115,6 @@ sid=109343
 preview="Linda Yang - Bie Kan Wo Zhi Shi Yi Zhi Yang (S o a p)"
 star=3.52
 difficulties=[1.56,1.87,1.90,2.60,3.12,3.52]
-alias="别看我只是一只羊"
 />
 
 <Beatmap
@@ -132,7 +122,6 @@ sid=629373
 preview="Aimer - Hoshikuzu Venus (Kyuukai)"
 star=3.72
 difficulties=[1.50,1.70,3.06,3.33,3.72]
-alias="星屑维纳斯"
 />
 
 <Beatmap
@@ -140,7 +129,6 @@ sid=344228
 preview="Xiao Qiong (CV: KSP) - Xia Yi Zhan. Yu Ni (DreaM117er)"
 star=3.77
 difficulties=[1.50,1.87,2.90,3.69,3.77]
-alias="下一站．与你"
 />
 
 <Beatmap
@@ -148,7 +136,6 @@ sid=53000
 preview="eufonius - Hikari Kagayaku Sekai (Flower)"
 star=3.96
 difficulties=[1.38,1.65,3.24,3.76,3.96,3.35]
-alias="光芒闪耀的世界"
 />
 
 <Beatmap
@@ -163,7 +150,6 @@ sid=1082270
 preview="Shirakami Fubuki - Ievan Polkka x Fubuki (Hamburgaga Remix) (-Aqua)"
 star=4.03
 difficulties=[1.40,1.81,2.41,3.25,4.03]
-alias="甩葱歌 x 小狐狸"
 />
 
 <Beatmap
@@ -178,7 +164,6 @@ sid=25871
 preview="Funtastic Power! - Pachelbel's Canon (Mustaash)"
 star=4.08
 difficulties=[1.37,1.50,2.65,3.81,4.08]
-alias="帕赫贝尔的卡农"
 />
 
 <Beatmap
@@ -186,7 +171,6 @@ sid=611812
 preview="Angela Chang - Aurora (Rizen)"
 star=4.09
 difficulties=[1.31,1.81,2.59,4.09]
-alias="欧若拉"
 />
 
 <Beatmap
@@ -203,7 +187,6 @@ sid=855083
 preview="Miss Monochrome (CV: Horie Yui) - Poker Face (Akitoshi)"
 star=4.22
 difficulties=[1.62,1.94,2.99,3.84,4.22]
-alias="小丑脸"
 />
 
 <Beatmap
@@ -218,7 +201,6 @@ sid=739396
 preview="sana - Sunset March (hypercyte)"
 star=4.81
 difficulties=[1.53,1.68,3.19,3.99,4.81]
-alias="夕阳进行曲"
 />
 
 <Beatmap
@@ -226,7 +208,6 @@ sid=295880
 preview="Smooth J - Haru yo, Koi (Streliteela)"
 star=5.09
 difficulties=[1.42,2.06,2.49,3.36,4.46,5.09]
-alias="春天，来吧"
 />
 
 <Beatmap
@@ -234,7 +215,6 @@ sid=637706
 preview="sana - Senpai. (Kyuukai)"
 star=5.23
 difficulties=[1.77,2.41,2.92,3.58,4.87,5.23]
-alias="先辈。"
 />
 
 <Beatmap
@@ -250,7 +230,6 @@ sid=670088
 preview="Yunomi - Mitarashi Platonic (feat. nicamoq) (komasy)"
 star=5.01
 difficulties=[1.18,1.92,3.02,3.59,5.01]
-alias="酱油丸子柏拉图"
 mode="t"
 />
 
@@ -267,7 +246,6 @@ sid=1042420
 preview="Suzuki Masayuki - Love Dramatic feat. Ihara Rikka (TV Size) (Ascendance)"
 star=3.67
 difficulties=[1.34,2.15,2.85,3.67]
-alias="戏剧性之恋"
 mode="c"
 />
 
@@ -276,7 +254,6 @@ sid=752110
 preview="Ling Yuan yousa - Hoshi to Kimi ga Kieta Hi (Dapuluous)"
 star=3.65
 difficulties=[1.36,1.91,2.50,3.03,3.65]
-alias="繁星与你消逝之日"
 mode="c"
 />
 
@@ -285,7 +262,6 @@ sid=519251
 preview="Jinjin - pi (Jinjin)"
 star=1.33
 difficulties=[0.68,0.68,0.74,0.74,1.05,1.08,1.28,1.33]
-alias="π"
 mode="m"
 />
 
@@ -322,7 +298,6 @@ sid=59504
 preview="BY2 - Ai Qing Chuang Jin Men (Pink Agate)"
 star=2.39
 difficulties=[1.64,2.39]
-alias="爱情闯进门"
 />
 
 <Beatmap
@@ -330,7 +305,7 @@ sid=745623
 preview="BabyBus - Wo Hui Zi Ji Shang Ce Suo (Regraz)"
 star=2.39
 difficulties=[1.49,2.39]
-alias="我会自己上厕所"
+unicode="我会自己上厕所"
 />
 
 <Beatmap
@@ -338,7 +313,6 @@ sid=725514
 preview="Minori Chihara - Michishirube (Kibbleru)"
 star=2.31
 difficulties=[1.60,2.31]
-alias="路标"
 />
 
 <Beatmap
@@ -346,7 +320,7 @@ sid=994409
 preview="Kelly Yu - Ti Mian (gary00737)"
 star=2.53
 difficulties=[1.79,2.53]
-alias="体面"
+unicode="体面"
 />
 
 <Beatmap
@@ -354,7 +328,7 @@ sid=303823
 preview="Gui Xu - Ke Xi (cmn_891127)"
 star=2.64
 difficulties=[1.48,2.64]
-alias="可惜"
+unicode="可惜"
 />
 
 <Beatmap
@@ -369,7 +343,6 @@ sid=510663
 preview="Chata - Dango Daikazoku (Yohanes)"
 star=2.70
 difficulties=[1.87,2.70]
-alias="团子大家族"
 />
 
 <Beatmap
@@ -377,7 +350,6 @@ sid=876788
 preview="Li Rong Hao - If I Were Young (bossandy)"
 star=2.81
 difficulties=[1.96,2.81]
-alias="年少有为"
 />
 
 <Beatmap
@@ -392,7 +364,6 @@ sid=301537
 preview="Fish Leong - Ning Xia (Kagamine Ren)"
 star=3.33
 difficulties=[1.67,2.44,3.33]
-alias="宁夏"
 />
 
 <Beatmap
@@ -400,7 +371,7 @@ sid=186048
 preview="CHOPSTICKS BRO. - Xiao Ping Guo (-N a n a k o-)"
 star=3.35
 difficulties=[1.63,1.99,3.35]
-alias="小苹果"
+unicode="小苹果"
 />
 
 <Beatmap
@@ -408,7 +379,6 @@ sid=608723
 preview="RADWIMPS - Katawaredoki (Monstrata)"
 star=3.36
 difficulties=[1.64,2.53,3.36]
-alias="黄昏之时"
 />
 
 <Beatmap
@@ -430,7 +400,7 @@ sid=238992
 preview="CCTV - Believe in the power of the brand (cmn_891127)"
 star=3.45
 difficulties=[1.61,2.26,3.45]
-alias="相信品牌的力量"
+unicode="相信品牌的力量"
 />
 
 <Beatmap
@@ -438,7 +408,6 @@ sid=651825
 preview="DAOKO x Kenshi Yonezu - Uchiage Hanabi (alacat)"
 star=3.61
 difficulties=[1.26,2.17,2.61,3.07,3.61]
-alias="打上花火"
 />
 
 <Beatmap
@@ -453,7 +422,6 @@ sid=170836
 preview="Tsuji Ayano - Kaze ni Naru (S o a p)"
 star=3.72
 difficulties=[1.61,3.10,3.72]
-alias="幻化成风"
 />
 
 <Beatmap
@@ -461,7 +429,6 @@ sid=162578
 preview="Angela Chang - Aurora (Pasha_Khvan97)"
 star=3.73
 difficulties=[1.19,1.62,2.33,3.73]
-alias="欧若拉"
 />
 
 <Beatmap
@@ -476,7 +443,6 @@ sid=84698
 preview="96Neko x KurousaP - Kagen no Tsuki (Nyquill)"
 star=3.86
 difficulties=[1.91,2.69,3.86]
-alias="下弦之月"
 />
 
 <Beatmap
@@ -491,7 +457,6 @@ sid=332082
 preview="Afilia Saga - Neptune*Sagashite (Gear)"
 star=4.00
 difficulties=[1.47,1.95,2.62,3.19,4.00]
-alias="寻找☆海王星"
 />
 
 <Beatmap
@@ -499,7 +464,6 @@ sid=1266328
 preview="Harumaki Gohan feat. Hatsune Miku - Yakusoku (Cut Ver.) (ruchuers)"
 star=4.00
 difficulties=[1.88,2.87,4.00]
-alias="约束"
 />
 
 <Beatmap
@@ -514,7 +478,6 @@ sid=980453
 preview="Kyary Pamyu Pamyu - PONPONPON (deetz)"
 star=4.05
 difficulties=[2.08,3.12,4.05]
-alias="彭薇薇"
 />
 
 <Beatmap
@@ -522,7 +485,6 @@ sid=144367
 preview="DECO*27 - Kisou Honnou feat. Yuuki Aoi (Kibbleru)"
 star=4.06
 difficulties=[1.76,2.01,3.05,4.06]
-alias="归想本能 feat. 悠木碧"
 />
 
 <Beatmap
@@ -544,7 +506,6 @@ sid=1297248
 preview="TOKYO GIRLS' STYLE - Reflection (timemon)"
 star=4.13
 difficulties=[2.04,3.05,4.13]
-alias="反射"
 />
 
 <Beatmap
@@ -580,7 +541,6 @@ sid=1054381
 preview="Orangestar - Nijigen no Onnanoko ni Koi o Shite Shimatte Tsurai...w (Irin)"
 star=4.31
 difficulties=[2.14,3.17,4.31]
-alias="爱上二次元的女孩而痛苦…w"
 />
 
 <Beatmap
@@ -588,7 +548,6 @@ sid=967347
 preview="Perfume - Daijobanai (eiri-)"
 star=4.36
 difficulties=[1.69,2.13,3.30,4.36]
-alias="没关系才怪"
 />
 
 <Beatmap
@@ -596,7 +555,7 @@ sid=215381
 preview="V.K - Wings of Piano (FlobuFlobs)"
 star=4.37
 difficulties=[2.01,2.97,4.37]
-alias="琴之翼"
+unicode="琴之翼"
 />
 
 <Beatmap
@@ -604,7 +563,6 @@ sid=94790
 preview="Hatsuki Yura - Fuuga (Lan wings)"
 star=4.38
 difficulties=[1.40,1.80,3.69,4.38]
-alias="风雅"
 />
 
 <Beatmap
@@ -612,7 +570,6 @@ sid=462896
 preview="Suzuki Konomi - This game (Kalibe)"
 star=4.43
 difficulties=[1.88,2.88,3.94,4.43]
-alias="鱼，好大的鱼，虎纹鲨鱼"
 />
 
 <Beatmap
@@ -620,7 +577,6 @@ sid=862835
 preview="Xiao Ye Dao ono - Dan Xiang Di Tie Feat. Karin (moonlightleaf)"
 star=4.44
 difficulties=[1.81,2.89,4.44]
-alias="单向地铁"
 />
 
 <Beatmap
@@ -628,7 +584,6 @@ sid=1009836
 preview="TryHardNinja feat. CaptainSparklez - Revenge (fieryrage)"
 star=4.54
 difficulties=[1.58,1.82,3.09,4.54]
-alias="creeper?"
 />
 
 <Beatmap
@@ -636,7 +591,6 @@ sid=402680
 preview="Ceui - Ima, Arukidasu Kimi e. (Karen)"
 star=4.62
 difficulties=[1.92,2.51,3.41,4.46,4.62]
-alias="给即将启程的你。"
 />
 
 <Beatmap
@@ -644,7 +598,6 @@ sid=950890
 preview="Kano - Ikanaide (Irin)"
 star=4.67
 difficulties=[1.89,2.44,3.41,4.30,4.67]
-alias="不要走"
 />
 
 <Beatmap
@@ -652,7 +605,6 @@ sid=42946
 preview="namapann - Desire Drive (Mixagji)"
 star=4.75
 difficulties=[1.58,1.94,3.83,4.75]
-alias="欲望加速"
 />
 
 <Beatmap
@@ -667,7 +619,6 @@ sid=64636
 preview="DJ Genericname - Dango Dango Drum and Bass (Moway)"
 star=4.84
 difficulties=[1.51,1.89,3.48,4.84,2.68,4.16]
-alias="团子大家族"
 />
 
 <Beatmap
@@ -675,7 +626,7 @@ sid=215069
 preview="TOTTO - Onigami (Kloyd)"
 star=4.93
 difficulties=[1.60,2.23,3.60,4.93]
-alias="鬼天"
+unicode="鬼天"
 />
 
 <Beatmap
@@ -683,7 +634,6 @@ sid=596704
 preview="ClariS - Hitorigoto -TV MIX- (Doormat)"
 star=4.95
 difficulties=[1.78,1.91,2.25,2.31,3.43,3.62,4.26,4.48,4.55,4.59,4.79,4.95]
-alias="独白"
 />
 
 <Beatmap
@@ -691,7 +641,7 @@ sid=1090501
 preview="Zu Hai - Hao Yun Lai (kanor)"
 star=4.97
 difficulties=[1.87,3.25,4.97]
-alias="好运来"
+unicode="好运来"
 />
 
 <Beatmap
@@ -706,7 +656,6 @@ sid=664099
 preview="Mitchie M feat. Hatsune Miku with KAITO - Ohedo Julia-Night (Natsu)"
 star=5.25
 difficulties=[1.38,2.04,3.29,4.38,5.25]
-alias="大江户朱莉安娜之夜"
 />
 
 <Beatmap
@@ -714,7 +663,7 @@ sid=425219
 preview="Lan Zi - Yi Bai Kuai Dou Bu Gei Wo (Pata-Mon)"
 star=5.27
 difficulties=[1.69,2.15,2.39,3.28,3.96,4.71,5.27]
-alias="一百块都不给我"
+unicode="一百块都不给我"
 />
 
 <Beatmap
@@ -722,7 +671,6 @@ sid=841289
 preview="mafumafu x Amatsuki - nonfantasy (Jian)"
 star=5.27
 difficulties=[1.77,2.52,3.36,4.49,5.27]
-alias="非现实"
 />
 
 <Beatmap
@@ -730,7 +678,6 @@ sid=602230
 preview="loos - Koi Yomi Zakura (Full size) (papapa213)"
 star=5.63
 difficulties=[1.60,2.27,3.52,4.74,5.18,5.25,5.35,5.63]
-alias="恋咏樱"
 />
 
 <Beatmap
@@ -738,7 +685,6 @@ sid=431971
 preview="M2U - Lunatic Sky (buhei)"
 star=5.93
 difficulties=[1.61,1.99,2.81,3.60,4.95,5.48,5.59,5.67,5.80,5.87,5.93]
-alias="狂野天空"
 />
 
 <Beatmap
@@ -746,7 +692,6 @@ sid=420765
 preview="Dendei - gabe power (HighTec)"
 star=6.04
 difficulties=[1.26,1.73,1.91,2.89,3.81,4.59,5.01,5.55,6.04]
-alias="gabe 脑力"
 />
 
 <Beatmap
@@ -754,7 +699,6 @@ sid=984641
 preview="sana - Kanojo wa Tabi ni Deru (Firika)"
 star=6.06
 difficulties=[1.93,2.60,3.65,4.69,6.06]
-alias="她踏上了旅程"
 />
 
 <Beatmap
@@ -762,7 +706,6 @@ sid=613158
 preview="Sasaki Sayaka - Kiss no Hitotsu de (Left)"
 star=6.27
 difficulties=[1.25,1.73,2.38,3.53,4.65,5.33,5.74,6.27]
-alias="仅凭一个吻"
 />
 
 <Beatmap
@@ -770,7 +713,6 @@ sid=1158494
 preview="TUYU - Rock na Kimi to wa Owakare da (Seros)"
 star=6.36
 difficulties=[1.89,2.47,3.39,4.68,5.56,6.36]
-alias="和充满摇滚气息的你说再见"
 />
 
 <Beatmap
@@ -778,7 +720,6 @@ sid=833895
 preview="t+pazolite - Oshama Scramble! (DTM9 Nowa)"
 star=6.98
 difficulties=[1.95,2.67,2.87,3.72,4.33,4.80,5.32,5.70,5.92,6.40,6.58,6.98]
-alias="牛奶猫"
 />
 
 <Beatmap
@@ -786,7 +727,6 @@ sid=1023737
 preview="Kikiyama - Yume Nikki (Axer)"
 star=1.23
 difficulties=[0.70,0.89,1.23]
-alias="梦日记"
 mode="t"
 />
 
@@ -795,7 +735,6 @@ sid=1180701
 preview="Chino (CV: Minase Inori), Maya (CV: Tokui Sora), Megu (CV: Murakawa Rie) - Komorebi Seishunfu ~Gekichuu Uta Ver.~ (Faputa)"
 star=1.94
 difficulties=[1.03,1.39,1.94]
-alias="木构街道青春谱 ~劇中歌 Ver.~"
 mode="t"
 />
 
@@ -804,7 +743,6 @@ sid=547701
 preview="Kayano Ai / Tomatsu Haruka / Hayami Saori - secret base ~Kimi ga Kureta Mono~ (10 years after Ver.) (Ascendance)"
 star=2.85
 difficulties=[1.17,2.07,2.85]
-alias="秘密基地 ～你赠与我～"
 mode="c"
 />
 
@@ -821,7 +759,7 @@ sid=839245
 preview="F4 - Liu Xing Yu (Rivals_7)"
 star=2.41
 difficulties=[1.16,1.72,2.41]
-alias="流星雨"
+unicode="流星雨"
 mode="m"
 />
 
@@ -838,7 +776,6 @@ sid=342327
 preview="3R2 - Next Stop.With You (feat. KSP) (Sky_Demon)"
 star=2.79
 difficulties=[1.66,2.46,2.79]
-alias="下一站．与你"
 mode="m"
 />
 
@@ -859,7 +796,7 @@ sid=79832
 preview="Gigi Leung - Chicken Chic (Weiren)"
 star=3.11
 difficulties=[1.82,3.10,3.11]
-alias="胆小鬼"
+unicode="胆小鬼"
 />
 
 <Beatmap
@@ -874,7 +811,6 @@ sid=127712
 preview="Primastella - Koigokoro (Luerxa)"
 star=4.51
 difficulties=[1.68,3.05,4.13,4.51]
-alias="恋心"
 />
 
 <Beatmap
@@ -889,7 +825,6 @@ sid=83130
 preview="EastNewSound - Eisou Youga ~Meikyou Shisui~ (Forseen)"
 star=4.79
 difficulties=[1.57,2.07,3.35,4.79]
-alias="咏奏妖华～明镜止水～"
 />
 
 <Beatmap
@@ -897,7 +832,6 @@ sid=451250
 preview="Syaro(CV.Uchida Maaya) - Caffeine Fighter (Doormat)"
 star=4.90
 difficulties=[1.89,2.30,3.43,4.55,4.90]
-alias="咖啡因战士"
 />
 
 <Beatmap
@@ -921,7 +855,6 @@ sid=277421
 preview="Lindsey Stirling - Senbonzakura (MrSergio)"
 star=5.15
 difficulties=[1.54,2.10,3.46,4.43,5.15,2.09,3.30]
-alias="千本樱"
 />
 
 <Beatmap
@@ -936,7 +869,6 @@ sid=371569
 preview="Minamotoya feat. Kuroa* - Hana Kagerou (DreaM117er)"
 star=5.26
 difficulties=[1.78,2.24,3.09,4.04,4.42,4.83,5.26]
-alias="华阳炎"
 />
 
 <Beatmap
@@ -944,7 +876,6 @@ sid=952409
 preview="MIMI feat. Hatsune Miku - Ai no Sukima (Log Off Now)"
 star=5.31
 difficulties=[2.12,3.51,3.95,4.47,4.99,5.31]
-alias="哀伤的隙间"
 />
 
 <Beatmap
@@ -966,7 +897,6 @@ sid=13223
 preview="Demetori - Emotional Skyscraper ~ World's End (happy30)"
 star=5.50
 difficulties=[4.53,5.50,5.02]
-alias="2012"
 />
 
 <Beatmap
@@ -974,7 +904,6 @@ sid=53857
 preview="Saiya - Remote Control (Garven)"
 star=5.53
 difficulties=[2.13,2.16,3.60,4.44,5.53,2.84,4.29]
-alias="遥控器"
 />
 
 <Beatmap
@@ -982,7 +911,6 @@ sid=444335
 preview="HO-KAGO TEA TIME - Kira Kira Days (Kagetsu)"
 star=5.60
 difficulties=[1.68,2.52,3.68,4.08,4.72,5.28,5.60]
-alias="闪耀 Days"
 />
 
 <Beatmap
@@ -990,7 +918,6 @@ sid=51972
 preview="goreshit - o'er the flood (grumd)"
 star=5.71
 difficulties=[1.65,2.35,3.79,5.71,3.30,5.52]
-alias="大洪水"
 />
 
 <Beatmap
@@ -998,7 +925,6 @@ sid=41686
 preview="Lily - Scarlet Rose (val0108)"
 star=5.79
 difficulties=[5.79]
-alias="血玫瑰"
 />
 
 <Beatmap
@@ -1006,7 +932,6 @@ sid=372851
 preview="Ni-Sokkususu - Blade Dance (Bearizm)"
 star=5.84
 difficulties=[2.00,2.55,3.82,4.90,5.84,3.30,4.19]
-alias="精灵剑舞祭"
 />
 
 <Beatmap
@@ -1014,7 +939,6 @@ sid=411894
 preview="Remo Prototype[CV: Hanamori Yumiri] - Sendan Life (Narcissu)"
 star=5.89
 difficulties=[1.46,2.23,3.52,4.99,5.76,5.89]
-alias="先端人生"
 />
 
 <Beatmap
@@ -1022,13 +946,11 @@ sid=867074
 preview="Reol - Heimenkyou (Frey)"
 star=5.97
 difficulties=[2.21,3.59,4.82,5.97]
-alias="平面镜"
 />
 
 <Beatmap
 sid=522857
 preview="Porter Robinson & Madeon - Shelter (Monstrata)"
-alias="庇护所"
 star=6.01
 difficulties=[1.33,2.04,2.81,3.49,4.29,5.16,5.56,5.80,5.90,5.95,6.01]
 />
@@ -1040,7 +962,6 @@ sid=153776
 preview="yuikonnu & ayaponzu* - Super Nuko World (AllStar12)"
 star=6.09
 difficulties=[1.97,2.60,4.13,5.36,6.09,2.95,5.34]
-alias="超级猫世界"
 />
 
 <Beatmap
@@ -1048,7 +969,7 @@ sid=186318
 preview="Warak - REANIMATE (iyasine)"
 star=6.11
 difficulties=[1.77,2.37,3.58,4.53,5.36,5.67,5.74,6.11]
-alias="暗夜苏醒"
+unicode="暗夜苏醒"
 />
 
 <Beatmap
@@ -1056,7 +977,6 @@ sid=437797
 preview="Silent Siren - Soukai Rock (Shad0w1and)"
 star=6.19
 difficulties=[1.66,2.20,2.75,4.00,4.59,5.59,5.80,5.99,6.19]
-alias="爽快摇滚"
 />
 
 <Beatmap
@@ -1071,7 +991,6 @@ sid=51245
 preview="IA - Six Trillion Years and Overnight Story (NatsumeRin)"
 star=6.21
 difficulties=[1.89,2.32,3.91,5.25,6.02,6.21,5.10,5.46]
-alias="六兆年零一夜的故事"
 />
 
 <Beatmap
@@ -1079,7 +998,6 @@ sid=546820
 preview="YUC'e - Future Candy (Nathan)"
 star=6.22
 difficulties=[2.12,3.61,5.37,6.22]
-alias="未来糖果"
 />
 
 <Beatmap
@@ -1087,7 +1005,6 @@ sid=914691
 preview="S3RL - MTC (Different Heaven Remix) (Sylas)"
 star=6.22
 difficulties=[1.90,2.44,3.53,5.15,6.03,6.22]
-alias="对二次元冲"
 />
 
 [我从未听过如此丧心病狂的电音S3RL-MTC（带字幕）](https://www.bilibili.com/video/BV1Js411U78a/)
@@ -1111,7 +1028,6 @@ sid=564329
 preview="YUC'e - Sengoku HOP (Nathan)"
 star=6.44
 difficulties=[2.12,2.78,3.24,5.04,6.14,6.44]
-alias="战国 HOP"
 />
 
 <Beatmap
@@ -1119,7 +1035,6 @@ sid=985788
 preview="Loki - Wizard's Tower (Taeyang)"
 star=6.49
 difficulties=[2.02,2.66,3.43,4.69,5.78,6.49]
-alias="巫师塔"
 />
 
 <Beatmap
@@ -1127,7 +1042,6 @@ sid=513731
 preview="A.SAKA - Nanatsu Issenzakura (yf_bmp)"
 star=6.56
 difficulties=[1.54,1.57,2.57,3.79,5.15,5.80,5.84,5.97,6.55,6.56]
-alias="七叶一旋樱"
 />
 
 <Beatmap
@@ -1149,7 +1063,6 @@ sid=287873
 preview="Alipio Martins - Piranha (Maffalda Reloaded Trap Mix) (Tarrasky)"
 star=6.61
 difficulties=[1.64,2.15,3.51,4.29,5.01,6.10,6.61,5.00]
-alias="灯笼鱼"
 />
 
 <Beatmap
@@ -1157,7 +1070,6 @@ sid=58951
 preview="UNDEAD CORPORATION - Yoru Naku Usagi wa Yume o Miru (Smoothie)"
 star=6.62
 difficulties=[1.78,2.08,3.40,5.72,6.62,3.26,5.03]
-alias="夜啼的兔子做着梦 / 夜啼兔"
 />
 
 <Beatmap
@@ -1165,7 +1077,6 @@ sid=384772
 preview="Yuaru - Asu no Yozora Shoukaihan (Akitoshi)"
 star=6.63
 difficulties=[1.76,2.48,3.56,5.06,5.53,5.66,6.63]
-alias="明日夜空哨戒班"
 />
 
 <Beatmap
@@ -1173,7 +1084,6 @@ sid=484532
 preview="Kano - Sukisuki Zecchoushou (Loreley)"
 star=6.67
 difficulties=[2.26,3.00,3.86,5.03,5.47,5.99,6.67]
-alias="喜欢喜欢绝顶症"
 />
 
 <Beatmap
@@ -1188,7 +1098,6 @@ sid=24313
 preview="Team Nekokan - Can't Defeat Airman (Blue Dragon)"
 star=6.78
 difficulties=[6.78]
-alias="空气人"
 />
 
 <Beatmap
@@ -1203,7 +1112,6 @@ sid=41823
 preview="The Quick Brown Fox - The Big Black (Blue Dragon)"
 star=6.93
 difficulties=[6.93,5.18]
-alias="大黑"
 />
 
 <Beatmap
@@ -1211,7 +1119,6 @@ sid=143397
 preview="Natsume Chiaki - Hanairo Biyori (rinsukir)"
 star=6.95
 difficulties=[1.52,2.29,3.58,5.19,5.56,6.95]
-alias="花色日和"
 />
 
 <Beatmap
@@ -1226,7 +1133,6 @@ sid=210316
 preview="U1 overground - Dopamine (fanzhen0019)"
 star=6.99
 difficulties=[1.49,2.41,3.59,4.85,5.63,6.99]
-alias="多巴胺"
 />
 
 <Beatmap
@@ -1248,7 +1154,6 @@ sid=647452
 preview="GEM - Umiyuri Kaiteitan (Loreley)"
 star=7.34
 difficulties=[2.30,3.17,4.07,5.00,5.99,6.27,7.05,7.34]
-alias="海百合海底谭"
 />
 
 <Beatmap
@@ -1256,7 +1161,6 @@ sid=452230
 preview="BABYMETAL - Gimme chocolate!! (alacat)"
 star=7.41
 difficulties=[1.89,2.49,3.87,4.68,5.56,6.46,7.41]
-alias="给我巧克力！！"
 />
 
 <Beatmap
@@ -1271,7 +1175,6 @@ sid=292301
 preview="xi - Blue Zenith (Asphyxia)"
 star=7.51
 difficulties=[2.12,2.69,3.59,4.62,5.59,6.18,6.83,6.98,7.51]
-alias="蓝极光 / 蓝顶"
 />
 
 <Beatmap
@@ -1279,7 +1182,6 @@ sid=721804
 preview="Omoi - Teo (Kroytz)"
 star=7.58
 difficulties=[2.62,3.61,5.06,5.65,6.02,6.80,7.58]
-alias="将手"
 />
 
 <Beatmap
@@ -1287,7 +1189,6 @@ sid=219380
 preview="Konuko - Toumei Elegy (Awaken)"
 star=7.83
 difficulties=[1.93,2.59,3.98,4.80,5.66,6.14,7.19,7.83]
-alias="透明哀歌"
 />
 
 <Beatmap
@@ -1295,7 +1196,6 @@ sid=413117
 preview="DECO*27 - Ghost Rule (Awaken)"
 star=8.20
 difficulties=[2.56,3.84,4.27,4.96,5.53,5.90,6.44,6.92,7.04,7.98,8.20]
-alias="幽灵法则"
 />
 
 <Beatmap
@@ -1310,7 +1210,6 @@ sid=147210
 preview="xi - FREEDOM DiVE (Pikastar)"
 star=8.72
 difficulties=[1.33,2.32,3.52,4.68,5.74,6.96,7.60,8.72]
-alias="FD"
 />
 
 <Beatmap
@@ -1326,7 +1225,6 @@ sid=625493
 preview="Yunomi with Momobako&miko - Soumatou Labyrinth (komasy)"
 star=4.48
 difficulties=[1.24,1.99,3.17,3.80,4.48]
-alias="走马灯迷宫"
 mode="t"
 />
 
@@ -1343,7 +1241,6 @@ sid=606334
 preview="Dark PHOENiX - Taketori Hishou (Madoka2574)"
 star=4.42
 difficulties=[1.42,2.15,3.46,4.42]
-alias="竹取飞翔"
 mode="m"
 />
 
@@ -1356,7 +1253,7 @@ sid=645502
 preview="A-Lin - Gei Wo Yi Ge Li You Wang Ji (Regraz)"
 star=1.17
 difficulties=[0.95,1.17]
-alias="给我一个理由忘记"
+unicode="给我一个理由忘记"
 />
 
 <Beatmap
@@ -1364,7 +1261,7 @@ sid=793539
 preview="Song Zuying - Xiao Bei Lou (Regraz)"
 star=2.26
 difficulties=[1.61,2.26]
-alias="小背篓"
+unicode="小背篓"
 />
 
 <Beatmap
@@ -1372,7 +1269,6 @@ sid=854025
 preview="Liu Zeng Tong - Lun Hui (bossandy)"
 star=2.28
 difficulties=[2.28]
-alias="轮回"
 />
 
 <Beatmap
@@ -1380,7 +1276,6 @@ sid=1733689
 preview="Araragi Tsukihi (CV: Iguchi Yuka) - Platinum Disco (TV Size) (DenYi)"
 star=2.43
 difficulties=[1.13,1.72,2.43]
-alias="白金 Disco"
 />
 
 <Beatmap
@@ -1388,7 +1283,7 @@ sid=251913
 preview="Jay Chou - Qing Hua Ci (liangv587)"
 star=2.88
 difficulties=[2.17,2.88]
-alias="青花瓷"
+unicode="青花瓷"
 />
 
 <Beatmap
@@ -1396,7 +1291,6 @@ sid=468807
 preview="Kalafina - Yume no Daichi (Vell)"
 star=3.03
 difficulties=[1.54,1.89,2.21,3.03]
-alias="梦之大地"
 />
 
 <Beatmap
@@ -1404,7 +1298,7 @@ sid=389179
 preview="Jay Chou - Fa Ru Xue (KaedekaShizuru)"
 star=3.05
 difficulties=[1.66,2.42,3.05]
-alias="发如雪"
+unicode="发如雪"
 />
 
 <Beatmap
@@ -1412,7 +1306,7 @@ sid=789103
 preview="Xiao Pan Pan & Xiao Feng Feng - Xue Mao Jiao (Asaiga)"
 star=3.25
 difficulties=[1.72,1.92,2.76,3.25]
-alias="学猫叫"
+unicode="学猫叫"
 />
 
 <Beatmap
@@ -1434,7 +1328,7 @@ sid=143734
 preview="Linda Yang - Wo Niu Yu Huang Li Niao (yf_bmp)"
 star=3.69
 difficulties=[1.33,1.93,3.01,3.69]
-alias="蜗牛与黄鹂鸟"
+unicode="蜗牛与黄鹂鸟"
 />
 
 <Beatmap
@@ -1484,7 +1378,7 @@ sid=773973
 preview="S.I.N.G - Ji Ming Yue (Sandrew)"
 star=4.44
 difficulties=[1.95,3.05,3.94,4.44]
-alias="寄明月"
+unicode="寄明月"
 />
 
 <Beatmap
@@ -1499,7 +1393,6 @@ sid=221768
 preview="Sharlo - Shinkai Shoujo (yf_bmp)"
 star=4.73
 difficulties=[1.72,2.05,3.11,3.75,4.73]
-alias="深海少女"
 />
 
 <Beatmap
@@ -1514,7 +1407,6 @@ sid=476730
 preview="Flower - Taiyou to Himawari (z1085684963)"
 star=4.94
 difficulties=[1.78,2.57,3.72,4.94]
-alias="太阳与向日葵"
 />
 
 <Beatmap
@@ -1522,7 +1414,6 @@ sid=416702
 preview="nameless x toa - Patchwork Staccato (Taeyang)"
 star=5.01
 difficulties=[1.38,1.55,1.96,2.41,2.77,2.99,3.31,4.02,4.47,5.01]
-alias="拼凑的断音"
 />
 
 <Beatmap
@@ -1537,7 +1428,6 @@ sid=476691
 preview="DJ OKAWARI - Flower Dance (Narcissu)"
 star=5.05
 difficulties=[1.29,2.25,3.10,4.36,5.05,1.61,2.50]
-alias="花舞"
 />
 
 <Beatmap
@@ -1545,7 +1435,6 @@ sid=1398443
 preview="Phao - 2 Phut Hon (KAIZ Remix) (Cut Ver.) (Elinor)"
 star=5.19
 difficulties=[1.83,2.90,3.83,4.52,5.19]
-alias="两分多钟"
 />
 
 <Beatmap
@@ -1567,7 +1456,6 @@ sid=1213174
 preview="YOASOBI - Ano Yume o Nazotte (-Aqua)"
 star=5.39
 difficulties=[2.12,2.64,3.60,4.52,5.39]
-alias="描绘那个梦境"
 />
 
 <Beatmap
@@ -1575,7 +1463,7 @@ sid=1174616
 preview="LeaF - Mopemope (hypercyte)"
 star=5.70
 difficulties=[1.97,2.75,3.63,4.71,5.70]
-alias="もぺもぺ"
+unicode="もぺもぺ"
 />
 
 <Beatmap
@@ -1583,7 +1471,6 @@ sid=241526
 preview="Soleily - Renatus (Multiple Creators)"
 star=5.78
 difficulties=[2.11,3.51,5.32,1.95,2.86,5.78,2.63,3.53,4.65,1.94,3.20,4.73]
-alias="重生纪元"
 />
 
 <Beatmap
@@ -1591,7 +1478,6 @@ sid=716441
 preview="Fractal Dreamers - Paradigm Shift (appleeaterx)"
 star=5.78
 difficulties=[2.13,2.67,3.80,5.24,5.78]
-alias="范式转移"
 />
 
 <Beatmap
@@ -1606,7 +1492,7 @@ sid=1369139
 preview="Yu-Peng Chen @HOYO-MiX - Rex Incognito (Crissa)"
 star=5.83
 difficulties=[1.83,2.42,3.47,4.63,5.03,5.83]
-alias="尘世闲游"
+unicode="尘世闲游"
 />
 
 <Beatmap
@@ -1621,7 +1507,6 @@ sid=522857
 preview="Porter Robinson & Madeon - Shelter (Monstrata)"
 star=6.01
 difficulties=[1.33,2.04,2.81,3.49,4.29,5.16,5.56,5.80,5.90,5.95,6.01]
-alias="避难所"
 />
 
 <Beatmap
@@ -1629,7 +1514,6 @@ sid=374858
 preview="IOSYS - Tanoshii Yoru no Ochakai - Ringo's Tea Party (Frey)"
 star=6.05
 difficulties=[1.74,2.67,3.69,5.11,6.05]
-alias="快乐的深夜茶会"
 />
 
 <Beatmap
@@ -1637,7 +1521,6 @@ sid=722797
 preview="Saratoga(CV: Sumire Uesaka) - Souzetsu Gekkou (Yasaija 714)"
 star=6.12
 difficulties=[1.80,2.25,3.41,4.61,4.90,5.37,5.79,5.93,6.12]
-alias="壮绝激昂"
 />
 
 <Beatmap
@@ -1645,7 +1528,6 @@ sid=128931
 preview="Feint - Tower Of Heaven (You Are Slaves) (eLy)"
 star=6.15
 difficulties=[2.13,3.21,3.87,4.56,5.12,6.15]
-alias="天堂塔"
 />
 
 <Beatmap
@@ -1660,7 +1542,7 @@ sid=1002819
 preview="Roselia - MIIRO (-Mikan)"
 star=6.56
 difficulties=[1.79,2.09,2.58,3.67,4.58,4.98,5.30,5.82,5.97,6.08,6.56,1.33,2.13,3.10,4.29,4.97,1.82,2.19,3.43,4.64,5.64,2.28,3.32,4.04]
-alias="海色"
+unicode="海色"
 />
 
 <Beatmap
@@ -1682,7 +1564,6 @@ sid=1443294
 preview="TUYU - Daemonisch (Keqing)"
 star=6.84
 difficulties=[2.84,3.79,4.79,5.41,5.97,6.13,6.42,6.77,6.78,6.84]
-alias="恶魔"
 />
 
 <Beatmap
@@ -1690,7 +1571,6 @@ sid=1376486
 preview="Risshuu feat. Choko - Take (yf_bmp)"
 star=7.68
 difficulties=[1.58,2.57,3.06,3.83,4.83,5.26,5.89,6.22,6.66,6.74,7.38,7.51,7.68]
-alias="竹"
 />
 
 <Beatmap
@@ -1698,7 +1578,7 @@ sid=85488
 preview="Azis - Hop (Stefan)"
 star=4.02
 difficulties=[1.25,1.90,3.36,4.02]
-alias="Хоп"
+unicode="Хоп"
 mode="t"
 />
 
@@ -1723,7 +1603,6 @@ sid=336173
 preview="Ci Mei Gui - Wu Xuan Lan (Peachtrees)"
 star=4.93
 difficulties=[1.74,2.24,3.36,3.88,4.93]
-alias="舞·绚烂"
 mode="c"
 />
 
@@ -1732,7 +1611,6 @@ sid=731247
 preview="Ryu* - China Express (Sorcerer)"
 star=5.21
 difficulties=[1.61,2.36,3.16,4.11,5.21]
-alias="中华急行"
 mode="c"
 />
 
@@ -1741,7 +1619,7 @@ sid=1135268
 preview="Ling Yuan yousa - Gou Zhi Qi Shi (Madoka2574)"
 star=2.68
 difficulties=[1.36,2.00,2.68]
-alias="勾指起誓"
+unicode="勾指起誓"
 mode="m"
 />
 
@@ -1750,7 +1628,6 @@ sid=473858
 preview="Ji Zhou - Theresa's teriteri Circulation (ExNeko)"
 star=3.01
 difficulties=[1.38,1.46,2.07,2.19,2.91,3.01]
-alias="德丽莎的 teriteri 循环"
 mode="m"
 />
 
@@ -1759,7 +1636,6 @@ sid=248504
 preview="Kozato - Tsuki -Yue- (KawaEE)"
 star=4.13
 difficulties=[1.77,2.85,4.13]
-alias="月"
 mode="m"
 />
 

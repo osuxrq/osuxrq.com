@@ -66,7 +66,6 @@ sid=376878
 preview="Siestail - Magic Lip Service (Hollow Wings) [Yuki's Lunatic]"
 star=5.23
 max=988
-alias="魔法的甜言蜜语"
 mods=HD
 />
 
@@ -76,7 +75,6 @@ sid=476691
 preview="DJ OKAWARI - Flower Dance (Narcissu) [Little's Insane]"
 star=4.80
 max=1025
-alias="花舞"
 mods=HD
 />
 
@@ -90,7 +88,6 @@ sid=834342
 preview="Rocket Girls 101 - Calorie (kanor) [Lodrew's Hard]"
 star=4.99
 max=1047
-alias="卡路里"
 mods=DT
 />
 
@@ -100,7 +97,6 @@ sid=95839
 preview="senya - Hitorishizuka (Satellite) [Forseen's Hard]"
 star=4.62
 max=884
-alias="一人静"
 mods=DT
 />
 
@@ -110,7 +106,6 @@ sid=115011
 preview="Hatsuki Yura - Yoiyami Hanabi (Lan wings) [Kotone]"
 star=5.28
 max=1020
-alias="宵暗花火"
 mods=DT
 />
 
@@ -124,7 +119,6 @@ sid=61080
 preview="Nanahira & Nayu & Irodori - Bakunyuondo (intoon) [Bakunyu~]"
 star=4.46
 max=1101
-alias="爆乳音头"
 />
 
 <Pool
@@ -188,7 +182,6 @@ sid=355236
 preview="*namirin - Sakurairo Time Capsule (Fuccho) [A Mystery's Insane]"
 star=4.90
 max=1168
-alias="樱色时间胶囊"
 />
 
 <Pool
@@ -209,7 +202,7 @@ sid=568455
 preview="fhana - Outside of Melancholy ~Yuuutsu no Mukougawa~ (Sotarks) [Insane]"
 star=4.62
 max=1027
-alias="Outside of Melancholy 〜憂鬱の向こう側〜"
+unicode="Outside of Melancholy 〜憂鬱の向こう側〜"
 />
 
 <Pool

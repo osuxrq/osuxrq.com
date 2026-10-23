@@ -142,7 +142,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Amane (CV: Minami Tanaka) - The Purge March (Nostril) [Normal]"
   star=2.41
   max=430
-  alias="粛清マーチ"
+  unicode="粛清マーチ"
 />
 
 ~~MILGRAM 二审曲，可爱的腔调同危险的歌词搭配起来有种强烈的反差感。豪庭！~~
@@ -159,7 +159,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="mafumafu feat. IA - Yuugure Semi Nikki (AtHeoN) [SharitsuTv's Normal]"
   star=2.47
   max=677
-  alias="夕暮れ蝉日記"
+  unicode="夕暮れ蝉日記"
 />
 
 别看是3分31秒的图，其实它有四段休息时间，其实也就刚刚好三分钟。<span style="color: orange;">难点在于考验你的稳定性</span>，整张图有不少八分二连的小切，再加上整体三分半的时长，你的稳定很容易在中途崩掉。 
@@ -172,7 +172,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Aisaka Taiga (CV: Kugimiya Rie) & Kawashima Ami (CV: Kitamura Eri) - Holy Night (Iceluin) [Hard]"
   star=2.71
   max=538
-  alias="ホーリーナイト"
+  unicode="ホーリーナイト"
 />
 
 ~~是大和与亚美在圣诞夜唱的插曲呢，好听爱听~~
@@ -215,7 +215,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="HACHI - DONUT HOLE (Ryuusei Aika) [JauiPlaY's Normal]"
   star=2.59
   max=772
-  alias="ドーナツホール"
+  unicode="ドーナツホール"
 />
 
 <Beatmap
@@ -224,7 +224,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="HACHI - DONUT HOLE (Ryuusei Aika) [SB's Hard]"
   star=2.93
   max=845
-  alias="ドーナツホール"
+  unicode="ドーナツホール"
 />
 
 同样是整体时长三分半，游玩时间三分钟的走路图。<span style="color: orange;">难点在于音乐的节奏比较复杂</span>，在发现音乐听不懂的时候多依靠下眼睛吧。 
@@ -239,7 +239,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Orange Heart(cv:Honda Mariko) Neptune(cv:Tanaka Rie) - Mousou Katharsis (Shurelia) [Hard]"
   star=2.69
   max=652
-  alias="妄想Katharsis"
+  unicode="妄想Katharsis"
 />
 
 ~~涡芽啊啊啊啊 快来玩超次元游戏海王星VII！ ~~
@@ -280,7 +280,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Nanahira - Viva Happy (Frey) [Advanced]"
   star=3.08
   max=727
-  alias="ビバハピ"
+  unicode="ビバハピ"
 />
 
 ~~ななひら可爱捏~~
@@ -309,7 +309,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Miss Monochrome (CV: Horie Yui) - Poker Face (Akitoshi) [Hard]"
   star=2.99
   max=986
-  alias="ポーカーフェイス"
+  unicode="ポーカーフェイス"
 />
 
 三分半的走路+零散小切图，难点在于这张图的<span style="color: orange;">一些单戳和切都是叠在一起的</span>，你需要通过认真听音乐和仔细观察前后note的缩圈距离来判断究竟是该单戳还是该连打。是一张对耐力、稳定、读谱都有考验的综合图
@@ -322,7 +322,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="himmel feat. YooSanHyakurei - Hoshizora no Hanataba (Imouto koko) [Hoshi]"
   star=2.54
   max=503
-  alias="星空の花束"
+  unicode="星空の花束"
 />
 
 ~~东方金曲，好听爱听~~
@@ -351,7 +351,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="EGOIST - Euterpe (jonathanlfj) [Hard]"
   star=2.65
   max=577
-  alias="エウテルペ"
+  unicode="エウテルペ"
 />
 
 ~~罪恶王冠开篇曲（集在听的，并非op）~~
@@ -366,7 +366,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Haruna Luna - Sora wa Takaku Kaze wa Utau (Nao Tomori) [Relaxing]"
   star=3.00
   max=642
-  alias="空は高く風は歌う"
+  unicode="空は高く風は歌う"
 />
 
 ~~Fate里个人很喜欢的一首~~
@@ -399,7 +399,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Shimotsuki Haruka - Kazahane (milr_) [Normal]"
   star=2.29
   max=557
-  alias="カザハネ"
+  unicode="カザハネ"
 />
 
 ~~恭喜你发现宝藏游戏/番 H2O- FOOTPRINTS IN THE SAND~~
@@ -414,7 +414,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="yanaginagi - Aqua Terrarium (Ayesha Altugle) [Hard]"
   star=2.79
   max=793
-  alias="アクアテラリウム"
+  unicode="アクアテラリウム"
 />
 
 ~~風の去から来自胃痛不止的明天（~~
@@ -429,7 +429,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Shiina Mayuri (CV: Hanazawa Kana), Shiina Kagari (CV: Han Megumi) - HOSHI NO KANADERU UTA (Duet Ver.) (Chaoslitz) [A Song Played by the Stars]"
   star=2.53
   max=660
-  alias="星の奏でる歌 (Duet Ver.)"
+  unicode="星の奏でる歌 (Duet Ver.)"
 />
 
 走路+时不时出现小跳、小切的组合，加上5分17秒的时长，我想不用我多说了吧，记得享受音乐！
@@ -456,7 +456,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Chata - Dango Daikazoku (Yohanes) [Hard]"
   star=2.70
   max=519
-  alias="だんご大家族"
+  unicode="だんご大家族"
 />
 
 ~~长图怎么能少了我们团子大家族呢（~~
@@ -513,7 +513,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Sound Horizon - Utsukushiki Mono (Narcissu) [Treasure]"
   star=2.63
   max=891
-  alias="美しきもの"
+  unicode="美しきもの"
 />
 
 ~~美丽之物……感伤与温馨交织，宛如一场关于珍贵事物的梦，温暖却转瞬即逝。~~
@@ -528,7 +528,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Akie - Ama no Jaku Piano ver. (- Matha -) [Memories]"
   star=2.79
   max=759
-  alias="天ノ弱 Piano ver."
+  unicode="天ノ弱 Piano ver."
 />
 
 ~~慢下来的天之弱也有一番别样的滋味~~
@@ -545,7 +545,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="yanaginagi - Koibumi (Shurelia) [Love Letter]"
   star=2.26
   max=707
-  alias="恋文"
+  unicode="恋文"
 />
 
 ~~要来玩玩Rewrite吗（笑）~~
@@ -574,7 +574,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Kinoshita Ringo (CV.Tamura Yukari) - Cordless*Tere*PHONE (-Nitrous) [Call Me]"
   star=2.98
   max=1396
-  alias="コードレス☆照れ☆PHONE"
+  unicode="コードレス☆照れ☆PHONE"
 />
 
 ~~农林第一话的插曲~~
@@ -595,7 +595,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Akiyama Kiro - Yugure ni Utsushite (Kagetsu) [Hard]"
   star=3.19
   max=788
-  alias="夕暮れに映して"
+  unicode="夕暮れに映して"
 />
 
 良曲发现！
@@ -636,7 +636,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Kotoha - Haru o Tsurete (tomatas95) [Hard]"
   star=3.20
   max=708
-  alias="春を連れて"
+  unicode="春を連れて"
 />
 
 <Beatmap
@@ -645,7 +645,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Kotoha - Haru o Tsurete (tomatas95) [A New Chapter Begins Between You and Me~]"
   star=3.95
   max=758
-  alias="春を連れて"
+  unicode="春を連れて"
 />
 
 ~~是纯白交响曲，好耶！~~
@@ -662,7 +662,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="petit milady - Koi wa Milk Tea (Okoratu) [Meyko's Hard]"
   star=3.20
   max=863
-  alias="恋はみるくてぃ"
+  unicode="恋はみるくてぃ"
 />
 
 ~~三坪房间的侵略者ED，这个蒸好听www~~
@@ -693,7 +693,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Hanasaka Yui (CV: M.A.O) - Harumachi Clover (Momochikun) [117's Hard]"
   star=3.24
   max=1023
-  alias="春待ちクローバー"
+  unicode="春待ちクローバー"
 />
 
 ~~我们harumahci也是有自己的full（~~
@@ -722,7 +722,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Hoshina Megumi - Star Trip (eringiRa) [Hard]"
   star=3.36
   max=1064
-  alias="スタートリップ"
+  unicode="スタートリップ"
 />
 
 ~~星空列车与白的旅行是好游戏，可以尝试~~
@@ -737,7 +737,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Omoi - Teo (Kroytz) [Dailycare's Hard]"
   star=3.61
   max=1030
-  alias="テオ"
+  unicode="テオ"
 />
 
 ~~初音经典金曲~~
@@ -780,7 +780,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="LamazeP - Ai no Uta feat. Hatsune Miku (Yumenexa) [Sanayui's Hard]"
   star=3.46
   max=1121
-  alias="愛の詩 feat. 初音ミク"
+  unicode="愛の詩 feat. 初音ミク"
 />
 
 ~~初音曲目+1~~
@@ -795,7 +795,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Ichigaya Arisa (CV: Itou Ayasa) - Su-Suki Nanka Janai! (Gaia) [Hard]"
   star=3.63
   max=1088
-  alias="す、好きなんかじゃない!"
+  unicode="す、好きなんかじゃない!"
 />
 
 ~~我们邦多利同样不能缺席啊（~~
@@ -810,7 +810,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="NayutalieN feat. KAFU - Secret UFO (v0ltia) [Lian's HARD]"
   star=3.44
   max=904
-  alias="ひみつのユーフォー"
+  unicode="ひみつのユーフォー"
 />
 
 依旧是主切。毕竟这个难度很少出现跳。但这并不影响这张图考验你的稳定性。
@@ -823,7 +823,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="XX:me - Torikago (Yugu) [Kamiya's Hard]"
   star=3.47
   max=955
-  alias="トリカゴ"
+  unicode="トリカゴ"
 />
 
 ~~国家队~~
@@ -838,7 +838,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="loos - Koi Yomi Zakura (Full size) (papapa213) [Hard]"
   star=3.52
   max=822
-  alias="恋詠桜（Full size）"
+  unicode="恋詠桜（Full size）"
 />
 
 ~~好听爱听。~~
@@ -867,7 +867,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="kessoku band - Seiza ni Naretara (Amateurre) [AmaNoodl's Hard]"
   star=3.50
   max=1122
-  alias="星座になれたら"
+  unicode="星座になれたら"
 />
 
 ~~是结束乐队，我们有救了！~~
@@ -882,7 +882,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="MIMI feat. Hatsune Miku - Ai no Sukima (theramdans) [Hard]"
   star=3.63
   max=1100
-  alias="哀の隙間"
+  unicode="哀の隙間"
 />
 
 ~~我们pp图也是有full的（~~
@@ -899,7 +899,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="ORESAMA - Hotohashiru (Meg) [sanairrt's Hard]"
   star=3.47
   max=981
-  alias="ホトハシル"
+  unicode="ホトハシル"
 />
 
 ~~魔法律师事务所ED~~
@@ -928,7 +928,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Enako feat. Pmarusama. - Iden Tei Tei Meltdown (Matsuyuki Ame) [eringiRa's Hard]"
   star=3.54
   max=1129
-  alias="アイデン貞貞メルトダウン"
+  unicode="アイデン貞貞メルトダウン"
 />
 
 ~~不当欧尼酱了......真不当，了吗？~~
@@ -1005,7 +1005,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="HO-KAGO TEA TIME - Kira Kira Days (Keqing) [Asa's Hard!]"
   star=3.86
   max=1148
-  alias="キラキラDays"
+  unicode="キラキラDays"
 />
 
 ~~这不是我们轻音少女吗（~~
@@ -1034,7 +1034,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="3L - Be Happy* (moonlightleaf) [Hard]"
   star=3.86
   max=1157
-  alias="Be Happy☆"
+  unicode="Be Happy☆"
 />
 
 ~~各位，这bg我是真喜欢（~~
@@ -1066,7 +1066,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="THE ORAL CIGARETTES - Sesshoku (Nevo) [Tachi & Ryxliee's Hard]"
   star=4.00
   max=1431
-  alias="接触"
+  unicode="接触"
 />
 
 ~~这个乐队里面我很喜欢的一首www~~
@@ -1083,7 +1083,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="t+pazolite - Party in the HOLLOWood feat. Nanahira (Kuki1537) [Nachmark's Hard]"
   star=3.83
   max=1096
-  alias="Party in the HOLLOWood feat. ななひら"
+  unicode="Party in the HOLLOWood feat. ななひら"
 />
 
 ~~还得是ななひら（ ~~
@@ -1112,7 +1112,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="THE BINARY - Hana ni Ame o, Kimi ni Uta o (Petal) [iRedi's Hard]"
   star=4.13
   max=1354
-  alias="花に雨を、君に歌を"
+  unicode="花に雨を、君に歌を"
 />
 
 ~~超超超超级好听的一首歌。~~
@@ -1127,7 +1127,7 @@ https://osu.ppy.sh/beatmapsets/<span style="color: red;">22276</span><span style
   preview="Usada Pekora - Discommunication Alien (Nana Abe) [mentai's hard peko.]"
   star=3.78
   max=935
-  alias="ディスコミュ星人"
+  unicode="ディスコミュ星人"
 />
 
 Usada Pekora Desupeko~
@@ -1142,7 +1142,7 @@ Usada Pekora Desupeko~
   preview="Kijibato - w/WWW feat. Hoshimiya Toto (Elcheer) [Hard]"
   star=4.07
   max=1490
-  alias="w/WWW feat. 星宮とと"
+  unicode="w/WWW feat. 星宮とと"
 />
 
 ~~你的稳定性摧毁器已上线（~~
@@ -1159,7 +1159,7 @@ Usada Pekora Desupeko~
   preview="ReoNa - Niji no Kanata ni (Gottagof4st) [As small flowers bloom]"
   star=2.94
   max=827
-  alias="虹の彼方に"
+  unicode="虹の彼方に"
 />
 
 ~~Bye ユージオ~~
@@ -1216,7 +1216,7 @@ Usada Pekora Desupeko~
   preview="Kuribayashi Minami - Anata ga... Inai (Shad0w1and) [Collab Hard]"
   star=3.19
   max=944
-  alias="あなたが…いない"
+  unicode="あなたが…いない"
 />
 
 虽然是日在校园，但别想歪了，歌很好听的（
@@ -1263,7 +1263,7 @@ ReO再次登场
   preview="cillia feat. Kagamine Rin - KOISURU*BEAM (Noffy) [Hard]"
   star=3.46
   max=995
-  alias="恋する☆ビーム"
+  unicode="恋する☆ビーム"
 />
 
 ~~铃酱可爱啊~~
@@ -1278,7 +1278,7 @@ ReO再次登场
   preview="Lia - Tori no Uta (Luscent) [Garden's Hard]"
   star=3.33
   max=1017
-  alias="鳥の詩"
+  unicode="鳥の詩"
 />
 
 ~~国歌来了（~~
@@ -1293,7 +1293,7 @@ ReO再次登场
   preview="Endorfin. - Sakurairo Prism (Karen) [lililing's Hard]"
   star=3.55
   max=1053
-  alias="桜色プリズム"
+  unicode="桜色プリズム"
 />
 
 ~~哎呀这声音真招人喜欢~~
@@ -1308,7 +1308,7 @@ ReO再次登场
   preview="Various Artists - Merry (Andrea) [Andrea & SupaV's H@RD!]"
   star=3.52
   max=1137
-  alias="メリー"
+  unicode="メリー"
 />
 
 ~~THE IDOLM@STER Million Live!肯定也是不会缺席的（~~
@@ -1323,7 +1323,7 @@ ReO再次登场
   preview="YooSanHyakurei - Ketsubetsu no Tabi (z1085684963) [Hard]"
   star=3.49
   max=865
-  alias="決别の旅"
+  unicode="決别の旅"
 />
 
 ~~东方再填一曲~~
@@ -1366,7 +1366,7 @@ ReO再次登场
   preview="Kaname Madoka (CV: Yuuki Aoi) - Mata Ashita (Dayno) [Farewell]"
   star=3.59
   max=936
-  alias="また あした"
+  unicode="また あした"
 />
 
 ~~纯纯的ED欺诈，差评！！！~~
@@ -1381,7 +1381,7 @@ ReO再次登场
   preview="Hiiragi Mayuki (CV: Ogura Yui), Hagino Chiaki (CV: Toujou Hisako) - Shiawase Iro (Teages) [Karafuru]"
   star=3.70
   max=1134
-  alias="しあわせ色"
+  unicode="しあわせ色"
 />
 
 ~~雏子的日记……中文念起来蛮怪的~~
@@ -1438,7 +1438,7 @@ ReO再次登场
   preview="YURiKA - Yasouka (fnayR) [Fireworks]"
   star=3.74
   max=999
-  alias="夜奏花"
+  unicode="夜奏花"
 />
 
 ~~说起来，夏日口袋的番马上就要播出了呢~~
@@ -1469,7 +1469,7 @@ ReO再次登场
   preview="Fujimiya Kaori (cv.Amamiya Sora) - Kanade (Modem) [Insane]"
   star=3.92
   max=1027
-  alias="奏（かなで）"
+  unicode="奏（かなで）"
 />
 
 一周的朋友
@@ -1486,7 +1486,7 @@ ReO再次登场
   preview="rionos - Pocket o Fukuramasete (rosario wknd) [Stuffing my Pockets]"
   star=3.65
   max=1258
-  alias="ポケットをふくらませて"
+  unicode="ポケットをふくらませて"
 />
 
 依旧是夏日口袋的曲，我很喜欢这首。
@@ -1501,7 +1501,7 @@ ReO再次登场
   preview="Girls Dead Monster STARRING LiSA - Ichiban no Takaramono ~Yui final ver.~ (Yumerios) [Eternal Love]"
   star=3.75
   max=1061
-  alias="一番の宝物 ～Yui final ver.～"
+  unicode="一番の宝物 ～Yui final ver.～"
 />
 
 ~~我们天使的心跳也算是出场了~~
@@ -1578,7 +1578,7 @@ ReO再次登场
   preview="Amamiya Sora - Tsuki Akari (Hinsvar) [Insane]"
   star=4.02
   max=831
-  alias="月灯り"
+  unicode="月灯り"
 />
 
 ~~这首歌算是把赤瞳的心声说出来了~~
@@ -1595,7 +1595,7 @@ ReO再次登场
   preview="hololive IDOL PROJECT - SHIJOSHUGI ADTRUCK (Amateurre) [Finshie's Hard]"
   star=4.23
   max=1445
-  alias="至上主義アドトラック"
+  unicode="至上主義アドトラック"
 />
 
 <Beatmap
@@ -1604,7 +1604,7 @@ ReO再次登场
   preview="hololive IDOL PROJECT - SHIJOSHUGI ADTRUCK (Amateurre) [Mocateurre's Insane]"
   star=5.38
   max=1931
-  alias="至上主義アドトラック"
+  unicode="至上主義アドトラック"
 />
 
 切切乐
@@ -1621,7 +1621,7 @@ ReO再次登场
   preview="inabakumori - Lagtrain (Sagu) [Ashemu's Light Insane]"
   star=4.13
   max=1092
-  alias="ラグトレイン"
+  unicode="ラグトレイン"
 />
 
 ~~Inaba！这图难度太多了其他的各位自己试吧（~~
@@ -1636,7 +1636,7 @@ ReO再次登场
   preview="Camellia - Syzygia (Realazy) [den 1's Hard]"
   star=4.13
   max=1280
-  alias="Συζυγία"
+  unicode="Συζυγία"
 />
 
 ~~山茶花+1~~
@@ -1651,7 +1651,7 @@ ReO再次登场
   preview="Sawai Miku - Colorful. (Rukaru) [Mochi's Insane]"
   star=4.13
   max=1103
-  alias="カラフル。"
+  unicode="カラフル。"
 />
 
 ~~猜 猜 谁 没 赢~~
@@ -1666,7 +1666,7 @@ ReO再次登场
   preview="Hanasaka Yui (CV: M.A.O) - Shunkashuutou * Egao Biyori (midorijeon) [Affection]"
   star=4.02
   max=856
-  alias="春夏秋冬＊笑顔日和"
+  unicode="春夏秋冬＊笑顔日和"
 />
 
 <span style="color: orange;">综合图</span>，硬要说的话就是几处小串容易爆。直到快结束才有休息时间，稳住。
@@ -1693,7 +1693,7 @@ ReO再次登场
   preview="Giga-P - Electric Angel (koreapenguin) [P A N's Hard]"
   star=4.16
   max=825
-  alias="えれくとりっく・えんじぇぅ"
+  unicode="えれくとりっく・えんじぇぅ"
 />
 
 ~~众多电子天使rank的其中一个版本~~
@@ -1722,7 +1722,7 @@ ReO再次登场
   preview="Kotoha - Ai Kotoba IV (Yuuma) [Yua's Insane]"
   star=4.38
   max=1182
-  alias="愛言葉Ⅳ"
+  unicode="愛言葉Ⅳ"
 />
 
 <Beatmap
@@ -1731,7 +1731,7 @@ ReO再次登场
   preview="Kotoha - Ai Kotoba IV (Yuuma) [Insane]"
   star=4.25
   max=1082
-  alias="愛言葉Ⅳ"
+  unicode="愛言葉Ⅳ"
 />
 
 ~~两个难度居然如此接近（~~
@@ -1748,7 +1748,7 @@ ReO再次登场
   preview="Sakura Chiyo (CV:Ozawa Ari) - URAOMOTE FORTUNE (P A N) [Insane]"
   star=4.21
   max=1036
-  alias="ウラオモテ・フォーチュン"
+  unicode="ウラオモテ・フォーチュン"
 />
 
 ~~月刊少女出现了。~~
@@ -1791,7 +1791,7 @@ ReO再次登场
   preview="Nomizu Iori - Black + White (Byakugan249) [Hard]"
   star=4.19
   max=991
-  alias="Black † White"
+  unicode="Black † White"
 />
 
 ~~老板，来份问题儿童都来自异世界的厕纸~~
@@ -1806,7 +1806,7 @@ ReO再次登场
   preview="Endorfin. - Utakata no Hi (Lunala) [Aquamarine]"
   star=4.29
   max=968
-  alias="泡沫の灯"
+  unicode="泡沫の灯"
 />
 
 此图来自[- Mahiru Shina- ]的投稿
@@ -1849,7 +1849,7 @@ ReO再次登场
   preview="Mitchie M - Suki ! Yuki ! Maji Magic (Natsu) [Gero's Insane]"
   star=4.36
   max=987
-  alias="好き！雪！本気マジック"
+  unicode="好き！雪！本気マジック"
 />
 
 ~~初音+3 又遇到了一张主次难是差分的~~
@@ -1866,7 +1866,7 @@ ReO再次登场
   preview="Tsunamaru - Daidai Genome (Lust) [Insane]"
   star=4.43
   max=573
-  alias="橙ゲノム"
+  unicode="橙ゲノム"
 />
 
 这是一张<span style="color: orange;">跳切图</span>，同时对读谱力也有一定要求。<span style="color: orange;">它的跳切是带位移的，还有一些是三连切后面跳着接了一个三连切</span>。在处理这些配置时你的稳定将面临严峻的考验。会打就很舒服，不会打就是糟透了。
@@ -1879,7 +1879,7 @@ ReO再次登场
   preview="senya - Koborezu no Negaigoto (Satellite) [Narcissu's Lunatic]"
   star=4.50
   max=1254
-  alias="零れずの願いゴト"
+  unicode="零れずの願いゴト"
 />
 
 ~~这是第几个加入的东方曲来着……（~~
@@ -1894,7 +1894,7 @@ ReO再次登场
   preview="Yukinoshita Yukino (CV: Hayami Saori) & Yuigahama Yui (CV: Touyama Nao) - Diamond no Jundo (Nakano-) [Collab Insane]"
   star=4.52
   max=989
-  alias="ダイヤモンドの純度"
+  unicode="ダイヤモンドの純度"
 />
 
 ~~钻石的纯度……我还是喜欢团子 solo 的慢速版，更有那种苦涩的感觉。~~
@@ -1909,7 +1909,7 @@ ReO再次登场
   preview="Chata - First Love (Laurier) [Insane]"
   star=4.51
   max=1109
-  alias="ふぁーすと♡ラブ"
+  unicode="ふぁーすと♡ラブ"
 />
 
 ~~一开口就知道是茶太（~~
@@ -1924,7 +1924,7 @@ ReO再次登场
   preview="Duca - Koiiro Sekai (Shirahane Suou) [Insane]"
   star=4.54
   max=1166
-  alias="コイイロセカイ"
+  unicode="コイイロセカイ"
 />
 
 ~~Duca也出场了~~
@@ -1939,7 +1939,7 @@ ReO再次登场
   preview="HoneyWorks feat. Minato Aqua - Heroine wa Heikin Ika. (aundy) [Ayesha's Insane]"
   star=4.79
   max=1207
-  alias="ヒロインは平均以下。"
+  unicode="ヒロインは平均以下。"
 />
 
 ~~可爱阿夸~~
@@ -1954,7 +1954,7 @@ ReO再次登场
   preview="kessoku band - Guitar to Kodoku to Aoi Hoshi (Amateurre) [Wen's Insane]"
   star=4.68
   max=1141
-  alias="ギターと孤独と蒼い惑星"
+  unicode="ギターと孤独と蒼い惑星"
 />
 
 ~~Beechi~~
@@ -1969,7 +1969,7 @@ ReO再次登场
   preview="Reol - Heimenkyou (Frey) [Insane]"
   star=4.82
   max=961
-  alias="平面鏡"
+  unicode="平面鏡"
 />
 
 ~~又到了奖励时间？~~
@@ -1984,7 +1984,7 @@ ReO再次登场
   preview="KOTOKO - Koi Kou Enishi (suzusiro) [Insane]"
   star=4.66
   max=1104
-  alias="恋ひ恋ふ縁"
+  unicode="恋ひ恋ふ縁"
 />
 
 哎呀，柚子厨来了（）
@@ -1999,7 +1999,7 @@ ReO再次登场
   preview="Isla (CV: Amamiya Sora) - Suki Nanode. (rosario wknd) [You'll Always be in my Heart]"
   star=4.76
   max=1010
-  alias="好きなので。"
+  unicode="好きなので。"
 />
 
 ~艾拉......~
@@ -2014,7 +2014,7 @@ ReO再次登场
   preview="ShinRa-Bansho - Sanyousei SAY YA!!! (Wither) [LUNATIC!!!]"
   star=4.81
   max=1091
-  alias="三妖精SAY YA!!!"
+  unicode="三妖精SAY YA!!!"
 />
 
 ~~Awsl~~
@@ -2058,7 +2058,7 @@ ReO再次登场
   preview="Yorushika - Odorouze (Ratarok) [Nattu's Insane]"
   star=4.95
   max=1482
-  alias="踊ろうぜ"
+  unicode="踊ろうぜ"
 />
 
 ~~我要开始放夜鹿了（~~
@@ -2087,7 +2087,7 @@ ReO再次登场
   preview="Nishikino Maki(CV.Pile) & Yazawa Nico(CV.Tokui Sora) - Zurui yo Magnetic today (Xinely) [Nelymat's Insane]"
   star=4.78
   max=1235
-  alias="ずるいよMagnetic today"
+  unicode="ずるいよMagnetic today"
 />
 
 贴贴贴贴贴贴
@@ -2102,7 +2102,7 @@ ReO再次登场
   preview="TUYU - Doro no Bunzai de Watashi dake no Taisetsu o Ubaouda nante (banter) [Insane]"
   star=4.91
   max=1112
-  alias="泥の分際で私だけの大切を奪おうだなんて"
+  unicode="泥の分際で私だけの大切を奪おうだなんて"
 />
 
 ~~Tuyu 来了；~~
@@ -2131,7 +2131,7 @@ ReO再次登场
   preview="Ayanami (CV: Taichi You) - Yuukyuu no Catharsis ~Ayanami ver.~ (KwAIMSuckASFuk) [GodKei's Insane]"
   star=4.98
   max=1415
-  alias="悠久のカタルシス ～綾波 ver.～"
+  unicode="悠久のカタルシス ～綾波 ver.～"
 />
 
 ~~密子（- -） 但你别说、真好听~~
@@ -2172,7 +2172,7 @@ ReO再次登场
   preview="Nanahira - Frightfully-insane Flan-chan's frightful song (Sherry) [Insane]"
   star=4.87
   max=1022
-  alias="物凄い狂っとるフランちゃんが物凄いうた"
+  unicode="物凄い狂っとるフランちゃんが物凄いうた"
 />
 
 ~~我是 nanahira 粉啊！~~
@@ -2187,7 +2187,7 @@ ReO再次登场
   preview="lino - Universe (Log Off Now) [Log Off Share's Insane]"
   star=4.90
   max=1429
-  alias="ユニバース"
+  unicode="ユニバース"
 />
 
 豪庭
@@ -2202,7 +2202,7 @@ ReO再次登场
   preview="Yorushika - Thoughtcrime (Meg) [Akitoshi's Insane]"
   star=5.03
   max=1419
-  alias="思想犯"
+  unicode="思想犯"
 />
 
 ~~夜鹿+1~~
@@ -2217,7 +2217,7 @@ ReO再次登场
   preview="Hoshimachi Suisei - Kakero (Amateurre) [Aerous' Insane]"
   star=4.98
   max=1328
-  alias="駆けろ"
+  unicode="駆けろ"
 />
 
 星姐又来了
@@ -2232,7 +2232,7 @@ ReO再次登场
   preview="senya - Yureru Koi wa Nami no Gotoku (Satellite) [Catharsis]"
   star=4.97
   max=1122
-  alias="揺れる恋は波の如く"
+  unicode="揺れる恋は波の如く"
 />
 
 ~~舰c啊，我逝去的青春！~~
@@ -2247,7 +2247,7 @@ ReO再次登场
   preview="Yorushika - Yoru Magai (CoLouRed GlaZeE) [Insane]"
   star=5.00
   max=1080
-  alias="夜紛い"
+  unicode="夜紛い"
 />
 
 ~~夜鹿✌夜鹿✌夜鹿✌夜鹿✌~~
@@ -2262,7 +2262,7 @@ ReO再次登场
   preview="Yorushika - Matasaburo (Rosiie) [Star's Insane]"
   star=5.06
   max=1263
-  alias="又三郎"
+  unicode="又三郎"
 />
 
 ~~嗨呦呦，这夜鹿，可真是美味呀。~~
@@ -2277,7 +2277,7 @@ ReO再次登场
   preview="Omoi - Snow Drive(01.23) (Kroytz) [pk's Insane]"
   star=5.00
   max=1529
-  alias="スノウドライヴ(01.23)"
+  unicode="スノウドライヴ(01.23)"
 />
 
 ~~哎呀我老喜欢听这首了~~
@@ -2310,7 +2310,7 @@ ReO再次登场
   preview="Eve - Ao no Waltz (hakashii) [To Somewhere Far Away, Beyond This Night, Dyed Blue.]"
   star=4.17
   max=1074
-  alias="蒼のワルツ"
+  unicode="蒼のワルツ"
 />
 
 ~~乔西的虎与鱼~~
@@ -2325,7 +2325,7 @@ ReO再次登场
   preview="Various Artists - Umapyoi Densetsu (Kwstv) [meep's Hard]"
   star=4.16
   max=1236
-  alias="うまぴょい伝説"
+  unicode="うまぴょい伝説"
 />
 
 ~~Kimino- aima ga~ 实际游玩其实不算长图，不过整体时长确实是就放在这里了~~
@@ -2340,7 +2340,7 @@ ReO再次登场
   preview="senya - Daichi ni Saku Senritsu (Yales) [Insane]"
   star=4.05
   max=1221
-  alias="大地に咲く旋律"
+  unicode="大地に咲く旋律"
 />
 
 ~~神曲~~
@@ -2371,7 +2371,7 @@ ReO再次登场
   preview="love solfege - Sanzen to Kagayaku Kanashiki Ashita to... (Andrea) [Bittersweet]"
   star=4.37
   max=1298
-  alias="燦然と輝く悲しき明日と…"
+  unicode="燦然と輝く悲しき明日と…"
 />
 
 ~~我要生气了，为什么神曲是手控！~~
@@ -2388,7 +2388,7 @@ ReO再次登场
   preview="Fujikawa Chiai - Kimi no namae (KwAIMSuckASFuk) [Tearing]"
   star=4.02
   max=1074
-  alias="きみの名前"
+  unicode="きみの名前"
 />
 
 <Beatmap
@@ -2397,7 +2397,7 @@ ReO再次登场
   preview="Fujikawa Chiai - Kimi no namae (Kibbleru) [Compassion]"
   star=4.48
   max=1091
-  alias="きみの名前"
+  unicode="きみの名前"
 />
 
 ~~番怎么样先不说，歌是真有感觉。~~
@@ -2412,7 +2412,7 @@ ReO再次登场
   preview="fhana - Hoshikuzu no Interlude (Crystal) [Interlude]"
   star=4.22
   max=1504
-  alias="星屑のインターリュード"
+  unicode="星屑のインターリュード"
 />
 
 天体的秩序又来了 同位的单图也是有的，只不过额……都很难。
@@ -2427,7 +2427,7 @@ ReO再次登场
   preview="Ray - lull ~Soshite Bokura wa~ (Delis) [Insane]"
   star=4.16
   max=1102
-  alias="lull ～そして僕らは～"
+  unicode="lull ～そして僕らは～"
 />
 
 ~~胃痛不止的明天又来了~~
@@ -2442,7 +2442,7 @@ ReO再次登场
   preview="Chata - Hoshizora no Memoria (Shurelia) [Stellar]"
   star=4.15
   max=1348
-  alias="星空のメモリア"
+  unicode="星空のメモリア"
 />
 
 ~~游戏名就是星空的记忆，可以尝试一下。~~
@@ -2457,7 +2457,7 @@ ReO再次登场
   preview="ClariS - Colorful (tamame's apostate remix) (Bearizm) [Darkened]"
   star=4.12
   max=1896
-  alias="カラフル (tamame's apostate remix)"
+  unicode="カラフル (tamame's apostate remix)"
 />
 
 ~~圆焰贴~~
@@ -2472,7 +2472,7 @@ ReO再次登场
   preview="SisterS - Hidamari Days (-Nya-) [Insane]"
   star=4.16
   max=1197
-  alias="ひだまりデイズ"
+  unicode="ひだまりデイズ"
 />
 
 ~~好险，差点把小埋打成小圆了……~~
@@ -2487,7 +2487,7 @@ ReO再次登场
   preview="Sawai Miku - Gomen ne, Iiko ja Irarenai. (Riana) [KeyWee's Insane]"
   star=4.23
   max=1194
-  alias="ごめんね、いいコじゃいられない。"
+  unicode="ごめんね、いいコじゃいられない。"
 />
 
 ~~斩服少女啊！还有看的吗？~~
@@ -2502,7 +2502,7 @@ ReO再次登场
   preview="Kugimiya Rie, Horie Yui, Kitamura Eri - Orange (Yuuma) [Bittersweet]"
   star=4.24
   max=1212
-  alias="オレンジ"
+  unicode="オレンジ"
 />
 
 龙虎ED啊，循环多少遍都觉得好听。
@@ -2517,7 +2517,7 @@ ReO再次登场
   preview="Ceui - Giniro, Haruka (Kazato Asa) [Memories of Winter]"
   star=4.29
   max=1463
-  alias="銀色、遥か"
+  unicode="銀色、遥か"
 />
 
 跳综合，带点切和零散的串
@@ -2544,7 +2544,7 @@ ReO再次登场
   preview="Imai Asami - Asayake no Starmine (LeCandy) [Retrieval]"
   star=4.33
   max=1123
-  alias="朝焼けのスターマイン"
+  unicode="朝焼けのスターマイン"
 />
 
 ~~再来个艾拉www~~
@@ -2573,7 +2573,7 @@ ReO再次登场
   preview="Satou Hiromi - KOWAREKAKE NO ORGEL (kanpakyin) [Orgel]"
   star=4.42
   max=1365
-  alias="こわれかけのオルゴール"
+  unicode="こわれかけのオルゴール"
 />
 
 快要坏掉的八音盒。
@@ -2602,7 +2602,7 @@ ReO再次登场
   preview="sana - Packet Hero (Fuccho) [toykii's Insane]"
   star=4.46
   max=1448
-  alias="パケットヒーロー"
+  unicode="パケットヒーロー"
 />
 
 走路跳，比较简单。
@@ -2615,7 +2615,7 @@ ReO再次登场
   preview="Sayuri - Hana no Tou (Mrgglock) [Astromi's Insane]"
   star=4.58
   max=1520
-  alias="花の塔"
+  unicode="花の塔"
 />
 
 ~~......R.I.P~~
@@ -2644,7 +2644,7 @@ ReO再次登场
   preview="Aqours - Yuuki wa Doko ni? Kimi no Mune ni! (Sotarks) [SMOKELIND's Insane]"
   star=4.54
   max=1387
-  alias="勇気はどこに？君の胸に！"
+  unicode="勇気はどこに？君の胸に！"
 />
 
 ~~水团这个我是真喜欢啊，听完歌词后感觉充满了力量。~~
@@ -2659,7 +2659,7 @@ ReO再次登场
   preview="Ceui - Ima, Arukidasu Kimi e. (Karen) [Renzia's Insane]"
   star=4.46
   max=1100
-  alias="今、歩き出す君へ。"
+  unicode="今、歩き出す君へ。"
 />
 
 <Beatmap
@@ -2668,7 +2668,7 @@ ReO再次登场
   preview="Ceui - Ima, Arukidasu Kimi e. (Karen) [Fycho's Kiseki]"
   star=4.62
   max=1153
-  alias="今、歩き出す君へ。"
+  unicode="今、歩き出す君へ。"
 />
 
 ~~现在就想告诉哥哥，我是妹妹！画风比较戳我~~
@@ -2683,7 +2683,7 @@ ReO再次登场
   preview="eufonius - Kimi ni Aeta kara (Dored) [Precious Memories]"
   star=4.41
   max=1104
-  alias="君に逢えたから"
+  unicode="君に逢えたから"
 />
 
 ~~真红，谈嘿嘿，真红，谈嘿嘿~~
@@ -2698,7 +2698,7 @@ ReO再次登场
   preview="Shiina Go feat. Nakagawa Nami - Kamado Tanjiro no Uta (Crissa) [Unbreakable Bond]"
   star=4.74
   max=1081
-  alias="竈門炭治郎のうた"
+  unicode="竈門炭治郎のうた"
 />
 
 走路+跳，因为CS6的缘故所以<span style="color: orange;">对定位要求很高</span>。可以来挑战一下自己的定位到底准不准。
@@ -2739,7 +2739,7 @@ ReO再次登场
   preview="Maeda Jun x yanaginagi - Owari no Sekai kara (YGOkid8) [Insane]"
   star=4.62
   max=1429
-  alias="終わりの世界から"
+  unicode="終わりの世界から"
 />
 
 ~~終の惑星のLoveSong专辑第一首~~
@@ -2754,7 +2754,7 @@ ReO再次登场
   preview="eufonius - Aletheia (Ayesha Altugle) [Shinku]"
   star=4.54
   max=1201
-  alias="アレセイア"
+  unicode="アレセイア"
 />
 
 ~~猜猜谁又来了~~
@@ -2769,7 +2769,7 @@ ReO再次登场
   preview="Horie Yui - Vanilla Salt (raheta_adi) [Collab]"
   star=4.58
   max=1366
-  alias="バニラソルト"
+  unicode="バニラソルト"
 />
 
 ~~哎呀又是龙虎~~
@@ -2784,7 +2784,7 @@ ReO再次登场
   preview="DAOKO x Kenshi Yonezu - Uchiage Hanabi (Monstrata) [Pyrotechnic]"
   star=4.48
   max=1206
-  alias="打上花火"
+  unicode="打上花火"
 />
 
 简单跳图，奖励关（？）
@@ -2797,7 +2797,7 @@ ReO再次登场
   preview="monet - GHOST x GRADUATION (Primonix) [Fluttering Petals]"
   star=4.64
   max=1144
-  alias="GHOST × GRADUATION"
+  unicode="GHOST × GRADUATION"
 />
 
 快去玩初雪樱！（
@@ -2812,7 +2812,7 @@ ReO再次登场
   preview="Minato Aqua - #Aquairo Palette (karupa) [Promise, I love you]"
   star=4.62
   max=1211
-  alias="#あくあ色ぱれっと"
+  unicode="#あくあ色ぱれっと"
 />
 
 ~~阿夸可爱阿夸可爱阿夸可爱~~
@@ -2827,7 +2827,7 @@ ReO再次登场
   preview="SILENT SIREN - Hachigatsu no Yoru (Akitoshi) [Insane]"
   star=4.84
   max=1455
-  alias="八月の夜"
+  unicode="八月の夜"
 />
 
 此图来自[- MahiruShina- ]的投稿
@@ -2842,7 +2842,7 @@ ReO再次登场
   preview="Yukinoshita Yukino (CV.Hayami Saori) & Yuigahama Yui (CV.Touyama Nao) - Everyday World (Pentori) [Insane]"
   star=4.66
   max=1107
-  alias="エブリデイワールド"
+  unicode="エブリデイワールド"
 />
 
 ~~也是百听不厌的一首了~~
@@ -2881,7 +2881,7 @@ ReO再次登场
   preview="yanaginagi - Megumi no Ame (Nakano-) [Laurier's Insane]"
   star=4.80
   max=1523
-  alias="芽ぐみの雨"
+  unicode="芽ぐみの雨"
 />
 
 春物+++
@@ -2910,7 +2910,7 @@ ReO再次登场
   preview="Coalamode. - Nanairo Symphony (AsuKow) [Colorful Melody]"
   star=4.90
   max=1301
-  alias="七色シンフォニー"
+  unicode="七色シンフォニー"
 />
 
 ~~四月来了~~
@@ -2925,7 +2925,7 @@ ReO再次登场
   preview="Ayane - Itsumo Kono Basho de (Kalibe) [Mirai]"
   star=4.67
   max=1344
-  alias="いつもこの場所で"
+  unicode="いつもこの場所で"
 />
 
 ~~石头门也干了（~~
@@ -2996,7 +2996,7 @@ ReO再次登场
   preview="TrySail - Honto da yo (_xyliac) [Finshie's Insane]"
   star=5.05
   max=1460
-  alias="ホントだよ"
+  unicode="ホントだよ"
 />
 
 ~~教师危机——这声音这歌词谁不喜欢啊（）~~
@@ -3011,7 +3011,7 @@ ReO再次登场
   preview="whiteeeen - Ano Koro ~Jin Jin Bao Zhe Ni~ (Ayucchi) [Those Bygone Years]"
   star=4.93
   max=1658
-  alias="あの頃〜ジンジンバオヂュオニー〜"
+  unicode="あの頃〜ジンジンバオヂュオニー〜"
 />
 
 ~~《那些年》日语版~~
@@ -3026,7 +3026,7 @@ ReO再次登场
   preview="Aimer - Hana no Uta (Kalibe) [Sakura]"
   star=4.97
   max=1390
-  alias="花の唄"
+  unicode="花の唄"
 />
 
 ~~唉，樱线。~~
@@ -3041,7 +3041,7 @@ ReO再次登场
   preview="u's - Datte Datte Aa Mujou (Xinchii) [Wakare]"
   star=4.88
   max=1540
-  alias="だってだって噫無情"
+  unicode="だってだって噫無情"
 />
 
 ~~拉拉再+1~~
@@ -3058,7 +3058,7 @@ ReO再次登场
   preview="senya - Kanjou Chemistry (Drum 'n' Bass Remix) (Satellite) [Satellite]"
   star=4.97
   max=1415
-  alias="感情ケミストリー (Drum 'n' Bass Remix)"
+  unicode="感情ケミストリー (Drum 'n' Bass Remix)"
 />
 
 ~~东方+？~~
@@ -3101,7 +3101,7 @@ ReO再次登场
   preview="RADWIMPS - Nandemo Nai ya (Monstrata) [Twilight]"
   star=4.27
   max=1510
-  alias="なんでもないや"
+  unicode="なんでもないや"
 />
 
 ~~超级水图出现了？！~~
@@ -3116,7 +3116,7 @@ ReO再次登场
   preview="Toyama Nao - Hajimari no Sora (Kuroame) [Together Until The End.]"
   star=4.42
   max=1439
-  alias="はじまりの空"
+  unicode="はじまりの空"
 />
 
 ~~来自专辑：群青インフィニティ~~
@@ -3131,7 +3131,7 @@ ReO再次登场
   preview="Various Artists - Toaru Kagaku no Railgun Compilation (alacat) [Marathon]"
   star=4.55
   max=1803
-  alias="とある科学の超電磁砲 Compilation"
+  unicode="とある科学の超電磁砲 Compilation"
 />
 
 老<span style="color: orange;">手控</span>了，<span style="color: orange;">不练别玩</span>（
@@ -3144,7 +3144,7 @@ ReO再次登场
   preview="supercell - Bokura no Ashiato (Shurelia) [Our Journey]"
   star=4.60
   max=1855
-  alias="僕らのあしあと"
+  unicode="僕らのあしあと"
 />
 
 ~~黑岩里超喜欢的一首~~
@@ -3173,7 +3173,7 @@ ReO再次登场
   preview="Takagi-san (CV: Takahashi Rie) - Karakai Jouzu no Takagi-san Compilation (gary00737) [The Sweet Story]"
   star=4.73
   max=1631
-  alias="からかい上手の高木さん Compilation"
+  unicode="からかい上手の高木さん Compilation"
 />
 
 ~~高木合集~~
@@ -3272,7 +3272,7 @@ ReO再次登场
   preview="Lucky Star no Minna - Kumikyoku 'Lucky Star Douga' (Andrea) [Marathon]"
   star=4.95
   max=4256
-  alias="組曲「らき☆すた動画」"
+  unicode="組曲「らき☆すた動画」"
 />
 
 幸运星组曲 （我刚刚过这个）
@@ -3315,7 +3315,7 @@ ReO再次登场
   preview="Demetori - Kourou ~ Eastern Dream (tokiko) [Bygone Dream]"
   star=5.17
   max=3004
-  alias="紅楼 ～ Eastern Dream"
+  unicode="紅楼 ～ Eastern Dream"
 />
 
 ~~此事在群文件 PP 长图推荐中亦有记载~~
@@ -3350,7 +3350,7 @@ ReO再次登场
   preview="YOASOBI - Ano Yume o Nazotte (Flask) [Koori's Insane]"
   star=5.07
   max=1274
-  alias="あの夢をなぞって"
+  unicode="あの夢をなぞって"
 />
 
 ~~夜鹿都来了夜游肯定也得来啊。~~
@@ -3375,7 +3375,7 @@ ReO再次登场
   preview="Yorushika - Haru (Delis) [Insane]"
   star=5.02
   max=1200
-  alias="晴る"
+  unicode="晴る"
 />
 
 ~~夜鹿返厂（~~
@@ -3388,7 +3388,7 @@ ReO再次登场
   preview="HoneyWorks - Re: Hatsukoi no Ehon feat. Aida Miou (CV: Toyosaki Aki) (Setu) [Insane]"
   star=4.98
   max=865
-  alias="Re:初恋の絵本 feat. 合田美桜（CV:豊崎愛生）"
+  unicode="Re:初恋の絵本 feat. 合田美桜（CV:豊崎愛生）"
 />
 
 ~~无论何时我们的恋情都是10厘米~~
@@ -3433,7 +3433,7 @@ PP跳图
   preview="HO-KAGO TEA TIME - Tenshi ni Fureta yo! (Asterisk DnB Remix) (sanairrt) [Insane]"
   star=5.11
   max=1526
-  alias="天使にふれたよ！(Asterisk DnB Remix)"
+  unicode="天使にふれたよ！(Asterisk DnB Remix)"
 />
 
 小心别被突如其来的串暗杀就行
@@ -3446,7 +3446,7 @@ PP跳图
   preview="Goose house - Hikaru nara (ProfessionalBox) [Synesthesia]"
   star=5.10
   max=1255
-  alias="光るなら"
+  unicode="光るなら"
 />
 
 ~~四谎的歌都很好听~~
@@ -3459,7 +3459,7 @@ PP跳图
   preview="TOGENASHI TOGEARI - Bleeding Hearts (Akitoshi) [Insane]"
   star=5.15
   max=1377
-  alias="爆ぜて咲く"
+  unicode="爆ぜて咲く"
 />
 
 ~~GBC 虽退但到~~
@@ -3474,7 +3474,7 @@ PP跳图
   preview="Tomita Miyu, Onishi Saori, Ohzora Naomi, Hanazawa Kana - Hallelujah*Essaim (Doyak) [Yohanes' Insane]"
   star=5.09
   max=1322
-  alias="ハレルヤ☆エッサイム"
+  unicode="ハレルヤ☆エッサイム"
 />
 
 ~~经典珈百璃。~~
@@ -3487,7 +3487,7 @@ PP跳图
   preview="cosMo@BousouP - Oceanus (Broccoly) [Asagi's Insane]"
   star=5.08
   max=1238
-  alias="Ωκεανος"
+  unicode="Ωκεανος"
 />
 
 切串挺多
@@ -3500,7 +3500,7 @@ PP跳图
   preview="Minato Aqua - Dadadada Tenshi (Amateurre) [Insane]"
   star=4.99
   max=1253
-  alias="ダダダダ天使"
+  unicode="ダダダダ天使"
 />
 
 ~~废柴天使，原唱nana和阿夸的翻唱我都喜欢哇~~
@@ -3525,7 +3525,7 @@ PP跳图
   preview="Various Artists - Super * Affection (gazimal) [wring's Insane]"
   star=5.18
   max=1640
-  alias="すーぱー☆あふぇくしょん"
+  unicode="すーぱー☆あふぇくしょん"
 />
 
 ~~幻想嘉年华~~
@@ -3538,7 +3538,7 @@ PP跳图
   preview="Kairiki bear feat. Hatsune Miku - Shippaisaku Shoujo (RLC) [Insane]"
   star=5.28
   max=1166
-  alias="失敗作少女"
+  unicode="失敗作少女"
 />
 
 ~~好听爱听~~
@@ -3551,7 +3551,7 @@ PP跳图
   preview="ClariS - Hitorigoto (Xexyz) [Soliloquium]"
   star=5.13
   max=1238
-  alias="ヒトリゴト"
+  unicode="ヒトリゴト"
 />
 
 ~~您的pp已到账~~
@@ -3564,7 +3564,7 @@ PP跳图
   preview="Akaza Akari (CV: Mikami Shiori) - Watashi, Shuyaku no Akaza Akari Desu (Happy Euri Mix) (Mythol) [Kalibot's Insane]"
   star=5.06
   max=1294
-  alias="私、主役の赤座あかりです (Happy Euri Mix)"
+  unicode="私、主役の赤座あかりです (Happy Euri Mix)"
 />
 
 ~~Akari Akari Akari~~
@@ -3577,7 +3577,7 @@ PP跳图
   preview="Inori Minase - Koiseyo Otome (Riana) [Saggin's Insane]"
   star=5.22
   max=1449
-  alias="コイセヨオトメ"
+  unicode="コイセヨオトメ"
 />
 
 小水~
@@ -3590,7 +3590,7 @@ PP跳图
   preview="DECO*27 - First Storm -Japanese Version- (SkyFlame) [Dakini's Insane]"
   star=5.30
   max=1291
-  alias="初嵐 -日本語版-"
+  unicode="初嵐 -日本語版-"
 />
 
 ~~豪庭~~
@@ -3603,7 +3603,7 @@ PP跳图
   preview="kessoku band - Hikari no Naka e (Shirahane Suou) [Insane]"
   star=5.34
   max=1391
-  alias="光の中へ"
+  unicode="光の中へ"
 />
 
 ~~是那个女人 她来了！~~
@@ -3616,7 +3616,7 @@ PP跳图
   preview="Kohinata Chiko - Rashikunai Koi (FreezingAnimenz) [karupa's Insane]"
   star=5.21
   max=981
-  alias="らしくない恋"
+  unicode="らしくない恋"
 />
 
 八卦恋爱
@@ -3629,7 +3629,7 @@ PP跳图
   preview="Aimi, Sakura Ayane, Maeshima Ami, Aiba Aina, Itou Miku - Picotto! Papitto!! GARUPA * PICO!!! (Saki) [dahkjdas' Insane]"
   star=5.24
   max=1587
-  alias="ピコっと！パピっと！！ガルパ☆ピコ！！！"
+  unicode="ピコっと！パピっと！！ガルパ☆ピコ！！！"
 />
 
 邦多利+1
@@ -3654,7 +3654,7 @@ PP跳图
   preview="Rhodanthe* - Yumeiro Parade (Doormat) [Fycho's Insane]"
   star=5.14
   max=1215
-  alias="夢色パレード"
+  unicode="夢色パレード"
 />
 
 黄金拼图
@@ -3667,7 +3667,7 @@ PP跳图
   preview="HIMEHINA - Hitogata Rock (dkblaze) [Asa's Insane]"
   star=5.42
   max=1617
-  alias="ヒトガタRock"
+  unicode="ヒトガタRock"
 />
 
 Rock 版也很爽啊（个人觉得有些难度所以标橙）
@@ -3680,7 +3680,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="fourfolium - Hosshii no! (Kisses) [Karia's Insane!]"
   star=5.22
   max=1234
-  alias="ほっしーの!"
+  unicode="ほっしーの!"
 />
 
 ~~没看过 new game 可以试试，好看的~~
@@ -3693,7 +3693,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Kato Megumi (CV.Yasuno Kiyono) - M flat (Momoka) [Insane]"
   star=5.14
   max=1005
-  alias="M♭"
+  unicode="M♭"
 />
 
 ~~有请 Winner 之一登场~~
@@ -3706,7 +3706,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="eufonius - glowing world ~Kagayaki no, Sekai e~ (Dored) [Asuka_-'s Eternal Love.]"
   star=5.17
   max=1074
-  alias="glowing world ～輝きの、セカイへ～"
+  unicode="glowing world ～輝きの、セカイへ～"
 />
 
 ~~又来一首~~
@@ -3731,7 +3731,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="UPLIFT SPICE - Omega Rhythm (Jemmmmy) [lightr's Insane]"
   star=5.21
   max=1023
-  alias="オメガリズム"
+  unicode="オメガリズム"
 />
 
 ~~小心串~~
@@ -3744,7 +3744,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="halca - Kokuhaku Bungee Jump (Yogurtt) [Uniform's Insane]"
   star=5.24
   max=1320
-  alias="告白バンジージャンプ"
+  unicode="告白バンジージャンプ"
 />
 
 ~~您好，借个女友~~
@@ -3757,7 +3757,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="TUYU - Loser Girl (Keqing) [Amasai's Insane]"
   star=5.45
   max=1007
-  alias="ルーザーガール"
+  unicode="ルーザーガール"
 />
 
 ~~loser~~
@@ -3770,7 +3770,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Usada Pekora - PEKORANDOMBRAIN! (Yuuma) [Kuse's Insane]"
   star=5.34
   max=1449
-  alias="ぺこらんだむぶれいん！"
+  unicode="ぺこらんだむぶれいん！"
 />
 
 ~~Peko~~
@@ -3783,7 +3783,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Kawada Mami - Hishoku no Sora (Akitoshi) [Expert]"
   star=5.30
   max=1363
-  alias="緋色の空"
+  unicode="緋色の空"
 />
 
 ~~我直接唱打（~~
@@ -3820,7 +3820,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Yorushika - Dakara Boku wa Ongaku o Yameta (Petal) [Jazz's Another]"
   star=5.38
   max=1463
-  alias="だから僕は音楽を辞めた"
+  unicode="だから僕は音楽を辞めた"
 />
 
 夜鹿又来喽
@@ -3845,7 +3845,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Hanatan - Airman ga Taosenai (SOUND HOLIC Ver.) (Natsu) [Insane]"
   star=5.40
   max=1238
-  alias="エアーマンが倒せない (SOUND HOLIC Ver.)"
+  unicode="エアーマンが倒せない (SOUND HOLIC Ver.)"
 />
 
 走跳切串比例挺平均。
@@ -3858,7 +3858,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="nonoc - Hisui (HeTo) [Do you find me now?]"
   star=5.47
   max=1429
-  alias="ヒスイ"
+  unicode="ヒスイ"
 />
 
 跳图
@@ -3871,7 +3871,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="BPM15Q - Go Shoot! (Venyera) [Melo's Insane]"
   star=5.55
   max=1646
-  alias="ごーしゅー!"
+  unicode="ごーしゅー!"
 />
 
 小心串
@@ -3884,7 +3884,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="yuikonnu - caramel heaven (sukiNathan) [pritifat's Insane]"
   star=5.63
   max=1366
-  alias="キャラメルへヴン"
+  unicode="キャラメルへヴン"
 />
 
 ~~不简单~~
@@ -3909,7 +3909,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="HO-KAGO TEA TIME - Kira Kira Days (Keqing) [Ram's Expert!]"
   star=5.37
   max=1272
-  alias="キラキラDays"
+  unicode="キラキラDays"
 />
 
 轻音+1
@@ -3958,7 +3958,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Yorushika - Odorouze (Ratarok) [Adi4t's Expert]"
   star=5.61
   max=1552
-  alias="踊ろうぜ"
+  unicode="踊ろうぜ"
 />
 
 看看谁来了（
@@ -3971,7 +3971,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="nano.RIPE - Hana no Iro (chaser01) [Misuzu's Insane]"
   star=5.40
   max=1106
-  alias="ハナノイロ"
+  unicode="ハナノイロ"
 />
 
 你知道花开伊吕波吗
@@ -3996,7 +3996,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="momosumomosu - Esoa (Dailycare) [Extra]"
   star=5.50
   max=1153
-  alias="エソア"
+  unicode="エソア"
 />
 
 ~~魔王学院的不适格者 算是比较舒服的一个厕纸（~~
@@ -4021,7 +4021,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="Yonekura Chihiro - Koiseyo Otome! (Kencho) [Collab Extra]"
   star=5.58
   max=1493
-  alias="恋せよ乙女！"
+  unicode="恋せよ乙女！"
 />
 
 ~~柚子厨......~~ 主跳的图，快去给我刷！！
@@ -4034,7 +4034,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="the peggies - Kimi no Sei (toybot) [Kalibe & Luscent's Extra]"
   star=5.63
   max=1455
-  alias="君のせい"
+  unicode="君のせい"
 />
 
 樱岛麻衣来了！
@@ -4059,7 +4059,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="HAG - Shoujotachi no Owaranai Yoru (Sarawatlism) [Forever]"
   star=5.62
   max=1361
-  alias="少女たちの終わらない夜"
+  unicode="少女たちの終わらない夜"
 />
 
 ~~跳图~~
@@ -4072,7 +4072,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="ClariS - Careless (Reiszen) [Godszen's Expert]"
   star=5.66
   max=1272
-  alias="ケアレス"
+  unicode="ケアレス"
 />
 
 ~~外传第二季没看过的，建议不要看……~~
@@ -4085,7 +4085,7 @@ Rock 版也很爽啊（个人觉得有些难度所以标橙）
   preview="TUYU - Itsuka Otona ni Nareru to Ii ne. (Len) [Not Classic Extra]"
   star=5.69
   max=1179
-  alias="いつかオトナになれるといいね。"
+  unicode="いつかオトナになれるといいね。"
 />
 
 Tuyu+1 
@@ -4098,7 +4098,7 @@ Tuyu+1
   preview="team Umifure - DEEP BLUE TOWN e Oide yo (Hanazawa Kana) [Mir's Expert]"
   star=5.74
   max=1159
-  alias="DEEP BLUE TOWNへおいでよ"
+  unicode="DEEP BLUE TOWNへおいでよ"
 />
 
 ~~深 蓝 城~~
@@ -4111,7 +4111,7 @@ Tuyu+1
   preview="kessoku band - Wasurete Yaranai (Matsuyuki Ame) [gazimal's Extra]"
   star=5.86
   max=1529
-  alias="忘れてやらない"
+  unicode="忘れてやらない"
 />
 
 ~~结束乐队+1~~
@@ -4124,7 +4124,7 @@ Tuyu+1
   preview="Nanamori-chu*Goraku-bu - Acchu~ma Seishun! (Tokiwa Kano) [lizzzil's Extra]"
   star=5.63
   max=1274
-  alias="あっちゅ～ま青春！"
+  unicode="あっちゅ～ま青春！"
 />
 
 ### 5-5.69 长图
@@ -4137,7 +4137,7 @@ Tuyu+1
   preview="Camellia feat. Nanahira - Tsukitourou (kolman) [-AzuMi & Parad0xa's Insane]"
   star=5.03
   max=1724
-  alias="月燈籠"
+  unicode="月燈籠"
 />
 
 ~~Nana!Nana!Nana!~~
@@ -4162,7 +4162,7 @@ Tuyu+1
   preview="Tapimiru - Hakkensha wa Watashi (sbsonic) [Dustinati's Insane]"
   star=5.03
   max=1426
-  alias="発見者はワタシ"
+  unicode="発見者はワタシ"
 />
 
 ~~从零开始的魔法书~~
@@ -4187,7 +4187,7 @@ Tuyu+1
   preview="Tomodachi Tsukuri-tai - Zannen-kei Rinjin-bu Hoshi Futatsuhan (Amamya) [Solitude]"
   star=5.34
   max=1616
-  alias="残念系隣人部★★☆"
+  unicode="残念系隣人部★★☆"
 />
 
 ~~我的朋友很少~~
@@ -4212,7 +4212,7 @@ Tuyu+1
   preview="Camellia feat. Nanahira - finorza (Sing) [Insane]"
   star=5.51
   max=2176
-  alias="⨍iиorzᾶ"
+  unicode="⨍iиorzᾶ"
 />
 
 ~~我懂得欣赏（~~
@@ -4225,7 +4225,7 @@ Tuyu+1
   preview="kessoku band - Karakara (Amateurre) [AmaNoodl's Insane]"
   star=5.14
   max=1553
-  alias="カラカラ"
+  unicode="カラカラ"
 />
 
 那个女人
@@ -4238,7 +4238,7 @@ Tuyu+1
   preview="ClariS - Connect (pregnant_man) [aishiteiru's Insane]"
   star=5.16
   max=1234
-  alias="コネクト"
+  unicode="コネクト"
 />
 
 圆神降临
@@ -4263,7 +4263,7 @@ Tuyu+1
   preview="Halozy - Genryuu Kaiko (pkk) [Death Melody]"
   star=5.08
   max=1618
-  alias="源流懐古"
+  unicode="源流懐古"
 />
 
 ~~还有其他版本，也是pp图（~~
@@ -4276,7 +4276,7 @@ Tuyu+1
   preview="Naoki Miki (CV: Takahashi Rie) & Ebisuzawa Kurumi (CV: Ozawa Ari) - Unhappy End World (Yasaija 714) [Collab Insane]"
   star=5.10
   max=1358
-  alias="アンハッピーエンドワールド"
+  unicode="アンハッピーエンドワールド"
 />
 
 ~~学园孤岛，这歌超好听~~
@@ -4313,7 +4313,7 @@ Tuyu+1
   preview="HARU NEMURI - Trust Nothing but Love (Ryuusei Aika) [Liyuu_0109's Insane]"
   star=5.09
   max=1538
-  alias="愛よりたしかなものなんてない"
+  unicode="愛よりたしかなものなんてない"
 />
 
 ~~很有感觉 但是不简单~~
@@ -4326,7 +4326,7 @@ Tuyu+1
   preview="fhana - Wonder Stella (CelsiusLK) [Insane]"
   star=5.33
   max=1813
-  alias="ワンダーステラ"
+  unicode="ワンダーステラ"
 />
 
 ~~带伊莉雅玩就是好~~
@@ -4351,7 +4351,7 @@ Tuyu+1
   preview="Hashimoto Miyuki - Kisetsu o Dakishimete ~blooming white love~ (Ayesha Altugle) [Aria]"
   star=5.30
   max=1671
-  alias="季節を抱きしめて ～blooming white love～"
+  unicode="季節を抱きしめて ～blooming white love～"
 />
 
 中后段有密度陡峰，坚持住
@@ -4376,7 +4376,7 @@ Tuyu+1
   preview="Mikakuning! - Tomadoi Recipe (Fycho) [Insane]"
   star=5.34
   max=1519
-  alias="とまどい→レシピ"
+  unicode="とまどい→レシピ"
 />
 
 ~~未确认进行时 小姑子可爱捏ww~~
@@ -4389,7 +4389,7 @@ Tuyu+1
   preview="Horie Yui - The World's End (attendant) [Another]"
   star=5.35
   max=1560
-  alias="The♡World’s♡End"
+  unicode="The♡World’s♡End"
 />
 
 ~~青春纪行~~
@@ -4402,7 +4402,7 @@ Tuyu+1
   preview="u's - Bokura wa Ima no Naka de (scanter) [Insane]"
   star=5.22
   max=1195
-  alias="僕らは今のなかで"
+  unicode="僕らは今のなかで"
 />
 
 ~~拉拉分数要爆表了（这曲还有其他rank 就不放了）~~
@@ -4415,7 +4415,7 @@ Tuyu+1
   preview="Chino (CV: Inori Minase) - Shinsaku no Shiawase wa Kochira! (Kyuuchie) [_xyliac's Another]"
   star=5.30
   max=1354
-  alias="新作のしあわせはこちら！"
+  unicode="新作のしあわせはこちら！"
 />
 
 ~~Chino Desu~~
@@ -4440,7 +4440,7 @@ Tuyu+1
   preview="Nibutani Shinka (CV: Akasaki Chinatsu) - Mogatairime demo Yumemi Summer! (beenscared) [Summer Dream!]"
   star=5.42
   max=1785
-  alias="モがたいリめでもゆめみサマー！"
+  unicode="モがたいリめでもゆめみサマー！"
 />
 
 中二病还在追我，夏大人，神曲，豪庭！
@@ -4453,7 +4453,7 @@ Tuyu+1
   preview="ClariS - Koi Sekai (Suimya) [My Angel Cecilia <3]"
   star=5.45
   max=1402
-  alias="コイセカイ"
+  unicode="コイセカイ"
 />
 
 ~~白圣女与黑牧师~~ 难
@@ -4478,7 +4478,7 @@ Tuyu+1
   preview="Shiro (CV: Ai Kayano) - Oracion (Nao Tomori) [New World]"
   star=5.54
   max=1470
-  alias="オラシオン"
+  unicode="オラシオン"
 />
 
 ~~Shiro Chan~~
@@ -4527,7 +4527,7 @@ Tuyu+1
   preview="DIALOGUE+ - Omoide Shiritori (Keqing) [Sayu]"
   star=5.80
   max=1450
-  alias="おもいでしりとり"
+  unicode="おもいでしりとり"
 />
 
 借一个不够啊，再借一个
@@ -4602,7 +4602,7 @@ Tuyu+1
   preview="sabi - true DJ MAG top ranker's song Zenpen (katagiri Remix) (Nathan) [Scub x Nathan's Insane]"
   star=5.69
   max=2378
-  alias="true DJ MAG top ranker's song 前編 (かたぎり Remix)"
+  unicode="true DJ MAG top ranker's song 前編 (かたぎり Remix)"
 />
 
 ~~这位更是DDDD~~
@@ -4627,7 +4627,7 @@ Tuyu+1
   preview="Shigure Ui (9-sai) - Shukusei!! Loli-Kami Requiem* (Vararaup) [KeyWee's Extra]"
   star=5.51
   max=1889
-  alias="粛聖!! ロリ神レクイエム☆"
+  unicode="粛聖!! ロリ神レクイエム☆"
 />
 
 ~~请尽情地鞭打我，时雨羽衣小姐（（（（（~~
@@ -4652,7 +4652,7 @@ Tuyu+1
   preview="ZUN - Mottomo Sumiwataru Sora to Umi (Nyanaro) [Nyanaro & Parachute's 53-minute conversation]"
   star=5.72
   max=1305
-  alias="最も澄みわたる空と海"
+  unicode="最も澄みわたる空と海"
 />
 
 <span style="color: red;">不想折磨自己建议这辈子都别点开这张图（</span>
@@ -4679,7 +4679,7 @@ Tuyu+1
   preview="Sakamoto Maaya - Okaerinasai (tomatomerde Remix) (Gloria Guard) [Return]"
   star=5.23
   max=1736
-  alias="おかえりなさい (tomatomerde Remix)"
+  unicode="おかえりなさい (tomatomerde Remix)"
 />
 
 端内正正好好6分钟 主要由跳切/小串构成
@@ -4786,7 +4786,7 @@ Tuyu+1
   preview="zts - Umineko no Naku Koro ni Compilation (Leader) [When They Cry]"
   star=5.47
   max=8966
-  alias="うみねこのなく頃に Compilation"
+  unicode="うみねこのなく頃に Compilation"
 />
 
 万恶之源海猫来了，这位更是30分钟手控
@@ -5132,7 +5132,7 @@ BPM高一点的手控。
   preview="ayaponzu* feat. beatMARIO - INTERNET SURVIVOR (NeonMarijuana) [JBlue's Hard]"
   star=3.79
   max=1214
-  alias="インターネットサバイバー"
+  unicode="インターネットサバイバー"
 />
 
 ~~可爱~~
@@ -5145,7 +5145,7 @@ BPM高一点的手控。
   preview="Nanawo Akari feat. Minato Aqua - I LOVE ME De i Rareru Yo Ni (Perikas) [HYPER]"
   star=4.03
   max=904
-  alias="I LOVE MEでいられるように"
+  unicode="I LOVE MEでいられるように"
 />
 
 ~~双人组合可爱。~~ 玩起来手感巨好的一张图，可惜了
@@ -5158,7 +5158,7 @@ BPM高一点的手控。
   preview="Takamori Natsumi, Sendai Eri, Asakawa Yuu, Tanezaki Atsumi - Ne! Ko! (Hanazawa Kana) [Remapper's Hard]"
   star=4.12
   max=1119
-  alias="ネ！コ！"
+  unicode="ネ！コ！"
 />
 
 ~~好听好玩 推波游戏 ノラと皇女と野良猫ハート~~
@@ -5183,7 +5183,7 @@ BPM高一点的手控。
   preview="Neko Hacker - From Zero feat. Rika (MandaliKa) [Insane_]"
   star=4.57
   max=1079
-  alias="From Zero feat. 利香"
+  unicode="From Zero feat. 利香"
 />
 
 甜死我了
@@ -5196,7 +5196,7 @@ BPM高一点的手控。
   preview="BRILLIANT4 - Elementario de Aimashou! (Mei) [Insane]"
   star=4.55
   max=1036
-  alias="エレメンタリオで会いましょう！"
+  unicode="エレメンタリオで会いましょう！"
 />
 
 ~~甘城光辉游乐园~~
@@ -5209,7 +5209,7 @@ BPM高一点的手控。
   preview="Hatsuki Yura - Salamandra no Odoriko (Sakurauchi Riko) [WISP's Insane]"
   star=4.67
   max=1250
-  alias="サラマンドラの踊り子"
+  unicode="サラマンドラの踊り子"
 />
 
 Yurasuki
@@ -5224,7 +5224,7 @@ Yurasuki
   preview="NayutalieN - Alien Alien (Nhato Remix) (Awlex) [Hard]"
   star=3.76
   max=696
-  alias="エイリアンエイリアン (Nhato Remix)"
+  unicode="エイリアンエイリアン (Nhato Remix)"
 />
 
 2. ID 852138  4.64★ AR9 

@@ -374,6 +374,11 @@ export default defineUserConfig({
                                 link: "/article/lastwords/README.md",
                                 activeMatch: "^/article/lastwords/$",
                             },
+                            {
+                                text: "游戏指南",
+                                link: "/article/tips/README.md",
+                                activeMatch: "^/article/tips/$",
+                            },
                         ]
                     },
                     {
@@ -470,6 +475,13 @@ export default defineUserConfig({
                             text: "出群遗言",
                             link: "README.md",
                             children: getSortedFilesByType('article/lastwords/users'),
+                        }
+                    ],
+                    "/article/tips/":[
+                        {
+                            text: "游戏指南",
+                            link: "README.md",
+                            children: getSortedFilesByYear('article/tips'),
                         }
                     ],
                     "/meta/": [

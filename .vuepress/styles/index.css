@@ -1,3 +1,5 @@
+@import './lastword-34235946.css';
+
 @font-face {
   font-family: 'Torus SemiBold';
   src: url('/fonts/Torus-SemiBold.woff2') format('woff2'),
@@ -25,5 +27,6 @@
 }
 
 :root {
-  --font-family: "Torus SemiBold", "Alibaba PuHuiTi Regular", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-family: 'Torus SemiBold', 'Alibaba PuHuiTi Regular', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
+

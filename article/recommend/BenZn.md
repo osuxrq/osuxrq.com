@@ -913,14 +913,6 @@ max=388
 />
 
 <Beatmap
-bid=1353259
-sid=637445
-preview="LiSA - Datte Atashi no Hero. -TV ver.- (Monstrata) [Akitoshi's Insane]"
-star=5.06
-max=489
-/>
-
-<Beatmap
 bid=946136
 sid=438535
 preview="NIGHTMARE - the WORLD  ~TV Size~ (smallboat) [117's Insane]"

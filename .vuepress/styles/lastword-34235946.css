@@ -1,0 +1,738 @@
+
+
+@property --wm-b {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 10px;
+}
+
+@property --wm-ga {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 1;
+}
+
+@keyframes wm-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes wm-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes wm-slide {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes wm-breathe {
+  0%, 100% { --wm-ga: 0.7; }
+  50% { --wm-ga: 1; }
+}
+
+main:has(#wm-lastword-marker) {
+  --wm-h: 333;
+  --wm-bg: hsl(var(--wm-h) 20% 9%);
+  --wm-panel: hsl(var(--wm-h) 18% 13%);
+  --wm-panel-2: hsl(var(--wm-h) 16% 17%);
+  --wm-line: hsl(var(--wm-h) 12% 24%);
+  --wm-text: hsl(var(--wm-h) 12% 93%);
+  --wm-muted: hsl(var(--wm-h) 8% 71%);
+  --wm-accent: hsl(var(--wm-h) 100% 70%);
+  --wm-accent-dim: hsl(var(--wm-h) 100% 70% / 0.35);
+  --wm-warn: hsl(38 100% 66%);
+  --wm-hover: hsl(0 0% 100% / 0.06);
+  --wm-glow-c: var(--wm-h) 100% 70%;
+  --wm-gk: 1;
+  --wm-card-shadow: 0 0 0 1px var(--wm-line);
+  --wm-card-shadow-hover: 0 0 0 1px var(--wm-accent), 0 0 22px hsl(var(--wm-glow-c) / 0.28);
+  --wm-ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --wm-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --wm-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  --wm-head: 'Torus Bold', 'Torus SemiBold', 'Alibaba PuHuiTi Regular', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: var(--wm-text);
+  background: var(--wm-bg);
+  counter-reset: wm-sec;
+
+  & p:has(> span[id$='-marker']) { display: none; }
+
+  & ::selection { color: hsl(var(--wm-h) 20% 9%); background: var(--wm-accent); }
+
+  & h1 {
+    margin: 0 0 2rem;
+    padding: 1.2rem 0 1.25rem;
+    border: 0;
+    background:
+      linear-gradient(var(--wm-accent), var(--wm-accent)) 0 100% / 3.5rem 3px no-repeat,
+      linear-gradient(var(--wm-line), var(--wm-line)) 0 100% / 100% 1px no-repeat,
+      repeating-linear-gradient(90deg, var(--wm-line) 0 1px, transparent 1px 16px) 0 100% / 24rem 6px no-repeat;
+    color: var(--wm-text);
+    font-family: var(--wm-head);
+    font-weight: 700;
+    font-size: clamp(2rem, 4.6vw, 3.3rem);
+    line-height: 1.15;
+    letter-spacing: 0;
+    text-shadow:
+      0 0 0.1em hsl(var(--wm-glow-c) / calc(var(--wm-ga) * var(--wm-gk) * 0.55)),
+      0 0 0.5em hsl(var(--wm-glow-c) / calc(var(--wm-ga) * var(--wm-gk) * 0.32));
+    animation:
+      wm-in 0.6s var(--wm-ease) backwards,
+      wm-breathe 7s ease-in-out 1s infinite;
+  }
+
+  & .user-card-container {
+    width: min(100%, 520px);
+    max-width: 520px;
+    margin: 0 0 3.5rem;
+    border-radius: 12px;
+    animation: wm-in 0.7s var(--wm-ease) 0.08s backwards;
+  }
+
+  & .user-card {
+    border: 1px solid var(--wm-line);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px -18px hsl(var(--wm-h) 80% 20% / 0.6);
+    transition: box-shadow 0.5s var(--wm-ease), border-color 0.5s var(--wm-ease);
+  }
+
+  & .user-card-container:hover .user-card {
+    border-color: hsl(var(--wm-glow-c) / 0.7);
+    box-shadow: 0 0 24px hsl(var(--wm-glow-c) / calc(0.3 * var(--wm-gk))), 0 12px 32px -16px hsl(var(--wm-h) 80% 20% / 0.6);
+  }
+
+  & .user-card .card-bg-animated {
+    background: linear-gradient(135deg, hsl(var(--wm-h) 70% 46%), hsl(calc(var(--wm-h) + 24) 60% 24%));
+    background-size: 100% 100%;
+    animation: none;
+    opacity: 0.85;
+  }
+
+  & .user-card .card-overlay {
+    background: hsl(var(--wm-h) 20% 9%);
+    opacity: 0.45;
+  }
+
+  & .user-card .user-avatar {
+    box-shadow: 0 0 0 1px hsl(0 0% 100% / 0.25);
+  }
+
+  & .user-card .text-name {
+    font-size: 8.2cqw;
+    line-height: 12cqw;
+    text-shadow: 0 0 0.35em hsl(var(--wm-h) 100% 78% / 0.55), 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  & .user-card .text-perf {
+    text-shadow: 0 0 0.2em hsl(var(--wm-h) 100% 80% / 0.4), 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  & .user-card::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.6;
+    background:
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 0 0 / var(--wm-b) 2px no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 0 0 / 2px var(--wm-b) no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 100% 0 / var(--wm-b) 2px no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 100% 0 / 2px var(--wm-b) no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 0 100% / var(--wm-b) 2px no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 0 100% / 2px var(--wm-b) no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 100% 100% / var(--wm-b) 2px no-repeat,
+      linear-gradient(hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.9)) 100% 100% / 2px var(--wm-b) no-repeat;
+    transition: --wm-b 0.5s var(--wm-ease), opacity 0.3s var(--wm-ease);
+  }
+
+  & .user-card-container:hover .user-card::before,
+  & .user-card:focus-visible::before {
+    --wm-b: 20px;
+    opacity: 1;
+  }
+
+  & .user-card:focus-visible {
+    outline: 2px solid var(--wm-accent);
+    outline-offset: 3px;
+  }
+
+  & h2 {
+    position: relative;
+    margin: 4.6rem 0 1.5rem;
+    padding: 0 0 0.7rem;
+    border: 0;
+    border-bottom: 1px solid var(--wm-line);
+    color: var(--wm-text);
+    font-family: var(--wm-head);
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+    line-height: 1.3;
+    counter-increment: wm-sec;
+    text-shadow: 0 0 0.6em hsl(var(--wm-glow-c) / calc(0.22 * var(--wm-gk)));
+  }
+
+  & h2::before {
+    content: counter(wm-sec, decimal-leading-zero);
+    display: inline-block;
+    margin-right: 0.85rem;
+    vertical-align: 0.2em;
+    color: var(--wm-accent);
+    font: 600 0.78rem/1 var(--wm-mono);
+    letter-spacing: 0.08em;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 0.5em hsl(var(--wm-glow-c) / calc(0.8 * var(--wm-gk))), 0 0 1.2em hsl(var(--wm-glow-c) / calc(0.4 * var(--wm-gk)));
+  }
+
+  & h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 3.5rem;
+    height: 2px;
+    background: var(--wm-accent);
+    box-shadow: 0 0 10px hsl(var(--wm-glow-c) / calc(0.7 * var(--wm-gk)));
+    transform-origin: 0 50%;
+  }
+
+  & h3 {
+    margin: 2.4rem 0 0.9rem;
+    padding: 0 0 0 0.8rem;
+    border: 0;
+    border-left: 2px solid var(--wm-accent);
+    color: var(--wm-text);
+    font-family: var(--wm-mono);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+  }
+
+  & p {
+    color: var(--wm-muted);
+    font-size: 1.02rem;
+    line-height: 1.9;
+  }
+
+  & strong { color: var(--wm-text); }
+
+  & p code, & li code, & h2 code, & h3 code {
+    padding: 0.1em 0.4em;
+    border: 0;
+    border-radius: 5px;
+    background: var(--wm-panel-2);
+    color: var(--wm-text);
+    font-family: var(--wm-mono);
+    font-size: 0.88em;
+  }
+
+  & p a, & li a {
+    padding-bottom: 1px;
+    color: var(--wm-accent);
+    text-decoration: none;
+    background:
+      linear-gradient(var(--wm-accent), var(--wm-accent)) 0 100% / 0 1px no-repeat,
+      linear-gradient(var(--wm-accent-dim), var(--wm-accent-dim)) 0 100% / 100% 1px no-repeat;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: background-size 0.4s var(--wm-ease), text-shadow 0.4s var(--wm-ease);
+  }
+
+  & p a:hover, & li a:hover, & p a:focus-visible, & li a:focus-visible {
+    background-size: 100% 1px, 100% 1px;
+    text-shadow: 0 0 0.7em hsl(var(--wm-glow-c) / calc(0.55 * var(--wm-gk)));
+    outline: none;
+  }
+
+  & .hint-container.warning {
+    margin: 1.6rem 0;
+    padding: 1.1rem 1.5rem 1.2rem;
+    border: 1px solid var(--wm-line);
+    border-left: 4px solid var(--wm-warn);
+    border-radius: 5px;
+    background: var(--wm-panel);
+    box-shadow: var(--wm-panel-shadow, none);
+    color: var(--wm-text);
+  }
+
+  & .hint-container.warning > .hint-container-title {
+    margin: 0 0 0.5rem;
+    padding-inline-start: 0;
+    color: var(--wm-warn);
+    font-family: var(--wm-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  & .hint-container.warning > .hint-container-title::before { display: none; }
+
+  & .hint-container.warning p:not(.hint-container-title) {
+    color: var(--wm-text);
+    font-family: var(--wm-head);
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    line-height: 1.5;
+  }
+
+  & .vp-tabs {
+    --tab-c-bg: var(--wm-panel);
+    --tab-c-bg-nav: var(--wm-panel-2);
+    --tab-c-bg-nav-hover: var(--wm-hover);
+    --tab-c-nav: var(--wm-muted);
+    margin: 1rem 0 1.6rem;
+    border: 1px solid var(--wm-line);
+    border-radius: 10px;
+    background: var(--wm-panel);
+    box-shadow: var(--wm-panel-shadow, none);
+    overflow: hidden;
+  }
+
+  & .vp-tabs-nav { border-radius: 0; border-bottom: 1px solid var(--wm-line); }
+
+  & .vp-tab-nav {
+    border-radius: 0;
+    font-family: var(--wm-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    transition: background-color 0.3s var(--wm-ease), color 0.3s var(--wm-ease);
+  }
+
+  & .vp-tab-nav::before, & .vp-tab-nav::after { display: none; }
+
+  & .vp-tab-nav::marker { content: none; }
+
+  & .vp-tab-nav.active {
+    color: var(--wm-accent);
+    background: var(--wm-panel);
+    box-shadow: inset 0 -2px 0 var(--wm-accent);
+  }
+
+  & .vp-tab { padding: 0.9rem 0 0.4rem; }
+
+  & .vp-tab.active { animation: wm-in 0.35s var(--wm-ease); }
+
+  & .vp-tab > p { margin: 0 1.2rem 0.4rem; }
+
+  & .vp-tab ul {
+    margin: 0.4rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  & .vp-tab ul li {
+    position: relative;
+    margin: 0;
+    padding: 0.7rem 1.2rem;
+    border-top: 1px solid var(--wm-line);
+    color: var(--wm-muted);
+    transition: background-color 0.4s var(--wm-ease), color 0.4s var(--wm-ease), padding-left 0.4s var(--wm-ease);
+  }
+
+  & .vp-tab ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: var(--wm-accent);
+    box-shadow: 0 0 8px hsl(var(--wm-glow-c) / calc(0.7 * var(--wm-gk)));
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition: transform 0.45s var(--wm-ease);
+  }
+
+  & .vp-tab ul li:hover {
+    padding-left: 1.45rem;
+    background: var(--wm-panel-2);
+    color: var(--wm-text);
+    transition-duration: 0.08s, 0.08s, 0.3s;
+  }
+
+  & .vp-tab ul li:hover::before { transform: scaleY(1); }
+
+  & .data-card-container {
+    position: relative;
+    margin-top: 0.6rem;
+    box-shadow: var(--wm-card-shadow);
+    transition: transform 0.5s var(--wm-spring), box-shadow 0.35s var(--wm-ease);
+  }
+
+  & .data-card-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+    background: var(--wm-hover);
+    opacity: 0;
+    transition: opacity 0.45s var(--wm-ease);
+  }
+
+  & .data-card-container:hover {
+    box-shadow: var(--wm-card-shadow-hover);
+  }
+
+  & .data-card-container:hover::after {
+    opacity: 1;
+    transition-duration: 0.06s;
+  }
+
+  & .data-card-container:active {
+    transform: scale(0.985);
+    transition: transform 0.12s var(--wm-ease), box-shadow 0.25s var(--wm-ease);
+  }
+
+  & .data-card-container:focus-visible {
+    outline: 2px solid var(--wm-accent);
+    outline-offset: 2px;
+  }
+
+  & p:has(#wm-hthr-marker) + h2::before {
+    color: var(--wm-warn);
+    text-shadow: 0 0 0.5em hsl(var(--wm-warn-c) / calc(0.8 * var(--wm-gk))), 0 0 1.2em hsl(var(--wm-warn-c) / calc(0.4 * var(--wm-gk)));
+  }
+
+  & p:has(#wm-hthr-marker) + h2::after {
+    background: var(--wm-warn);
+    box-shadow: 0 0 10px hsl(var(--wm-warn-c) / calc(0.7 * var(--wm-gk)));
+  }
+
+  & p:has(#wm-hthr-marker) + h2 + p {
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--wm-line);
+    border-left: 3px solid var(--wm-warn);
+    border-radius: 5px;
+    background: var(--wm-panel);
+    box-shadow: var(--wm-panel-shadow, none);
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol {
+    margin: 1.2rem 0;
+    padding: 1.2rem 1.4rem 1.2rem 3rem;
+    border: 1px solid var(--wm-line);
+    border-radius: 10px;
+    background: var(--wm-panel);
+    box-shadow: var(--wm-panel-shadow, none);
+    color: var(--wm-muted);
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol li ul {
+    margin: 0.3rem 0 0.2rem;
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol li li {
+    padding: 0.05rem 0;
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol li {
+    padding: 0.35rem 0;
+    transition: color 0.4s var(--wm-ease);
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol li:hover {
+    color: var(--wm-text);
+    transition-duration: 0.08s;
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ ol li::marker {
+    color: var(--wm-accent);
+    font-family: var(--wm-mono);
+    font-weight: 700;
+  }
+
+  & p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+    margin-top: 3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--wm-line);
+    color: var(--wm-text);
+    font-family: var(--wm-head);
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 0 0 0.8em hsl(var(--wm-glow-c) / calc(0.3 * var(--wm-gk)));
+  }
+
+  @media (max-width: 719px) {
+    & h2 { margin-top: 3.2rem; }
+    & .user-card-container { width: 100%; }
+    & p:has(#wm-project-marker) + h2 ~ ol { padding-left: 2.4rem; }
+  }
+}
+
+main:has(#wm-lastword-marker) {
+  --wm-warn-c: 38 100% 66%;
+}
+
+@supports (animation-timeline: view()) {
+  main:has(#wm-lastword-marker) h2::after {
+    animation: wm-draw linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 70%;
+  }
+
+  main:has(#wm-lastword-marker) h2::before {
+    animation: wm-slide linear both;
+    animation-timeline: view();
+    animation-range: entry 5% entry 60%;
+  }
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) {
+  --wm-bg: hsl(var(--wm-h) 32% 97%);
+  --wm-panel: hsl(0 0% 100%);
+  --wm-panel-2: hsl(var(--wm-h) 28% 95%);
+  --wm-line: hsl(var(--wm-h) 16% 86%);
+  --wm-text: hsl(var(--wm-h) 32% 14%);
+  --wm-muted: hsl(var(--wm-h) 10% 35%);
+  --wm-accent: hsl(var(--wm-h) 82% 50%);
+  --wm-accent-dim: hsl(var(--wm-h) 82% 50% / 0.32);
+  --wm-warn: hsl(26 92% 46%);
+  --wm-warn-c: 34 100% 62%;
+  --wm-hover: hsl(var(--wm-h) 90% 50% / 0.06);
+  --wm-glow-c: var(--wm-h) 100% 72%;
+  --wm-gk: 0.8;
+  --wm-panel-shadow: 0 1px 2px hsl(var(--wm-h) 30% 30% / 0.06), 0 10px 26px -16px hsl(var(--wm-h) 50% 40% / 0.28);
+  --wm-card-shadow: 0 0 0 1px var(--wm-line), 0 8px 20px -14px hsl(var(--wm-h) 50% 30% / 0.45);
+  --wm-card-shadow-hover: 0 0 0 1px var(--wm-accent), 0 0 20px hsl(var(--wm-glow-c) / 0.5), 0 10px 22px -14px hsl(var(--wm-h) 60% 40% / 0.5);
+  background:
+    linear-gradient(180deg, hsl(var(--wm-h) 70% 95%), transparent 22rem),
+    var(--wm-bg);
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) ::selection {
+  color: hsl(0 0% 100%);
+  background: var(--wm-accent);
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) .user-card {
+  border-color: transparent;
+  box-shadow: 0 12px 30px -14px hsl(var(--wm-h) 60% 30% / 0.55);
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) .user-card-container:hover .user-card {
+  border-color: transparent;
+  box-shadow: 0 0 22px hsl(var(--wm-glow-c) / 0.55), 0 14px 32px -14px hsl(var(--wm-h) 60% 30% / 0.6);
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) h1 {
+  text-shadow:
+    0 0 0.08em hsl(var(--wm-glow-c) / calc(var(--wm-ga) * 0.3)),
+    0 0 0.45em hsl(var(--wm-glow-c) / calc(var(--wm-ga) * 0.16));
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) h2 {
+  text-shadow: 0 0 0.7em hsl(var(--wm-glow-c) / 0.14);
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+  text-shadow: none;
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) p code,
+html[data-theme='light'] main:has(#wm-lastword-marker) li code,
+html[data-theme='light'] main:has(#wm-lastword-marker) h2 code,
+html[data-theme='light'] main:has(#wm-lastword-marker) h3 code {
+  background: hsl(var(--wm-h) 30% 93%);
+}
+
+@keyframes wm-sheen {
+  0% { translate: -120% 0; }
+  35%, 100% { translate: 120% 0; }
+}
+
+@keyframes wm-card-in {
+  from { opacity: 0; translate: 0 14px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes wm-pop {
+  from { opacity: 0; scale: 0.96; }
+  to { opacity: 1; scale: 1; }
+}
+
+main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+  position: relative;
+  overflow: hidden;
+  margin: 3.5rem 0 1rem;
+  padding: 2.8rem 1.5rem 2.5rem;
+  border: 1px solid var(--wm-line);
+  border-radius: 12px;
+  background:
+    linear-gradient(var(--wm-warn), var(--wm-warn)) 12px 12px / 14px 2px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) 12px 12px / 2px 14px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) calc(100% - 12px) 12px / 14px 2px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) calc(100% - 12px) 12px / 2px 14px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) 12px calc(100% - 12px) / 14px 2px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) 12px calc(100% - 12px) / 2px 14px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) calc(100% - 12px) calc(100% - 12px) / 14px 2px no-repeat,
+    linear-gradient(var(--wm-warn), var(--wm-warn)) calc(100% - 12px) calc(100% - 12px) / 2px 14px no-repeat,
+    linear-gradient(180deg, hsl(var(--wm-glow-c) / 0.1), transparent 70%),
+    var(--wm-panel);
+  box-shadow: var(--wm-panel-shadow, none);
+  color: var(--wm-text);
+  font-family: var(--wm-head);
+  font-size: clamp(1.6rem, 3.8vw, 2.6rem);
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow:
+    0 0 0.5em hsl(var(--wm-glow-c) / calc(0.45 * var(--wm-gk))),
+    0 0 1.3em hsl(var(--wm-glow-c) / calc(0.25 * var(--wm-gk))),
+    0 0 2.2em hsl(var(--wm-warn-c) / calc(0.18 * var(--wm-gk)));
+}
+
+main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type code {
+  text-shadow: none;
+  font-size: 0.8em;
+}
+
+main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 38%, hsl(var(--wm-glow-c) / 0.22) 50%, transparent 62%);
+  translate: -120% 0;
+  animation: wm-sheen 6.5s ease-in-out 1.2s infinite;
+}
+
+main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 9rem;
+  height: 3px;
+  translate: -50% 0;
+  background: linear-gradient(90deg, transparent, var(--wm-warn) 25%, var(--wm-accent) 50%, var(--wm-warn) 75%, transparent);
+  box-shadow: 0 0 12px hsl(var(--wm-glow-c) / calc(0.6 * var(--wm-gk)));
+}
+
+html[data-theme='light'] main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+  text-shadow: 0 0 0.6em hsl(var(--wm-glow-c) / 0.25);
+}
+
+main:has(#wm-lastword-marker) .user-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 40%, hsl(0 0% 100% / 0.18) 50%, transparent 60%);
+  translate: -120% 0;
+}
+
+main:has(#wm-lastword-marker) .user-card-container:hover .user-card::after {
+  translate: 120% 0;
+  transition: translate 0.9s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .user-card .user-avatar {
+  transition: transform 0.5s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .user-card-container:hover .user-avatar {
+  transform: scale(1.04);
+}
+
+main:has(#wm-lastword-marker) .data-card-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 21;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 35%, hsl(0 0% 100% / 0.13) 50%, transparent 65%);
+  translate: -110% 0;
+}
+
+main:has(#wm-lastword-marker) .data-card-container:hover::before {
+  translate: 110% 0;
+  transition: translate 0.8s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .data-card-container .preview-rect {
+  transition: filter 0.3s ease, transform 0.5s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .data-card-container:hover .preview-rect:not(.is-disabled) {
+  transform: scale(1.03);
+  transition: filter 0.3s ease, transform 0.5s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .data-card-container .text-large {
+  transition: text-shadow 0.4s var(--wm-ease);
+}
+
+main:has(#wm-lastword-marker) .data-card-container:hover .text-large {
+  text-shadow: 0 0 0.35em hsl(0 0% 100% / 0.55), 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@supports ((animation-timeline: view()) and (animation-range: entry)) {
+  main:has(#wm-lastword-marker) .data-card-container {
+    animation: wm-card-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+
+  main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+    animation: wm-pop linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main:has(#wm-lastword-marker) .data-card-container,
+  main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type {
+    animation: none;
+  }
+
+  main:has(#wm-lastword-marker) p:has(#wm-project-marker) + h2 ~ p:last-of-type::before {
+    animation: none;
+    opacity: 0;
+  }
+
+  main:has(#wm-lastword-marker) .user-card::after,
+  main:has(#wm-lastword-marker) .data-card-container::before {
+    display: none;
+  }
+
+  main:has(#wm-lastword-marker) .user-card-container:hover .user-avatar,
+  main:has(#wm-lastword-marker) .data-card-container:hover .preview-rect:not(.is-disabled) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main:has(#wm-lastword-marker) h1 {
+    animation: none;
+  }
+
+  main:has(#wm-lastword-marker) .user-card-container,
+  main:has(#wm-lastword-marker) h2::after,
+  main:has(#wm-lastword-marker) h2::before {
+    animation: none;
+  }
+
+  main:has(#wm-lastword-marker) .data-card-container:active {
+    transform: none;
+  }
+
+  main:has(#wm-lastword-marker) .vp-tab ul li::before {
+    transition: none;
+  }
+
+  main:has(#wm-lastword-marker) .vp-tab ul li:hover {
+    padding-left: 1.2rem;
+  }
+
+  main:has(#wm-lastword-marker) .vp-tab.active {
+    animation: none;
+  }
+
+  main:has(#wm-lastword-marker) .user-card::before {
+    transition: opacity 0.2s linear;
+  }
+}

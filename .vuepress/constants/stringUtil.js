@@ -1,5 +1,5 @@
 import rawData from '../../assets/aliasDB.json';
-import stringSimilarity from "string-similarity-js";
+import { stringSimilarity } from "string-similarity-js";
 
 // 核心逻辑：(?<![a-zA-Z]) 确保前面不能是英文字母
 const featPattern = /(?<![a-zA-Z])\b(?:[(\\[-]\s*)?(?:feat\.?|ft\.?|featuring|covered?\s+by|cover)\b.*$/i;
